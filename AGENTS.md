@@ -8,7 +8,7 @@
 - Try to keep the code human understandable
 - Divide the code into sections, and add concise 1 line comments in the code to explain the function of each code section. Avoid comment redundancy.
 - Add concise 1 line comments in the code to explain the working of code subsections when you deem it not obvious by words used in the code or too complex for average human developers.
-- DRY: do not repeat yourself. If two chuncks of code in a file define very similar processing logic, modularize the logic into a single function.
+- DRY: do not repeat yourself. If two chunks of code in a file define very similar processing logic, modularize the logic into a single function.
 
 # Project Brain
 - Whenever you receive a prompt, use the agent_neuron.md file references in AGENTS.md and their tags to help you inform your plan about which repo resources are pertinent to your task.
