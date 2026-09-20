@@ -25,6 +25,9 @@
 
 # Editing and Commits
 - When prompted to edit files, propose a plan in steps. Each step is ideally a commit
-- When editing code, always consider editing .md files, context files, documentation files, readme files to keep the coherent with the edited code.
+- When editing code, always consider editing .md files, context files, documentation files, readme files to keep them coherent with the edited code:
+    - Files that describe working logic should be updated when implemented logic changes
+    - Files that describe file contents should change when file contents change
+    - Files that describe workflow events have to be updated when the user takes project decisions like: stated project objectives, methods, technologies of choice...
 - Don't commit without explicit approval.
 - Whenever a task requires you to inspect folders and files, consider the <context>.md file closest to the object of your inspection: update the <context>.md file with a concise sum-up of your inspection findings for future reference. Keep the list of context references updated in the AGENT.md file (present file). As the development proceeds, this practice will create a content map of the project that should help you save processing time on file and folder inspection.
