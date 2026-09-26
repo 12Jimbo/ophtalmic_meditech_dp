@@ -1,0 +1,9 @@
+# Local Python virtual environment
+.env/
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+
+# Jupyter-generated state
+.ipynb_checkpoints/
