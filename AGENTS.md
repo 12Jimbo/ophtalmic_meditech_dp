@@ -11,17 +11,36 @@
 - DRY: do not repeat yourself. If two chunks of code in a file define very similar processing logic, modularize the logic into a single function.
 
 # Project Brain
-- Whenever you receive a prompt, use the agent_neuron.md file references in AGENTS.md and their tags to help you inform your plan about which repo resources are pertinent to your task.
-- Whenever you access a folder as part of a task, if the folder contains a agent_neuron.md, include agent_neuron.md in your current session context
-- Whenever plan to inspect files in folder X, check first whether a agent_neuron.md file is present in X:
+
+- Whenever you receive a prompt, consult @BRAIN.md for file references and related taggs. Use the referenced files that you deem more relevant to your task, to inform your plan for addressing the task. 
+
+- Whenever you access a folder as part of a task, if the folder contains a neuron.md, include neuron.md in your current session context.
+
+- Whenever you edit code (like SQL or Python) in a file file_x, in folder folder_x, consider whether your edit is a bug fix, adding or removing logic, or modifiying present logic. If the logic was edited, or if the bug fix involved upstream or downstream dependencies of file_x, check whether a neuron.md file is present in folder_x. Then:
     - If no such file is present:
-        - create it and name it after X's path
-        - inspect the files of interest in X and add an entry in agent_neuron.md for each file in X where you sum up the file content, its pertinence to your present task, and related metadata pertinent to your ability to analyze it (like file size),  for future reference. The file entry in agent_neuron.md has to be small compared to the file's content.
-        - Consider X parent folder, Y:
-            - If Y is not the root, and there is a agent_neuron.md in Y, update it whith a reference to the newly created X/agent_neuron.md
-            - If Y is the project root, add a reference to the newly created agent_neuron.md to AGENTS.md, 
-            - If you add a reference to a agent_neuron.md file in a .md file, tag the reference to help codex determine its relevance to future user prompts.
-    - If a agent_neuron.md file is present for X, re-evaluate which files to inspect in X based on your current task, and on the descriptions and task relevance you find in agent_neuron.md about said files
+        - create it neuron.md in folder_x
+        - create an entry in neuron.md for file_x
+        - Create an entry @BRAIN.md 
+    - If a neuron.md file is present in folder_x: 
+        - Create or update the entry for file_x in neuron.md 
+
+- Whenever you create an entry in a neuron.md for file_x:
+    - add in neuron.md a reference to file_x
+    - write a summary description of file_x functionalities
+    - add the id and date of the last known commit to file_x
+    - If in the course of the present task you have noticed upstream or downstream dependencies of file_x, add them in the entry as references.
+
+- Whenever you update an entry in a neuron.md for file_x:
+    - Edit the entry so that it is materially consistent with the edited code
+    - Check the date of the last known commit to file_x: if there is a more recent commit to file_x: 
+        - Based on the last commit edits, check the material consistency of the file_x entry with file_x, and update the entry accordingly
+        - Update the date and id of last known commit to the most recent commit
+
+- Whenever you create an entry in @BRAIN.md for a neuron.md:
+    - add a reference to neouron.md
+    - add a list of tags that would help you determine the neuron's relevance to future tasks
+    - Group together neuron entries at the same folder level.
+
 
 # Editing and Commits
 - When prompted to edit files, propose a plan in steps. Each step is ideally a commit
