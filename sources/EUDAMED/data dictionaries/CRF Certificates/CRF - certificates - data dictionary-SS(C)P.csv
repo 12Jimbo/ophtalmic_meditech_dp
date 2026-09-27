@@ -1,0 +1,40 @@
+MDR Eudamed - Data Dictionary,,,,,,,,,,,,,,,
+ Field ID,Field Label,Entity Name,Field Description / Notes,ENUM Reference Code ,Field Type,Field Size,Multilingual Flag,Occurrence,Searchable,GDPR Flag,Public Access Flag,Business Rules,Updateable,DTX Entity,XSD Element Name
+FLD-CRF-256,(certificate ID),SSCP,SS(C)P attached to a certificate.,,CertificateID,,,1,Y,,Y,,,SSCPType,certificateID
+FLD-UDID-307,SS(C)P Reference Number,SSCP,Unique reference of the SS(C)P provided by the Manufacturer. Must be unique in the system for the Manufacturer,,String,S,,1,,,Y,BR-UDID-715,,SSCPType,referenceNumber
+FLD-UDID-334,SS(C)P Revision Number,SSCP,Unique reference of the version of the SS(C)P. Revision number should be unique in the system for the same SS©P ,,String,S,,1,,,Y,BR-UDID-716,"Y
+
+New Revision Number required with new versions",SSCPDocumentType,revisionNumber
+FLD-UDID-112,Basic UDI-DI code,SSCP,"SSCP(Summary of safety and clinical performance) can be registered in EUDAMED by the Notified Body and can be periodically updated
+
+Field stores the reference to the Basic UDI - DI for which the SSCP is uploaded. SS©P can contain references to several Basic UDIs",,"Basic UDI data - FLD-UDID-14, FLD-UDID-01
+[DD Basic UDI]",,,1..n,Y,,Y,BR-UDID-710,"Y
+Add or Remove Basic UDIs",SSCPType,basicUDI
+FLD-UDID-113,Notified Body,SSCP,"SSCP(Summary of safety and clinical performance) can be registered in EUDAMED by the Notified Body and can be periodically updated
+
+Field stores the reference to the Notified Body  who manages the SSCP (for a specific version of SSCP). In time the Notified Body can change together with a new Certificates that covers the Device (the SS(C)P will be uploaded in EUDAMED together with the new Certificate by the new NB)",,"Actor - NotifiedBody -FLD-ACT-001
+
+[Actor- Actor]",,,1,Y,,Y,BR-UDID-714,Y,SSCPType,NBActorCode
+FLD-UDID-335,Linked certificate,SSCP,Certificate reference to which the current version is linked,,Certificate [Certificate],,,1..n,Y,,Y,BR-UDID-714,Y,SSCPType,certificateID
+FLD-UDID-287,Date issued ,SSCP,Date when the Master Document has been issued by the Manufacturer,,Date,,,1,,,Y,BR-UDID-719,Y,SSCPType,startDate
+FLD-UDID-337,SSCP Attached Documents,SSCP,Reference to the SSCP actual documents (Master Document and Translations),,SSCPDocuments,,,1..n,,,"Y
+
+Discarded translation documents are not Public",,Y,SSCPDocumentType,documents
+FLD-UDID-362,Inactive,SSCP,Indicates if the SS(C)P is marked as inactive. All Basic UDI-DI(s) associated to an inactive SS(C)P can be associated to another active SS(C)P.,,Boolean,,,0..1,,,Y,BR-CRF-293,,SSCPType,inactivated
+FLD-UDID-363,Inactive from,SSCP,The date when the SS(C)P is marked as inactive.,,Date,,,0..1,,,Y,BR-CRF-294,,SSCPType,inactivatedFrom
+FLD-UDID-288,Version,SSCP,Version of the SSCP,,"VersionData
+[EUDAMED- Common Entities]",,,"1 
+Managed by EUDAMED",,,Y,,,Entity,
+FLD-UDID-115,Master Document (flag),SSCPDocuments,Flags if the current document (attachement) is a Master Document or not,,Boolean,,,1,,,Y,,Y,SSCPDocumentType,masterDocument
+FLD-UDID-336,Validated,SSCPDocuments,Flags if the SS(C)P Maser Document is Validated or not,,Boolean,,,"0..1
+
+Applicable only for Master Document",,,Y,,Y,SSCPDocumentType,status
+FLD-UDID-338,Document (Attachement),SSCPDocuments,Document (translated document attached to the SS©P),,"StoredDocument
+[EUDAMED- Common Entities]",,,1,,,Y,"BR-UDID-711
+BR-UDID-712   ",,SSCPDocumentType,masterDocument
+FLD-UDID-340,Received date from MF,SSCPDocuments,Date when the Translation is received from the MF,,Date,,,1,,,Visible for MF/NB concerned and CAs,    BR-UDID-713,,SSCPDocumentType,receievedDate
+FLD-UDID-339,Discarded,SSCPDocuments,Flag that mentions if the Translation Document is discarded or not,,Boolean,,,"1
+
+Occurrence applicable if Translations are provided (FLD-UDID-337)",,,,,"Y
+
+Only in case it was initially False",SSCPDocumentType,discarded

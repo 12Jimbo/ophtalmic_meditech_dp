@@ -1,0 +1,97 @@
+Share with external,Field ID,Field Label,Entity Name,Field Description / Notes,ENUM Reference Code ,Field Type,Field Size,Updateable Flag,Multilingual Flag,Occurrence,Confidential,Searchable,GDPR Flag,Public Access Flag,Data Exchange Flag,Business Rules,DTX Entity Name,DTX XSD Element Name
+,FLD-EUD-001,Document ID ,StoredDocument,Eudamed unique identification for the document.,,Long,,,,1,,,,Y,,,DocumentType,URI
+,FLD-EUD-002,Filename,StoredDocument,The filename of the document.,,String,S,,,1,,,,Y,,,,
+,FLD-EUD-003,Language(s),StoredDocument,The language (enumeration) in which the content of the document is written in.,ENUM_MDR_LANGUAGE,Enum,,,,0..*,,,,Y,Y,,DocumentType,languages
+,FLD-EUD-004,Name (Document original name),StoredDocument,Document original name provided by the owner of he document,,String,L,,Y,0..1,,Y,,Y,Y,,DocumentType,name
+,FLD-EUD-005,Document size,StoredDocument,The document size in Bytes,,Number,,,,1,,,,Y,Y,BR-DOC-003,DocumentType,size
+,FLD-EUD-006,Document format,StoredDocument,Mime Type for the document,ENUM_MDR_DOCUMENT_MIME_TYPES,Enum,S,,,1,,,,Y,Y,BR-DOC-002,DocumentType,mimeType
+,FLD-EUD-007,Document content,StoredDocument,base64Binary,,String,XL,,,1,,,,Y,Y,,DocumentType,content
+,FLD-EUD-008,Document version,StoredDocument,Version of the document,,VersionData,,,,"1 
+(Managed by EUDAMED)",,,,Y,,,,
+,FLD-EUD-009,Text,LanguageSpecificContent,The language dependent text provided by the user.,,String,L,Y,Y,1,,Y,,Y,Y,,LanguageSpecificTextType,textValue
+,FLD-EUD-010,Language,LanguageSpecificContent,The language of the information contained in field 'content'.,ENUM_MDR_LANGUAGE,Enum,,Y,,1,,,,Y,Y,,LanguageSpecificTextType,language
+,FLD-EUD-011,Last update Date,VersionData,"In order to keep a reference to the changes performed in the different system entities, a version control mechanism is put in place.
+
+Property stores the Date when the version was last updated Set up automatically by EUDAMED system",,Date,,,,1,,    ,,Y,,,,
+,FLD-EUD-012,Created Date,VersionData,"Date when the version was initially created 
+
+Set up automatically by EUDAMED system",,Date,,,,1,,,,Y,Y,,Entity,versionDate
+,FLD-EUD-013,Version Number,VersionData,"In order to keep a reference to the changes performed in the different system entities, a version control mechanism is put in place.
+
+Property stores the Number of the Version - number of the version. 
+
+Set up automatically by EUDAMED system when a new version is created",,Number,,,,1,,    ,,Y,Y,,Entity,version
+,FLD-EUD-014,State,VersionData,"In order to keep a reference to the changes performed in the different system entities, a version control mechanism is put in place.
+
+Property stores the State of the Version 
+
+Set up automatically by EUDAMED system","ENUM_ACT_STATE
+
+ENUM_UDID_WorkflowState
+
+ENUM_CRF_WorkflowState
+
+ENUM_CIPS_WorkflowState",Enum,,,,1,,,,Y,Y,"BR-ACT-015
+
+BR-UDID-823
+
+BR-CRF-103
+
+BR-CIPS-126",Entity,state
+,FLD-EUD-015,Submission Date,VersionData,Date when the data was last submitted by the manufacturer. Set up automatically by EUDAMED system,,Date,,,,0..1,,,,Y,,,,
+,FLD-EUD-016,Discard Date,VersionData,Date when the Device/ version has been Discarded ,,Date,,,,0..1,,,,Y,,,,
+,FLD-EUD-017,Telephone,PublicContactDetails,The actor's public contact telephone,,String,XS,Y,,0..1,,,,Y,Y,BR-PUB-EUD-003,"ElectronicContactType
+public = true",contactPerson.contactDetails.phone
+,FLD-EUD-018,Email,PublicContactDetails,The actor's public contact email,,EmailAddress,XS,Y,,1,,,,Y,Y,BR-PUB-EUD-003,"ElectronicContactType
+public = true",contactPerson.contactDetails.eMail
+,FLD-EUD-019,Web site,PublicContactDetails,The actor's public contact web site,,String,S,Y,,0..1,,,,Y,Y,BR-PUB-EUD-003,"ElectronicContactType
+public = true",contactPerson.contactDetails.website
+,FLD-EUD-020,Email,NonPublicContactDetails,The actor's private contact email,,EmailAddress,XS,Y,,1,Y,,Y,,Y,BR-ACT-031,"ElectronicContactType
+public = false",contactPerson.contactDetails.eMail
+,FLD-EUD-021,Contact name,NonPublicContactDetails,The actor's private contact person,,Person,,Y,,0..1,Y,,Y,,Y,BR-ACT-031,PersonType,"contactPerson.firstName
+contactPerson.lastName"
+,FLD-EUD-022,Telephone,NonPublicContactDetails,The actor's private contact telephone,,String,XS,Y,,0..1,Y,,Y,,Y,BR-ACT-031,"ElectronicContactType
+public = false",contactPerson.contactDetails.phone
+,FLD-EUD-023,Organisation name,Organisation,Multilingual organisation names of the actor,,LanguageSpecificContent,S,Y,Y,1..*,,Y,,Y,Y,"BR-ACT-119
+BR-UDID-718",OrganisationType,organisation.names
+,FLD-EUD-024,Abbreviated Name,Organisation,Multilingual organisation abbreviated names of the actor,,LanguageSpecificContent,XS,Y,Y,0..*,,Y,,Y,Y,BR-ACT-120,OrganisationType,organisation.shortNames
+,FLD-EUD-025,Organisation Natural Person,Organisation,An organisation can be represented by a natural person,,Person,,Y,,0..1,,,,Y,,Only for Sponsor,,
+,FLD-EUD-026,Organisation Contact,Organisation,Contact person information for the organisation,,PublicContactDetails,,Y,,0..1,,,,Y,Y,Used for Subcontractor,OrganisationType,contactPerson
+,FLD-EUD-028,Responsible CA,Organisation,"The competent authority who validated this organisation.
+EUDAMED stores organisations used in differrent modules, these organisations are not Actors of the system.",,"Actor  [Actor - Actor]
+FLD-ACT-001",Eudamed actor ID,,,"0..1 
+(only applicable for Actor)",,Y,,Y,,,,
+,FLD-EUD-029,Address,Organisation,Full geographical address information,,GeographicAddress,,Y,,1,,,,Y,Y,,PartyType,geographicAddress
+,FLD-EUD-030,EORI,Organisation,"Economic Operators Registration and Identification number
+(applies only to Economic Operators)",,String,XS,"Y (conditionally)
+Can be provided later on if initially not provided OR it can be changed (if already provided) via a Change of Tax and Trade IDs request",,"0..1 
+(only applicable for Actor)",,,,Y,Y,"RULE-00013, RULE-00017",ActorType,EORI
+,FLD-EUD-031,National Trade register,Organisation,National Trade Register Id,,String,M,"Y (conditionally)
+Can be provided later on if initially not provided OR it can be changed (if already provided) via a Change of Tax and Trade IDs request",,"0..1 
+(only applicable for Actor)",,,,Y,Y,"RULE-00013, RULE-00017",OrganisationType,nationalTraderRegistry
+,FLD-EUD-032,VAT number,Organisation,The national VAT code attributed by the country of residence of the organisation,,String,XS,"Y (conditionally)
+Can be provided later on if initially not provided OR it can be changed (if already provided) via a Change of Tax and Trade IDs request",,"0..1 
+(only applicable for Actor)",,,,Y,Y,"RULE-00013, RULE-00017",EOActorType,VATCode
+,FLD-EUD-033,VAT applicable,Organisation,Is the VAT code applicable for this actor,,Boolean,,"Y (conditionally)
+Can be provided later on if initially not provided OR it can be changed (if already provided) via a Change of Tax and Trade IDs request",,"1 
+(only applicable for Actor)",,,,,,"RULE-00013, RULE-00017",,
+,FLD-EUD-034,Street,GeographicAddress,A geographical address street name,,String,M,Y,,0..1,,,,Y,Y,,GeographicAddressType,street
+,FLD-EUD-035,Street number,GeographicAddress,A geographical address street number,,String,XS,Y,,0..1,,,,Y,Y,,GeographicAddressType,streetNum
+,FLD-EUD-036,City name,GeographicAddress,A geographical address city name,,String,M,Y,,0..1,,,,Y,Y,,GeographicAddressType,city
+,FLD-EUD-037,GPS coordinates,GeographicAddress,A geographical address GPS coordinates in DD format,,GPS,,Y,,0..1,,,,Y,Y,,GeographicAddressType,GPSCoordinates
+,FLD-EUD-038,Street information is required unless you specified it is Not applicable,GeographicAddress,Is the street information applicable for this actor?,,Boolean,,Y,,1,,,,,,,,
+,FLD-EUD-039,Postal code,GeographicAddress,A geographical address postal code,,String,XS,Y,,0..1,,,,Y,Y,,GeographicAddressType,postCode
+,FLD-EUD-040,Address complement,GeographicAddress,A geographical address complement information,,String,M,Y,,0..1,,,,Y,Y,,GeographicAddressType,AddressComplement
+,FLD-EUD-041,PO box,GeographicAddress,A geographical address Po Box,,String,XS,Y,,1,,,,Y,Y,,GeographicAddressType,POBox
+,FLD-EUD-042,Country,GeographicAddress,A geographical address country,ENUM_MDR_COUNTRY,Country,,,,1,,Y,,Y,Y,"BR-ACT-024
+BR-ACT-036
+BR-EUD-007",GeographicAddressType,country
+,FLD-EUD-043,Longitude,GPS,The GPS DD format longitude,,Decimal,,Y,,1,,,,Y,Y,BR-ACT-115 ,GPSType,longitude
+,FLD-EUD-044,Latitude,GPS,The GPS DD format latitude,,Decimal,,Y,,1,,,,Y,Y,BR-ACT-115 ,GPSType,latitude
+,FLD-EUD-048,First Name,Person,A person's first name,,String,XS,Y,,1,,,,Y,Y,,PersonType,firstname
+,FLD-EUD-049,Last Name,Person,A person's last name,,String,XS,Y,,1,,,,Y,Y,,PersonType,lastname
+,FLD-EUD-056,Actor code,Decision,Unique identifier of the actor who took the decision,,"Actor  [Actor - Actor]
+FLD-ACT-001",,,,1,,,,,,,CipsDecisionType,ownerActorCode
+,FLD-EUD-057,Decision date,Decision,Date of the decision,,Date,,,,1,,Y,,Y,,,CipsDecisionType,date
+,FLD-EUD-058,Decision taken,Decision,Type of decision taken,ENUM_MDR_DecisionTaken,Enum,,,,1,,,,,,BR-CIPS-094,CipsDecisionType,decision
+,FLD-EUD-060,Decision comment,Decision,"Comment provided with the decision, if any",,String,L,,,0..1,,,,,,,CipsDecisionType,comments

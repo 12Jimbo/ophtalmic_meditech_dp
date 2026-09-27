@@ -1,0 +1,39 @@
+Export to external Stakeholders, Field ID,Field Label,Entity Name,Field Name,Field Description / Notes,ENUM Reference Code ,Field Type,Field Size,Metadata Flag,User Entry Flag,Updateable Flag,Multilingual Flag,Occurrence,Confidential,Searchable,GDPR Flag,Public Access Flag,Data Exchange Flag,Business Rules,DTX Entity Name,DTX XSD Element Name
+N,FLD-AIM-001,Justification,AccountAssessment,justification,,,"Comment
+[EUDAMED -  Common Entities]",L,,,,,0..1,,,,,,,,
+N,FLD-AIM-002,Decision date,AccountAssessment,decisionDate,,,Date,,Y,N,,,1,,,,,,,,
+N,FLD-AIM-003,Reason for refusal,AccountAssessment,userRefusalReasons,,ENUM_AIM_REFUSAL_REQ,Enum,,,,,,,,,,,,BR-IAM-061,,
+N,FLD-AIM-004,Assessment outcome/decision,AccountAssessment,userRegistrationRequestState,,"ENUM_AIM_REQUEST_STATE
+ENUM_AIM_FIRST_NB_LAA_STATES",Enum,,,,,,1,,,,,,"BR-IAM-045
+BR-IAM-062",,
+N,FLD-AIM-005,Assessment provider,AccountAssessment,actorProvidingAssessment,Who performed the assessment,,Actor,,Y,N,,,1,,,,,,,,
+,FLD-AIM-006,EUDAMED email of the user for the actor,EudamedAccount,email,,,EmailAddress,XS,,,,,1,,,Y,,,,,
+,FLD-AIM-007,Sub-contractor,EudamedAccount,isSubcontractor,,,Boolean,,,,Y,,1,,,Y,,,BR-IAM-047,,
+,FLD-AIM-008,Sub-contractor Organisation,EudamedAccount,subcontractorOrganisation,,,"Organisation
+[EUDAMED -  Common Entities]",,,,Y,,0..1,,,,,,BR-IAM-047,,
+N,FLD-AIM-028,Account Assessment,EudamedAccount,AccountAssessment,,,AccountAssessment,,,,,,0..1,,,,,,,,
+N,FLD-AIM-009,User profile,EudamedAccount,userProfile,,,UserProfile,,,,Y,,0..*,,,,,,,,
+N,FLD-AIM-010,User data,EudamedAccount,userData,,,UserData,,,,Y,,1,,,,,,,,
+N,FLD-AIM-011,User manager,EudamedAccount,userManager,,,UserManager,,,,,,1,,,,,,,,
+N,FLD-AIM-012,User notification configuration,EudamedAccount,acceptingModule,,,"NotificationEmailAddress
+[EUDAMED -  Common Entities]",,,,Y,,1..*,,,,,,,,
+N,FLD-AIM-013,Account status,EudamedAccount,eudamedAccountStatus,,ENUM_AIM_ACCOUNT_STATUS,Enum,,,,Y,,1,,,,,,BR-IAM-060,,
+N,FLD-AIM-014,User Manager Name,UserManager,name,,,"Person
+[EUDAMED -  Common Entities]",,,,,,1,,,Y,,,,,
+N,FLD-AIM-015,Position,UserManager,position,,,String,S,,,,,1,,,Y,,,,,
+N,FLD-AIM-016,Title,UserProfile,userprofileName,,,String,XS,,N,,,1,,,,,,,,
+N,FLD-AIM-017,Actor type,UserProfile,actorType,,ENUM_ACT_ACTOR_TYPE,Enum,,,N,,,1,,,,,,BR-ACT-019,,
+N,FLD-AIM-018,Grants,UserProfile,grants,,,Grant,,,N,,,1..*,,,,,,,,
+N,FLD-AIM-019,Module,UserProfile,module,,ENUM_MDR_MODULES,Enum,,,N,,,1,,,,,,BR-EUD-006,,
+N,FLD-AIM-020,Profile type,UserProfile,profileType,,,ProfileType,,,N,,,1,,,,,,,,
+N,FLD-AIM-028,CIPS permission type,UserProfile,cipsPermission,,ENUM_AIM_CIPS_PERMISSION,Enum,,,Y,Y,,1,,,Y,,,BR-IAM-066,,
+N,FLD-AIM-029,CIPS selected SIN(s),UserProfile,selectedSIN,,ENUM_AIM_CIPS_SIN,Enum,,,Y,Y,,0..*,,,Y,,,BR-IAM-067,,
+N,FLD-AIM-021,Preferred Language,UserData,preferredLanguage,,ENUM_MDR_LANGUAGE,Enum,,,,Y,,1,,,Y,,,BR-EUD-005,,
+N,FLD-AIM-022,Name,UserData,name,,,"Person
+[EUDAMED -  Common Entities]",,,,Y,,1,,,Y,,,,,
+N,FLD-AIM-023,EU Login Account,UserData,euLoginAccount,,,EUloginAccount,,,N,,,1,,,Y,,,,,
+N,FLD-AIM-024,EU login,EUloginAccount,EULoginId,,,String,XS,,N,,,1,,,Y,,,,,
+N,FLD-AIM-025,Name,EUloginAccount,name,,,"Person
+[EUDAMED -  Common Entities]",,,N,,,1,,,Y,,,,,
+N,FLD-AIM-026,EU login Email,EUloginAccount,email,,,EmailAddress,XS,,N,,,1,,,Y,,,,,
+N,FLD-AIM-027,Preferred Language,EUloginAccount,preferredLanguage,,ENUM_MDR_LANGUAGE,Enum,,,N,,,1,,,Y,,,BR-EUD-005,,

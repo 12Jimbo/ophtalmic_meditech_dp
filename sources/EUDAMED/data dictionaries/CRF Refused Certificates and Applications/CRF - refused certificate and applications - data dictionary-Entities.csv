@@ -1,0 +1,17 @@
+,
+"Application (refused certificate, withdrawn/refused application for conformity assessment)",
+Entity,Description
+Application,Keeps the information for an application (relating to a certificate refusal or a refused/withdrawn application for conformity assessment).
+ApplicationID,Describes the unique identification of an application (relating to a certificate refusal or a refused/withdrawn application for conformity assessment).
+ProductProcedure,"Specifies the actors to an application for a product conformity assessment procedure (relating to a certificate refusal or a refused/withdrawn application for conformity assessment), namely the manufacturer (MF) and the authorised representative (AR)."
+QualityProcedure,"Specifies the actors to an application for a quality conformity assessment procedure (relating to a certificate refusal or a refused/withdrawn application for conformity assessment), namely the manufacturer (MF), the system or procedure pack provider and the authorised representative (AR)."
+,
+"Certificate-Application (refused certificate, withdrawn/refused application for conformity assessment) Scope",
+Entity,Description
+Scope,Denotes the scope of a certificate or an application (relating to a certificate refusal or a refused/withdrawn application for conformity assessment). It is further specialised for product and quality conformity assessment procedures.
+ProductProcedureScope,Defines the devices in the scope of a product conformity assessment procedure.
+QualityProcedureScope,Denotes the scope of a quality conformity assessment procedure.
+Device,Defines the information that need to be provided to include a device in the scope of a quality conformity assessment procedure.
+DeviceGroup,Defines the information that need to be provided to include a device group in the scope of a quality conformity assessment procedure.
+SystemProcedurePack,Defines the information that need to be provided to include a system or procedure pack (SPP) in the scope of a MDR quality conformity assessment procedure.
+CustomMadeDevice,Defines the information that need to be provided to include a custom-made device (CMD) in the scope of a MDR quality conformity assessment procedure.

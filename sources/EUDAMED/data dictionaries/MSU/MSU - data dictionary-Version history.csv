@@ -1,0 +1,39 @@
+,,,
+,Version history,,
+,,,
+,Current section contains the version history and changes performed for the current document,,
+,,,
+,Version number,Updates performed,Version released
+,3.27.0,No changes,"Release 3.27.0 PG, 2.27 PROD"
+,3.25.0,No changes,Release 3.25.0 PG
+,3.22.0,No changes,Release 3.22.0 PG
+,3.18.0,No changes,Release 3.18.0
+,3.11.0,Identified searchable fields for Procedure entity,Release 3.11.0
+,3.10.7,No updates,Release 3.10.7
+,3.10.6,No updates,Release 3.10.6
+,3.10.5,No updates,Release 3.10.5
+,3.10.4,No updates,Release 3.10.4
+,3.10.3,No updates,Release 3.10.3
+,3.10.2,No updates,Release 3.10.2
+,3.10.1,No updates,Release 3.10.1
+,3.10.0,The attribute knownManufacturer added for procedure device,Release 3.10.0
+,3.9,No updates,Release 3.9
+,3.8,No updates,Release 3.8
+,3.7,No updates,Release 3.7
+,3.6,DTX mapping added for Procedure,Release 3.6
+,3.5,No updates,Release 3.5
+,3.4,"Added non-visible fields, updated field names to match API naming",Release 3.4
+,3.3(*),"Updated reports entities
+Added Introduction and Entities sheets",Release 3.3
+,8,Added: Annual summary report,09 Aug 2022 
+,7,"Added: Four years report entity
+Changed: some field numbering duplication fixed",28 Jul 2022 
+,6.1,Changed cardinality of finalInspectioonReport.aplicableRegulation,30 Jun 2022 
+,6,Final inspection report information added,24 Jun 2022 
+,5,Additional information data updates,12 May 2022 
+,4,,03 Feb 2022 
+,3,precond as separate class,21 Dec 2021 
+,2,corActionType and measureType as separate classes,20 Dec 2021 
+,1,"first version (does not yet include classes related to 4-years report, annual summary report or final inspection report)",17-Dec-21
+,,,
+,(*)  New version number has been set up in order for all documentation to be syncronised with the version of the application. The latest version (8.1) will have the version number 3.3.,,

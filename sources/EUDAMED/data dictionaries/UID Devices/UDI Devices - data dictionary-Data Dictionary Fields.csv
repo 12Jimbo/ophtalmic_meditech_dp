@@ -1,0 +1,66 @@
+,,
+,Field ID,Unique ID for the label (technical field. assigned by the BA)
+,Field Label,Field label in EN language as it appears at the GUI. NOTE: each field label needs to be recordet in the label log
+,Entity Name,Entity model class name
+,Field Description/Notes,"Field description in EN language. 
+Field related notes."
+,ENUM Reference Code,Reference code to the enum list used by the field
+,Field Type,"Description of the type of the field. The field type can be a technical field type or can be of a reference to another Entity.
+
+Type of technical fields used : String (list of characters) , Date , Boolean (True or False), Enum (enumeration - list of values. The code of the exact enumeration where the values are available is  described in the 'ENUM Reference Code' field), Integer (Integer numeric field), Decimal (Numeric field with comma separated values), etc.;
+
+Type of field - Entity : When the field type is a reference to another Entity it means that in fact the current field is expressing a relationship of the current Entity to the referenced Entity. We also say that the current field is ""of type"" of the referenced Entity (having in fact all the attributes of this refered entity).
+Expressing the link between the different entities is important in order to express the multiplicity (how many entities of a type can relate to another one)
+
+Note: When the Entity referenced in the Field Type column is described in the same Sheet of the Data Dictionary, no additional remarks are added.
+
+If the Entity referenced is in another Tab of the same Data Dictionary - the corresponding sheet is mentiond together with the Entity in the Field Type column (for example : Containeditem  [DD Container Pack])
+
+If the Entity referenced is in ANOTHER  Data Dictionary (example Actor) - the corresponding Module the sheet from the Data Dictionary corresponding to that Module is mentiond together with the Entity in the Field Type column (for example : VersionData  [Actor - EUDAMED Common Entities])
+
+
+Example of a reference to another entity:  
+Figure 1 presents the entity Person containing the field personContactDetails which is ""of type"" (references the entity) ContactDetails.  This means that the Person (entity) is related to the ContactDetails (entity) (same relationship explicitly presented in Figure 2). 
+The number of Contact Details a Person can have (a person can have 0 or many Contact Details) is expressed in the field 'Occurence'.
+
+Example of representation inside Data Dictionary (figure 3)
+FLD-UDID-50 Clinical Investigations (from Basic UDI-DI entuty)  is of type Clink (Clinical Investigation link entity). It reflects how many Clinical Investigations entities can be associated to the Basic UDI (0 or many in this case).
+If  a Clinical Investigation is provided for the Basic UDI- then the occurence of this field is  1 (if several are porvided, the occurence is equivalent with the number provided).
+
+FLD-UDID-51 and 300 are part of the entity Clink- their multiplicity (occurence) being applicable within that entity (in our case - if a Clinica Invetigation is provided - then the multiplicity of this fields apply)"
+,Field Size,"XXS : 50 characters;
+XS : 120 characters;
+S : 255 characters;
+M : 500 characters;
+L :  2000 characters;
+XL : clob;
+SRN : 15 characters;
+Number (10);
+Decimal : Numeric- comma separated values;
+Table short names: VARCHAR 2 (3 CHAR);
+Audit fields : VARCHAR2 (30 CHAR)
+"
+,Multilingual Flag,Can the user provide multiple translations for this field (if blank means No)
+,Occurrence,"How many times does this field exists. Identifies if the field/ attribute is Mandatory(Required), Optional or  Conditional and how many times does this field exists.
+
+If occurrence is 0..1 -  field is Optional or can apperar only once for the current entity;
+If occurrence is 0..n -  field is Optional or can apperar several times for the current entity;
+If occurrence is 1 ..n ( any number > 1 ) -  field is Mandatory(/Required) and is present as in the mentioned number of times (n) for the current entity. 
+
+Notes : 
+1. In order to determine if a field is Mandatory (Required) or not, the Applicable Legislation needs to be taken into account (there are fields Required for specific Applicable legislations, e.g, Implantable;)
+2. If a generic value is provided in the Occuence field (e.g., 1..n) , it means that the attribute can be provided serveral times for the entity without having a specific limit. As an example Device Nomenclature Code (FLD-UDID-149 - UDI/Device Module) has an Occurence of 1..n in regards to the UDI-DI entity. This means that several Device Nomenclature codes can be provided for a UDI-DI, without mentioning a specific limit.
+
+When specific conditions apply for a certain field (field is required in certain conditions) , these are presented in the Occurence column (e.g., Required only for Directive Certificate). "
+,Confidential,To be seen only by the owner and the CA on the restricted site (if blank means No)
+,Searchable,if the field will be used in the search (if blank means No)
+,GDPR Flag,if the information stored in this field is considered personal data in compliance with PDPR (if blank means No)
+,Public Access Flag,if the information from this field will be available into the MDR Eudamed public site (if blank means No)
+,Updateable ,mentions if the field is updateble (Editable) when creating a normal update of the entity (standard version) (if blank means No)
+,Updateable (version 'for Correction'),mentions if the field is updateble when creating a version for correction for the entity (if blank means No)
+,MDR (MDD/AIMDD),referance to the legal bases for the field when 'required in legislation' flag is 'Yes' (if blank means No)
+,IVDR (IVDD),referance to the legal bases for the field when 'required in legislation' flag is 'Yes' (if blank means No)
+,Applicable for Legacy Devices,mentions if the field is required in case of Legacy Devices or not (if blank means No)
+,Business Rules,Reference code to the business rules related to the field
+,DTX Entity Name,Data Exchange Entity name
+,DTX XSD Element Name,Data Exchange XSD Element / Entity Attribute

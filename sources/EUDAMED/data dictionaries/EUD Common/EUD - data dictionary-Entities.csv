@@ -1,0 +1,15 @@
+,,,
+,Entity,Description,Business Rules
+,Comment,Justifications by a specific person and date in multiple languages,
+,Country,Country references and codes,
+,GeographicAddress,"A location, address with postal details",
+,GPS,"Global Position system data for a location, DD-format",
+,LanguageSpecificContent,Translatable fields in different languages,
+,NonPublicContactDetails,Details the Competent Authorities may contact,
+,Organisation,"Stores ""intrinsic"" data of an Organisation, independently of its role in Eudamed",BR-UDID-720
+,Person,Contains a natural person first- and lastname,
+,PublicContactDetails,Public data visible to all users of Eudamed,
+,StoredDocument,File attachment,
+,VersionData,"VersionData contains all information related to a version of an Entity.
+A version is considered a modification on an Entity who is not in the Draft status.",
+,Decision,Decision contains generic information linked to any 'decisions' taken in the context of a request/application/etc.,

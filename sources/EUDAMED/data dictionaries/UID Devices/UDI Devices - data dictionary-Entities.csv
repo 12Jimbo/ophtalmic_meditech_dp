@@ -1,0 +1,41 @@
+,,,,
+,Entity,Description,Business Rules,Comments
+,DIIdentifier,"Unique (Primary) Identifier for a Device, Device Model, Package Structure element or Unit of Use;
+
+Device identifier consists of the DI Code and Issuing Entity.","BR-UDID-003 
+BR-UDID-640",
+,BasicUDIData,"Basic UDI is the Device Model (grouping of Devices having similar properties) for a Device. BasicUDIData manages the properties and relationships for a Device, from the Device Model level;",BR-UDID-680,
+,EUDIData,"EUDAMED DI  is the Device Model (grouping of Devices having similar properties) for a Legacy Device. EUDIData  manages the properties and relationships for a Device, from the Device Model level;",BR-UDID-680,
+,UDIData,"UDI-DI is the unique identificator of a Device (the device itself). UDIData entity manages all the properties and relationships for a Device, from the Device level;","BR-UDID-004
+BR-UDID-268
+BR-UDID-681
+",
+,UDIDeviceData,"UDI-DI/ EUDAMED ID  is the unique identificator of a Legacy  Device (the device itself). UDIDeviceData  entity manages all the properties and relationships for a Legacy Device, from the Device level;","BR-UDID-648
+BR-UDID-681",
+,Clink,"When registering the Device -  where applicable, the single identification number of the clinical investigation or investigations conducted in relation to the device or a link to the clinical investigation  must be provided.
+
+Entity stores a reference or the details  to the Clinical Investigations linked to the Basic UDI-DI",,
+,DeviceCertificateInformation,"When registering the Device, for Devices covered by Product certificates, user will have to provide identification details of the Product Certificate covering the Device (information provided by the Manufacturer).
+
+For Legacy Devices , providing the Device Certificate Information covering the Device is required.",,
+,CertificateLink,Certificate Information about Certificates linked to the Device in EUDAMED,,
+,ContainedItem,Details of Container Packaging structure ,,
+,DeviceStatus,Status of the Device or Package element,,
+,ClinicalSize,"Device Clinical Size properties.
+
+When registering a device, Clinical Sizes can be provided if applicable. Several Clinical Sizes can be added for the Device. Clinical Size will be defined by the Type, Precizion, Value (either Range, single value or Text) and Measuring Unit",,
+,SubstanceList,"Details of Substances
+
+When registering a device containing in its composition substances (substances being CMR of category 1A or 1B / substances having endocrine-disrupting properties/  substances which, if used separately, may be considered to be a medicinal product/ substances which, if used separately, may be considered to be a medicinal product derived from human blood or human plasma), Manufacturer will have to submit the details of those substances.",,
+,InstructionForUseDetails,"Details for Critical Warnings and Storage and Handling Conditions
+
+Storage and handling Conditions and Critical Warnings or Contra-Indications specified on the Label of the Device or in the Instruction of Use have to be registered in EUDAMED - if applicable. ",,
+,ProductDesignerLink,Reference to the Natural or Legal Person who designed or Manufactured the Device (either created as an SRN if the Manufacturer already defined in EUDAMED or as an Organisation),,
+,ProductDesignerOrganisaton,Details of the Natural or Legal Person who designed or Manufactured the Device (Product Designer) Organisation,,
+,MarketInfo ,Entity stores the details about the market distribution of the Device (Countries where the device is placed on the market),,
+,VersionData,Entity stores the details about the versions of the different entities,,
+,Manufacturer,Entity stores the details about the Manufacturer Actor registered in EUDAMED,,
+,NotfiedBody,Entity stores the details about the Notified Body Actor registered in EUDAMED,,
+,AuthorisedRepresentative,Entity stores the details about the Authorised Representative Actor registered in EUDAMED,,
+,SystemOrProcedurePackProvider,Entity stores the details about the System or Procecure Pack Producer Actor registered in EUDAMED,,
+,EMDN,"The EMDN Code identifies the device according to the European Medical Device Nomenclature (EMDN), the legally required nomenclature referenced by the MDR/IVDR. It enables harmonised classification for regulatory activities, including vigilance, clinical investigations, certificates, and public information.",,

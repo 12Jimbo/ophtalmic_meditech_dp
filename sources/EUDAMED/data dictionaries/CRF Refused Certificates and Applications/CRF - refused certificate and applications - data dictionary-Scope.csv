@@ -1,0 +1,88 @@
+ Field ID,Field Label,Entity Name,Field Description / Notes,ENUM Reference Code ,Field Type,Field Size,Multilingual Flag,Product Certificate Occurrence,Quality Certificate Occurrence,Searchable,GDPR Flag,Public Access Flag,Business Rules,DTX Entity,XSD Element Name
+FLD-CRF-203,Device(s)/Basic UDI code,ProductProcedureDevice,"The Basic UDI-DI of a device in the scope of a product conformity assessment procedure.  
+
+Notes
+When registering a certificate, the Basic UDI-DI must already exist (registered) in Eudamed.
+When registering an application (refused certificate or an application for conformity assessment) it is not mandatory to have registered the Basic UDI-DI in Eudamed.",,"Basic UDI- DI - FLD-UDID-14
+[UDI Device - DD BASIC UDI]",,,0..1,,Y,,Y,"BR-CRF-042
+BR-CRF-045
+BR-CRF-046
+BR-CRF-225",ProductProcedureScopeType,DICode
+FLD-CRF-204,Device(s)/Issuing entity,ProductProcedureDevice,The issuing entity (enumeration) of the Basic UDI-DI.,,"Issuing Entity Basic UDI-DI - FLD-UDID-01
+[UDI Device - DD BASIC UDI]",,,1..1,,Y,,Y,,DIIdentifierType,issuingEntityCode
+FLD-CRF-205,Device(s)/Model,ProductProcedureDevice,"The model of the device, if it is applicable. ",,"Device Model  - FLD-UDID-20
+[UDI Device - DD BASIC UDI]",,,0..1,,Y,,Y,,ProductProcedureScopeType,model
+FLD-CRF-206,Device(s)/Name,ProductProcedureDevice,"The name of the device, if it is applicable.",,"Device Name - FLD-UDID-22
+[UDI Device - DD BASIC UDI]",,,0..1,,Y,,Y,BR-CRF-039,ProductProcedureScopeType,name
+FLD-CRF-207,Device(s)/Risk class,ProductProcedureDevice,The risk class of the device.,,"Risk Class - FLD-UDID-16
+[UDI Device - DD BASIC UDI]",,,1..1,,Y,,Y,"BR-CRF-027
+BR-CRF-029",ProductProcedureScopeType,riskClass
+FLD-CRF-208,Device(s)/Codes reflecting the design and intended purpose of the device,ProductProcedureDevice,"Device type codes reflecting the design type and intended purpose of the device.
+Device type codes are provided in Commission Implementing Regulation (EU) 2017/2185. The device type codes applicable in this field are those found in Annex I, section I for a MDR product conformity assessment procedure and in Annex II, section I for a IVDR product conformity assessment procedure.",ENUM_CRF_DeviceType,enum,,,1..1,,Y,,Y,BR-CRF-042,ProductProcedureScopeType,productDeviceTypeCode
+FLD-CRF-209,Device(s)/Horizontal codes,ProductProcedureDevice,"Device type codes reflecting specific device characteristics and/or device technology and/or specific knowledge for product verification. 
+Device type codes are provided in Commission Implementing Regulation (EU) 2017/2185. The device type codes applicable in this field are those found in Annex I, section II for a MDR product conformity assessment procedure and in Annex II, section II for a IVDR product conformity assessment procedure.",ENUM_CRF_DeviceType,enum,,,0..*,,Y,,Y,BR-CRF-042,ProductProcedureScopeType,horizontalDeviceTypeCodes
+FLD-CRF-210,Device(s)/Intended purpose,ProductProcedureDevice,"The intended purpose in relation to which the device is assessed in the product conformity assessment procedure. Each intended purpose is provided in the certificate languages identified by the NB (when it uploads the certificate documents - see field certificateDocument).
+Refer also to fields of entity LanguageSpecificContent in sheet 'Common'.",,LanguageSpecificContent [EUDAMED -  Common Entities],,Y,1..1,,,,Y,"BR-CRF-042
+BR-CRF-105",ProductProcedureScopeType,intendedPurposes
+FLD-CRF-232,Device(s)/Is Basic UDI-DI known?,ProductProcedureDevice,Indicates whether the Manufacturer has provided the Basic UDI-DI to the Notified Body when applied for the conformity assessment of their device.,,boolean,,,1..1,,,,Y,,"ProductProcedureScopeType
+QualityProcedureScopeType",basicUdiKnown
+FLD-CRF-233,Device(s)/Name,ProductProcedureDevice,Device known by name when registering a refused certificate of type product.,,string,M,,0..1,,,,Y,,ProductProcedureScopeType,deviceName
+FLD-CRF-234,Device(s)/Reference/Catalogue number,ProductProcedureDevice,Device known by reference/catalogue number when registering a refused certificate of type product.,,string,M,,0..1,,,,Y,,ProductProcedureScopeType,deviceReference
+FLD-CRF-235,(infoicon),ProductProcedureDevice,"Flag indicating if the Basic UDI-DI is registered in the UDI/Devices module.
+
+False indicates the Basic UDI-DI is not registered in the UDI/Devices module yet.
+Note: It the UI it is displayed as an infoicon with the text: ""This device is not registered in the UDI/Devices module""",,boolean,,,1..1,,,,Y,,ProductProcedureScopeType,isRegisteredInUDIModule
+FLD-CRF-215,Device(s)/Basic UDI code,QualityProcedureDevice,"The Basic UDI-DI of a device in the scope of a quality conformity assessment procedure.
+ 
+Notes:
+Only one of the following must be given for adding a device in the scope of a quality conformity assessment procedure:
+- Basic UDI-DI and issuing entity;
+- Name;
+- Reference/Catalogue number.
+When registering a certificate, the Basic UDI-DI must already exist (registered) in Eudamed.
+When registering an application (refused certificate or an application for conformity assessment) it is not mandatory to have registered the Basic UDI-DI in Eudamed.",,"FLD-UDID-14
+[UDI Device - DD BASIC UDI]",,,,0..1,Y,,Y,"BR-CRF-039
+BR-CRF-045
+BR-CRF-046
+BR-CRF-072
+BR-CRF-109",QualityProcedureScopesType,DICode
+FLD-CRF-216,Device(s)/Basic UDI code/Issuing entity,QualityProcedureDevice,"In case a Basic UDI-DI is provided, the issuing entity (enumeration).",,"FLD-UDID-01
+[UDI Device - DD BASIC UDI]",,,,0..1,Y,,Y,,DIIdentifierType,issuingEntityCode
+FLD-CRF-229,Device(s)/Basic UDI code/Risk class,QualityProcedureDevice,Risk class of Basic UDI-DI,,"FLD-UDID-16
+[UDI Device - DD BASIC UDI]",,,,0..1,Y,,Y,"BR-CRF-027
+BR-CRF-029",QualityProcedureScopesType,riskClass
+FLD-CRF-236,(infoicon),QualityProcedureDevice,"Flag indicating if the Basic UDI-DI is registered in the UDI/Devices module.
+
+False indicates the Basic UDI-DI is not registered in the UDI/Devices module yet.
+Note: It the UI it is displayed as an infoicon with the text: ""This device is not registered in the UDI/Devices module""",,boolean,,,,1..1,,,Y,,QualityProcedureScopeType,isRegisteredInUDIModule
+FLD-CRF-217,Device(s)/Name,QualityProcedureDevice,"The name of a device in the scope of a quality conformity assessment procedure.
+
+Note: Only one of the following must be given for adding a device in the scope of a quality conformity assessment procedure:
+- Basic UDI-DI;
+- Name;
+- Reference/Catalogue number.",,string,M,,,0..1,,,Y,BR-CRF-039,QualityProcedureScopesType,deviceName
+FLD-CRF-218,Device(s)/Reference/Catalogue number,QualityProcedureDevice,"The reference/catalogue number of a device in the scope of a quality conformity assessment procedure.
+ 
+Note: Only one of the following must be given for adding a device in the scope of a quality conformity assessment procedure:
+- Basic UDI-DI and issuing entity;
+- Name;
+- Reference/Catalogue number.",,string,M,,,0..1,,,Y,,QualityProcedureScopesType,deviceReference
+FLD-CRF-219,Device(s)/Risk class,QualityProcedureDevice,The risk class of the device.,ENUM_CRF_RiskClass,enum,,,,1,Y,,Y,"BR-CRF-027
+BR-CRF-028
+BR-CRF-029",QualityProcedureScopesType,riskClass
+FLD-CRF-220,Characteristics of class I devices included in the scope of a certificate,QualityProcedureDevice,Additional (1 to 3) device characteristics (enumeration) for a class I device in the scope of a quality conformity assessment procedure.,ENUM_CRF_DeviceCharacteristics,enum,,,,0..3,Y,,Y,BR-CRF-048,QualityProcedureScopesType,classICharacteristics
+FLD-CRF-221,Device group(s)/Identification of the device group,QualityProcedureDeviceGroup,Identification (free text) of a device group in the scope of a quality conformity assessment procedure.,,string,L,,,1,,,Y,BR-CRF-142,QualityProcedureScopesType,deviceGroupIdentifier
+FLD-CRF-222,Device group(s)/Risk class,QualityProcedureDeviceGroup,Risk class(es) (enumeration) of the devices included in a device group in the scope of a quality conformity assessment procedure.,ENUM_CRF_RiskClass,enum,,,,1..4,Y,,Y,"BR-CRF-027
+BR-CRF-028
+BR-CRF-029",QualityProcedureScopesType,riskClass
+FLD-CRF-223,Characteristics of class I devices included in the scope of a certificate,QualityProcedureDeviceGroup,Additional (1 to 3) device characteristics (enumeration) for class I devices included in a device group in the scope of a MDR quality conformity assessment procedure.,ENUM_CRF_DeviceCharacteristics,enum,,,,0..3,Y,,Y,BR-CRF-048,QualityProcedureScopesType,classICharacteristics
+FLD-CRF-228,Device(s)/Custom-made device/Identification,QualityProcedureCMD,Description (free text) of a custom-made device (CMD) in the scope of a MDR quality conformity assessment procedure.,,string,L,,,0..1,,,Y,"BR-CRF-019
+BR-CRF-020
+BR-CRF-039",QualityProcedureScopeType,CMDdescription
+FLD-CRF-224,System or procedure packs/spppSteriliser,QualityProcedureSPPSterilisation,Indicating whether the System and/or Procedure Pack Producer is the steriliser of the System and/or Procedure Pack ,,boolean,,,,0..1,Y,,Y,,SystemProcedurePackSterilisationType,spppSteriliser
+FLD-CRF-225,System or procedure packs/sppGroupApplicable,QualityProcedureSPPSterilisation,Indicating whether there is at least one System and/or Procedure Pack Group in the scope of the SPP sterilisation.,,boolean,,,,0..1,Y,,Y,,SystemProcedurePackSterilisationType,sppGroupApplicable
+FLD-CRF-230,System or procedure packs/sterilisationMethod,QualityProcedureSPPSterilisation,Sterilisation method enumeration,ENUM_CRF_SPPSterilisationMethod ,enum,,,,0..6,Y,,Y,,SystemProcedurePackSterilisationType,sterilisationMethod
+FLD-CRF-226,System or procedure packs/comments,QualityProcedureSPPSterilisation,Mandatory comments to be provided by the NB when Others choice is selected from the sterilisation method enumeration. ,,string,L,,,0..1,,,Y,,SystemProcedurePackSterilisationType,comments
+FLD-CRF-227,System or procedure packs/steriliser,QualityProcedureSPPSterilisation,The organisation that is the sterialiser of the SPP.,,"Organisation
+[EUDAMED -  Common Entities]",,,,0..1,Y,,Y,,SystemProcedurePackSterilisationType,steriliser
+FLD-CRF-231,SPPGroup/sppGroupIdentification,QualityProcedureSPPGroup,Identification (free text) of a System and/or Procedure Pack Group in the scope of a quality conformity assessment procedure.,,string,L,,,0..*,,,Y,BR-CRF-108,SPPGroupType,sppGroupIdentification

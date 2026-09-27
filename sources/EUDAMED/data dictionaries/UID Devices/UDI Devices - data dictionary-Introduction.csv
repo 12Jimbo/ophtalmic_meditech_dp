@@ -1,0 +1,22 @@
+,,
+,Introduction,
+,,
+,"The purpose of this document is to give an understanding over the data that is to be provided to Eudamed and that can be communicated through Data Exchange process for the UDI/Device module. 
+
+The document presents the different attributes related to UDI/Device that may be communicated through XML, their correspondence to the fields from EUDAMED User Interface, the description of each field apart and the Rules applying at the level of the Entity of for each specific field apart.
+
+Each attribute is defined by the Entity where it resides and the attribute name.",
+,,
+,Document sections (sheets),
+,,
+,Data Dictionary Fields,Section contains a description of the fields used in the data dictionary
+,Entities ,"Section contains the list of Entities in MDR EUDAMED system involved in the Data Exchange process for the module described, a description of the Entity and the Business Rules applicable at the level of each Entity apart"
+,Field Size,Section explain the different type of Sizes used for the String fields inside the document
+,DD Basic UDI,Section contains all the fields related to the Basic UDI main Entity and other Entities associated to the Basic UDI for device(s) that are managed/affected by a manufacturer.
+,DD UDI-DI ,Section contains all the fields related to the UDI main Entity and other Entities associated to the UDI for a device that are managed/affected by a manufacturer.
+,DD Legacy devices,"Section contains all the fields related to the EUDAMED DI ,  EUDAMED ID and related entities for the Legacy Devices."
+,DD Basic UDI_SPP,Section contains all the fields related to the Basic UDI main Entity and other Entities associated to the Basic UDI for a System or Procedure Pack that are managed/affected by a System or Procedure Pack Producer (PR).
+,DD UDI-DI_SPP,Section contains all the fields related to the UDI  main Entity and other Entities associated to the UDI for a System or Procedure Pack that are managed/affected by a System or Procedure Pack Producer(PR).
+,DD Container Pack,Section contains the fields related to the Container Package. Container Package details can be registered for Regulation Devices or System or Procedure Packs
+,DD AR related,Section contains all the fields related to the entities associated to the Basic UDI-DI that can be affected only by the Authorised Representatives (Not applicable for the first release).
+,DD NRD,Section contains all the fields related to the NRD entity and other Entities associated to the NRD.

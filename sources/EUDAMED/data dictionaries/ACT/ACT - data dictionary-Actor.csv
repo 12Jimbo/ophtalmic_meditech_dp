@@ -1,0 +1,119 @@
+Export to external Stakeholders, Field ID,Field Label,Entity Name,Field Name,Field Description / Notes,ENUM Reference Code ,Field Type,Field Size,Metadata Flag,User Entry Flag,Updateable Flag,Multilingual Flag,Occurrence,Confidential,Searchable,GDPR Flag,Public Access Flag,Data Exchange Flag,Business Rules,DTX Entity Name,DTX XSD Element Name
+,FLD-ACT-001,Eudamed actor ID / SRN,Actor,actorId,"Actor Identifier for all actor roles, being of SRN type (format) for Economic Operators and Sponsors",,String,XS,Y,N,N,,1,,Y,,Y,Y,"BR-ACT-017
+BR-ACT-018
+BR-ACT-021
+BR-ACT-022",ActorType,actorCode
+,FLD-ACT-002,Status From Date,Actor,statusFromDate,The date when an actor chnaged the status,,Date,,Y,N,Y,,0..1,,,,Y,Y,,ActorType,statusFromDate
+,FLD-ACT-003,Status,Actor,status,The status indicates if an actor is active or inactive in Eudamed,ENUM_ACT_ACTIVITY_STATUS,Enum,,,,Y,,1,,,,Y,,BR-ACT-063,ActorType,actorStatus
+,FLD-ACT-107,Status Change Reason,Actor,statusChangeReason,The reason for changing the status,,String,L,,,N,,0..1,,,,,,,ActorType,statusChangeReason
+,FLD-ACT-004,Role,Actor,actorType,An actor is of a specific role and defines what information is required in Eudamed so operations can be performed within the system. Each actor role has a set of tasks. A predefined set of actor roles has been defined based on the system requirements.,ENUM_ACT_ACTOR_TYPE,Enum,,,,N,,1,,Y,,Y,Y,"BR-ACT-019
+BR-ACT-057",ActorType,"MFActorType
+ARActorType
+IMActorType
+PRActorType"
+,FLD-ACT-100,Sponsor type,Actor,sponsorType,"In the case where the Role is 'Sponsor', a Sponsor type needs to be defined.",ENUM_ACT_SPONSOR_TYPE,Enum,,,,N,,1,,,,Y,Y,BR-ACT-123,,
+,FLD-ACT-005,Last actor detail confirmation date,Actor,lastConfirmation,This date contains the last verified actor detail information check performed by the LAA. This is a two yearly requirement imposed to keep the actor information within the system up to date.,,Date,,Y,N,Y,,0..1,,,,,Y,,ActorType,lastConfirmation
+,FLD-ACT-006,Person responsible for regulatory compliance,Actor,PRRC,Person(s) responsible for regulatory compliance,,RegulatoryResponsible [Actor],,,,Y,,1..* (only for MF and AR),,,,Y,Y,,"NONEUMFActorType
+EUMFActorType
+ARActorType",PRRCPersons
+,FLD-ACT-007,Notification email,Actor,notificationEmail,"Actor level notification emailaddresses for each Eudamed module, so module related notifications can be managed differently.",,NotificationEmailAddress [EUDAMED -  Common Entities],,,,Y,,1..*,Y,,,,,,,
+,FLD-ACT-008,Organisation,Actor,organisation,All actors within the system are representing an organisation containing contact information and address information,,Organisation [EUDAMED -  Common Entities],,,,Y,,1,,,,Y,Y,,ActorType,organisation
+,FLD-ACT-009,Public contact detail,Actor,contactDetailsPublic,"Actor contact information available for the public, this means all actor types within the restricted website and the public website",,PublicContactDetails [EUDAMED -  Common Entities],,,,Y,,1,,,,Y,Y,,Organisation,contactsDetails
+,FLD-ACT-010,Contact details for Competent Authorities,Actor,contactDetailsPrivate,Actor information visible only to the competent authorities on the restricted website,,NonPublicContactDetails [EUDAMED -  Common Entities],,,,Y by EC,,1,Y,,Y,,Y,,ActorType,contactPerson
+,FLD-ACT-011,CA responsibilities,Actor,competentAuthorityCompetences,A competent authority can have multiple responsibilities in the domain of medical devices. This collection of responsibilities is used to define available profiles for its users or to define the EUDAMED scope.,,CompetentAuthorityResponsibilities [Actor],,,,Y by EC,,1 (only for CA),,,,Y,,,,
+,FLD-ACT-012,Responsible CA,Actor,responsibleCA,Economic operators and NB first LAA are validated by a competent authority before they can start using the features in EUDAMED. ,,Actor [Actor],,,,N,,0..1,,Y,,Y,Y,"BR-ACT-037
+BR-ACT-118",ActorType,responsibleCA
+ > 0.1 ,FLD-ACT-014,Notified Body Subsidiaries List,Actor,subsidiariesList,Document attachment provided by the notified by listing his subsidiaries,DOC-ACT-001,StoredDocument  [EUDAMED -  Common Entities],,,,Y,,0..1 (only for NB),,,,Y,,BR-ACT-117,,
+,FLD-ACT-015,Version,Actor,version,Updates to actor information are considered new versions,,VersionData [EUDAMED -  Common Entities],,Y,N,N,,1,,,,Y,,,Entity,
+,FLD-ACT-016,EUDAMED  CA Reference,Actor,uniqueCAReference,Competent authorities have a unique reference assigned by EUDAMED.,,String,XS,,,N,,1 (only for CA),,,,Y,,country-DA-XXX,,
+N,FLD-ACT-101,NANDO DA ID,Actor,nandoDaId,This field contains the mapping between the DA from NANDO to the CA behaving as the DA in EUDAMED. This mapping is required to import Notified Bodies into EUDAMED.,,String,S,Y,,N,,0..1,,,,,,,,
+,FLD-ACT-104,Is the actor validated?,Actor,isACTvalidated,"Technical field - not displayed in user interface - to specify, for SP actor type only - if the actor has been validated or not.",,Boolean,,,,N,,1,,,,,,,,
+,FLD-ACT-139,Last confirmation date of actor data accuracy,Actor,accuracyDate,"Date (and version that was current) when the user did the last confirmation of the actor data accuracy. 
+Applicable to Economic Operators and Sponsors.",,AccuracyDate,,,,Y,,1,,,,Y,,,,
+,FLD-ACT-042,Actor Relationship From,ActorRelationship,firstSideOfRelation,The start point of a relationship between actors,,Actor [Actor],,Y,N,Y,,1,,,,,,,,
+,FLD-ACT-043,Actor Relationship To,ActorRelationship,secondSideOfRelation,The end point of a relationship between actors,,Actor [Actor],,,,Y,,1,,,,,,,IMnonEUMFLinkedRelationshipType,actorCode
+,FLD-ACT-044,Actor relationship Type,ActorRelationship,ActorRelationshipType,The type of relationship between two actors,ENUM_ACT_ACTOR_REL_TYPE,Enum,,,,Y,,1,,,,,,BR-ACT-060,IMnonEUMFLinkedRelationshipType,
+,FLD-ACT-102,Start Date,ActorRelationship,startDate,Start of the relationship,,Date,,,,,,0..1,,,,,,,IMnonEUMFLinkedRelationshipType,startDate
+,FLD-ACT-103,End Date,ActorRelationship,endDate,End of the relationship,,Date,,,,,,0..1,,,,,,,IMnonEUMFLinkedRelationshipType,endDate
+,FLD-ACT-045,Responsible for,RegulatoryResponsible,responsibilityDomains,The domains covered by this regulatory responsible,,String,M,,,Y,,0..1,,,,Y,Y,,PersonType,responsibilities
+,FLD-ACT-046,Telephone,RegulatoryResponsible,telephone,The regulatory responsible person's telephone,,String,XS,,,Y,,0..1,,,,Y,Y,,ElectronicContactType,phone
+,FLD-ACT-047,Email,RegulatoryResponsible,email,The regulatory responsible person's email,,String,XS,,,Y,,1,,,,Y,Y,,ElectronicContactType,eMail
+N,FLD-ACT-048,Use the same address as the Actor address,RegulatoryResponsible,isSameAddress,Is the address of the regulatory person the same as the actor ,,Boolean,,,,Y,,1,,,,,,,,
+,FLD-ACT-049,Regulatory Responsible Name,RegulatoryResponsible,name,The regulatory responsible person,,Person [EUDAMED -  Common Entities],,,,Y,,1,,,,Y,Y,,PersonType,"firstname
+lastname"
+,FLD-ACT-050,Address,RegulatoryResponsible,address,Full geographical address information,,GeographicAddress [EUDAMED -  Common Entities],,,,Y,,0..1,,,,,,,PartyType,geographicAddress
+,FLD-ACT-067,Responsible for NBs and Certificates,CompetentAuthorityResponsibilities,isResponsibleForNBandCertificates,Designating Authority,ENUM_ACT_CA_RESP,Boolean,,,,Y by EC,,1  (only for CA),,,,,,BR-ACT-050,,
+,FLD-ACT-068,Represents the Member State for regulatory notifications,CompetentAuthorityResponsibilities,isMainAuthority,Represents the Member State for regulatory notifications,ENUM_ACT_CA_RESP,Boolean,,,,Y by EC,,1  (only for CA),,,,,,BR-ACT-050,,
+,FLD-ACT-069,Competent for Market Surveillance,CompetentAuthorityResponsibilities,isResponsibleForMarketSurveillance,Competent for Market Surveillance,ENUM_ACT_CA_RESP,Boolean,,,,Y by EC,,1  (only for CA),,,,,,BR-ACT-050,,
+,FLD-ACT-070,Responsible for Economic operator validation,CompetentAuthorityResponsibilities,isResponsibleForEconomicOperator,responsible for Economic operator validation,ENUM_ACT_CA_RESP,Boolean,,,,Y by EC,,1  (only for CA),,,,,,"BR-ACT-037
+BR-ACT-050",,
+,FLD-ACT-072,Competent for UDI/Devices,CompetentAuthorityResponsibilities,isResponsibleForUDI_Device,Competent for UDI/Devices,ENUM_ACT_CA_RESP,Boolean,,,,Y by EC,,1  (only for CA),,,,,,BR-ACT-050,,
+,FLD-ACT-073,Competent for Vigilance,CompetentAuthorityResponsibilities,isResponsibleForVigilance,Competent for Vigilance,ENUM_ACT_CA_RESP,Boolean,,,,Y by EC,,1  (only for CA),,,,,,BR-ACT-050,,
+,FLD-ACT-074,Competent for CI/PS,CompetentAuthorityResponsibilities,isResponsibleForCIPS,Competent for CI/PS,ENUM_ACT_CA_RESP,Boolean,,,,Y by EC,,1  (only for CA),,,,,,BR-ACT-050,,
+,FLD-ACT-075,Competences limited to IVDs only,CompetentAuthorityResponsibilities,IVDscope,Competences limited to IVDs only,ENUM_ACT_CA_RESP,Boolean,,,,Y by EC,,1  (only for CA),,,,,,BR-ACT-050,,
+,FLD-ACT-076,Competences limited to MDs only,CompetentAuthorityResponsibilities,MDscope,Competences limited to MDs only,ENUM_ACT_CA_RESP,Boolean,,,,Y by EC,,1  (only for CA),,,,,,BR-ACT-050,,
+,FLD-ACT-077,Ready to participate coordinated CIPS procedure,CompetentAuthorityResponsibilities,isReadyToParticipateCIPSCoordinatedProcedure,"When the sponsor initiate single application for coordinated assessment of a CIPS, it shall be able to select among the list with MS only those MS for which there is a CA ready to participate in coordinated assessment procedure. Then the sponsor needs to propose who will be the coordinating MS and the list with proposed coordinating MS will be filtered once again based on the information from isReadyToBeCoordinatingCIPSAuthority.",ENUM_ACT_CA_RESP,Boolean,,,,Y by EC,,1 (only for CA with CIPS responsibility),,,,,,BR-ACT-050,,
+,FLD-ACT-078,Ready to be the Coordinating Authority,CompetentAuthorityResponsibilities,isReadyToBeCoordinatingCIPSAuthority,available to become a coordinating authority for a CIPS,ENUM_ACT_CA_RESP,Boolean,,,,Y by EC,,1 (only for CA with CIPS responsibility),,,,,,"BR-ACT-050
+1 for CA with CI/PS responsibility only, for CA without this responsibilty it is 0",,
+,FLD-ACT-079,Available end date to participate coordinated CIPS procedure,CompetentAuthorityResponsibilities,dateUntilReadyToParticipateCIPSCoordinatedProcedure,Last availability date to take part in a coordinating CIPS procedure,,Date,,,,Y by EC,,1 (only for CA with CIPS responsibility),,,,,,BR-ACT-050,,
+,FLD-ACT-080,Available end date to be the Coordinating Authority,CompetentAuthorityResponsibilities,dateUntilReadyToBeCoordinatingCIPSAuthority,Last availability date to become a coordinating authority for a CIPS,,Date,,,,Y by EC,,1 (only for CA with CIPS responsibility),,,,,,BR-ACT-050,,
+,FLD-ACT-081,Application Id,ChangeOfCARequest,applicationId,A unique actor registration request identifier used for reference during the assessment procedure,,Integer,,Y,N,N,,,,,,,,,,
+,FLD-ACT-082,Current Assessments by CA,ChangeOfCARequest,CAinput,Actor validation assessment by the forrmer competent authority,,ActorRegistrationAssessment [Actor],,,,,,,,,,,,,,
+,FLD-ACT-083,New Assessments by CA,ChangeOfCARequest,CAoutcome,Actor validation assessment by the new forrmer competent authority,ENUM_ACT_CHANGE_CA_TYPE,Enum,,,,,,,,,,,,,,
+,FLD-ACT-084,Reason of change,ChangeOfCAReason,Reason,Reason of why there is a need of change of the competent authority,,String,L,,Y,,,,y,,,,,,,
+,FLD-ACT-085,Assessment outcome/decision,ChangeOfCARequest,requestingUser,Authenticated user information requesting the actor registration request,,Actor [Actor],,,,,,,,,,,,,,
+,FLD-ACT-108,Party ID,AccessPoint,partyId,Identifier generated by EUDAMED,,String,,,,,,,,,,,,,,
+,FLD-ACT-109,Organisation information,AccessPoint,organisationId,Organisation information,,Organisation [EUDAMED -  Common Entities],,,,,,1,,,,,,,,
+,FLD-ACT-110,Access Point Country,AccessPoint,country,Country of the AP,,Country [EUDAMED -  Common Entities],,,,,,1,,,,,,,,
+,FLD-ACT-111,Access Point City,AccessPoint,city,City of the AP,,String,,,,,,,,,,,,,,
+,FLD-ACT-112,Is the access point owned by a third party?,AccessPoint,is3rdparty,Is the access point owned by a third party?,,Boolean,,,,,,,,,,,,,,
+,FLD-ACT-113,May the access point be user by other Actor(s)?,AccessPoint,isShareable,May the access point be user by other Actor(s)?,,Boolean,,,,,,,,,,,,,,
+,FLD-ACT-114,Access Point Status,AccessPoint,status,Access Point Status defined by the system,ENUM_ACT_APstatus,Enum,,,,,,,,,,,,,,
+,FLD-ACT-115,Access Point Name or description,AccessPoint,apNameOrDescription,Access Point Name or description provided by the user,,String,,,,,,,,,,,,,,
+,FLD-ACT-116,Will you use an existing Access Point set up for an application other than Eudamed,AccessPoint,apAlreadyExistsNonEudamed,Will you use an Access Point that exists already for an applicaiotn other than EUDAMED?,,Boolean,,,,,,,,,,,,,,
+,FLD-ACT-117,Access Point link,AccessPoint,accessPointLink,Reference to the AP link,,AccessPointLink [Actor],,,,,,1,,,,,,,,
+,FLD-ACT-118,Assessment date,,assessDate,Date of the assessment of the AP request,,Date,,,,,,,,,,,,,,
+,FLD-ACT-119,Version,AccessPoint,version,Version data of the AP,,VersionData [EUDAMED -  Common Entities],,,,,,1,,,,,,,,
+,FLD-ACT-120,Actor,AccessPointLink,actorCode,Reference to the Actor who submits the request,,Actor [Actor],,,,,,1,,,,,,,,
+,FLD-ACT-121,Access Point identifier,AccessPointLink,AccessPointId,Link to the AP,,AccessPoint [Actor],,,,,,1,,,,,,,,
+,FLD-ACT-122,Legal contact,AccessPointLink,legalContact,Details of the legal contact person of the AP link,,Person [EUDAMED -  Common Entities],,,,,,1,,,,,,,,
+,FLD-ACT-123,Technical contact,AccessPointLink,technicalContact,Details of the technical contact person of the AP link,,Person [EUDAMED -  Common Entities],,,,,,0..1,,,,,,,,
+,FLD-ACT-124,Business justification / Proof of testing document,AccessPointLink,justificationDocument,"Depending on whether it concerns the Playground or the Production environment, document that justifies the AP request or that proves successful testing in Playground.",,"StoredDocument 
+[EUDAMED -  Common Entities]",,,,,,1,,,,,,,,
+,FLD-ACT-125,Third party agreement document,AccessPointLink,authorisationDocument,Document that proves the agreement between the requesting actor and the third party who is the owner of the AP,,"StoredDocument 
+[EUDAMED -  Common Entities]",,,,,,1,,,,,,,,
+,FLD-ACT-126,Is the access point owned by the requesting actor?,AccessPointLink,ownAP,Is the access point owned by the requesting actor?,,Boolean,,,,,,,,,,,,,,
+,FLD-ACT-127,Rejection reason,AccessPointLink,rejectionReason,"Reason for rejecting the AP request, provided by the EC",,String,,,,,,,,,,,,,,
+,FLD-ACT-128,Will you use an existing EUDAMED Access Point? ,AccessPointLink,existingAP,Will you use an existing EUDAMED Access Point? ,,Boolean,,,,,,,,,,,,,,
+,FLD-ACT-129,Status,AccessPointLink,status,Status of the AP link,ENUM_ACT_APLinkstatus,Enum,,,,,,,,,,,,,,
+,FLD-ACT-130,Date disclaimer accepted,AccessPointLink,disclaimerDateAccepted,Date on which the user accepted the disclaimer at initiation of the AP request,,Date,,,,,,,,,,,,,,
+,FLD-ACT-131,Assessment date,AccessPointLink,assessDate,Date of assessment of the AP request by the EC,,Date,,,,,,,,,,,,,,
+,FLD-ACT-132,Request submission date,AccessPointLink,requestSubmissionDate,Date of submission of the AP request,,Date,,,,,,,,,,,,,,
+,FLD-ACT-133,Version,AccessPointLink,version,Version data of the AP link,,VersionData [EUDAMED -  Common Entities],,,,,,1,,,,,,,,
+,FLD-ACT-134,Access Point link ,AccessPointLinkToModule,accessPointLinkId,Reference to AP link,,AccessPointLink [Actor],,,,,,0..*,,,,,,,,
+,FLD-ACT-135,Module,AccessPointLinkToModule,module,Module linked to the AP link,ENUM_MDR_MODULES,Enum,,,,,,,,,,,,,,
+,FLD-ACT-136,Service,AccessPointLinkToModule,serviceID,Reference to the service of the given module,,String,,,,,,1,,,,,,,,
+,FLD-ACT-137,Security key,AccessPointLinkToModule,securityKey,Security key generated by the system for the given service of the given module for the given AP,,String,,,,,,,,,,,,,,
+,FLD-ACT-138,Version,AccessPointLinkToModule,version,Version data of the AP link to the module,,VersionData [EUDAMED -  Common Entities],,,,,,,,,,,,,,
+,FLD-ACT-140,Date,AccuracyDate,date,Date on which the user confirmed the actor data accuracy. Applicable to Economic Operators and Sponsors.,,Date,,,,,,0..*,,,,Y,,,,
+,FLD_accuracyDate.versionNumber,Version,AccuracyDate,versionNumber,"Number of the version that was current at the moment the user confirmed the actor data accuracy. 
+Applicable to Economic Operators and Sponsors.",,Integer,,,,,,0..*,,,,Y,,,,
+,FLD-ACT-141,Request ID,AcquisitionRequest,requestId,"System-generated unique identifier for the acquisition/merger request.
+Format: FA-YYYY-XXXXXX for full acquisition/merger; PA-YYYY-XXXXXX for partial acquisition.",,String,XS [maxLimit=14 char],,,,,1,,,,N,Y,,,
+,FLD-ACT-142,Acquirer,AcquisitionRequest,acquirer,Reference to the Actor initiating the acquisition/merger request (the buying  party).,ActorAcquisitionRole,Enum,XS,,,,,1,,,,Y,Y,,,
+,FLD-ACT-143,Acquirer object,AcquisitionRequest,SRN + version number,Reference to the Actor initiating the acquisition/merger request (the buying  party).,,ActorLite,,,,,,1,,,,,,,,
+,FLD-ACT-144,Acquiree,AcquisitionRequest,acquiree,Reference to the Actor being acquired. Entered by the Acquirer via Actor ID/SRN lookup.,ActorAcquisitionRole,Enum,XS,,,,,1,,,,Y,Y,,,
+,FLD-ACT-145,Acquiree object,AcquisitionRequest,SRN + version number,Reference to the Actor being acquired. Entered by the Acquirer via Actor ID/SRN lookup.,,ActorLite,,,,,,1,,,,,,,,
+,FLD-ACT-146,Type of acquisition,AcquisitionRequest,acquisitionType,Specifies whether the request covers a Full acquisition of the Actor or a Partial acquisition limited to a specific devices product line.,ActorAcquisitionType,Enum,,,,,,1,,,,Y,Y,,,
+,FLD-ACT-147,Inactivation,AcquisitionRequest,inactivation,"Indicates whether the Acquiree Actor should be inactived  upon completion of the acquisition.
+Only applicable when acquisitionType is Full acquisition of the Actor.",,Boolean,,,,,,0..1,,,,N,N,Only applicable when acquisitionType = Full_Acquisition_Merger,,
+,FLD-ACT-148,Inactivation date,AcquisitionRequest,inactivationDate,"The date on which the Acquiree Actor should be set to inactive.
+Applicable and required only when acquisitionType = Full acquisition of the Actror AND inactivation = Yes. Not applicable for Partial acquisition of the devices (product line).
+Note: does not trigger automatic inactivation. The actual inactivation must be performed manually by the Acquiree.",,Date,,,,,,0..1,,,,N,N,Required when inactivation = Yes AND acquisitionType = Full_Acquisition_Merger,,
+,FLD-ACT-149,Additional information,AcquisitionRequest,additionalInformation,Free text field allowing the Acquirer to provide additional context or justification for the acquisition request. Mandatory in all acquisition types (Full and Partial).,,String,L,,,,,1,,,,N,N,,,
+,FLD-ACT-150,State,AcquisitionRequest,state,"Current workflow state of the acquisition request. System-managed lifecycle.
+Values: Submitted | Withdrawn | Approved | Refused",ActorAcquisitionState,Enum,,,,,,1,,,,Y,Y,,,
+,FLD-ACT-151,Request submission date,AcquisitionRequest,requestSubmissionDate,The date on which the Acquirer submitted the acquisition request. Set automatically by the system at the point of submission.,,Date,,,,,,0..1,,,,N,N,,,
+,FLD-ACT-152,Last update date,AcquisitionRequest,lastUpdateDate,Date of the most recent update to the acquisition request record. Updated automatically on any state change or data modification. Used as default sort column (descending) in the request management table.,,Date,,,,,,1,,,,N,Y,,,
+,FLD-ACT-153,Acquiree assessment,AcquisitionRequest,acquireeApproval,The Acquiree's decision on whether to approve or refuse the incoming acquisition/merger request.,ActorAcquisitionState,Enum,,,,,,1,,,,N,Y,,,
+,FLD-ACT-154,Reason for refusal,AcquisitionRequest,refusalReason,Reason provided by the Acquiree when refusing an acquisition request. Displayed on the request detail screen when State = Refused.,,String,L,,,,,0..1,,,,N,N,Required when acquireeApproval = No,,

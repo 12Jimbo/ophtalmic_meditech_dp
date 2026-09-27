@@ -1,0 +1,11 @@
+MDR Eudamed - Data Dictionary,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+ Field ID,Field Label,Entity Name,Field Name,Field Description / Notes,ENUM Reference Code ,Field Type,Field Size,Multilingual Flag,Occurrence,Confidential,Searchable,GDPR Flag,Public Access Flag,Business Rules,Updateable,Field Applicable for MDR,Field Applicable for IVDR,DTX Entity,XSD Element Name
+FLD-UDID-41,Comment,ARComment,ARComments,Comments made by the Authorised Representative related  to the Device,,String,M,,1,,,,,Attribute not applicable for version 1,"Not yet implemented
+Y",Y,Y,CommentType,comment
+FLD-UDID-332,Date,ARComment,date,Date when the Authorised Representative submitted the comment for the Device,,Date,,,1,,,,,Attribute not applicable for version 1,"Not yet implemented
+Y",Y,Y,CommentType,date
+FLD-UDID-43,ARSRN,ARComment,ARSRN,Authorised Representative that issued the comment,,"Actor - Authorised Repreentative - FLD-ACT-001
+[Actor -  Actor]",XS,,1,,,,,Attribute not applicable for version 1,,Y,Y,CommentType,ownerActorCode
+FLD-UDID-306,Basic UDI-DI for which comment is sent,ARComment,ARSRN,Basic UDI-DI for which the comments of the AR are issued,,"BasicUDIData
+[DD Basic UDI]",,,1,,,,,Attribute not applicable for version 1,,Y,Y,,

@@ -1,0 +1,6 @@
+ Field ID,Field Label,Entity Name,Field Name,Field Description / Notes,ENUM Reference Code ,Field Type,Field Size,Multilingual Flag,Occurrence,Searchable,Public Access Flag,Business Rules
+FLD-CRF-701,Valid from,NominatedExpertsList,validityDateFrom,The starting validity date of the list of nominated experts.,,date,,,1..1,N,N,
+FLD-CRF-702,Valid to,NominatedExpertsList,validityDateTo,The ending validity date of the list of nominated experts.,,date,,,0..1,N,N,
+FLD-CRF-703,Nominated expert list,NominatedExpertsList,nominatedExpertsList,The list of nominated experts in electronic form (PDF).,DOC-CRF-014,StoredDocument  [EUDAMED -  Common Entities],,,1..1,N,N,BR-CRF-233
+FLD-CRF-704,(Refer to fields of entity VersionData in sheet 'Common'),NominatedExpertsList,expertListVersionData,"Information about the state of the list of nominated experts. Note that a version of a list of nominated experts has only 2 states:  'Registered' and 'Deleted'. That is, thee is no 'Draft' version of a list of nominated experts.",,"VersionData - FLD-EUD-014 - 
+[EUDAMED -  Common Entities]",,,1..1,N,N,

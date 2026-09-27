@@ -1,0 +1,6 @@
+,
+"DA Request, Summary report, Nominated expert list",
+Entity,Description
+DARequest,Keeps the information about a request of a Designating Authority  for the suspension/withdrawal of a certificate issued by a NB.
+NominatedExpertsList,Keeps the information (documents) about the list of nominated experts.
+SummaryReport,Keeps the information (documents) about the member state summary reports on Notified Bodies by DAs

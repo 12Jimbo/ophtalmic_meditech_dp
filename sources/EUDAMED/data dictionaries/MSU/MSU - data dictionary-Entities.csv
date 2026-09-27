@@ -1,0 +1,21 @@
+,,
+,Procedure,
+,Entity,Description
+,Procedure,"Keeps the information for each market surveillance procedure version. Is a parent entity for other procedure related entity versions.
+Every new version of the procedure has links to the latest versions of the child entitities."
+,CorrectiveAction,Keeps the information for each market surveillance procedure corrective action version. Is a child entity of the market surveillance procedure.
+,Measure,Keeps the information for each market surveillance procedure measure version. Is a child entity of the market surveillance procedure.
+,Objection,Keeps the information for each market surveillance procedure objection version against the measure. Is a child entity of the market surveillance procedure measure.
+,AdditionalInformation,Keeps the information for each market surveillance procedure additional information version. Is a child entity of the market surveillance procedure.
+,,
+,Final inspection report,
+,Entity,Description
+,FinalInspectionReport,Keeps the information for each market surveillance final inspection report. 
+,,
+,Annual summary report,
+,Entity,Description
+,AnnualSummaryReport,Keeps the information for each market surveillance annual summary report. 
+,,
+,4 years MS result report,
+,Entity,Description
+,FourYearsReport,Keeps the information for each market surveillance 4 years report. 

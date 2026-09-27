@@ -1,0 +1,35 @@
+,,,
+,Version history,,
+,,,
+,This  section describes  the version history and changes performed for the current document,,
+,,,
+,Version number,Updates performed,Version released
+,2.27.0,"Changes:
+Added matching DTX fields where applicable and business rules in anticipation of DTX Certificates release","Release 3.27.0 PG, 2.27.0 PROD"
+,2.25.0,No changes,"Release 3.25.0 PG, 2.25.0 PROD"
+,2.22.0,"Changes: 
+- New field FLD-CRF-264 added ","Release 3.22.0 PG, 2.22.0 PROD"
+,2.18.0,No changes. Aligned PG and PROD versions - use PROD.,"Release 3.18.0 (PG), 2.18.0 (PROD)"
+,3.11.0,Version update. No changes.,Release 3.11.0
+,3.10.0.1,Version update. No changes.,Release 3.10.0.1
+,3.10.0,Version update. No changes.,Release 3.10.0
+,3.9,Version update. No changes.,Release 3.9
+,3.8,"New fields added FLD-CRF-260, FLD-CRF-261,FLD-CRF-262, FLD-CRF-263 related to ""Mechanism for scrutiny"" step when issuing/supplementing or reissuing a certificate.",Release 3.8
+,3.7,"Added FLD-UDID-362 and FLD-UDID-363 within the SS(C)P entity. Fields defines whether a given SS(C)P is inactive, if yes, since when it is inactive.",Release 3.7
+,3.6,Version update. No changes.,Release 3.6
+,3.5,Version update. No changes.,Release 3.5 (September 2023)
+,3.4,Version update. No changes.,Release 3.4 (June 2023)
+,3.3,Version update. No changes.,Release 3.3 (January 2023)
+,3.2,Version update. No changes.,Release 3.2 (October 2022)
+,"3.1
+","FLD-CRF-220 - label text alignment
+FLD-CRF-223 - label text alignment",Release 3.1 (July 2022)
+,"3.0 (*)
+","Following documents to be publicly accessible:
+    FLD-CRF-240 Scientific opinion
+    FLD-CRF-239 Justification (for not following the scientific opinion)",Release 3.0 (April 2022)
+,7.0  ,,Initial production release (Sept 2021)
+,,,
+,,,
+,,,
+,(*)  New version number has been set up in order for all documentation to be syncronised with the version of the application. Latest version (7.1) will have the version number 3.0,,

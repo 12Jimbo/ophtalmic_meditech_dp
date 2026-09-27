@@ -1,0 +1,124 @@
+MDR Eudamed - Data Dictionary,,,,,,,,,,,,,,,,,,,,,,
+,,EA,,,EA,,EA,,,,,,,,,,,,,,,
+ Field ID,Field Label,Entity Name,Field Name,Database property,Field Description / Notes,ENUM Reference Code ,Field Type,Field Size,Multilingual Flag,Occurrence,Confidential,Searchable,GDPR Flag,Public Access Flag,Business Rules,Updateable,Updateable (version 'for Correction'),Field Applicable for MDR,DTX Entity,XSD Element Name,,
+FLD-UDID-291,Issuing Entity UDI-DI,UDIData,IssuingEntity,DEVICE_IDENTIFIERS:ISSUING_AGENCY_ID,"Assigned Issuing Entities that will generate the DI Codes allocated for  all DI`s inside Eudamed (Basic UDI DI, UDI-DI, Unit of Use DI, Secondary Di , Package level DI).
+
+The Commission shall designate one or several entities to operate a system for assignment of UDIs ('issuing entity')",ENUM_MDR_IssuingEntity,Enum,,,1,,Y,,Y,    ,,,Y,DIIdentififierType,issuingEntityCode,,
+FLD-UDID-178,UDI-DI code,UDIData,DI Code,UDI_DI_DATA:PRIMARY_DI_ID,The UDI-DI is a unique numeric or alphanumeric code specific to a  device and that is also used as the 'access key' to information stored in a UDI database. ,,String,XS,,1,,Y,,Y,BR-UDID-03    ,,,Y,UDIDIType,identifier,,
+FLD-UDID-136,Secondary UDI - DI code,UDIData,DI Code,UDI_DI_DATA:PRIMARY_DI_ID,"Secondary UDI DI Code - reference to the Secondary UDI-DI registered for the current UDI-DI . 
+
+Additional DI  associated to this UDI-DI. 
+Only one  Secondary UDI-DI (Additional UDI-DI)  can be associated to a UDI-DI",,String,XS,,0..1,,Y,,Y,"BR-UDID-03  
+BR-UDID-20  ","Y
+(Add)
+
+Can be provided later on if initially not provided",Y,Y,UDIDIDataType,"secondaryIdentifier
+(DIIdentififierType->DIcode)",,
+FLD-UDID-293,Issuing Entity Secondary DI,UDIData,IssuingEntity,DEVICE_IDENTIFIERS:ISSUING_AGENCY_ID,"Assigned Issuing Entities that will generate the DI Codes allocated for  all DI`s inside Eudamed (Basic UDI DI, UDI-DI, Unit of Use DI, Secondary Di , Package level DI).
+
+The Commission shall designate one or several entities to operate a system for assignment of UDIs ('issuing entity')",ENUM_MDR_IssuingEntity,Enum,,,0..1,,Y,,Y,    ,"Y
+(Add)
+
+Can be provided later on if initially not provided",Y,Y,DIIdentififierType,issuingEntityCode,,
+FLD-UDID-144,List of Critical Warnings or Contraindications or Storage and handling Conditions,UDIData,applicableUseDetails,"CRITICAL_WARNINGS,
+STORAGE_HANDLING_CONDITIONS",References the Critical warnings or Storage and Handling Conditions  associated to the SPP ( list of Critical warnings or Storage and Handling Conditions associated to the UDI-DI).,,Critical Warnings (ConditionForUse),,,0..n,,,,Y,BR-UDID-30,"Y
+(Edit; Add; Delete)",,Y,UDIDIDataType,criticalWarnings,,
+FLD-UDID-312,List of  Storage and handling Conditions,UDIData,applicableUseDetails,"CRITICAL_WARNINGS,
+STORAGE_HANDLING_CONDITIONS",References the Storage and Handling Conditions  associated to the  SPP (UDI-DI),,Storage and Handling (ConditionsForUse),,,0..n,,,,Y,BR-UDID-28,"Y
+(Edit;Add;Delete)",,Y,UDIDIDataType,storageHandlingConditions,,
+FLD-UDID-145,Basic UDI-DI Identifier ,UDIData,BasicUDI,BSC_UDI_UDI_DI_VERSIONS:BASIC_UDI_DATA_ID,Reference to the Basic UDI-DI to which the System/Procedure pack is associated. ,,"Basic UDI-DI FLD-UDID-14, FLD-UDID-01
+[DD Basic UDI_SPP]",,,1,,,,Y,    ,,,Y,UDIDIDataType,basicUDIIdentifier,,
+FLD-UDID-148,Type of UDI-PI,UDIData,productionIdentifier,"UDI_DATA:BATCH_NUMBER
+UDI_DATA:SERIALIZATION_NUMBER
+UDI_DATA:MANUFACTURING_DATE
+UDI_DATA:EXPIRATION_DATE
+UDI_DATA:SOFTWARE_IDENTIFICATION",Reference to the Types of UDI-PI (production Identifiers) applicable for the current System/Procedure pack (UDI-DI). Defines the way the production is controled,ENUM_UDID_ProductionIdentifier,Enum,,,1..n,,,,Y, BR-UDID-131   ,"Y
+(Add; Delete)",Y,Y,UDIDIDataType,productionIdentifier,,
+FLD-UDID-149,Nomenclature code,UDIData,MDNCode,CND_NOMENCLATURES,"The  Nomenclature Code(s) associated with the UDI-DI. 
+The corresponding EMDN Nomenclature Code will be stored in the field
+
+",EMDN Nomenclature,Enum,,,1..n,,Y,,Y,BR-UDID- 636  ,"Y
+(Add; Delete)",Y,Y,UDIDIDataType,MDNCodes,,
+FLD-UDID-163,Reference / Catalogue number,UDIData,referenceNumber,UDI_DI_DATA:REFERENCE,Property stores the Reference or Catalogue Number of the System/Procedure pack,,String,XS,,1,,Y,,Y,,,Y,Y,UDIDIDataType,referenceNumber,,
+FLD-UDID-169,Labelled as sterile,UDIData,sterile,UDI_DI_DATA:STERILE,Property defines if the System/Procedure pack is labeled as Sterile or not,,Boolean,,,1,,Y,,Y,,,Y,Y,UDIDIDataType,sterile,, 
+FLD-UDID-170,Need for sterilisation before use,UDIData,sterilization,UDI_DI_DATA:STERILIZATION,Property defines if the System/Procedure packneeds to be sterilised before use or not,,Boolean,,,1,,Y,,Y,,,Y,Y,UDIDIDataType,sterilization,,
+FLD-UDID-174,URL for additional information,UDIData,website,UDI_DI_DATA:WEBSITE,Manufacturer`s website where additional information about the device (UDI-DI)  are available,,String,M,,0..1,,,,Y,    ,"Y
+(Edit; Add; Delete)",Y,Y,UDIDIDataType,website,,
+FLD-UDID-175,Additional product Description,UDIData,additionalDescription,UDI_DI_DATA:ADDITIONAL_DESCRIPTION,"Additional Product Description.
+
+Additional Product Description is required for System or Procedure Packs or for Standard Devices being marked as System or Procedure Packs (as a Device in themselvs)",,"LanguageSpecificContent
+[EUDAMED- Common Entities]",L,Y,"1
+
+Required for System or Procedure Packs",,,,Y,BR-UDID-131    ,"Y
+(Edit; Add)",Y,Y,UDIDIDataType,additionalDescription,,
+FLD-UDID-176,Trade name,UDIData,tradeName,UDI_DI_DATA:TRADE_NAME_CLOB,"System/Procedure pack Trade Name assigned to the UDI-DI
+
+Trade names can be provided if applicable for the device. Several Trade- Names can be provided for the System or Procedure Pack in the same language or in different languages.",,"LanguageSpecificContent
+[EUDAMED- Common Entities]",S,Y,0..n,,Y,,Y,BR-UDID-70,"Y
+(Edit; Add; Delete)",Y,Y,UDIDIDataType,tradeNames,,
+FLD-UDID-177,Version,UDIData,versionData,UDI_DI_DATA:VERSION_STATE_ID,Reference to the version of the Device,,"VersionData
+[EUDAMED- Common Entities]",,,"1 
+
+Managed by EUDAMED",,,,Y,,,,,Entity,,,
+FLD-UDID-130,System or Procedure Pack Status,UDIData,deviceStatus,,"Status of the System/Procedure pack (On the EU market, Not intended to be placed on the  EU Market,  No longer placed on the EU market).",ENUM_UDID_DeviceStatus,Enum,,,1,,,,Y,"BR-UDID-114
+BR-UDID-073 
+BR-UDID-458","Y
+(Edit)",Y,Y,UDIDIStatusType,code,,
+FLD-UDID-256,System or Procedure Pack  Substatus,UDIData,deviceSubStatus,,Stores a references to the Substatus of the System or procedure Pack,,DeviceSubstatus,,,"0,,n",,,,Y,"BR-UDID-073 
+BR-UDID-458","(Not yet implemented)
+Y",Y,Y,UDIDIDataType,substatuses,,
+FLD-UDID-309,Container Packages related to UDI-DI,UDIData,,,Reference to the Container Package associated to the UDI-DI,,Containeditem ,,,0..n,,,,Y,,Y,Y,Y,UDIDIDataType,packages,,
+FLD-UDID-122,Manufacturer action required,DeviceSubStatus,,,Manufacturer actions (selected in the FSCA report),ENUM_VGL_MF_CORRECTIVE ACTION,Enum,,,"1..n
+
+Occurrence applicable if Device Substatus (FLD-UDID-256) is provided",,,,Y,    BR-UDID-729,"
+Y
+
+Managed from Vigilance Module",Y,Y,UDIDISubstatusType,mfCorrectiveActions,,
+FLD-UDID-126,Start date ,DeviceSubStatus,,,Start Date when the Substatus has been initialised,,Date,,,"1
+
+Occurrence applicable if Device Substatus (FLD-UDID-256) is provided",,,,Y,,"Y
+
+Managed from Vigilance Module",Y,Y,UDIDISubstatusType,startDate,,
+FLD-UDID-127,Estimated end date,DeviceSubStatus,,,Estimated end  date when the Substatus has been closed (Triggered by Vigilance module),,Date,,,"0..1 
+
+Occurrence applicable if Device Substatus (FLD-UDID-256) is provided",,,,Y,,"Y
+
+Managed from Vigilance Module",Y,Y,UDIDISubstatusType,endDate,,
+FLD-UDID-131,UDI-DI/Device -Sub status,DeviceSubstatus,,,"SubStatus of the Device (Recalled, Field safety corrective action initiated)",ENUM_UDID_DeviceSubStatus,Enum,,,"1
+
+Occurrence applicable if Device Substatus (FLD-UDID-256) is provided",,,,Y,,"Y
+
+Managed from Vigilance Module",Y,Y,UDIDISubstatusType,code,,
+FLD-UDID-211,Storage/handling conditions type,Storage and Handling (ConditionForUse),storageValue,STORAGE_HANDL_CONDITIONS:TYPE_ID,"Storage and handling Conditions specified on the Label of the Device have to be registered in EUDAMED - if applicable. 
+
+Field stores the Type of Storage and Handling Conditions. Field is Applicable only when the type of Conditions for Use have the Type Storage / handling Conditions, being required in this case.",ENUM_UDID_StorageHandlingCondition,Enum,,,"1
+
+Occurrence applicable  if Storage and handling conditions (FLD-UDID-312) are provided",,,,Y,    ,"Y
+(Edit;Add;Delete)",Y,Y,StorageHandlingConditionType,storageHandlingConditionValue,,
+FLD-UDID-213,Storage/Handling conditions Description,Storage and Handling (ConditionForUse),comments,"CRITICAL_WARNINGS:CRITICAL_WARNING_COMMENT
+
+STORAGE_HANDL_CONDITIONS:DESCRIPTION
+",Comments or description associated to the values selected form the Storage or handling Conditions or Critical warnings ,,"LanguageSpecificContent
+[EUDAMED- Common Entities]",L,Y,"0..n
+
+Occurrence applicable  if Storage and handling conditions (FLD-UDID-312) are provided
+
+Required for specific items from the list of Enumerations- where additional details are required",,,,Y,,"Y
+(Edit;Add;Delete)",Y,Y,StorageHandlingConditionType,comments,,
+FLD-UDID-212,Critical Warnings type,Critical Warnings (ConditionForUse),warningValues,CRITICAL_WARNINGS:TYPE_ID,"Storage and handling Conditions and Critical Warnings or Contra-Indications specified on the Label of the Device or in the Instruction of Use have to be registered in EUDAMED - if applicable. 
+
+Field stores the Type of Critical Warnings or Contra-Indications, being required in this case. ",ENUM_UDID_CriticalWarnings,Enum,,,"1
+
+Occurrence applicable  if Critical Warnings (FLD-UDID-144) are provided",,,,Y,    ,"Y
+(Edit;Add;Delete)",Y,Y,CriticalWarningType,warningValue,,
+FLD-UDID-319,Critical warnings or contra-indications Description,Critical Warnings (ConditionForUse),comments,"CRITICAL_WARNINGS:CRITICAL_WARNING_COMMENT
+
+STORAGE_HANDL_CONDITIONS:DESCRIPTION
+", Comments or description associated to the values selected for the Critical warnings ,,"LanguageSpecificContent
+[EUDAMED- Common Entities]",L,Y,"0..n 
+
+Occurrence applicable  if Critical Warnings (FLD-UDID-144) are provided
+
+Required for specific items from the list of Enumerations (for cases in which  additional details are required)",,,,Y,,"Y
+(Edit;Add;Delete)",Y,Y,CriticalWarningType ,"comments
+",,

@@ -1,0 +1,52 @@
+,,,
+,Version history,,
+,,,
+,Current section contains the version history and changes performed for the current document,,
+,,,
+,Version number,Updates performed,Version released
+,2.27.0,No changes.,"Release 3.27.0 PG, 2.27.0 PROD"
+,2.25.0,No changes.,"Release 3.25.0 PG, 2.25.0 PROD"
+,2.22.0,"Changes:
+Structured definition for all fields required to support EMDN code versioning including following fields:
+FLD_EMDN.code, FLD_EMDN.term, FLD_EMDN.status, FLD_EMDN.version, FLD_EMDN.fromDate, FLD_EMDN.action","Release 3.22.0 (PG), 2.22.0 (PROD)"
+,2.18.0,No changes. Aligned PG and PROD versions - use PROD.,"Release 3.18.0 (PG), 2.18.0 (PROD)"
+,3.11.0,"Added previously missing fields for Legacy Devices: humanProductCheck,  medicinalProductCheck",Release 3.11.0
+,3.10.0,"Updated FLD-UDID-181 and FLD-UDID-181. Removed the note related to the implementation of manual linking.
+NRD entity  is moved under a dedicated Data Dictionary (known as OCM).",Release 3.10.0
+,3.9,"Added NRD data dictionary.
+Label update for FLD-UDID-178,FLD-UDID-291,FLD-UDID-136,FLD-UDID-293 to accommodate Master UDI-DI implementation.",Release 3.9
+,3.8,"Device substatus entity is being populated for a device that is referenced in FSCA report in the Vigilance module.
+FLD-UDID-123 has been deleted from the DeviceSubStatus entity.
+FLD-UDID-178 - indicates the UDI-DI code and the Master UDI-DI code. Only the label differ depending on the type of device.",Release 3.8
+,3.7,Version update. No changes.,Release 3.7
+,3.6,"Updated the description for the fields FLD-UDID-180 and FLD-UDID-331 related to the link between a regulation device and their coresponding legacy device. It is possible to manually create and delete manually created link  between related devices.
+Updated label description for the FLD-UDID-137 and FLD-UDID141.
+Updated clarification for the field FLD-UDID-265 that is conditional mandatory.",Release 3.6
+,3.5,Added FLD-UDID-179 Trade name applicable field. Flag Indicating in the UI if the trade name is applicable for the device.,Release 3.5 (September 2023)
+,3.4,"SS(C)P tab was removed from this Data Dictionary. The data about SS(C)P can be consulted in the Certificates Data Dictionary (SSCPs are managed by NBs in EUDAMED).
+FLD-UDID-37 AR Comments was removed because it is not yet implemented (not MVP).
+
+The value for the updateable column was modified for the following fields:
+FLD-UDID-15, FLD-UDID-20, FLD-UDID-22, FLD-UDID-39, FLD-UDID-136, FLD-UDID-293, FLD-UDID-135, FLD-UDID-292, FLD-UDID-138, FLD-UDID-294, FLD-UDID-148, FLD-UDID-149, FLD-UDID-159, FLD-UDID-174, FLD-UDID-175, FLD-UDID-176, FLD-UDID-130, FLD-UDID-256, FLD-UDID-140, FLD-UDID-310, FLD-UDID-311, FLD-UDID-312, FLD-UDID-144, FLD-UDID-139, FLD-UDID-137, FLD-UDID-141, FLD-UDID-180, FLD-UDID-309, FLD-UDID-122, FLD-UDID-123, FLD-UDID-126, FLD-UDID-127, FLD-UDID-131, FLD-UDID-200, FLD-UDID-201, FLD-UDID-202, FLD-UDID-203, FLD-UDID-313, FLD-UDID-314, FLD-UDID-315, FLD-UDID-316, FLD-UDID-317, FLD-UDID-318, FLD-UDID-211, FLD-UDID-213, FLD-UDID-212, FLD-UDID-319, FLD-UDID-222, FLD-UDID-353, FLD-UDID-354, FLD-UDID-355, FLD-UDID-250, FLD-UDID-251, FLD-UDID-252, FLD-UDID-222, FLD-UDID-223, FLD-UDID-353, FLD-UDID-354, FLD-UDID-355",Release 3.4 (June 2023)
+,3.3,"FLD-UDID-138 - A value for the direct marking DI can be added at a later time, but once added it cannot be modified or removed.
+FLD-UDID-44 - Label change",Release 3.3 (January 2023)
+,3.2,"FLD-UDID-159 New device is a conditionally updateable field. Can be updated If at the registration the value was set as 'Yes'
+FLD-UDID-135 Unit of Use-DI is a conditionally updateable field. Can be provided later on if at the registration was not provided.
+FLD-UDID-176 - label update to 'Trade name'.
+FLD-UDID-358 for the CertificateLink entity has been changed to FLD-UDID-361 due to uniqueness conflict.",Release 3.2 (October 2022)
+,"3.1
+","Updated FLD-UDID-252 updatability description.
+Field FLD-UDID-146 is not updatable .",Release 3.1 (July 2022)
+,"3.0 (*)
+","Updated the Enum ENUM_UDID_IssuingEntity to ENUM_MDR_IssuingEntity for the Issuing Entity fields
+Update the Enumeration for the  Nomenclature Code field (FLD-UDID-149)- to EMDN Nomenclature 
+Update FLD-UDID-39 (DD Legacy Devices). Update Occurrence and description",Release 3.0 (April 2022)
+,8.1,"Entity updates performed:
+
+FLD-UDID-122 - recall precision and FLD-UDID-123  - 'scope of recall'   added mention that the fields are  managed from vigilance module;
+FLD-UDID-148 - 'Type of UDI-PI'  and FLD-UDID-159 - 'New Device'  marked as updatable;",Release 2.9 (Jannuary 2022)
+,8.0  ,,Initial production release (Sept 2021)
+,,,
+,,,
+,,,
+,(*)  New version number has been set up in order for all documentation to be syncronised with the version of the application. Latest version (8.2) will have the version number 3.0,,

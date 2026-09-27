@@ -1,0 +1,32 @@
+,,,
+,,,
+,,,
+,,,
+,Version history,,
+,,,
+,Current section contains the version history and changes performed for the current document,,
+,,,
+,Version number,Updates performed,Version released
+,2.27.0,"Changes done in following fields as indicated in the highlighted color:
+- New entity AcquisitionRequest and related fields to support mergers and acquisitions between actors","Release 3.27.0 PG, 2.27.0 PROD"
+,2.25.0,No changes,"Release 3.25.0 PG, 2.25.0 PROD"
+,2.22.0,"Changes done in following fields as indicated in the highlighted color:
+- Updated FLD-ACT-139 & FLD-ACT-140. Created FLD_accuracyDate.versionNumber (CR-00020).","Release 3.22.0 (PG), 2.22.0 (PROD)"
+,2.18.0,"Changes done in following fields as indicated in the highlighted color:
+- No changes","Release 3.18.0 (PG), 2.18 (PROD)"
+,2.15,"version update, no other updates",Release 2.15
+,2.14,"version update, no other updates",Release 2.14
+,2.13,"version update, no other updates",Release 2.13
+,2.12,Added fields related to Actor data accuracy confirmation: FLD-ACT-139 and FLD-ACT-140,Release 2.12 (August/September 2023)
+,2.11,Added fields related to Machine to Machine Access Point management: FLD-ACT-108 until FLD-ACT-138,Release 2.11 (June 2023)
+,2.10,"Added and Updated following fields in Actor: FLD-ACT-002, FLD-ACT-003, FLD-ACT-107",Release 2.10 (January 2023)
+,2.9,added ChangeOfCA in Entities,Release 2.9 (October 2022)
+,2.8,"version update, no other updates",Release 2.8 (July 2022)
+,2.7 (*),version alignment,Release 2.7 (March 2022)
+,4.7,"PRRC email address (FLD-ACT-047) changed from email to string
+FLD-ACT-104: Is the actor validated? (specific for Sponsor actor, where no explicit CA validation applies)",Release 2.2 (November 2021)
+,4.0,,Initial production release (Sept 2021)
+,,,
+,,,
+,,,
+,(*)  New version number has been set up in order for all documentation to be syncronised with the version of the application. Latest version (4.8) will have the version number 2.7,,

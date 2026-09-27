@@ -1,0 +1,15 @@
+,,,,,
+,Introduction,,,,
+,,,,,
+,"The purpose of this document is to give an understanding over the data that is to be provided to Eudamed and that can be communicated through Data Exchange process for the Notified Bodies and Certificates module. 
+
+The document presents the different attributes related to Notified Bodies and Certificates that may be communicated through XML, their correspondence to the fields from EUDAMED User Interface, the description of each field apart and the Rules applying at the level of the Entity of for each specific field apart.
+
+Each attribute is defined by the Entity were it resides and the attribute name.",,,,S
+,,,,,
+,Document sections (sheets),,,,
+,,,,,
+,Data Dictionary Fields,Section contains a description of the fields used in the data dictionary,,,
+,Entities ,"Section contains the list of Entities in MDR EUDAMED system involved in the Data Exchange process for the module described, a description of the Entity and the Business Rules applicable at the level of each Entity apart",,,
+,Application,"Containing the refused certificate, Application refusal and Withdrawn application",,,
+,Scope,The application scope containing the devices and device groups based on product or quality applications,,,

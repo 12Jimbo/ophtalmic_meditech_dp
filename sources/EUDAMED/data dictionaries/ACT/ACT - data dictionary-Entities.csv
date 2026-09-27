@@ -1,0 +1,33 @@
+,,,
+,Entity,Description,Business Rules
+,AccountAssessment,Information regarding the Decision`s taken and the Comments / Justification`s of those decisions about EUDAMED accounts.,
+,Actor,"Stores Core data of an actor
+Is identified by a Single Registration Number
+An Organisation registered in Eudamed in order to act with a specific Actor role.
+Organisations acting with more than one role are registered in Eudamed as distinct Actors, one per role",
+,ActorRelationship,"Describes any sort of relationship that may (optional) exist between two Actor instances.
+It stores all relationships including the link between the importer and the Non-EU Manufacturer.",BR-ACT-060
+,Actor RegistrationRequest,Actor Registration request is considered non updatable as a correction of a request is considered a new version of all fields.,"BR-ACT-046
+BR-ACT-047"
+,ActorRegistrationAssessment,Information regarding the Decision`s taken and the Comments / Justification`s of those decisions about Actor Registrations.,
+,CompetentAuthorityCompetences,Areas where an Authority is Competent in ,"BR-ACT-050
+BR-ACT-052
+BR-ACT-054
+BR-ACT-055
+BR-ACT-056
+BR-ACT-058"
+,EudamedAccount,A Eudamed Account represents a combination of a user connected to the Eudamed system for a specific Actor and with one are more profiles.,"BR-IAM-014
+BR-IAM-015
+BR-IAM-041
+BR-IAM-042
+BR-IAM-049
+BR-IAM-050
+BR-IAM-051
+BR-IAM-056
+BR-IAM-058
+BR-IAM-059
+BR-IAM-063"
+,Mandate,Mandate metadata (the actual data are in the Annex),BR-ACT-028
+,MandateAssessment,Information regarding the Decision`s taken and the Comments / Justification`s of those decisions about Mandates.,
+,RegulatoryResponsible,Person responsible for regulatory compliance,
+,AcquisitionRequest,,

@@ -1,0 +1,27 @@
+,
+Certificate,
+Entity,Description
+Certificate,"Keeps the information for each certificate version. An issued or re-issued certificate is the first (Eudamed) version of the certificate. An amendment, supplement, restriction, suspension, re-instatement, withdrawal or cancellation (by MF) is stored as a new (Eudamed) certificate version."
+CertificateID,"Keeps the unique identification of a certificate version, including the first version of a certificate i.e. an issued or re-issued certificate. "
+ProductProcedure,"Specifies the actors to a product conformity assessment procedure, namely the manufacturer (MF) and the authorised representative (AR)."
+QualityProcedure,"Specifies the actors to a quality conformity assessment procedure, namely the manufacturer (MF), the system or procedure pack producer (SPPP) and the authorised representative (AR)."
+RefusedCertificate,
+,
+Summary of Safety and Clinical Performance SS(C)P,
+Entity,Description
+SS(C)P,"Entity stores the details about the Summary of Safety and Clinical Performance.
+
+SSCP(Summary of safety and clinical performance) can be registered in EUDAMED by the Notified Body and can be periodically updated"
+SS(C)P Translations,Entity stores details about the details of the SSCP Translations (Translations of the master document associated to the version of SS(C)P)
+,
+Mechanism for scrutinty,
+Entity,Description
+MechanismForScrutiny,Entity stores the details about the mechanism for scrutiny for risk class III (implantable) and risk class IIb non-implantable (Active devices intended to administer and/or remove a medicinal product)
+,
+Instruction for use,
+Entity,Description
+InstructionForUse,Entity stores the details of Instruction for use documents attached for the UDI-DI(s) within a Basic UDI-DI.
+,
+MS Summary Report,
+Entity,Description
+SummaryReport,

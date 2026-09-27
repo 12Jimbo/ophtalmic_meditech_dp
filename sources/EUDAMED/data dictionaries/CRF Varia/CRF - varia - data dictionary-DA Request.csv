@@ -1,0 +1,21 @@
+ Field ID,Field Label,Entity Name,Field Description / Notes,ENUM Reference Code ,Field Type,Field Size,Multilingual Flag,Occurrence,Searchable,GDPR Flag,Public Access Flag,Business Rules
+FLD-CRF-401,Designating authority,DARequest,Reference to the designating authority (CA responsible for NBs) who requested the suspension/withdrawal of the certificate and is responsible for the NB that issued the certificate.,,Actor - FLD-ACT-001  -[Actor],,,1..1,Y,,,BR-CRF-262
+FLD-CRF-402,Certificate,DARequest,"Reference(s) to the certificate(s) for which the suspension or withdrawal is requested.
+Refer to fields of entity CertificateID in  'Certificate' DD.",,Certificate - FLD-CRF-025 - [Certificate],,,1..*,,,,
+FLD-CRF-413,(Certificate not registered in EUDAMED),DARequest,"Reference(s) to the certificate(s) for which the suspension or withdrawal is requested. The certificate is not registered in EUDAMED.
+",,DACertificate,,,1..*,,,,
+FLD-CRF-403,(Refer to fields of entity VersionData in sheet 'Common'),DARequest,"Keeps information about the state of a DA Request version. 
+Refer to fields of entity VersionData in sheet 'Common'.
+
+Note: This information is additional internal Eudamed information for each DA Request version.",,"VersionData - FLD-EUD-014 - 
+[EUDAMED -  Common Entities]",,,1..1,Y,,,"BR-CRF-260
+BR-CRF-264"
+FLD-CRF-404,Request date,DARequest,The date the requesting CA (DA) has registered the request for the suspension/withdrawal of the certificate.,,date,,,1..1,Y,,,
+FLD-CRF-405,(Withdrawal/Suspension),DARequest,Whether the request is for the suspension or withdrawal of the certificate.,ENUM_CRF_DARequestReason,ENUM,,,1..1,Y,,,
+FLD-CRF-406,Comments,DARequest,Additional information (free text),,string,L,,1..1,,,,
+FLD-CRF-407,Certificate number,DACertificate,A number assigned by the NB to an certificate that is not registered in EUDAMED,,string,S,,1..1,,,,
+FLD-CRF-408,Revision number,DACertificate,A revision number assigned by the NB to an certificate that is not registered in EUDAMED,,string,XS,,0..1,,,,
+FLD-CRF-409,Notified Body,DACertificate,The NB Identification number (assigned by NANDO) in scope of the request for suspension/withdrawal of certificates not registered in EUDAMED,,Actor - FLD-ACT-001  -[Actor],,,1..1,Y,,,
+FLD-CRF-410,Manufacturer identification,DACertificate,Identification of the MF in scope of the request for suspension/withdrawal of certificates not registered in EUDAMED,,Actor - FLD-ACT-001  -[Actor],,,0..1,Y,,,
+FLD-CRF-411,Authorised representative identification,DACertificate,Identification of one AR in case the MF in scope of the request for suspension/withdrawal of certificates not registered in EUDAMED,,Actor - FLD-ACT-001  -[Actor],,,0..*,Y,,,
+FLD-CRF-412,SPPP identification,DACertificate,Identification of the system or procedure pack producer (SPPP) in scope of the request for suspension/withdrawal of certificates not registered in EUDAMED,,Actor - FLD-ACT-001  -[Actor],,,0..1,Y,,,

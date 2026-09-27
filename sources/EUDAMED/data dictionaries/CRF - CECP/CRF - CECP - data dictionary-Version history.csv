@@ -1,0 +1,30 @@
+,,,
+,Version history,,
+,,,
+,This  section describes  the version history and changes performed for the current document,,
+,,,
+,Version number,Updates performed,Version released
+,3.27.0,No changes,"Release 3.27.0 PG, 2.27 PROD"
+,3.25.0,No changes,Release 3.25.0 PG
+,3.22.0,No changes,Release 3.22.0 PG
+,3.18.0,No changes.,Release 3.18.0 (PG)
+,3.11.0,Version update. No changes.,Playground release 3.11.0
+,3.10.0,Version update. No changes.,Playground release 3.10.0
+,3.9,Version update. No changes.,Playground release 3.9
+,3.8,Version update. No changes.,Playground release 3.8
+,3.7,Version update. No changes.,Playground release 3.7 (February 2024)
+,3.6,Version update. No changes.,Playground release 3.6 (October 2023)
+,3.5,Version update. No changes.,Playground release 3.5 (August 2023)
+,3.4,Added new entity CECPStatus. It maintains the historical statuses of a CECP.,Playground release 3.4 (April 2023)
+,3.3,"FLD-CRF-310 and FLD-CRF-322 - corrrected the conformity assessment types.
+Two new fields, FLD-CRF-356 and FLD-CRF-357, have been added to store information about a link to a refused certificate and/or withdrawn application. However, these fields will not be visible in the user interface.
+",Playground release 3.3 (January 2023)
+,3.2,Version update. No changes.,Playground release 3.2 (October 2022)
+,3.1,Version update. No changes.,Playground release 3.1 (July 2022)
+,"3.0 (*)
+",Aligned the version number,Playground release 3.0 (April 2022)
+,7.1,FLD-CRF-306 - Status date. Indicates the date when CECP status was updated. ,Playground release 2.3 (January 2022)
+,7.0,Initial release in playground,Playground release 2.0 (September  2021)
+,,,
+,,,
+,(*)  New version number has been set up in order for all documentation to be syncronised with the version of the application. Latest version (7.2) will have the version number 3.0,,

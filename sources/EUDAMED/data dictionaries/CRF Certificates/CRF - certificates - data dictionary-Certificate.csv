@@ -1,0 +1,191 @@
+ Field ID,Field Label,Entity Name,Field Description / Notes,ENUM Reference Code ,Field Type,Field Size,Multilingual Flag,Product Certificate Occurrence,Quality Certificate Occurrence,Searchable,GDPR Flag,Public Access Flag,Business Rules,DTX Entity,XSD Element Name
+FLD-CRF-024,Date of issue,CertificateID,"The date of issue of the certificate (issued, re-issued, supplemented, amended or restricted). In case a certificate is suspended, re-instated, withdrawn or cancelled by MF the date of issue is not changed.",,date,,,1,1,Y,,Y,"BR-CRF-001
+BR-CRF-021
+BR-CRF-052
+BR-CRF-053
+BR-CRF-130
+BR-CRF-131","CertificateIdentifierType (GET)
+PostCertificateIdentifierType (POST/PUT)",issuedDate
+FLD-CRF-025,Certificate number,CertificateID,"A number assigned by the NB to an issued, re-issued, supplemented, amended or restricted certificate. In case of suspension, re-instatement, withdrawal or cancellation (by MF) the certificate number is not changed.",,string,S,,1,1,Y,,Y,"
+BR-CRF-001
+BR-CRF-005
+BR-CRF-076
+BR-CRF-126
+BR-CRF-129","CertificateIdentifierType (GET)
+PostCertificateIdentifierType (POST/PUT)",certificateNumber
+FLD-CRF-026,Revision number,CertificateID,"A revision number assigned by the NB to an issued, re-issued, supplemented, amended or restricted certificate. In case of suspension, re-instatement, withdrawal or cancellation (by MF) the revision number is not changed.",,string,XS,,0..1,0..1,Y,,Y,"BR-CRF-001
+BR-CRF-005
+BR-CRF-076
+BR-CRF-126","CertificateIdentifierType (GET)
+PostCertificateIdentifierType (POST/PUT)",certificateRevisionNumber
+FLD-CRF-027,Decision date,CertificateID,"The date of the decision to suspend, re-instate, withdraw or cancel by MF a certificate. When a certificate is 'issued', 're-issued', 'supplemented', 'amended' or  'restricted' the decision date is not applicable.",,date,,,0..1,0..1,Y,,Y,BR-CRF-133,"CertificateIdentifierType (GET)
+PostCertificateIdentifierType (POST/PUT)",decisionDate
+FLD-CRF-028,Notified Body identification,CertificateID,The NB Identification number (assigned by NANDO) of the NB who issued the certificate.,,Actor - FLD-ACT-001  -[Actor],,,1,1,Y,,Y,"BR-CRF-001
+BR-CRF-006
+BR-CRF-007
+BR-CRF-008
+BR-CRF-049
+BR-CRF-141","CertificateIdentifierType (GET)
+PostCertificateIdentifierType (POST/PUT)",NBActorCode
+FLD-CRF-002,Preceding certificate(s) identifier,Certificate,"In case of a re-issued certificate, one or more identification(s) of previous certificates. In case of a new certificate version a single identification of the previous version of the certificate.
+Refer also to fields of entity CertificateID.",,CertificateID,,,0..*,0..*,,,Y,"BR-CRF-121
+BR-CRF-122","precedingCertificateIdentifiersType (GET)
+PostPrecedingCertificateIdentifiersType (POST/PUT)",precedingCertificate
+FLD-CRF-003,Starting certificate validity date,Certificate,The starting certificate validity date can be different from the date of issue (by default the system will provide an equal value as for the date of issue).  It cannot be earlier than the date of issue and can be postponed by maximum 3 months from the date of issue.,,date,,,1,1,Y,,Y,"BR-CRF-054
+BR-CRF-023
+BR-CRF-022
+BR-CRF-132","IssuedCertificateType (GET)
+PostCertificateType (POST/PUT)",startValidityDate
+FLD-CRF-003X,Starting decision applicability date,Certificate,The “starting validity date decision” can be different from the decision date (by default the system will provide an equal value as for the decision date).  It cannot be earlier than the Decision date and can be postponed by maximum 3 months from the decision date.,,date,,,1,1,Y,,Y,BR-CRF-134,CertificateStatusChangeDecisionType,startApplicabilityDate
+FLD-CRF-004,Date of expiry,Certificate,"The expiry date of the certificate. It is set when a new certificate is issued (status issued or re-issued) . It can also be changed in case of a restriction. It cannot be changed in all other cases (supplement, amend, restrict, suspend, re-instate, withdraw or canceled by MF).",,date,,,1,1,Y,,Y,"BR-CRF-001
+BR-CRF-024
+BR-CRF-025
+BR-CRF-026
+BR-CRF-056
+BR-CRF-135 RULE-00060","IssuedCertificateType (GET)
+PostCertificateType (POST/PUT)",expiryDate
+FLD-CRF-006,Applicable regulation,Certificate,Indication (enumeration) if the certificate is for MDR or IVDR devices.,ENUM_CRF_Regulation,enum,,,1,1,Y,,Y,"BR-CRF-001
+BR-CRF-003",,
+FLD-CRF-007,Certificate type,Certificate,Indicates (enumeration) the certificate type.,ENUM_CRF_CertificateType,enum,,,1,1,Y,,Y,"BR-CRF-001
+BR-CRF-004 RULE-00060","ProductProcedureType (GET)
+QualityProcedureType (GET)
+PostCertificateProductProcedureType (POST/PUT)",applicableRegulation
+FLD-CRF-008,Status change reason,Certificate,The reasons (enumeration) for submitting a new certificate version. It does not apply to the first version of a certificate i.e. to an issued or re-issued certificate.,"ENUM_CRF_AMENDED_StatusChangeReason
+ENUM_CRF_REINSTATED_StatusChangeReason
+ENUM_CRF_CANCELLEDBYMF_StatusChangeReason
+ENUM_CRF_WITHDRAWN_StatusChangeReason
+ENUM_CRF_SUSPENDED_StatusChangeReason
+ENUM_CRF_RESTRICTED_StatusChangeReason
+ENUM_CRF_SUPPLEMENTED_StatusChangeReason",enum,,,0..*,0..*,,,Y,"BR-CRF-002
+BR-CRF-086
+BR-CRF-095
+BR-CRF-088
+BR-CRF-102
+BR-CRF-101
+BR-CRF-096
+BR-CRF-100
+BR-CRF-138",CertificateStatusChangeDecisionType,statusChangeReason
+FLD-CRF-244,Decision comments,Certificate,Notified Body' comments regarding the certificate status change reasons. This filed is applicable when change in certificate status occur.,,LanguageSpecificContent [EUDAMED -  Common Entities],,,0..*,0..*,,,,BR-CRF-187,DecisionType,comments
+FLD-CRF-255,Other' comments for status change reason,Certificate,Notified Body' comments for option 'Others' within the status change reason. ,,LanguageSpecificContent [EUDAMED -  Common Entities],,,0..*,0..*,,,Y,BR-CRF-240,CertificateStatusChangeDecisionType,otherChangeReason
+FLD-CRF-010,Status,Certificate,"Indicates (enumeration) if it is a new certificate (issued, re-issued) or a new certificate version (Amended, Supplemented, Suspended, Re-instated, Withdrawn or Cancelled by MF). ",ENUM_CRF_CertificateStatus,enum,,,1,1,Y,,Y,"BR-CRF-001
+BR-CRF-060
+BR-CRF-061
+BR-CRF-062
+BR-CRF-063
+BR-CRF-064
+BR-CRF-065
+BR-CRF-066
+BR-CRF-067
+BR-CRF-070
+BR-CRF-071
+BR-CRF-037
+BR-CRF-138
+RULE-00063","IssuedCertificateType (GET)
+PostCertificateStatusType (POST/PUT)",status
+FLD-CRF-011,Version,Certificate,Indicates the version of the certificate.,,"VersionData - FLD-EUD-014 - 
+[EUDAMED -  Common Entities]",,,1,1,Y,,Y,"BR-CRF-081
+BR-CRF-082
+BR-CRF-180",,
+FLD-CRF-014,Decision document(s) for the status change,Certificate,"The electronic form of the NB official decision (paper document) for the suspension, re-instatement, withdrawal or cancellation by the MF. The NB also identifies the languages of each uploaded document (official paper document). ",,StoredDocument  [EUDAMED -  Common Entities],,Y,0..*,0..*,,Y,,"BR-CRF-074
+BR-CRF-137
+BR-CRF-145
+BR-CRF-146",CertificateStatusChangeDecisionType,statusChangeDecisionDocument
+FLD-CRF-015,Conditions or limitations,Certificate,The conditions (includes limitations) applying to the certificate. The conditions are provided in the certificate languages identified by the NB (when it uploads the certificate documents - see field certificateDocument).,,LanguageSpecificContent [EUDAMED -  Common Entities],L,Y,0..*,0..*,,,Y,"BR-CRF-139
+BR-CRF-148
+RULE-00070","IssuedCertificateType (GET)
+PostCertificateConditionsType (POST/PUT)",conditions
+FLD-CRF-022,Special device type,Certificate,Defines the type of devices linked to the certificate. Applies only for certificate of type quality.,ENUM_CRF_SpecialDeviceType ,enum,,,0,3..5,,,Y,"BR-CRF-116
+BR-CRF-192",QualityProcedureType,specialDevice
+FLD-CRF-016,Certificate document(s),Certificate,"The official paper certificate(s) in electronic form, in case of an issued, re-issued, amended, supplemented or restricted certificate. The NB also identifies the languages of each uploaded document (official paper certificate). ",,StoredDocument  [EUDAMED -  Common Entities],,Y,1..*,1..*,,,Y,"BR-CRF-032
+BR-CRF-033
+BR-CRF-136",ConformityAssessmentType,documents
+FLD-CRF-018,Certificate language,Certificate,The list of languages the certificate is supporting,ENUM_MDR_LANGUAGE,String,,,1..*,1..*,,,Y,"BR-CRF-031
+BR-CRF-057
+BR-CRF-153
+BR-CRF-190
+RULE-00070",DocumentType,Languages
+FLD-CRF-020,Is SPP applicable?,Certificate,Define the device scope,,boolean,,,0,1,,,Y,"BR-CRF-001
+BR-CRF-017
+BR-CRF-018
+BR-CRF-211",PostCertificateType,SPPScope
+FLD-CRF-021,SPP Type,Certificate,Lists the SPP options,ENUM_CRF_CertificateSPPType,enum,,,0,0..1,,,Y,"BR-CRF-001
+BR-CRF-017
+BR-CRF-091",CertificateType,SPPEnum
+FLD-CRF-029,Manufacturer identification,ProductProcedure,"Identification of the MF in case of a product conformity assessment procedure. The MF is identified by its SRN (a unique identification number assigned to the MF when it is registered as an Actor in Eudamed).
+
+Notes: In a product conformity assessment procedure the MF is mandatory. 
+For the case of a quality conformity assessment procedure refer to fields mfSRN and spppSRN in entity QualityProcedure.",,"Manufacturer - FLD-ACT-001
+Actor [Actor]",,,1,,Y,,Y,"BR-CRF-001
+BR-CRF-009
+BR-CRF-010
+BR-CRF-011
+BR-CRF-050
+BR-CRF-144
+RULE-00089","ProductProcedureType (GET)
+PostCertificateProductProcedureType (POST/PUT)","MFActorCode (GET)
+MFActor (POST/PUT)"
+FLD-CRF-030,Authorised representative identification,ProductProcedure,"Identification of one AR when the product conformity assessment procedure relates to a non EU MF. The AR is identified by its SRN (a unique identification number assigned to the AR when it is registered as an Actor in Eudamed).
+
+Note: For the case of a quality conformity assessment procedure refer to field arSRN in entity QualityProcedure.",,"Authorised Representative - FLD-ACT-001
+Actor [Actor]",,,0..1,,Y,,Y,"BR-CRF-001
+BR-CRF-012
+BR-CRF-013
+BR-CRF-014
+BR-CRF-015
+BR-CRF-016
+BR-CRF-051
+BR-CRF-144
+RULE-00089","ProductProcedureType (GET)
+PostCertificateProductProcedureType (POST/PUT)","ARActors (POST/PUSH)
+ARActorCodes (GET)"
+FLD-CRF-031,Manufacturer identification,QualityProcedure,"Identification of the MF in case of a quality conformity assessment procedure which includes devices and/or device groups and/or custom-made devices. The MF is identified by its SRN (a unique identification number assigned to the MF when it is registered as an Actor in Eudamed).
+
+Notes: 
+In a quality conformity assessment procedure an MF must be provided if the assessment includes devices or device groups or custom-made devices, and a system or procedure pack producer - SPPP must be provided if the assessment includes system or procedure packs - SPP (see field spppSRN in entity QualityProcedure).
+For the case of a product conformity assessment procedure refer to field mfSRN in entity ProductProcedure.",,"Manufacturer - FLD-ACT-001
+Actor [Actor]",,,,0..1,Y,,Y,"BR-CRF-001
+BR-CRF-009
+BR-CRF-010
+BR-CRF-011
+BR-CRF-050
+BR-CRF-144
+RULE-00089",QualityProcedureType,MFActor
+FLD-CRF-032,SPPP identification,QualityProcedure,Identification of the system or procedure pack producer (SPPP) in case of a quality conformity assessment procedure which includes system or procedure packs (SPP). The MF is identified by its SRN (a unique identification number assigned to the MF when it is registered as an Actor in Eudamed).,,"Systems or Procedure Pack Producer - FLD-ACT-001
+Actor [Actor]",,,,0..1,Y,,Y,"BR-CRF-001
+BR-CRF-010
+BR-CRF-011
+RULE-00089",QualityProcedureType,PRActor
+FLD-CRF-033,Authorised representative identification,QualityProcedure,Identification of one or more AR when the product conformity assessment procedure relates to a non EU MF. The AR is identified by its SRN (a unique identification number assigned to the AR when it is registered as an Actor in Eudamed).,,"Authorised Representative - FLD-ACT-001
+Actor [Actor]",,,,0..*,Y,,Y,"BR-CRF-001
+BR-CRF-012
+BR-CRF-013
+BR-CRF-014
+BR-CRF-015
+BR-CRF-016
+BR-CRF-051
+BR-CRF-144
+RULE-00089",ConformityAssesmentType,ARActors
+FLD-CRF-257,Documents for CECP,MechanismForScrutiny,CECP reference number generated by EUDAMED to each CECP record registered by Notified Bodies.,,cecpReferenceNumber - FLD-CRF-367 - CECP [Certificates],,,1..*,1..*,,Y,,,CECPType,reference
+FLD-CRF-236,(MDR) Mechanism for scrutiny / Clinical evaluation assessment report by the NB,MechanismForScrutiny,A report drawn by the Notified Body upon the conformity assessment report provided by the Manufacturer of the device under Mechanism for scrutiny,,StoredDocument  [EUDAMED -  Common Entities],,,1,1,,Y,,BR-CRF-163,CECPType,finalCEAssessmentReport
+FLD-CRF-252,(IVDR) Mechanism for scrutiny Performance evaluation assessment report by the NB,MechanismForScrutiny,A report drawn by the Notified Body upon the conformity assessment report provided by the Manufacturer of the device under Mechanism for scrutiny,,StoredDocument  [EUDAMED -  Common Entities],,,1,0,,Y,,BR-CRF-163,MechanismForScrutinyIVDRType,PEAssessmentReport
+FLD-CRF-237,(MDR/IVDR) Mechanism for scrutiny / Instruction for use,MechanismForScrutiny,Instruction for use means the information provided by the manufacturer to inform the user of a device's intended purpose and proper use and of any precautions to be taken,,InstructionForUse,,Y,1..*,1..*,,Y,,"BR-CRF-163
+BR-CRF-186","CECPScopeType
+MechanismForScrutinyIVDRType",instructionsForUse
+FLD-CRF-238,(MDR) Mechanism for scrutiny / Is scientific opinion followed?,MechanismForScrutiny,Indicates whether Notified Body has followed the scientific opinion and there is no divergencies in opinions provided by the screening panel.,,boolean,,,1,1,,Y,,BR-CRF-185,CECPType,SOFollowed
+FLD-CRF-239,(MDR / IVDR) Mechanism for scrutiny / Justification (for not following the scientific opinion),MechanismForScrutiny,A document to be provided by the Notified Body in case they have divergence in opinion with the screening panel that provided the scientific opinion.,,StoredDocument  [EUDAMED -  Common Entities],,,1,1,,,Y,"BR-CRF-163
+BR-CRF-184","CECPType
+MechanismForScrutinyIVDRType",justificationNotFollowingSO
+FLD-CRF-240,(MDR) Mechanism for scrutiny / Scientific opinion document,MechanismForScrutiny,A document drawn up by the screening pannel and provided to the Notified Body. ,,StoredDocument  [EUDAMED -  Common Entities],,,1,1,,,Y,BR-CRF-163,CECPType,SODocument
+FLD-CRF-258,(IVDR) Mechanism for scrutiny / Laboratory tests and the scientific opinion by the EU reference laboratory (EURL) applicable,MechanismForScrutiny,Wether the laboratory tests is applicable.,,boolean,,,1,0,,Y,,,MechanismForScrutinyIVDRType,laboratoryTestApplicable
+FLD-CRF-241,(IVDR) Mechanism for scrutiny / Laboratory tests and the scientific opinion by the EU reference laboratory (EURL),MechanismForScrutiny,A document drawn up by the EU reference laboratory.,,StoredDocument  [EUDAMED -  Common Entities],,,0..1,0,,Y,,BR-CRF-184,MechanismForScrutinyIVDRType,laboratoryTest
+FLD-CRF-259,(IVDR) Mechanism for scrutiny / Expert panels views applicable,MechanismForScrutiny,Whether the expert panels views is applicable,,boolean,,,1,0,,Y,,,MechanismForScrutinyIVDRType,expertPanelViewApplicable
+FLD-CRF-242,(IVDR) Mechanism for scrutiny / Expert panels views,MechanismForScrutiny,A document containing expert panel views expressed in accordance with Article 48(4).,,StoredDocument  [EUDAMED -  Common Entities],,,0..1,0,,Y,,BR-CRF-184,MechanismForScrutinyIVDRType,expertPanelViews
+FLD-CRF-243,(IVDR) Mechanism for scrutiny / Divergent views between the NB and the expert panel,MechanismForScrutiny,Whether there is a divergence between expert panel and the NB.,,boolean,,,0..1,0,,Y,,BR-CRF-185,MechanismForScrutinyIVDRType,divergentViewToExpertPanel
+FLD-CRF-245,(MDR) Mechanism for scrutiny / Disclaimer for publishing scientific opinion and justification (if applicable),MechanismForScrutiny,Notified Body shall acknowledge the disclaimer when providing scientific opinion and justification for not following the scientific opinion (if applicable) within the meaning of Article 109 (MDR).,,boolean,,,0..1,0..1,,,,BR-CRF-263,CECPType,acceptedDisclaimer
+FLD-CRF-264,Basic UDI-DI code : [BUDI code],MechanismForScrutiny,Basic UDI-DI code of the external CECP,,"FLD-UDID-14
+[UDI Device - DD BASIC UDI]",,,,0..*,,,,BR-CFR-320,NOCECP,basicUDI
+FLD-CRF-253,Basic UDI-DI,InstructionForUse,"Basic UDI-DI within the Mechanism for scrutiny. Basic UDI-DI must have the following characteristics:
+Risk class III (implantable) or
+Risk class Iib non-implantable (Active devices intended to administer and/or remove a medicinal product",,"Basic UDI- DI - FLD-UDID-14
+[UDI Device - DD BASIC UDI]",,,1..*,1..*,,Y,,BR-CRF-216,InstructionForUseType,basicUDI
+FLD-CRF-254,(Instruction for use uploaded document),InstructionForUse,One or more associated documents for an UDI-DI within the Basic UDI-DI.,,StoredDocument  [EUDAMED -  Common Entities],,,1..*,1..*,,Y,,BR-CRF-186,InstructionForUseType,instructionForUse

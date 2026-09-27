@@ -1,0 +1,29 @@
+Export to external Stakeholders, Field ID,Field Label,Entity Name,Field Name,Field Description / Notes,ENUM Reference Code ,Field Type,Field Size,Metadata Flag,User Entry Flag,Updateable Flag,Multilingual Flag,Occurrence,Confidential,Searchable,GDPR Flag,Public Access Flag,Data Exchange Flag,Business Rules,DTX Entity Name,DTX XSD Element Name
+,FLD-MAN-001,Mandate Id,Mandate,mandateId,The unique mandate identification reference,,String,XS,Y,N,N,,1,,,,Y,Y,BR-ACT-102,MandateType,identifier
+,FLD-MAN-002,Mandate to,Mandate,endDate,The mandate period end date. After this date the mandate is considered expired.,,Date,,,,Y,,0..1,,,,Y,Y,BR-ACT-108,MandateType,endDate
+,FLD-MAN-003,Mandate from,Mandate,startDate,The mandate period start date.,,Date,,,,Y,,1,,,,Y,Y,BR-ACT-108,MandateType,startDate
+,FLD-MAN-004,Is vigilance delegated to AR,Mandate,isVigilanceDelegatedToAR,With this option the Non-EU manufacturer delgates the management of vigilance data for his devices to the authorised representative.,,Boolean,,,,Y,,1,,,,,Y,,MandateType,isVigilanceDelegatedToAR
+,FLD-MAN-005,Upload annex,Mandate,annex,Document attachment provided by the manufacturer containing summary mandate information,DOC-ACT-004,"StoredDocument
+[EUDAMED -  Common Entities]",,,,Y,,1,,,,Y,Y,BR-ACT-117,MandateType,document
+,FLD-MAN-007,AR confirmation assessment,Mandate,ARConfirmation,Mandate request assessment by the authorised representative.,,MandateAssessment,,,,N,,1,,,,Y,,,MandateType,aRConfirmationDecision
+,FLD-MAN-008,Version,Mandate,version,Updates to mandates are considered new versions,,"VersionData
+[EUDAMED -  Common Entities]",,Y,N,N,,1,,,,Y,Y,BR-ACT-111,Entity,version
+,FLD-MAN-009,Manufacturer,Mandate,MF,The Non-EU manufacturer part of the mandate,,"Manufacturer - FLD-ACT-001
+Actor [Actor]",SRN,Y,N,N,,1,,,,Y,Y,,MandateType,actorCode
+,FLD-MAN-010,Authorised Representative,Mandate,AR,The authorised representative part of the mandate,,"Authorised Representative - FLD-ACT-001
+Actor [Actor]",SRN,,,N,,1,,,,Y,Y,,MandateType,actorCode
+,FLD-MAN-011,Termination date,Mandate,terminateDate,The termination date of the mandate,,Date,,,,N,,0..1,,,,Y,Y,BR-ACT-109,MandateType,MandateEarlyTerminationDecisionType
+,FLD-MAN-016,Terminate justification,Mandate,terminateJustification,The termination justification provided by the actor performing the termination,,String,L,,,N,,0..1,,,,Y,Y,,MandateType,MandateEarlyTerminationDecisionType
+,FLD-MAN-017,Terminated by,Mandate,terminateActor,The actor (MF or AR) who performs the termination,,"MF or AR - FLD-ACT-001
+Actor [Actor]",SRN,Y,N,N,,0..1,,,,Y,,,MandateType,MandateEarlyTerminationDecisionType
+,FLD-MAN-012,Justification,MandateAssessment,justification,Mandate assessment justification,,"Comment
+[EUDAMED -  Common Entities]",L,,,N,,0..1,,,,,Y,,DecisionType,comments
+,FLD-MAN-013,Decision date,MandateAssessment,decisionDate,Mandate assessment date,,Date,,Y,N,N,,1,,,,,Y,,DecisionType,date
+,FLD-MAN-014,Assessment outcome/decision,MandateAssessment,mandateState,Mandate assessment state,ENUM_MANDATE_STATE,Enum,,,,N,,1,,,,,Y,"BR-ACT-097
+BR-ACT-101
+BR-ACT-106
+BR-ACT-107
+BR-ACT-112",Entity,"state
+(Always REGISTERED)"
+,FLD-MAN-015,Assessment provider,MandateAssessment,actorProvidingAssessment,Which actor performed the assessment,,"Authorised Representative - FLD-ACT-001
+Actor [Actor]",SRN,Y,N,N,,1,,,,,Y,,DecisionType,ownerActorCode

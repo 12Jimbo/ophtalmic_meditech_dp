@@ -1,0 +1,39 @@
+Export to external Stakeholders, Field ID,Field Label,Entity Name,Field Name,Field Description / Notes,ENUM Reference Code ,Field Type,Field Size,Metadata Flag,User Entry Flag,Updateable Flag,Multilingual Flag,Occurrence,Confidential,Searchable,GDPR Flag,Public Access Flag,Data Exchange Flag,Business Rules,DTX Entity Name,DTX XSD Element Name
+,FLD-ACT-081,Justification,ActorRegistrationAssessment,justification,An assessment justification describing in detail the reason for the outcome in order to correct his request,,"Comment
+[EUDAMED -  Common Entities]",L,,,N,,0..1,,,,,Y,"Required for ""not approved"" assessments
+BR-ACT-034",DecisionType,comments
+,FLD-ACT-082,Decision date,ActorRegistrationAssessment,decisionDate,The assessment decision date,,Date,,Y,N,N,,1,,,,,Y,,DecisionType,date
+,FLD-ACT-083,Assessment outcome/decision,ActorRegistrationAssessment,actorRegistrationRequestState,The assessment decision outcome,ENUM_ACT_REQUEST_STATE,Enum,,,,N,,1,,,,,Y,"BR-ACT-015
+BR-ACT-042
+BR-ACT-044
+BR-ACT-045
+BR-ACT-046
+BR-ACT-047
+BR-ACT-048
+BR-ACT-064
+BR-ACT-067
+BR-ACT-113
+BR-ACT-122",ActorRegistrationResponseType,"ActorRegistrationRefusalDecisionType
+ActorRegistrationCorrectionDecisionType
+ActorRegistrationApprovalDecisionType"
+,FLD-ACT-084,Reason for refusal,ActorRegistrationAssessment,refusalReasons,Refusal actor registration request assessment outcomes contain a refusal reason,ENUM_ACT_REFUSAL_REQ,Enum,,,,N,,0..1,,,,,Y,BR-ACT-023,ActorRegistrationRefusalDecisionType,"reason
+RefusalReasonEnum"
+,FLD-ACT-085,Correction reasons,ActorRegistrationAssessment,correctionReasons,Rejected actor registration request assessment outcomes contain a rejection reason,ENUM_ACT_CORRECT_REQ,Enum,,,,N,,0..1,,,,,Y,BR-ACT-020,ActorRegistrationCorrectionDecisionType,"reason
+CorrectionReasonEnum"
+,FLD-ACT-086,Assessment provider,ActorRegistrationAssessment,actorProvidingAssessment,Which actor performed the assessment,,Actor [Actor],,Y,N,N,,1,,,,,Y,,DecisionType,ownerActorCode
+,FLD-ACT-087,Application Id,RegistrationRequest,applicationId,A unique actor registration request identifier used for reference during the assessment procedure,,Integer,,Y,N,N,,1,,,,,Y,,ActorRegistrationType,applicationID
+,FLD-ACT-088,Additional Information,RegistrationRequest,additionalInformation,Comment provided by the Requesting User during registration,,String,L,,,N,,0..1,,,,,,,ActorRegistrationType,additionalInformation
+,FLD-ACT-089,Submission date,RegistrationRequest,submissionDate,The date of the actor registration request submission to Eudamed,,Date,,Y,N,N,,0..1,,,,,Y,,ActorRegistrationType,initialSubmissionDate
+,FLD-ACT-090,Actor information,RegistrationRequest,actorInformation,The actor created after a registered actor registration request,,Actor [Actor],,,,N,,1,,,,,Y,,ActorRegistrationRequestType,actor
+,FLD-ACT-091,Previous Assessments by CA,RegistrationRequest,CAoutcome,Actor validation assessment by the competent authority,,ActorRegistrationAssessment,,,,N,,0..*,,,,,,,ActorRegistrationPreviousAssesmentsType,Previous Assessments
+,FLD-ACT-092,Previous Assessments by AR,RegistrationRequest,ARoutcome,Actor verification by the authorised representative for a Non-EU manufacturer actor registration request,,ActorRegistrationAssessment,,,,N,,0..*,,,,,,,ActorRegistrationPreviousAssesmentsType,Previous Assessments
+,FLD-ACT-093,Requesting User,RegistrationRequest,requestingUser,Authenticated user information requesting the actor registration request,,EudamedAccount,,Y,N,N,,1,,,,,,,ActorRegistrationRequestType,LAA
+,FLD-ACT-094,Signed agreement annex,RegistrationRequest,agreement,Document attachment provided by the requestor confirming to agree with the Eudamed conditions ,DOC-ACT-002,"StoredDocument 
+[EUDAMED -  Common Entities]",,,,N,,1,,,,,Y,BR-ACT-117,ActorRegistrationRequestType,agreement
+,FLD-ACT-095,Organisation identification document,RegistrationRequest,organisationIdentificationDocument,Document attachment provided by the requestor identifying the organisation he is representing,DOC-ACT-006,"StoredDocument
+[EUDAMED -  Common Entities]",,,,N,,0..1,,,,,Y,BR-ACT-117,ActorRegistrationRequestType,organisationIdentificationDocument
+N,FLD-ACT-096,EUDAMED email of the user for the actor,EudamedAccount,email,Requesting user email,,EmailAddress,XS,,,N,,1,,,Y,,,,,
+,FLD-ACT-097,Sub-contractor,EudamedAccount,isSubcontractor,Is requesting user a subcontractor of the actor to be registered,,Boolean,,,,N,,1,,,,,,BR-IAM-047,,
+,FLD-ACT-098,Sub-contractor Organisation,EudamedAccount,subcontractorOrganisation,Subcontractor information of requesing user,,"Organisation
+[EUDAMED -  Common Entities]",,,,N,,0..1,,,,,,BR-IAM-047,ActorRegistrationRequestType,LAASubcontractor
+,FLD-ACT-099,Duplicate Justification,RegistrationRequest,duplicateJustification,Justification from the requestor why he continues the registration after being informed about possible duplicates,,String,L,,,N,,0..1,,,,,,,ActorRegistrationRequestType,duplicateJustification

@@ -1,0 +1,50 @@
+MDR Eudamed - Data Dictionary,,,,,,,,,,,,,,,,,,,,
+,,EA,,,EA,,EA,,,,,,,,,,,,,
+ Field ID,Field Label,Entity Name,Field Name,Database property,Field Description / Notes,ENUM Reference Code ,Field Type,Field Size,Multilingual Flag,Occurrence,Confidential,Searchable,GDPR Flag,Public Access Flag,Business Rules,Updateable ,Updateable (version 'for Correction'),Field Applicable for MDR,DTX Entity,XSD Element Name
+FLD-UDID-01,Issuing Entity Basic UDI-DI,BasicUDIData,IssuingEntity,DEVICE_IDENTIFIERS:ISSUING_AGENCY_ID,"Assigned Issuing Entities that will generate the DI Codes allocated for  all DI`s inside Eudamed (Basic UDI DI, UDI-DI, Unit of Use DI, Secondary Di , Package level DI).
+
+The Commission shall designate one or several entities to operate a system for assignment of UDIs ('issuing entity')",ENUM_MDR_IssuingEntity,Enum,,,1,,Y,,Y,    ,,,Y,DIIdentififierType,issuingEntityCode
+FLD-UDID-14,Basic UDI- DI code,BasicUDIData,DI Code,BASIC_UDI_DATA:BASIC_UDI_ID(CODE),"Device Identifier code/value (DI Code). Together with the Issuing Entity creates the uniqness of the element to which they are assigned (Basic UDI-DI , UDI-DI, etc.)
+
+The Basic UDI-DI is the primary identifier of a device/System or Procedure Pack model.It is the main key for records in the UDI database and is referenced in relevant certificates and EU declarations of conformity",,String,XS,,1,,Y,,Y,BR-UDID-03    ,,,Y,DIIdentififierType,DICode
+FLD-UDID-44,System or Procedure Pack Producer Actor ID,BasicUDIData,SRN of the System or Proceudre Pack Producers  that registers the System or Procedure Pack.,BASIC_UDI_DATA:RISK_CLASS_ID,Actor ID of the System or Procedure Pack,,"Actor - System or Procedure Pack Producer - FLD-ACT-001
+[Actor -  Actor]",,,1,,Y,,Y,,,,Y,PRBasicUDIType,PRActorCode
+FLD-UDID-16,Risk Class,BasicUDIData,riskClass,BASIC_UDI_DATA:RISK_CLASS_ID,"Highest Risk Class of the Devices in the System/Procedure pack.
+
+",ENUM_UDID_RiskClass,Enum,,,1,,Y,,Y,,,Y,Y,BasicUDIType,riskClass
+FLD-UDID-20,System or Procedure Pack Model ,BasicUDIData,deviceModel,BASIC_UDI_DATA:DEVICE_MODEL,"Information allowing the identification of the System/Procedure pack Model. 
+
+At least one of the System/Procedure pack identification details System/Procedure pack Model or the System/Procedure pack Name) have to be provided for a Basic UDI-DI.",,String,S ,,"0..1 
+
+Either SPP Model or SPP Name is required (both can be provided)",,Y,,Y,BR-UDID-66    ,"Y
+(Edit; Add; Delete)",Y,Y,"BasicUDIType
+ModelNameGroup","model
+
+In case only the Model is provided for a Device - then BasicUDIType.model property will be provided (no ModelNameGroup in this case).
+
+If both Model and Name are available for the Device - ModelNameGroup has to be provided containing both   properties model and name "
+FLD-UDID-22,System/Procedure pack Name,BasicUDIData,deviceName,BASIC_UDI_DATA:DEVICE_NAME,"Information allowing the identification of the System/Procedure pack Model. 
+
+At least one of the System/Procedure pack identification details System/Procedure pack Model or the System/Procedure pack Name) have to be provided for a Basic UDI-DI.",,String,S ,,"0..1 
+
+Either SPP Model or SPP Name is required (both can be provided)",,Y,,Y,BR-UDID-66    ,"Y
+(Edit; Add; Delete)",Y,Y,ModelNameGroup,"name
+
+In case only the Name is provided for a Device - then ModelNameGroup.name property will be provided
+
+If both Model and Name are available for the Device - ModelNameGroup has to be provided containing both   properties model and name "
+FLD-UDID-40,Version,BasicUDIData,versionData,BASIC_UDI_DATA:VERSION_NUMBER,Reference to the version of the Basic UDI DI,,"VersionData
+[EUDAMED- Common Entities]",,,"1 
+
+Managed by EUDAMED",,,,Y,,,,Y,Entity,
+FLD-UDID-260,Medical Purpose of the System or Procedure Pack,BasicUDIData,medicalPurpose,,"Description of the Medical Purpose of the System or Procedure Pack.
+
+Field is applicable for System and Procedure Packs and refers to the Indication of the specific medical purpose of the System or Procedure Pack Producer",,"LanguageSpecificContent
+[EUDAMED- Common Entities]",XL,Y,1,,,,Y,,"Y
+(Edit; Add)",Y,"Y
+
+Only in case of Systems and procedure packs",PRBasicUDIType,medicinalPurpose
+FLD-UDID-261,System or Procedure Pack,BasicUDIData,systemorProcedurePackType,,Determine if current System or Procedure Pack is a System or a Procedure Pack,"SystemProcedurePackTypeEnum
+(ENUM_UDID_SystemProcedurePackType)",Enum,,,1,,Y,,Y,,,,"Y
+
+Only in case of Systems and procedure packs",PRBasicUDIType,type

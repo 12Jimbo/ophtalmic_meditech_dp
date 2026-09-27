@@ -1,0 +1,511 @@
+MDR Eudamed - Data Dictionary,,,,,,,,,,,,,,,,,,,,,,
+,,EA,EA,,EA,,,,,,,,,,,,,,,,,
+ Field ID,Field Label,Entity Name,Field Description / Notes,ENUM Reference Code ,Field Type,Field Size,Multilingual Flag,Occurrence,Searchable,GDPR Flag,Public Access Flag,Business Rules,Updateable ,Field Applicable for MDD/AIMDD,Field Applicable for IVDD,DTX Entity,XSD Element Name,,,,,
+FLD-UDID-295,Issuing Entity for EUDAMED DI,EUDIData,"Assigned Issuing Entities that will generate the DI Codes allocated for  all DI`s inside Eudamed 
+
+
+
+","ENUM_MDR_IssuingEntity. 
+In case of EUDAMED DI- Issuing Entity is by default EUDAMED",Enum,,,1,,,Y,    BR-UDID-644,,Y,Y,DIIdentififierType,issuingEntityCode,,,,,
+FLD-UDID-42,EUDAMED DI code,EUDIData,"
+The EUDAMED DI  is the primary identifier of a device model for a Legacy Device.
+
+EUDAMED DI can be provided by the Manufacturer based on previously defined algorithm or can be automatically generated based on the UDI-DI if this is provided for the current  Legacy Device.",,String,XS,,1,Y,,Y,"BR-UDID-003
+BR-UDID-640
+BR-UDID-641   
+BR-UDID-642 
+",,Y,Y,DIIdentififierType,DICode,,,,,
+FLD-UDID-10,Legal Manufacturer SRN,EUDIData,SRN of the Manufacturer that registers the Device.,,"Actor - Manufacturer - FLD-ACT-001
+[Actor -  Actor]",SRN,,1,Y,,Y,    ,,Y,Y,DeviceBasicUDIType,MFActorCode,,,,,
+FLD-UDID-11,Applicable Legislation,EUDIData,"Applicable Legislation of the Device.
+
+The device can have only one Applicable Legislation. Either a Regulation value can be selected/provided (MDR or IVDR) or a Directive Regulation value (MDD, AIMDD or IVDD) - in the case of Directive Devices.","ENUM_MDR_LEG
+",Enum,,,1,Y,,Y,BR-UDID-646,,Y,Y,"MDEUDIType
+IVDEUDIType","For MDD or AIMDD applicableLegislation property in the MDEUDIType gives the type of Applicable legislation
+
+For IVDD - if entity IVDEUDIType is provided Applicable legislation is IVDD",,,,,
+FLD-UDID-12,"Is it a System which is  a Device in itself, Procedure pack which is a Device in itself",EUDIData,"Property defines if the Legacy Deviuce  is refering to a  Device , a System which is  a Device in itself or a Procedure pack which is a Device in itself (in accordance with the Art. 22(4) MDR ).","DevicesSystemProcedurePackTypeEnum
+(ENUM_UDID_DeviceSystemProcedurePackType)",Enum,,,1,,,Y,,,Y,,MDRBasicUDIType ,"
+type
+
+",,,,,
+FLD-UDID-356,Is it a Kit,EUDIData,"Property defines if the Device is a Kit or not
+
+Option Kit is only applicable in case of IVDD  Devices ",,Boolean,,,1,,,Y,,,,Y,IVDApplicablePropertiesGroup ,"
+ IVDD - KIT",,,,,
+FLD-UDID-13,Special Device Type,EUDIData,"Property defines  if the Device is a Special Device Type anf if so , the type of Special device Type. 
+
+In case the Device is  a Standard Device having  the option System or Procedure Pack (which is a Device in itself) or a System or Procedure Pack - field is not supplied.",ENUM_UDID_SpecialDevice,Enum,,,0..1,Y,,Y,BR-UDID-705,,Y,Y,"MDRBasicUDIType
+
+IVDRBasicUDIType",specialDevice,,,,,
+FLD-UDID-15,Authorised Representative,EUDIData,"The SRN of the Authorised Representative associated with the Legacy Device.
+
+For Manufacturers which are not established in the Union (NonEU Manufacturers)  providing the Authorised Representative for the Legacy Device is required.",,"Actor - Aurhorised Representative - FLD-ACT-001
+[Actor -  Actor]",SRN,,"0..1 
+
+Applicable and mandatory only for nonEU MF",Y,,Y,BR-UDID-011,"Y
+(Edit)",Y,Y,DeviceBasicUDIType,ARActorCode,,,,,
+FLD-UDID-16,Risk Class,EUDIData,"Risk Class of the Device associated with the Legacy Device.
+
+Device Risk Class is dependent directly on the Applicable Legislation of the Device.",ENUM_UDID_RiskClass,Enum,,,1,Y,,Y,,,Y,Y,BasicUDIType,riskClass,,,,,
+FLD-UDID-18,"Tissues and cells - Presence of animal tissues or Cells, or their derivates",EUDIData,Property defines if the Device has presence of animal tissues or cells or their derivates,,Boolean,,,1,,,Y,,,Y,Y,DeviceBasicUDIType,animalTissuesCells,,,, ,
+FLD-UDID-23,"Tissues and cells - presence of human tissues or cells, or their derivates",EUDIData,Property defines if the Device has presence of human tissues or cells or their derivates,,Boolean,,,1,,,Y,,,Y,Y,DeviceBasicUDIType,humanTissuesCells,,,,,
+FLD-UDID-34,Tissues and cells - Presence of cells or substances of microbial origin,EUDIData,Property defines if the Device  contains presence of substances of microbial origin,,Boolean,,,1,,,Y,,,,Y,IVDRBasicUDIType,microbialSubstances,,,,,
+FLD-UDID-20,Device Model ,EUDIData,"I nformation allowing the identification of the device - Device Model. 
+
+At least one of the Device identification details (Device Model or the Device Name) have to be provided for a EUDAMED DI.",,String,S ,,"0..1 
+
+Either Device Model or Device Name is required (both can be provided)",Y,,Y,BR-UDID-066    ,"Y
+(Edit; Add; Delete)",Y,Y,"BasicUDIType
+ModelNameGroup","model
+
+In case only the Model is provided for a Device - then BasicUDIType.model property will be provided (no ModelNameGroup in this case).
+
+If both Model and Name are available for the Device - ModelNameGroup has to be provided containing both   properties model and name ",,,,,
+FLD-UDID-22,Device Name,EUDIData,"Information allowing the identification of the device - Device Name. 
+
+At least one of the Device identification details (Device Model or the Device Name) have to be provided for a EUDAMED DI.",,String,S ,,"0..1 
+
+Either Device Model or Device Name is required (both can be provided)",Y,,Y,BR-UDID-066    ,"Y
+(Edit; Add; Delete)",Y,Y,ModelNameGroup,"name
+
+In case only the Name is provided for a Device - then ModelNameGroup.name property will be provided
+
+If both Model and Name are available for the Device - ModelNameGroup has to be provided containing both   properties model and name ",,,,,
+FLD-UDID-28,Active Device,EUDIData,"Property defines if the EUDAMED DI corresponds to an Active device or not.
+
+'Active device' means any device, the operation of which depends on a source of energy other than that generated by the human body for that purpose, or by gravity, and which acts by changing the density of or converting that energy. 
+
+Devices intended to transmit energy, substances or other elements between an active device and the patient, without any significant change, shall not be deemed to be active devices. Software shall also be deemed to be an active device.",,Boolean,,,1,Y,,Y,BR-UDID-007   ,,Y,,MDRApplicablePropertiesGroup,active,,,,,
+FLD-UDID-29,Device Intended to administer and/or Remove medicinal product,EUDIData,Property defines if the  Device  is intended to administer or remove medicinal product,,Boolean,,,1,Y,,Y,,,Y,,MDRApplicablePropertiesGroup,administeringMedicine,,,,,
+FLD-UDID-30,Implantable,EUDIData,"Property defines if the Legacy Device corresponds to a device that is Implantable or not.
+
+Any device intended to be partially introduced into the human body by clinical intervention and intended to remain in place after the procedure for at least 30 days shall also be deemed to be an implantable device.
+
+In case of Devices having the Risck Class "" Class I "" field Implantable has by default value ""False""",,Boolean,,,1,Y,,Y,"BR-UDID-007
+BR-UDID-676",,Y,,MDRApplicablePropertiesGroup,implantable,,,,,
+FLD-UDID-31,Measuring Function,EUDIData,Property defines if the Device has a Measuring Function or not,,Boolean,,,1,Y,,Y,,,Y,,MDRApplicablePropertiesGroup,measuringFunction,,,,,
+FLD-UDID-32,Reusable Surgical Instruments,EUDIData,"Property defines if the Device  is  a Reusable Surgical Instrument or not.
+
+'Reusable surgical instrument' means an instrument intended for surgical use in cutting, drilling, sawing, scratching, scraping, clamping, retracting, clipping or similar procedures, without a connection to an active device and which is intended by the Manufacturer to be reused after appropriate procedures such as cleaning, disinfection and sterilisation have been carried out. 
+
+In case of Devices being marked as Implantable (field ""Implantable"" has value ""True"" )field Reusable Surgical Instruments has by default value ""False""",,Boolean,,,1,Y,,Y,BR-UDID-677,,Y,,MDRApplicablePropertiesGroup,reusable,,,,,
+FLD-UDID-33,Companion Diagnostic,EUDIData,"Property defines if the Device corresponds to a device that has a role of Companion Diagnostic device or not.
+
+'Companion diagnostic’ means a device which is essential for the safe and effective use of a corresponding medicinal product to:
+-  identify, before and/or during treatment, patients who are most likely to benefit from the corresponding medicinal product; or
+- identify, before and/or during treatment, patients likely to be at increased risk of serious adverse reactions as a result of treatment with the corresponding medicinal product. ",,Boolean,,,1,Y,,Y,,,,Y,IVDRApplicablePropertiesGroup,companionDiagnostics,,,,,
+FLD-UDID-35,Near Patient Testing ,EUDIData,"Property defines if the Device  device is Near Patient testing or not.
+
+'Device for near-patient testing’ means any device that is not intended for self-testing but is intended to perform testing outside a laboratory environment, generally near to, or at the side of, the patient by a health professional;",,Boolean,,,1,Y,,Y,,,,Y,IVDRApplicablePropertiesGroup,nearPatientTesting,,,,,
+FLD-UDID-36,Patient Self Testing,EUDIData,"Property defines if the Device  is Self Patient testing device or not. 
+
+'Device for self-testing’ means any device intended by the manufacturer to be used by lay persons, including devices used for testing services offered to lay persons by means of information society services;",,Boolean,,,1,Y,,Y,,,,Y,IVDRApplicablePropertiesGroup,selfTesting,,,,,
+FLD-UDID-262,Reagent,EUDIData,Property defines if the Device is a reagent or not.,,boolean,,,1,Y,,Y,,,,Y,IVDRApplicablePropertiesGroup,reagent,,,,,
+FLD-UDID-263,Professional Testing,EUDIData,Property defines if the Device is designed to be used for Professional Testing or not.,,boolean,,,1,Y,,Y,,,,Y,IVDRApplicablePropertiesGroup,professionalTesting,,,,,
+FLD-UDID-264,Instrument,EUDIData,Property defines  if the Device  is an Instrument or not.,,boolean,,,1,Y,,Y,,,,Y,IVDRApplicablePropertiesGroup,instrument,,,,,
+FLD-UDID-50,Clinical Investigations associated to the EUDAMED DI,EUDIData,"References the Clinical Investigation Link, storing the details of Clinical Investigations associated to the EUDAMED DI.",,Clink,,,0..n,,,,BR-UDID-098 ,"Y 
+
+(Edit, Add, Delete)",Y,Y,DeviceBasicUDIType,clinicalInvestigationLinks,, ,,,
+humanProductCheck,"Presence of a substance which , if used separately, may be considered to be a medicinal product derived from human blood or plasma",EUDIData,Defines if the Device containes substances which may be considered medicinal product derived from human blood or plasma,,Boolean,,,0..1,,,Y,,,Y,,MDEUDIType,humanProductCheck ,,,,,
+medicinalProductCheck,"Presence of substance which, if used separately, may be considered to be a medicinal product",EUDIData,Defines if the Device containes substances which may be considered medicinal product,,Boolean,,,0..1,,,Y,,,Y,,MDEUDIType,medicinalProductCheck,,,,,
+FLD-UDID-39,Device Certificate Information associated with the Device,EUDIData,"References the Device Certificate Informations related to the Legacy Device.
+
+Providing Device Certificate Information is required for Legacy Devices (Notified Body, Certificate Number and Expiry Date). In case of Legacy Devices - all Certificates covering the Device have to be provided.  Several Device Certificate informations can be provided.
+
+Providing Certificate information is optionally (required if available) for MDD Class I Legacy Devices (with the exception of Measuring function ones) and for IVDD Devices having the risk class General. ",,DeviceCertificateInformation,,,"0..n
+
+Required to be provided for Legacy Devices with the exception of Devices being Class I Devices or Class IVDD General",,,,BR-UDID-113,,Y,Y,BasicUDIType,deviceCertificatesLinks,,,, , 
+FLD-UDID-40,Version ,EUDIData,Reference to the version of the EUDI,,"VersionData
+[EUDAMED- Common Entities]",,,"1 
+
+Managed by EUDAMED",,,,,,,,Entity,,,,,,
+FLD-UDID-51,Clinical Investigation/Performance study reference Number,Clink,"When registering the Device -  where applicable, the single identification number of the clinical investigation or investigations conducted in relation to the device  must be provided.
+
+Field stores the Clinical Investigation Number provided by the user when the Clinical Investigation is not registered in EUDAMED",,String,,,"1
+
+Occurrence applicable if Clinical Investigations are provided (FLD-UDID-50)",,,Y,,,Y,Y,ClinicalInvestigationLinkType,nonEUApplicableCountries,,,,,
+FLD-UDID-300,Countries outside EU where Clinical Investigation is performed,Clink,"List of Countries where the Clinical Investigation has been performed.
+
+Field is optional and can be provided only for Clinical Investigations performed Outside EU (Non EU Countries only).
+
+If provided, the Clinical Investigation is considered to be NonEU Clinical Investigation",ENUM_MDR_COUNTRY,"Country [EUDAMED- Common Entities]
+",,,"0..n 
+
+Occurrence applicable if Clinical Investigations are provided (FLD-UDID-50)",,,Y,,,Y,Y,ClinicalInvestigationLinkType,nonEUApplicableCountries,,,,,
+FLD-UDID-54,Version ,Clink,Reference to the version of the Link,,"VersionData
+[EUDAMED- Common Entities]",,,"1 
+
+Managed by EUDAMED",,,,,,Y,Y,Entity,,,,,,
+FLD-UDID-60,Certificate Type ,DeviceCertificateInformation,"When registering the Device, for Devices covered by Product certificates, user will have to provide identification details of the Product Certificate covering the Device.
+
+Property defines the type of Product Certificate associate with the Device. 
+
+In case of Legacy Devices, identification information about Directive Certificates covering the Devices  is required to be provided",Enum_UDI_Device_Certificate_Info_CertTypes,Enum,,,"1
+
+Occurrence applicable if Device Certificate Information is provided (FLD-UDID-39)",,,Y,,,Y,Y,DeviceCertificateLinkType,certificateType,,,,,
+FLD-UDID-61,Certificate Number,DeviceCertificateInformation,"When registering the Device, for Devices covered by Product certificates, user will have to provide identification details of the Product Certificate covering the Device.
+
+Property stores the Certificate Number of the Product Certificate.
+
+In case of Legacy Devices, identification information about Directive Certificates covering the Devices  is required to be provided",,String,XS,,"1
+Occurrence applicable if Device Certificate Information is provided (FLD-UDID-39)
+
+Field is required for Legacy Devices",,,Y,    ,,Y,Y,DeviceCertificateLinkType,certificateNumber,,,,,
+FLD-UDID-62,Revision Number,DeviceCertificateInformation,"When registering the Device, for Devices covered by Product certificates, user will have to provide identification details of the Product Certificate covering the Device.
+
+Property stores the Certificate Revision Number  of the Product Certificate.",,String,XS,,"0..1
+
+Occurrence applicable if Device Certificate Information is provided (FLD-UDID-39)",,,Y,    ,,Y,Y,DeviceCertificateLinkType,certificateRevisionNumber,,,,,
+FLD-UDID-63,Notified Body,DeviceCertificateInformation,"When registering the Device, for Devices covered by Product certificates, user will have to provide identification details of the Product Certificate covering the Device.
+
+Property stores the reference to the Notified Body that issued the Product Certificate.
+
+In case of Legacy Devices, identification information about Directive Certificates covering the Devices  is required to be provided",,"Actor - Notified Body - FLD-ACT-001
+[Actor -  Actor]",,,"1
+
+Occurrence applicable if Device Certificate Information is provided (FLD-UDID-39)",,,Y,    ,,Y,Y,DeviceCertificateLinkType,NBActorCode,,,,,
+FLD-UDID-64,Expiry Date,DeviceCertificateInformation,"When registering the Device, for Devices covered by Product certificates, user will have to provide identification details of the Product Certificate covering the Device.
+
+Property stores the Certificate Expiry Date of the Product Certificate.
+
+In case of Legacy Devices, identification information about Directive Certificates covering the Devices  is required to be provided",,Date,,,"1
+
+Occurrence applicable if Device Certificate Information is provided (FLD-UDID-39)
+
+Field is required for Legacy Devices",,,Y,    ,,Y,Y,DeviceCertificateLinkType,expiryDate,,,,,
+FLD-UDID-341,Issuing Entity UDI-DI / EUDAMED ID,UDIDeviceData,"Assigned Issuing Entities that will generate the DI Codes allocated for  all DI`s inside Eudamed (Basic UDI DI, UDI-DI, Unit of Use DI, Secondary Di , Package level DI).
+
+The Commission shall designate one or several entities to operate a system for assignment of UDIs ('issuing entity')
+
+Issuing Entity for the EUDAMED ID is by default EUDAMED",ENUM_MDR_IssuingEntity,Enum,,,"1   
+
+Either UDI-DI or EUDAMED ID is required",,,Y,    BR-UDID-644,,Y,Y,DIIdentififierType,issuingEntityCode,,,,,
+FLD-UDID-342,UDI-DI / EUDAMED ID code,UDIDeviceData,"The UDI-DI is a unique numeric or alphanumeric code specific to a  device and that is also used as the 'access key' to information stored in a UDI database. 
+
+The EUDAMED ID  is the primary identifier of  device  for a Legacy Device.
+
+A Legacy Device can have as identifier for the Device - either a UDI-DI or (in case an UDI-DI is not assigned) a EUDAMED ID.
+
+The EUDAMED ID is generated automatically based on the EUDAMED DI (when UDI-DI is not provided)",,String,XS,,"1   
+
+Either UDI-DI or EUDAMED ID is required",Y,,Y,"BR-UDID-003
+BR-UDID-640 
+BR-UDID-641
+BR-UDID-643
+BR-UDID-645",,Y,Y,DIIdentififierType,DIcode,,,,,
+FLD-UDID-137,Member State of the placing on the EU market of the Device,UDIDeviceData,Defines the Country where the device has been placed on the Market  (Member State in which the device is to or has been placed on the market in the Union),ENUM_MDR_COUNTRY,"Country [EUDAMED- Common Entities]
+",,,1,Y,,Y,BR-UDID-045,"Y
+(Edit; Add) 
+
+Can be provided later on if the Device is subject to a change of state from Not intended to be placed on EU market or No longer placed on the EU market to On the EU market
+and/or
+can be updated to a country from the list of the countries where the device is made available.",Y,Y,MarketInfoType,country (having property originalPlacedOnTheMarket True),,,,,
+FLD-UDID-139,Natural or Legal person who manufactured and designed the Device,UDIDeviceData,Reference to the natural or Legal person who Designed and Manufactured the device (in case the Device is designed and manufactured by another legal or natural person),,ProductDesignerLink,,,0..1,,,Y,BR-UDID-095,"Y
+(Edit)
+
+Can be updated in case initially it has been provided by specifying details of an Organisation and the Manufacturer wants to provide the SRN . It cannot be provided if initially has been mentioned as Not applicable, or in case the PD has been provided as an SRN)",Y,Y,DeviceUDIDIDataType ,productDesignerActor,,,,,
+FLD-UDID-311,List of Medicinal product substances associated to the Device,UDIDeviceData,References to the Medicinal product  Substances  associated to the device ,,MedicinalProductSubstance (SubstanceList),,,0..n,,,Y,BR-UDID-041,"Y
+(Edit; Add; Delete)
+
+If innitially have been marked as applicable (at EUDAMED DI level)",Y,,MDRUDIDIDataType  ,"substances
+
+ Defined as a substance having the type MedicalHumanProductSubstanceType",,,,,
+FLD-UDID-141,Member States where device is or is to be made available on the market,UDIDeviceData,Reference to the list of Countries where the device has been made available,,MarketInfo,,,1..n,,,Y,"BR-UDID-043
+BR-UDID-673
+BR-UDID-674
+BR-UDID-630 ","Y
+(Edit; Add; Delete)",Y,Y,DeviceUDIDIDataType,marketInfos,,,,,
+FLD-UDID-144,List of Critical Warnings or Contraindications or Storage and handling Conditions,UDIDeviceData,References the Critical warnings or Storage and Handling Conditions  associated to Device ( list of Critical warnings or Storage and Handling Conditions associated to the UDI-DI).,,Critical Warnings (ConditionForUse),,,0..n,,,Y,BR-UDID-030,"Y 
+(Edit; Add; Delete)",Y,Y,UDIDIDataType,criticalWarnings,,,,,
+FLD-UDID-312,List of  Storage and handling Conditions,UDIDeviceData,References the Storage and Handling Conditions  associated to the Device (UDI-DI),,Storage and Handling (ConditionsForUse),,,0..n,,,Y,BR-UDID-028,"Y 
+(Edit; Add; Delete)",Y,Y,UDIDIDataType,storageHandlingConditions,,,,,
+FLD-UDID-145,EUDAMED DI Identifier ,UDIDeviceData,Reference to the EUDAMED DI to which the Device is associated. ,,"FLD-UDID-295, FLD-UDID-42 
+EUDIData",,,1,,,Y,,,Y,Y,UDIDIDataType,basicUDIIdentifier,,,,,
+FLD-UDID-146,Clinical Sizes,UDIDeviceData,References to the list of Clinical Sizes associated to the UDI-DI,,ClinicalSize,,,0..n,,,Y,BR-UDID-075,,Y,,MDRUDIDIDataType,clinicalSizes,,,,,
+FLD-UDID-149,Nomenclature code,UDIDeviceData,"The Device Nomenclature Code(s) associated with the UDI-DI. 
+The corresponding EMDN Nomenclature Code will be stored in the field
+
+",EMDN Nomenclature,Enum,,,1..n,Y,,Y,BR-UDID- 636  ,"Y
+(Add; Delete)",Y,Y,UDIDIDataType,MDNCodes,,,,,
+FLD-UDID-156,Containing latex,UDIDeviceData,Property defines if the Device contains latex into it`s composition,,Boolean,,,1,Y,,Y,,,Y,,MDRUDIDIDataType,latex,,,,,
+FLD-UDID-157,Maximum number of reuses,UDIDeviceData,"Property defines the Maximum Number of reuses applicable for the Device.
+
+Field is optional and can be completed if the Device is not marked as single use device ( singleUse is false).
+
+Rules governing the completion of the field: 
+
+If value provided is '-1', device is considered as non Single Use Device and the device does not have a maximum number of reuses (infinite number of reuses)
+
+If value provided is '0',  devices is considered as Single use Device
+
+If value provided is >1,  devices is considered as non Single use Device having a limited number of reuses (the value provided)",,Number, ,,"0..1 
+
+Field can be completed only if singleUse is false",,,Y,BR-UDID-024,,Y,Y,DeviceUDIDIDataType,"numberOfReuses
+
+If value provided is '-1', device is considered as non Single Use Device and the device does not have a maximum number of reuses (infinite number of reuses)
+
+If value provided is '0',  devices is considered as Single use Device
+
+
+If value provided is >1,  devices is considered as non Single use Device having a limited number of reuses (the value provided)",,,,,
+FLD-UDID-163,Reference / Catalogue number,UDIDeviceData,Property stores the Reference or Catalogue Number of the Device,,String,XS,,1,Y,,Y,,,Y,Y,UDIDIDataType,referenceNumber,,,,,
+FLD-UDID-164,Reprocessed single use device,UDIDeviceData,Property defines if the Device is a Reprocessesed single use device or not,,Boolean,,,1,Y,,Y,,,Y,,MDRUDIDIDataType,reprocessed,,,,,
+FLD-UDID-167,Labelled as single use,UDIDeviceData,Property defines if the Device is a Labelled as a Single use or not,,Boolean,,,1,Y,,Y,,,Y,Y,DeviceUDIDIDataType,"provided through numberOfReuses 
+
+If value provided is 0 for numberOfReuses, Device is considered as Single use Device 
+
+If value provided is <>0 numberOfReuses  (-1 or any value > 0), Device is considered as not being Single use Device ",,,,,
+FLD-UDID-169,Device labelled sterile,UDIDeviceData,Property defines if the UDI-DI is labeled as Sterile or not,,Boolean,,,1,Y,,Y,,,Y,Y,UDIDIDataType,sterile,,,,,
+FLD-UDID-170,Need for sterilisation before use,UDIDeviceData,Property defines if the UDI-DI needs to be sterilised before use or not,,Boolean,,,1,Y,,Y,,,Y,Y,UDIDIDataType,sterilization,,,,,
+FLD-UDID-174,URL for additional information,UDIDeviceData,Manufacturer`s website where additional information about the device (UDI-DI)  are available,,String,M,,0..1,,,Y,    ,"Y
+(Edit; Add; Delete)",Y,Y,UDIDIDataType,website,,,,,
+FLD-UDID-175,Additional product Description,UDIDeviceData,"Additional Product Description.
+
+Additional Product Description is required for System or Procedure Packs or for Standard Devices being marked as System or Procedure Packs (as a Device in themselvs)",,"LanguageSpecificContent
+[EUDAMED- Common Entities]",L,Y,"0..1 
+
+Required for System or Procedure Packs that is  a Device in itself",,,Y,BR-UDID-131    ,"Y
+(Edit; Add; Delete)",Y,Y,UDIDIDataType,additionalDescription,,,,,
+FLD-UDID-179,Trade name applicable,UDIDeviceData,Indicates if Trade name(s) exist for the device.,,Boolean,,,1,,,Y,,"Y
+(Edit)",Y,Y,,,,,,,
+FLD-UDID-176,Trade name,UDIDeviceData,"Device Trade Name assigned to the UDI-DI
+
+Trade names can be provided if applicable for the device. Several Trade- Names can be provided for the Device in the same language or in different languages.",,"LanguageSpecificContent
+[EUDAMED- Common Entities]",S,Y,0..n,Y,,Y,BR-UDID-070,"Y
+(Edit; Add; Delete)",Y,Y,UDIDIDataType,tradeNames,,,,,
+FLD-UDID-130,Device Status,UDIDeviceData,"Status of the Device (On the EU market,  No longer placed on the EU market).",ENUM_UDID_DeviceStatus,Enum,,,1,,,Y,"BR-UDID-114
+BR-UDID-073 
+BR-UDID-458","Y
+(Edit)
+Cannot update to 'Not intended for  the EU market'",Y,Y,UDIDIStatusType,code,,,,,
+FLD-UDID-256,Device Substatus,UDIDeviceData,Stores a references to the Substatus of the Device,,DeviceSubstatus,,,0..n,,,Y,"BR-UDID-073 
+BR-UDID-458","Y
+
+Managed from Vigilance Module",Y,Y,UDIDIDataType,substatuses,,,,,
+FLD-UDID-331,Related Regulation  Device,UDIDeviceData,"Regulation Device related to the current Legacy Device.
+
+The reference will be used in order to express the link between a Regulation Device and a Legacy  Device (to show that is the same Device)
+
+In the current phase - relationship will be performed automatically by EUDAMED when the same UDI-DI is used as identifier for the two Devices. Relationship will be only returned when downloading devices from EUDAMED (if applicable).",,"UDIData (reference to Issuing Entity and UDI-DI  of the Regulation Device)
+FLD-UDID-291, FLD-UDID-178
+
+[DD UDI-DI]",,,"0,,1",,,Y,"BR-UDID-704
+BR-UDID-702","Y (conditionally)
+
+If the link between the Reuglation and Legacy Device is made manually it can be updated (can be deleted)",Y,Y,DeviceRelatedLinkType,diIdentifier,,,,,
+FLD-UDID-181,Relationship Type,UDIDeviceData,"Type of Relationship created between  Devices (UDI-DI`s).
+
+",ENUM_Device_Link_Relationship_Type,Enum,,,"0..1 
+
+Required when Related Legacy Device is provided (when linking is performed by the Manufacturer)
+ ",,,Y,BR-UDID-830,,Y,Y,DeviceRelatedLinkType,type,,,,,
+FLD-UDID-122,Manufacturer action required,DeviceSubStatus,Manufacturer actions (selected in the FSCA report),ENUM_VGL_MF_CORRECTIVE ACTION,Enum,,,"1..n
+
+Occurrence applicable if Device Substatus (FLD-UDID-256) is provided",,,Y," 
+   BR-UDID-729","
+Y
+
+Managed from Vigilance Module",Y,Y,UDIDISubstatusType,mfCorrectiveActions,,,,,
+FLD-UDID-126,Start date ,DeviceSubStatus,Start Date when the Substatus has been initialised,,Date,,,"1
+
+Occurrence applicable if Device Substatus (FLD-UDID-256) is provided",,,Y, ,"Y
+
+Managed from Vigilance Module",Y,Y,UDIDISubstatusType,startDate,,,,,
+FLD-UDID-127,Estimated end date,DeviceSubStatus,Estimated end  date when the Substatus has been closed (Triggered by Vigilance module),,Date,,,"0..1 
+
+Occurrence applicable if Device Substatus (FLD-UDID-256) is provided",,,Y, ,"Y
+
+Managed from Vigilance Module",Y,Y,UDIDISubstatusType,endDate,,,,,
+FLD-UDID-131,UDI-DI/Device -Sub status,DeviceSubstatus,"SubStatus of the Device (Recalled, Field safety corrective action initiated)",ENUM_UDID_DeviceSubStatus,Enum,,,"1
+
+Occurrence applicable if Device Substatus (FLD-UDID-256) is provided",Y,,Y,    ,"Y
+
+Managed from Vigilance Module",Y,Y,UDIDISubstatusType,code,,,,,
+FLD-UDID-190,/Clinical Size Type,ClinicalSize,"Device Clinical Sizes can be provided if applicable. Several Clinical Sizes can be added for the Device. Clinical Size will be defined by the Type, Precizion, Value (either Range, single value or Text) and Measuring Unit
+
+The Type of Clinical Size (example : length, width, etc.)",ENUM_UDID_ClinicalSizeType,Enum,,,"1
+
+Occurrence applicable if Clinical Size (FLD-UDID-146) is provided",,,Y,,,Y,,ClinicalSizeType,clinicalSizeType,,,,,
+FLD-UDID-191,/Precizion,ClinicalSize,"Device Clinical Sizes can be provided if applicable. Several Clinical Sizes can be added for the Device. Clinical Size will be defined by the Type, Precizion, Value (either Range, single value or Text) and Measuring Unit
+
+Clinical Size Precision - mentions how the recording of Data will be performed (as  Value, Range or Text  is selected)",ENUM_UDID_ClinicalSizePrecision,Enum,,,"1
+
+Applicable  if Clinical Size (FLD-UDID-146) is provided",,,Y,,,Y,,ClinicalSizeType,"Precision type is given by the type of Clinical Size registered (TextClinicalSizeType allows input of Text value, ValueClinicalSizeType - allows input of Value (numeric)  and RangeClinicalSizeType allows input of Range)",,,,,
+FLD-UDID-192,/Maximum,ClinicalSize,"Device Clinical Sizes can be provided if applicable. Several Clinical Sizes can be added for the Device. Clinical Size will be defined by the Type, Precizion, Value (either Range, single value or Text) and Measuring Unit
+
+Maximum Value that the Clinical Size can get (when Range is selected as precision)",,Decimal,,,"0..1
+
+Occurrence applicable if Clinical Size (FLD-UDID-146) is provided
+
+Required when Precision has value Range",,,Y,BR-UDID-077    ,,Y,,RangeClinicalSizeType,"maximum
+
+Applicable for ClinicalSize of Type RangeClinicalSizeType",,,,,
+FLD-UDID-193,/Value(Minimum),ClinicalSize,"Device Clinical Sizes can be provided if applicable. Several Clinical Sizes can be added for the Device. Clinical Size will be defined by the Type, Precizion (either Range, single value or Text), Value  and Measuring Unit
+
+Value (Minimum) that the Clinical Size can get (when Range is selected as precision)",,Decimal,,,"0..1 
+
+Occurrence applicable if Clinical Size (FLD-UDID-146) is provided
+
+Required when Precision has value Range 
+
+",,,Y,    ,,Y,,"RangeClinicalSizeType
+","minimum
+
+Applicable for ClinicalSize of Type RangeClinicalSizeType",,,,,
+FLD-UDID-194,/Value(Text),ClinicalSize,"Device Clinical Sizes can be provided if applicable. Several Clinical Sizes can be added for the Device. Clinical Size will be defined by the Type, Precizion, Value (either Range, single value or Text) and Measuring Unit
+
+Value that the Clinical Size can get (when Text  is selected as Precision)",,String,S,,"0..1  
+
+Occurrence applicable if Clinical Size (FLD-UDID-146) is provided
+
+Required when Precision has value Text",,,Y,    ,,Y,,TextClinicalSizeType,"text
+
+Applicable for ClinicalSize of Type TextClinicalSizeType",,,,,
+FLD-UDID-196,/Value,ClinicalSize,"Device Clinical Sizes can be provided if applicable. Several Clinical Sizes can be added for the Device. Clinical Size will be defined by the Type, Precizion (either Range, single value or Text), Value  and Measuring Unit
+
+Value  that the Clinical Size can get (when Value  is selected as precision)",,Decimal,,,"0..1 
+
+Occurrence applicable if Clinical Size (FLD-UDID-146) is provided
+
+Required when Precision has value Value",,,Y,,,,,"
+ValueClinicalSizeType","value
+
+Applicable for ClinicalSize of Type ValueClinicalSizeType",,,,,
+FLD-UDID-195,/Measure Unit,ClinicalSize,"Device Clinical Sizes can be provided if applicable. Several Clinical Sizes can be added for the Device. Clinical Size will be defined by the Type, Precizion, Value (either Range, single value or Text) and Measuring Unit
+
+Clinical Size Measure Unit",ENUM_UDID_ClinicalSizeMeasureUnit,Enum,,,"0..1 
+
+Occurrence applicable if Clinical Size (FLD-UDID-146) is provided
+
+Required when the Precision value is either Value or Range",,,Y,BR-UDID-76,,Y,,"RangeClinicalSizeType
+ValueClinicalSizeType","valueUnit
+
+Applicable for ClinicalSize of Type RangeClinicalSizeType or 
+ValueClinicalSizeType",,,,,
+FLD-UDID-358,Clinical Size Type Description,ClinicalSize,"Decription of the Clinical Size Type, given when the Clinical Size Type has the option OTHER",,"LanguageSpecificContent
+[EUDAMED- Common Entities]",L,,"0..1
+
+Required when the Clinical Size Type has option Other ",,,Y,,,Y,,ClinicalSizeType,description,,,,,
+FLD-UDID-359,Measure Unit  Description,ClinicalSize,"Decription of the Measure Unit , given when the Clinical Size Type has the option OTHER",,"LanguageSpecificContent
+[EUDAMED- Common Entities]",,,"0..1
+
+Required when the Measure Unit Type has option Other ",,,Y,,,Y,,"RangeClinicalSizeType
+ValueClinicalSizeType","description
+
+Applicable for ClinicalSize of Type RangeClinicalSizeType or 
+ValueClinicalSizeType",,,,,
+FLD-UDID-316,"Type of Substance  (Presence of a substance which, if used separately, may be considered to be a medicinal product/ Presence of a substance which, if used separately, may be considered to be a medicinal product derived from human blood or human plasma)",MedicinalProductSubstance (SubstanceList),Field stores the details regarding the type of  medicinal substance registered ( Substance which can be considered a Medicinal Product or Substance which may be considered a medicinal product derived from human blood or plasma),ENUM_UDID_SubstType,Enum,,,"1
+
+Occurrence applicable if List of medicinal product substances (FLD-UDID-311) is provided",,,Y,,"Y
+(Edit; Add; Delete)",Y,, MedicalHumanProductSubstanceType,type,,,,,
+FLD-UDID-317,Name of Substance,MedicinalProductSubstance (SubstanceList),"Field stores the Name of Substance (applicable for all types of substances - CMR, Endocrine , Medicinal product, Medicinal product derived from human blood or human). 
+
+In case of CMR Substances or Medicinal product and Medicinal product derived from human blood or human plasma , if the #CAS or #EC or INN is provided, field is no longer required",,"LanguageSpecificContent
+[EUDAMED- Common Entities]",L,Y,"0..1 
+
+Occurrence applicable if List of medicinal product substances (FLD-UDID-311) is provided
+
+Not required in case the  INN is provided",,,Y,,"Y
+(Edit; Add; Delete)",Y,,SubstanceType,name,,,,,
+FLD-UDID-318,INN,MedicinalProductSubstance (SubstanceList),"Field stores the INN value for the  substance provided.
+
+INN can be provided only for substances  which, if used separately, may be considered to be a medicinal product or substances which, if used separately, may be considered to be a medicinal product derived from human blood or human plasma.",,String,L,,"0..1 
+
+Occurrence applicable if List of medicinal product substances (FLD-UDID-311) is provided",,,Y,,"Y
+(Edit; Add; Delete)",Y,,MedicalHumanProductSubstanceType,INN,,,,,
+FLD-UDID-211,Storage/handling conditions type,Storage and Handling (ConditionForUse),"Storage and handling Conditions specified on the Label of the Device have to be registered in EUDAMED - if applicable. 
+
+Field stores the Type of Storage and Handling Conditions. Field is Applicable only when the type of Conditions for Use have the Type Storage / handling Conditions, being required in this case.",ENUM_UDID_StorageHandlingCondition,Enum,,,"1
+
+Occurrence applicable if Storage and handling conditions (FLD-UDID-312) are provided",,,Y,    ,"Y
+(Edit; Add; Delete)",Y,Y,StorageHandlingConditionType,storageHandlingConditionValue,,,,,
+FLD-UDID-213,Storage/Handling conditions Description,Storage and Handling (ConditionForUse),Comments or description associated to the values selected form the Storage or handling Conditions or Critical warnings ,,"LanguageSpecificContent
+[EUDAMED- Common Entities]",L,Y,"0..n 
+
+Occurrence applicable if Storage and handling conditions (FLD-UDID-312) are provided
+
+Required for specific items from the list of Enumerations- where additional details are required",,,Y,,"Y
+(Edit; Add; Delete)",Y,Y,StorageHandlingConditionType,comments,,,,,
+FLD-UDID-212,Critical Warnings type,Critical Warnings (ConditionForUse),"Storage and handling Conditions and Critical Warnings or Contra-Indications specified on the Label of the Device or in the Instruction of Use have to be registered in EUDAMED - if applicable. 
+
+Field stores the Type of Critical Warnings or Contra-Indications, being required in this case. ",ENUM_UDID_CriticalWarnings,Enum,,,"1
+
+Occurrence applicable if Critical Warnings (FLD-UDID-144) are provided",,,Y,    ,"Y
+(Edit; Add; Delete)",Y,Y,CriticalWarningType,warningValue,,,,,
+FLD-UDID-319,Critical warnings or contra-indications Description,Critical Warnings (ConditionForUse), Comments or description associated to the values selected for the Critical warnings ,,"LanguageSpecificContent
+[EUDAMED- Common Entities]",L,Y,"0..n 
+
+Occurrence applicable if Critical Warnings (FLD-UDID-144) are provided
+
+Required for specific items from the list of Enumerations- where additional details are required",,,Y,,"Y
+(Edit; Add; Delete)",Y,Y,CriticalWarningType,warningValue,,,,,
+FLD-UDID-221,Enter the SRN  (Is the Device designed or Manufactured by another legal or natural person),ProductDesignerLink,"Details of the Product Designer (Original Manufacturer) who Manufactured (produced) or Designed the Device.
+
+An original design manufacturer (ODM) is a company that designs and manufactures a product, as specified, that is eventually rebranded by another firm for sale. 
+
+Details of the Product Designer can be given either by providing the SRN (if the PD is already registered in EUDAMED and has an SRN) or by providing Organisation details (Name and Contact Details - in case the PD is not registered in EUDAMED)
+
+SRN of the natural or legal person who designed and manufactured the device. Reference to a Manufacturer present in EUDAMED
+
+",,String,SRN,,"0..1
+
+Occurrence applicable if the Product Designer (FLD-UDID-139) is provided",,,Y,    ,"Y
+(Edit)
+
+Can be updated in case initially it has been provided by specifying details of an Organisation that is not a registered Actor with an Actor ID/SRN . It cannot be updated if initially has been mentioned as Not applicable, or specified with an Actor ID/SRN)",Y,Y,ProductDesignerActorType,productDesignerActorCode,,,,,
+FLD-UDID-222,Organisation (When the Product Designer is not already registered as a Manufacturer in EUAMED),ProductDesignerLink,"Details of the Product Designer (Original Manufacturer) who Manufactured (produced) or Designed the Device.
+
+Reference to an Organisation details  provided in case the Manufacturer that designed and manufactured the device is not present in EUDAMED.
+",,"ProductDesignerOrganisation
+ ",,,"0 if SRN otherwise 1
+
+Occurrence applicable if the Product Designer (FLD-UDID-139) is provided",,,Y,BR-UDID-718,"Y
+(Edit)",Y,Y,ProductDesignerActorType,productDesignerOrganisation,,,,,
+FLD-UDID-223,version,ProductDesignerLink,Reference to the version of the Link,,"VersionData
+[EUDAMED- Common Entities]",,,"1 
+
+Managed by EUDAMED",,,,,,Y,Y,Entity,,,,,,
+FLD-UDID-353,Organisation Name,"ProductDesignerOrganisation
+ ",Name of the Organisation,,LanguageSpecificContent,S,,"1
+
+Occurrence applicable if the ProductDesignerOrganisation (FLD-UDID-222) is provided",,,Y,,"Y
+(Edit)",Y,Y,productDesignerOrganisation,organizationName,,,,,
+FLD-UDID-354,Contact Details,"ProductDesignerOrganisation
+ ",For the Product Desginer Organisation Public Contact details need to be provided,,PublicContactDetails [EUDAMED- Common Entities],,,"1 (only Public Contact details)
+
+Occurrence applicable if the ProductDesignerOrganisation (FLD-UDID-222) is provided",,,Y,,"Y
+(Edit)",Y,Y,PartyType,contactDetails,,,,,
+FLD-UDID-355,Geographical Address,"ProductDesignerOrganisation
+ ",Adress of the Product Desginer Organisation,,GeographicAddress  [EUDAMED- Common Entities,,,"1
+
+Occurrence applicable if the ProductDesignerOrganisation (FLD-UDID-222) is provided",,,Y,,"Y
+(Edit)",Y,Y,PartyType,geographicAddress,,,,,
+FLD-UDID-250,Start date,MarketInfo ,"Details regarding the Countries where the Device (UDI-DI) is made available on the market. There can be a Start Date (optional) and an End Date (also optional) of making available on a specific market the product.
+
+Field stores details about the Start Date when the Device is made available on the marked",,Date,,,"0..1
+
+Occurrence applicable  if Market Info (FLD-UDID-141) is provided",,,Y,    ,"Y
+(Edit; Add; Delete)",Y,Y,MarketInfoType,startDate,,,,,
+FLD-UDID-251,End date,MarketInfo ,"Details regarding the Countries where the Device (UDI-DI) is made available on the market. There can be a Start Date (optional) and an End Date (also optional) of making available on a specific market the product.
+
+Field stores details about the  End Date when the Device is made available on the marked",,Date,,,"0..1
+
+Occurrence applicable  if Market Info (FLD-UDID-141) is provided",,,Y,    ,"Y
+(Edit; Add; Delete)",Y,Y,MarketInfoType,endDate,,,,,
+FLD-UDID-252,Member State where the device is or is to be made available,MarketInfo ,"Details regarding the Countries where the Device (UDI-DI) is made available on the market. There can be a Start Date (optional) and an End Date (also optional) of making available on a specific market the product.
+
+Field stores details about the Country where the Device is made available on the market",ENUM_MDR_COUNTRY,"Country [EUDAMED- Common Entities]
+",,,"1..n
+
+Occurrence applicable  if Market Info (FLD-UDID-141) is provided",,,Y,,"Y
+(Add; Delete)
+
+New Countries can be added (existing countries can be removed). Country where the device was initially placed on the EU market cannot be removed only its end date can be updated.",Y,Y,MarketInfoType,country,,,,,
+FLD-UDID-246,Version,MarketInfo ,Reference to the version of the Market Info,,"VersionData
+[EUDAMED- Common Entities]",,,"1 
+
+Managed by EUDAMED",,,Y,,,Y,Y,Entity,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+, ,,,,,,,,,,,,,,,,,,,,,

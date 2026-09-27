@@ -1,0 +1,19 @@
+ Field ID,Field Label,Entity Name,Field Description / Notes,ENUM Reference Code ,Field Type,Field Size,Multilingual Flag,Occurrence,Searchable,GDPR Flag,Public Access Flag,Business Rules,DTX Entity,XSD Element Name
+FLD-CRF-322,Device information/Basic UDI,CECPScope,"The Basic UDI-DI of the device in the scope of the CECP, if the device has been assigned a Basic UDI-DI.
+
+Notes
+The Basic UDI-DI has been assigned in case the CECP is performed in the context of a: 
+- (MDR) EU technical documentation assessment (Annex IX Chapter II);
+- (MDR) EU type-examination (Annex X).
+The Basic UDI-DI has been assigned in case the CECP is performed in the context of a (MDR) EU Quality Management System certificate (Annex IX Chapter I)",,"Basic UDI- DI - FLD-UDID-14
+[UDI Device - DD BASIC UDI]",,,0..1,Y,,,"BR-CRF-161
+BR-CRF-162
+BR-CRF-212",CECPScopeType,DICode
+FLD-CRF-323,Device information/Issuing entity,CECPScope,"In case a Basic UDI-DI is provided, the issuing entity (enumeration).",,"Basic UDI- DI - FLD-UDID-14
+[UDI Device - DD BASIC UDI]",,,0..1,Y,,,,CECPScopeType,issuingEntityCode
+FLD-CRF-324,Device information/Device Risk class,CECPScope,The risk class of the device in the CECP.,,"Risk Class - FLD-UDID-16
+[UDI Device - DD BASIC UDI]",,,0..1,Y,,,,CECPScopeType,riskClass
+FLD-CRF-325,Device information/Device Model,CECPScope,The model of the device in the CECP.,,"Device Model  - FLD-UDID-20
+[UDI Device - DD BASIC UDI]",,,0..1,,,,,CECPScopeType,model
+FLD-CRF-326,Device information/Device Name,CECPScope,"The name of the device in the scope of the CECP, if the device has not been assigned a Basic UDI-DI.",,"Device Name - FLD-UDID-22
+[UDI Device - DD BASIC UDI]",,,0..1,,,,BR-CRF-195,CECPScopeType,name

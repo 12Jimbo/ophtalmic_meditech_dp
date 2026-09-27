@@ -1,0 +1,112 @@
+ Field ID,Field Label,Entity Name,Field Description / Notes,ENUM Reference Code ,Field Type,Field Size,Multilingual Flag,Product Certificate Occurrence,Quality Certificate Occurrence,Searchable,GDPR Flag,Public Access Flag,Business Rules,DTX Entity,XSD Element Name
+FLD-CRF-314,Application reference number,Application,An application reference number provided by the NB. The application reference number is unique per NB.,,string,S,,1,1,Y,,Y,"BR-CRF-075
+BR-CRF-111",ApplicationType,applicationReference
+FLD-CRF-302,"Date of issue of the refusal, Date of application withdrawal, Date of application refusal",Application,The date of the decision i.e. the date of certificate refusal or the date the application for conformity assessment was refused/withdrawn.,,date,,,1,1,Y,,Y,BR-CRF-002,ApplicationType,certificateRefusalDate
+FLD-CRF-303,Date of submission (by MF/Producer),Application,The date the MF/SPPP applied to the NB for the conformity assessment of their devices.,,date,,,1,1,Y,,Y,,ApplicationType,applicationSubmissionDate
+FLD-CRF-304,Reason for refusal comment,Application,"Additional reasons (free text) for the decision (to refuse the certificate or refuse/withdraw the application for conformity assessment).
+Refer also to field 'decision'.",,LanguageSpecificContent [EUDAMED -  Common Entities],,Y,0..*,0..*,,,,BR-CRF-035,DecisionType,comments
+FLD-CRF-305,Applicable regulation,Application,Indication (enumeration) if the application for conformity assessment is for MDR or IVDR devices.,ENUM_CRF_Regulation,enum,,,1,1,Y,,Y,"BR-CRF-002
+BR-CRF-003",,
+FLD-CRF-306,Conformity assessment procedure,Application,Indicates (enumeration) the certificate type for which the application was made.,ENUM_CRF_CertificateType,enum,,,1,1,Y,,Y,"BR-CRF-002
+BR-CRF-004","ProductProcedureType
+QualityProcedureType",applicableRegulation
+FLD-CRF-307,Version,Application,"Keeps information about the state of the application for conformity assessment.
+Refer to fields of entity VersionData in sheet 'Common'.
+
+Note: An application for conformity assessment has only one version i.e. the versionNumber in entity VersionData is always 1.",,"VersionData - FLD-EUD-014 - 
+[EUDAMED -  Common Entities]",,,1,1,Y,,Y,"BR-CRF-081
+BR-CRF-082
+BR-CRF-180",,
+FLD-CRF-311,Decision reasons,Application,"Reason(s) (enumeration) for the decision (to refuse the certificate or refuse/withdraw the application for conformity assessment).
+Refer also to field 'decision'.
+","ENUM_CRF_APPL_DecisionReason
+ENUM_CRF_REFUSED_DecisionReason",enum,,,1..*,1..*,,,Y,"BR-CRF-034
+BR-CRF-035",ApplicationType,reasonRefusedCertificate
+FLD-CRF-337,Decision languages,Application,"The list of languages the certificate is supporting.
+",ENUM_MDR_LANGUAGE,string,,Y,1..*,1..*,,,Y,,,
+FLD-CRF-336,Other (within the Decision reasons),Application,"Comments to be provided for the option 'Other' from Decision reasons when refusing a certificate. Can be multiple depending on the number of decision languages. NB must fill in the other comments in all decision languages.
+",,LanguageSpecificContent [EUDAMED -  Common Entities],,Y,0..*,0..*,,,Y,BR-CRF-036,ApplicationType,otherDecisionReason
+FLD-CRF-312,Decision type,Application,"Indicates (enumeration) if the application for conformity assessment is refused by the NB, or withdrawn by the MF or the conformity assessment lead to a certificate refusal by the NB.",ENUM_CRF_Decision,enum,,,1,1,Y,,Y,,ApplicationType,applicationDecision
+FLD-CRF-313,Decision on refusal document,Application,A refused certificate decision is stored in a document that can be uploaded,DOC-CRF-022,StoredDocument  [EUDAMED -  Common Entities],,,0..1,0..1,,Y,,,ConformityAssesmentType,documents
+FLD-CRF-335,Application submission date ,Application,Date indicating application submission date by the MF.,,date,,,1,1,Y,,Y,,ApplicationType,applicationSubmissionDate
+FLD-CRF-334,Refusal reference number,Application,A refusal reference number provided by the NB.,,string,S,,0..1,0..1,Y,,Y,,ApplicationType,refusalReferenceNumber
+FLD-CRF-315,Notified Body identification,Application,The NB identification number (assigned by NANDO) of the NB to which the MF and/or SPPP applied to for conformity assessment.,,"Manufacturer - FLD-ACT-001
+Actor [Actor]",,,1,1,Y,,Y,"BR-CRF-002
+BR-CRF-006
+BR-CRF-007
+BR-CRF-008
+BR-CRF-049
+BR-CRF-141",ConformityAssesmentType,NBActorCode
+319,(Link to a CECP),Application,Keeps information about the linked CECP to a refused certificate or withdrawn application.,,"Application ID for conformity assessment - FLD-CRF- 302 
+CECP [CECP] ",,N,,0..*,Y,,Y,"BR-CRF-002
+BR-CRF-012
+BR-CRF-013
+BR-CRF-014
+BR-CRF-015
+BR-CRF-016
+BR-CRF-051
+BR-CRF-224",ConformityAssesmentType,ARActorCodes
+FLD_ProductProcedure.RegisteredManufacturer,Is the Manufacturer registered as an actor with Actor ID/SRN in EUDAMED?,ProductProcedure,"Whether the Manufacturer referenced in the refused certificate is registered in EUDAMED. Only applicable for refused certificates and refused/withdrawn applications.
+Note: In a product conformity assessment procedure the MF is mandatory. For the a quality conformity assessment procedure it can be either a MF or a SPP, therefore MF is not mandatory.",,boolean,,,1,,,,Y,RULE-00024,,
+FLD-CRF-316,Manufacturer identification,ProductProcedure,"Identification of the MF in case of a product conformity assessment procedure that references a Manufacturer not registered in EUDAMED.  The MF is identified by its SRN (a unique identification number assigned to the MF when it is registered as an Actor in Eudamed).
+Only for MF registered in EUDAMED. 
+Notes: In a product conformity assessment procedure the MF is mandatory. 
+For the case of a quality conformity assessment procedure refer to fields mfSRN and spppSRN in entity QualityProcedure.",,"Manufacturer - FLD-ACT-001
+Actor [Actor]",,,0.. 1,,Y,,Y,"BR-CRF-002
+BR-CRF-009
+BR-CRF-010
+BR-CRF-050
+RULE-00024",ProductProcedureType,MFActorCode
+FLD_ProductProcedure.NonRegisteredManufacturer,Non registered Manufacturer identification,ProductProcedure,"Identification of the MF in case of a product conformity assessment procedure that references a Manufacturer not registered in EUDAMED. Only applicable for refused certificates and refused/withdrawn applications.
+
+Note: In a product conformity assessment procedure the MF is mandatory. For the a quality conformity assessment procedure it can be either a MF or a SPP, therefore MF is not mandatory.",,Organisation [EUDAMED -  Common Entities],,,0.. 1,,,,Y,"RULE-00009
+RULE-00024",,
+FLD-CRF-317,Authorised representative identification,ProductProcedure,"Identification of one AR when the product conformity assessment procedure relates to a non EU MF. The AR is identified by its SRN (a unique identification number assigned to the AR when it is registered as an Actor in Eudamed).
+
+Note: For the case of a quality conformity assessment procedure refer to field arSRN in entity QualityProcedure.",,"Authorised Representative - FLD-ACT-001
+Actor [Actor]",,,0..1,,Y,,Y,"BR-CRF-002
+BR-CRF-012
+BR-CRF-013
+BR-CRF-014
+BR-CRF-015
+BR-CRF-016
+BR-CRF-051
+BR-CRF-223
+RULE-00018",ConformityAssesmentType,ARActorCodes
+FLD_QualityProcedure.RegisteredManufacturer,Is the Manufacturer registered as an actor with Actor ID/SRN in EUDAMED?,QualityProcedure,"Whether the Manufacturer referenced in the refused certificate is registered in EUDAMED.Only applicable for refused certificates and refused/withdrawn applications.
+Note: In a product conformity assessment procedure the MF is mandatory. For the a quality conformity assessment procedure it can be either a MF or a SPP, therefore nor MF nor SPPP are mandatory.",,boolean,,,,0.. 1,,,Y,RULE-00024,,
+FLD-CRF-318,Manufacturer identification,QualityProcedure,"Identification of the MF in case of a quality conformity assessment procedure which includes devices and/or device groups and/or custom-made devices from an actor registered in EUDAMED. The MF is identified by its SRN (a unique identification number assigned to the MF when it is registered as an Actor in Eudamed).
+
+Notes: 
+In a quality conformity assessment procedure an MF must be provided if the assessment includes devices or device groups or custom-made devices, and a system or procedure pack producer - SPPP must be provided if the assessment includes system or procedure packs - SPP (see field spppSRN in entity QualityProcedure).
+For the case of a product conformity assessment procedure refer to field mfSRN in entity ProductProcedure.",,"Manufacturer - FLD-ACT-001
+Actor [Actor]",,,,0..1,Y,,Y,"BR-CRF-001
+BR-CRF-009
+BR-CRF-010
+BR-CRF-011
+BR-CRF-050
+BR-CRF-144
+RULE-00024",QualityProcedureType,MFActorCode
+FLD_QualityProcedure.NonRegisteredManufacturer,Non registered Manufacturer identification,QualityProcedure,"Identification of the MF in case of a quality conformity assessment procedure which includes devices and/or device groups and/or custom-made devices from a Manufacturer not registered in EUDAMED. Only applicable for refused certificates and refused/withdrawn applications.
+Note: In a product conformity assessment procedure the MF is mandatory. For the a quality conformity assessment procedure it can be either a MF or a SPP, therefore nor MF nor SPPP are not mandatory.",,Organisation [EUDAMED -  Common Entities],,,0.. 1,,,,Y,"RULE-00009
+RULE-00024",,
+FLD_QualityProcedure.RegisteredSPPP,Is the Producer registered as an actor with Actor ID/SRN in EUDAMED?,QualityProcedure,"Whether the SPPP referenced in the refused certificate is registered in EUDAMED.Only applicable for refused certificates and refused/withdrawn applications.
+Note: In a product conformity assessment procedure the MF is mandatory. For the a quality conformity assessment procedure it can be either a MF or a SPP, therefore nor MF nor SPPP are mandatory.",,boolean,,,,0.. 1,,,Y,RULE-00024,,
+FLD-CRF-319,SPPP identification,QualityProcedure,Identification of the system or procedure pack producer (SPPP) in case of a quality conformity assessment procedure which includes system or procedure packs (SPP). The SPPP is identified by its SRN (a unique identification number assigned to the SPPP when it is registered as an Actor in Eudamed).,,"Systems or Procedure Pack Producer - FLD-ACT-001
+Actor [Actor]",,,,0..1,Y,,Y,"BR-CRF-002
+BR-CRF-010
+BR-CRF-011
+RULE-00024",QualityProcedureType,PRActorCode
+FLD_QualityProcedure.NonRegisteredSPPP,Not registered SPPP identification,QualityProcedure,Identification of the system or procedure pack producer (SPPP) in case of a quality conformity assessment procedure which includes system or procedure packs (SPP) from a SPPP not registered in EUDAMED. Only applicable for refused certificates and refused/withdrawn applications,,Organisation [EUDAMED -  Common Entities],,,,0.. 1,,,Y,"RULE-00009
+RULE-00024",,
+FLD-CRF-320,Authorised representative identification,QualityProcedure,"Identification of one or more AR when the application for a product conformity assessment procedure relates to a non EU MF. The AR is identified by its SRN (a unique identification number assigned to the AR when it is registered as an Actor in Eudamed).
+
+Note: For the case of an application for a product conformity assessment procedure refer to field arSRN in entity ProductProcedure.",,"Manufacturer - FLD-ACT-001
+Actor [Actor]",,N,,0..*,Y,,Y,"BR-CRF-002
+BR-CRF-012
+BR-CRF-013
+BR-CRF-014
+BR-CRF-015
+BR-CRF-016
+BR-CRF-051
+BR-CRF-223",ConformityAssesmentType,ARActorCodes

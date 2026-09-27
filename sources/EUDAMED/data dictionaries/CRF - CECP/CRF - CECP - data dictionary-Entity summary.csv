@@ -1,0 +1,6 @@
+,
+Clinical Evaluation Consultation Procedure (CECP),
+Entity,Description
+CECP,Keeps the information for a CECP.
+CECPScope,Defines the details of the device(s) in the scope of the CECP.
+CECPStatus,Maintains records of the status and its corresponding dates.
