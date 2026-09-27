@@ -31,4 +31,4 @@ A defensible ophthalmic cohort should be classification-led, using CPC groups su
 
 **Lens**: requires account. 2 weeks free access, then needs upgrade to paid account.
 
-**EUDAMED**: found api documentation: [EUDAMED API](https://developer.datalake.sante.service.ec.europa.eu/api-details#api=94b9e658-d721-4b58-8d96-022c490f7a17&operation=411c8f92-26fa-4451-9377-7a13b5d17915). The EUDAMED site does not seem to link to this, and only offers manual search from portal or download.
+**EUDAMED**: free. A bit difficult to navigate, but promising.
