@@ -11,18 +11,24 @@
 - DRY: do not repeat yourself. If two chunks of code in a file define very similar processing logic, modularize the logic into a single function.
 
 # Project Brain
+Expect a BRAIN.md in the project root.
 
-- Whenever you receive a prompt, consult @BRAIN.md for file references and related taggs. Use the referenced files that you deem more relevant to your task, to inform your plan for addressing the task. 
+- Whenever you receive a prompt, consult BRAIN.md. for file references and related taggs. Use the referenced files that you deem more relevant to your task, to inform your plan for addressing the task. 
 
 - Whenever you access a folder as part of a task, if the folder contains a neuron.md, include neuron.md in your current session context.
 
-- Whenever you edit code (like SQL or Python) in a file file_x, in folder folder_x, consider whether your edit is a bug fix, adding or removing logic, or modifiying present logic. If the logic was edited, or if the bug fix involved upstream or downstream dependencies of file_x, check whether a neuron.md file is present in folder_x. Then:
-    - If no such file is present:
-        - create it neuron.md in folder_x
+- Whenever you edit code (like SQL or Python) in a file file_x, in folder folder_x, check whether a neuron.md file is present in folder_x. Then:
+    - If no neuron.md file is present:
+        - create a neuron.md in folder_x
+        - write in neuron.md a reference to its closest neuron.md ancestor. If there is no ancestor, reference BRAIN.md as closest ancestor
+        - Add to the closest ancestor or BRAIN.md a reference to neuron.md
+        - write in neuron.md a reference to its closest neuron.md descendants, if any.
+        - For each referenced descendant in neuron.md, update the descendant reference to the closest ancestor.
         - create an entry in neuron.md for file_x
-        - Create an entry @BRAIN.md 
+        - Create an entry BRAIN.md 
     - If a neuron.md file is present in folder_x: 
-        - Create or update the entry for file_x in neuron.md 
+        - Create or update the entry for file_x in neuron.md
+        - Update the closest ancestor reference in the neuron
 
 - Whenever you create an entry in a neuron.md for file_x:
     - add in neuron.md a reference to file_x
@@ -36,7 +42,7 @@
         - Based on the last commit edits, check the material consistency of the file_x entry with file_x, and update the entry accordingly
         - Update the date and id of last known commit to the most recent commit
 
-- Whenever you create an entry in @BRAIN.md for a neuron.md:
+- Whenever you create an entry in BRAIN.md for a neuron.md:
     - add a reference to neouron.md
     - add a list of tags that would help you determine the neuron's relevance to future tasks
     - Group together neuron entries at the same folder level.
