@@ -7,3 +7,6 @@ __pycache__/
 
 # Jupyter-generated state
 .ipynb_checkpoints/
+
+# Personal use files
+up_next.txt
