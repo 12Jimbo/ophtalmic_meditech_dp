@@ -1,7 +1,7 @@
 # Elaboration
 - Evaluate the complexity of your task:
     - Consider asking the user to switch to higher effort
-    - Consider asking approval to spawn a more advanced models
+    - Consider asking approval to spawn more advanced models
 
 # Coding Style
 - Include code features that were not explicitly asked for only if you deem them strictly necessary
@@ -10,43 +10,35 @@
 - Add concise 1 line comments in the code to explain the working of code subsections when you deem it not obvious by words used in the code or too complex for average human developers.
 - DRY: do not repeat yourself. If two chunks of code in a file define very similar processing logic, modularize the logic into a single function.
 
-# Project Brain
+# Project Navigation
+Whenever you access a folder as part of a task, if the folder contains a context_node.md, include context_node.md in your current session context.
 
-- Whenever you receive a prompt, consult @BRAIN.md for file references and related taggs. Use the referenced files that you deem more relevant to your task, to inform your plan for addressing the task. 
-
-- Whenever you access a folder as part of a task, if the folder contains a neuron.md, include neuron.md in your current session context.
-
-- Whenever you edit code (like SQL or Python) in a file file_x, in folder folder_x, consider whether your edit is a bug fix, adding or removing logic, or modifiying present logic. If the logic was edited, or if the bug fix involved upstream or downstream dependencies of file_x, check whether a neuron.md file is present in folder_x. Then:
-    - If no such file is present:
-        - create it neuron.md in folder_x
-        - create an entry in neuron.md for file_x
-        - Create an entry @BRAIN.md 
-    - If a neuron.md file is present in folder_x: 
-        - Create or update the entry for file_x in neuron.md 
-
-- Whenever you create an entry in a neuron.md for file_x:
-    - add in neuron.md a reference to file_x
-    - write a summary description of file_x functionalities
-    - add the id and date of the last known commit to file_x
-    - If in the course of the present task you have noticed upstream or downstream dependencies of file_x, add them in the entry as references.
-
-- Whenever you update an entry in a neuron.md for file_x:
-    - Edit the entry so that it is materially consistent with the edited code
-    - Check the date of the last known commit to file_x: if there is a more recent commit to file_x: 
-        - Based on the last commit edits, check the material consistency of the file_x entry with file_x, and update the entry accordingly
-        - Update the date and id of last known commit to the most recent commit
-
-- Whenever you create an entry in @BRAIN.md for a neuron.md:
-    - add a reference to neouron.md
-    - add a list of tags that would help you determine the neuron's relevance to future tasks
-    - Group together neuron entries at the same folder level.
-
+context_node.md files are a fast way to acquire information about:
+  - Code dependencies between project files
+  - What projects files write to which data assets
+  - What projects files read from which data assets
+  - Data assets lineage
+So reading the context_node.md might efficiently inform your decisions about which project files is worth reading, and with which priority.
 
 # Editing and Commits
-- When prompted to edit files, propose a plan in steps. Each step is ideally a commit
-- When editing code, always consider editing .md files, context files, documentation files, readme files to keep them coherent with the edited code:
-    - Files that describe working logic should be updated when implemented logic changes
-    - Files that describe file contents should change when file contents change
-    - Files that describe workflow events have to be updated when the user takes project decisions like: stated project objectives, methods, technologies of choice...
-- Don't commit without explicit approval.
-- Whenever a task requires you to inspect folders and files, consider the <context>.md file closest to the object of your inspection: update the <context>.md file with a concise sum-up of your inspection findings for future reference. Keep the list of context references updated in the AGENT.md file (present file). As the development proceeds, this practice will create a content map of the project that should help you save processing time on file and folder inspection.
+- When a task requires file editing, propose a plan in steps.
+- When editing code, always consider editing documentation files to keep them coherent with the edited code
+- Whenever you edit code files (like SQL or Python notebooks and scripts) in file_x, in folder_x, follow `.claude/skills/brain/context_node_manager.md` to create or update the folder's context_node metadata.
+- Step edits will be human reviewed in Source Control as changes, and manually staged
+- If you are asked to stage changes, write a commit message in the dedicated text box under Source Control. If that is not possible, print out your suggested commit message.
+- Staged changes will either be executed by user, or by agent after explicit user permission
+- The human user will intend each step in the plan as a potential commit
+
+
+# Do NOT
+- Do not stage changes without explicit approval.
+- Do not commit without explicit approval.
+- Do not create or switch branch without explicit approval.
+- Do not push or pull code without explicit approval.
+- Do not rebase branch without explicit approval.
+- Do not create folders in the project without explicit approval.
+- Do not move files or folders to or from folders without explicit approval.
+- Do not rename or delete files or folders without explicit approval.
+
+
+
