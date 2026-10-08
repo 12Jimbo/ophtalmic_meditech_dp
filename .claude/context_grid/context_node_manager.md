@@ -1,9 +1,9 @@
---
+---
 name: context_node_manager
 description: creates, deletes, or updates context_node.md files in the project
---
+---
 
-Consider the context_node_master `.claude/skills/brain/context_node_master.md`.
+Consider the context_node_master `.claude/context_grid/context_node_master.md`.
 
 Given file_x in folder_x, the following operates under the assumption that file_x is a file containing executable code (like python or sql scripts, or notebooks). If the file does not contain executable code, halt the process and signal the discrepancy. Otherwise:
 

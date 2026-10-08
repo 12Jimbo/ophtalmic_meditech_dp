@@ -23,7 +23,7 @@ So reading the context_node.md might efficiently inform your decisions about whi
 # Editing and Commits
 - When a task requires file editing, propose a plan in steps.
 - When editing code, always consider editing documentation files to keep them coherent with the edited code
-- Whenever you edit code files (like SQL or Python notebooks and scripts) in file_x, in folder_x, follow `.claude\context_grid\context_node_manager.md` to create or update the folder's context_node metadata.
+- Whenever you edit code files (like SQL or Python notebooks and scripts) in file_x, in folder_x, follow `.claude/context_grid/context_node_manager.md` to create or update the folder's context_node metadata.
 - Step edits will be human reviewed in Source Control as changes, and manually staged
 - If you are asked to stage changes, write a commit message in the dedicated text box under Source Control. If that is not possible, print out your suggested commit message.
 - Staged changes will either be executed by user, or by agent after explicit user permission
