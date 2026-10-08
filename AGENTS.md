@@ -30,9 +30,9 @@ Expect a BRAIN.md in the project root.
     - Structure the neuron according to the following template: a neuron is devided in 3 sections: axon, body, and dendrites
     - Determine the neuron's parent as the closest neuron.md in the current neuron's ancestor folders. If there is no parent neuron, assign BRAIN.md as parent
     - Determine the neuron's childrens as the list of closest neuron.md in each subpath of the current neuron's location. A neuron can have no chilren.
-    - Add a reference to the parent neuron to the current neuron under the axon section.
-    - Add a reference to the current neuron to each one of its children, under the dendrites section
-    - Update the parent neuron reference in each child of the current neuron, to reference the current neuron. There can be only one parent for each neuron.
+    - In the current neuron, under the axon section reference to the current neuron parent. Axon can have only one parent reference
+    - In each of the current neuron children, under their axon section, reference the current neuron. Axons can have only one parent reference
+    - In the current neuron parent, under the dendrites section, add a reference to the current neuron
 
 - Whenever you create an entry in a neuron.md for file_x:
     - create the entry under the body section of the neuron
