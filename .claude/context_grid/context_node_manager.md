@@ -19,17 +19,17 @@ Given file_x in folder_x, the following operates under the assumption that file_
     - Assign a value to fields in the file_x record, as prescribed by the field rules. 
     - Propagate:
         - `imports_from` to `imported_by`: 
-            for each file_n in the `imports_from` list:
+            for each file_y in the `imports_from` list:
             - let's name x_imports_from = current `imports_from` list
-            - If file_y does not have a context node, create a contex node for file_y (and consequently its PGT record)
-            - let's name y_imported_by = the `imported_by` list of file_'s PGT record
+            - If file_y does not have a context node, create a contextnode for file_y (and consequently its PGT record)
+            - let's name y_imported_by = the `imported_by` list of file_y PGT record
             - If the path to file_x is not in y_imported_by, add it to y_imported_by
 
 - Whenever you update the record of file_x in the PGT of a context_node.md:
     - Consider the edits you made to file_x, and your knowledge regarding file_x already available to the present session
     - If file_x has been deleted:
         - Propagate:
-            - `imports_from` to `imported_by`: for each PGT record of each file in `imports_from`, remove file_x path from `imported_by`
+            - `imports_from` to `imported_by`: in each PGT record of each file in `imports_from`, remove file_x path from `imported_by`
         - Remove file_x PGT record
     - If file_x has been moved or renamed:
         - Propagate:
@@ -41,11 +41,11 @@ Given file_x in folder_x, the following operates under the assumption that file_
             - Take a session lasting note of the updated field value: prop_f_new
             - Propagate:
                 - `imports_from` to `imported_by`: 
-                    for each file_n in prop_f_old that is not in prop_f_new:
-                    - If file_y does not have a context node, create a contex node for file_y (and consequently its PGT record)
-                    - let's name y_imported_by = the `imported_by` list of file_'s PGT record
+                    for each file_y in prop_f_old that is not in prop_f_new:
+                    - If file_y does not have a context node, create a contextnode for file_y (and consequently its PGT record)
+                    - let's name y_imported_by = the `imported_by` list of file_y PGT record
                     - Remove all copies of file_x path from y_imported_by
-                    for each file_n in prop_f_new:
-                    - If file_y does not have a context node, create a contex node for file_y (and consequently its PGT record)
-                    - let's name y_imported_by = the `imported_by` list of file_'s PGT record
+                    for each file_y in prop_f_new:
+                    - If file_y does not have a context node, create a contextnode for file_y (and consequently its PGT record)
+                    - let's name y_imported_by = the `imported_by` list of file_y PGT record
                     - If the path to file_x is not in y_imported_by, add it to y_imported_by
