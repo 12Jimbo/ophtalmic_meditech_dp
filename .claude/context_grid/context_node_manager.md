@@ -10,10 +10,12 @@ The process described in this document is meant to have as object a file_x in fo
     - file_x has unstaged changes
 If the assumptions are not met, halt the process and signal the discrepancy. Otherwise:
 - Consider file_x diff
-    - If file_x has been deleted, and has a CNT record:
-        - For each male vertex in file_x record, for each file_y path in the male vertex, cut the file_y edge originating from file_x male vertex
-        - Remove file_x CNT record
-        - End of processing for file_x
+    - If file_x has been deleted:
+        - If file_x has no CNT record, stop processing file_X
+        - If fileand has a CNT record:
+            - For each male vertex in file_x record, for each file_y path in the male vertex, cut the edge from file_x to file_y on the male vertex
+            - Remove file_x CNT record
+            - End of processing for file_x
     - Otherwise:
         - If no context_node.md file exists in folder_x:
             - create a context_node.md file in folder_x using context_node_master as template
@@ -37,9 +39,13 @@ If the assumptions are not met, halt the process and signal the discrepancy. Oth
         - For each male vertex, for each file_y path removed from a male vertex, cut the edge from file_x to file_y on the male vertex
 
 Grid management commands:
-    - "There is and edge from file_x male vertex to file_y" means that a given male vertex of file_x lists file_y, and that the coupled female vertex of file_y lists file_x `resource` value
+    - An edge from file_x to file_y on male vertex mv exists if:
+        - mv is coupled with fv
+        - file_x.mv is lists file_y path
+        - file_y.fv lists file_x path
+    - An edge from file_x to file_y on male vertex mv is equivalent to an edge from file_x to file_y on female vertex fv if fv and mv are coupled
     - If an instruction applies to an edge from file_x to file_y on field_z, then:
-        - The instruction assumes that field_z is a coupled vertex, 
+        - The instruction assumes that field_z is a coupled vertex
         - For the scope of the instruction:
             - the couple's male vertex in file_x CTN record is referred to just as male
             - the couple's female vertex in file_y CTN record is referred to just as female
@@ -47,12 +53,10 @@ Grid management commands:
     - If invoking: grow an edge from file_x to file_y on field_z:
         - If assumptions are met, file_x path is added to the female (unless already present)
     - If invoking: cut the edge from file_x to file_y on field_z:
-        - The instruction assumes file_x path is listed in the female        
+        - The instruction assumes file_x path is listed in the female
         - If assumptions are met, file_x path is removed from the female
     - If invoking: regrow the edge from file_x to file_y on field_z:
         - The instruction assumes that file_x old path is listed in the female, but file_x new path is not
         - If assumptions are met:
             - cut the edge from file_x to file_y on field_z using the old file_x path
             - grow the edge from file_x to file_y on field_z using the new file_x path
-    
-  
