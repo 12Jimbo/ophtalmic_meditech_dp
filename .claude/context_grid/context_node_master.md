@@ -23,44 +23,40 @@ the code node table tracks, for each code file (resource) in this table:
 
 
 Field Rules:
-  - resource: is the path relative to project root of a file in the current folder, serves as record id. 
+  - `resource`: is the path relative to project root of a file in the current folder, serves as record id. 
     - resource path cannot be empty or null
     - There cannot be duplicates of this field in the CNT for a given context node file.
     - Expressions like "this file's CNT record" unambiguously refer to the record in the CNT of the file's context node identified by the file's path
-  - description: a summary description of the resource
+  - `description`: a summary description of the resource
     - under 150 characters
     - can be empty
     - must be assigned a value based exclusively on resource content
-  - imports_from: is the list of paths relative to project root of all and only the scripts or notebooks that are imported by the resource.
+  - `imports_from`: is the list of paths relative to project root of all and only the scripts or notebooks that are imported by the resource.
+    - is a male vertex to `imported_by`
     - must be assigned a value based exclusively on resource code content
-    - can be empty
-    - the list cannot contain duplicates
-    - assign value based exclusively on resource content
-    - cannot include the path in `resource` in the list
+    - cannot include the path in the `resource` field of the record
     - can propagate to `imported_by`
-  - imported_by: is the list of paths relative to project root of scripts or notebooks that import the resource
-    - can be empty
-    - the list cannot contain duplicates
-    - cannot include the path in `resource` in the list
+  - `imported_by`: is the list of paths relative to project root of scripts or notebooks that import the resource
+    - is a female vertex to CNT `importt_from`
     - can be populated only as target of a propagating fied
-    - initilizes to empty list
-  - data_sources: is the list of all and only the files the resource reads from
+  - `data_sources`: is the list of all and only the files the resource reads from
+    - is a vertex
     - must be assigned a value based exclusively on resource code content
-    - can be empty
-    - the list cannot contain duplicates
-  - data_targets: is the list of all and only the files the resource writes to
+  - `data_targets`: is the list of all and only the files the resource writes to
+    - is a vertex
     - must be assigned a value based exclusively on resource code content
-    - can be empty
-    - the list cannot contain duplicates
-  - updated_at: is the current timestamp at the time of record creation or update
-  - update_n: starts at 1 upon record creation, and increases by 1 every time the record is updated
+  - `updated_at`: is the current timestamp at the time of record creation or update
+  - `update_n`: starts at 1 upon record creation, and increases by 1 every time the record is updated
 
-Field Rule Concepts:
+Grid Rules:
   - Vertex fields:
-    - Are a list of file paths relative to root
-    - vertex fields can be male or female:
-      - Upon 
-  - Propagating fields: fields that can propagate to a target field can reference a target file and inform updates to the target field of that file's CNT record.
-    - There can be more than one target file
-    - There can be more than one target field
-    - Target files can reside in locations different than the current node's location
+    - Are a lists of file paths relative to project root
+    - Vertexes can be empty
+    - Vertexes can't contain duplicates
+    - Vertexes cannot include the path in the `resource` field of the same record
+    - Vertex fields can be:
+      - Female, relative to a given male vertex field of a node table
+        - Upon record creation, female vertexes are initialized to empty
+      - Male, relative to a given female vertex field of a node table
+        - Upon record creation, for each file path listed in the male vertex, add the male's `resource` value to that file's female vertex if it exists
+    - Two vertex fields are considered coupled if they are male and female relative to each other
