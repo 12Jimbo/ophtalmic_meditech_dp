@@ -6,7 +6,11 @@ description: creates or updates context_node.md files in the project
 Read the context_node_master `.claude/context_grid/context_node_master.md`.
 Invoke the contect_edge_manager `.claude/context_grid/context_edge_manager.md` when operating on edges.
 
-The process described in this document is meant to have as object a file_x in folder_x, and assumes that:
+The process described in this document is meant to have as object a file_x in folder_x, for x in [1, ... n]. 
+
+FOR EACH FILE_X, FOLLOW THE NODE UPDATE PROCESS
+------------------------------------------------------------------------------------------------------
+It is assumed that:
     - file_x is a file containing executable code (like python or sql scripts, or notebooks)
     - file_x either has unstaged changes or has been created after the last commit
 If the assumptions are not met, halt the process and signal the discrepancy. Otherwise:
@@ -18,17 +22,17 @@ If the assumptions are not met, halt the process and signal the discrepancy. Oth
             - End of processing for file_x
     - If file_x has been moved from folder_z to folder_x:
         - If file_x has a CNT record in folder_z context node, delete its CNT record   
-    - If no context_node.md file exists in folder_x:
-        - create a context_node.md file in folder_x using context_node_master as template.
-            - Copy from template only table schemas and table titles
-            - Add in the first line a reference to the maste filepath
+    - If no context_node.md file exists in folder_x, create it
     - Read the context_node.md field rules to inform how you assign values each field in the following process
     - Create or update the record for file_x in the CNT of context_node.md
+
+- Whenever you create a context_node.md file in folder_x, use context_node_master as template:
+    - Copy from template only table schemas and table titles
+    - Add in the first line a reference to the master filepath 
 
 - Whenever you create the CNT record of file_x in a context_node.md:
     - Read file_x 
     - Assign a value to each field in the file_x record, as prescribed by the field rules. 
-    - For each male vertex, for each file_y path in it, grow the edge from file_x to file_y on the male vertex
 
 - Whenever you delete the CNT record of file_x in a context_node.md:
     - For each male vertex in file_x record, for each file_y path in the male vertex, cut the edge from file_x to file_y on the male vertex
@@ -36,20 +40,17 @@ If the assumptions are not met, halt the process and signal the discrepancy. Oth
 
 - Whenever you update the CNT record of file_x in the CNT of a context_node.md:
     - Keep in memory the old version of the CNT record for the duration of the session
-    - If file_x has been renamed:
-        - Update file_x `resource` value in its CNT record with the new file_x path
-        - For each male vertex, for each file_y path in it, regrow the edge from file_x to file_y on the male vertex
-        - For each female vertex and its coupled male vertex, for each file_y path in the female vertex:
-            - Take note of the list of resources in the female vertex
-            - Empty the female vertex
-            - For each file_y path in the noted resources, grow the edge file_y to file_x on the male vertex
-    - If file_x content was edited:
-        - Following the field rules, update, in this order:
-            - The `resource` field 
-            - simple fields
-            - male vertexes
-        - Then:
-            - If the `resource` has changed value as result of the update, for each male vertex, for each file_y path in it, regrow the edge from file_x to file_y on the male vertex
-            - Otherwise:
-                - For each male vertex, for each file_y path added to the male vertex, grow the edge from file_x to file_y on the male vertex
-                - For each male vertex, for each file_y path removed from a male vertex, cut the edge from file_x to file_y on the male vertex
+    - Following the field rules, update, in this order:
+        - The `resource` field 
+        - simple fields
+        - male vertexes
+
+------------------------------------------------------------------------------------------------------
+
+After node processing has executed for each file_x, call the context edge manager and pass it for edge processing:
+ - The list of resourceas for which a CNT record was created during the present process: updated_records_list
+ - The list of resourceas for which a CNT record id was updated during the present process: updated_ids_list
+ - The list of resourceas for which a CNT record male vertexes were updated during the present process: updated_males_list. For each male vertex, provide the sublists:
+    - Of resources that were added to the vertex
+    - Of resources taht were removed from the present vertex
+
