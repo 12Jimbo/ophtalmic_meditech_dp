@@ -21,6 +21,7 @@ If the assumptions are not met, halt the process and signal the discrepancy. Oth
     - If no context_node.md file exists in folder_x:
         - create a context_node.md file in folder_x using context_node_master as template
             - Do not copy from template rows beginning with "--"
+            - Copy the table schemas, but do not import the sample records to the context node instance
     - Read the context_node.md field rules to inform how you assign values each field in the following process
     - Create or update the record for file_x in the CNT of context_node.md
 

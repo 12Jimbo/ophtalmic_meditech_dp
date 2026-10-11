@@ -59,3 +59,6 @@ Grid Rules:
         - Has to be coupled to one and only one female vertex
         - Males are authoritative and are assigned values based on resource code exclusively
 
+Metadata Fields
+  - Metadata fields describe events of resource content editing
+  - Metadata fields are not refreshed when their CNT record is edited exclusively in the `resource` field or in female vertexes
