@@ -1,9 +1,8 @@
 
--- MASTER CONTEXT NODE TEMPLATE
--- This document serves as template for context_node.md files, aka context nodes.
--- This document also specifies how to instantiate context node from this template - how to fill placeholders with actual values.
--- Rows beginning with "--" will be treated as comments and not be included in instances of this template
--- The expressions "current folder" or "folder" in the following will refer to the folder of the instantiated context node
+MASTER CONTEXT NODE TEMPLATE
+This document serves as template for context_node.md files, aka context nodes.
+This document also specifies how to instantiate context node from this template - how to fill placeholders with actual values.
+The expressions "current folder" or "folder" in the following will refer to the folder of the instantiated context node
 
 # Context Node
 Each context node stores metadata about files in its same folder path.
@@ -16,16 +15,15 @@ the code node table tracks, for each code file (resource) in this table:
   - Code dependencies upstream and downstream
   - Data dependencies upstream and downstream
 
---Sample CNT:
+Code Node Table (CNT) - Sample
 | resource | description | imports_from | imported_by | data_sources | data_targets | updated_at | update_n |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | `scripts\clean_data.py` | Cleans the raw dataset for downstream analysis. | [`config\settings.py`] | [`notebooks\analysis.ipynb`] | [`data\raw.csv`] | [`data\clean.csv`] | `2026-10-08T08:34:00+02:00` | 1 |
 
 
 Field Rules:
-  - `resource`: is the path relative to project root of a file in the current folder, serves as record id. 
-    - resource path cannot be empty or null
-    - There cannot be duplicates of this field in the CNT for a given context node file.
+  - `resource`: is the path relative to project root of a file in the current folder
+    - is the record id. 
     - Expressions like "this file's CNT record" unambiguously refer to the record in the CNT of the file's context node identified by the file's path
     - In the context of context nodes, the term "resource" refers to a file paths relative to project root
   - `description`: a summary description of the resource
@@ -44,7 +42,15 @@ Field Rules:
   - `updated_at`: is the current timestamp at the time of record creation or update
   - `update_n`: starts at 1 upon record creation, and increases by 1 every time the record is updated
 
-Grid Rules:
+Field types:
+  - Simple fields: if a field has no specified type, it's assumed to be a simple field
+
+
+  - Record identity field, aka record id. An id field value:
+    - cannot be empty 
+    - cannot be null
+    - must be unique in the table
+    - there can be only one id field per table
   - Vertex fields:
     - Are a lists of file resources
     - Vertexes can be empty
@@ -59,6 +65,6 @@ Grid Rules:
         - Has to be coupled to one and only one female vertex
         - Males are authoritative and are assigned values based on resource code exclusively
 
-Metadata Fields
-  - Metadata fields describe events of resource content editing
-  - Metadata fields are not refreshed when their CNT record is edited exclusively in the `resource` field or in female vertexes
+  - Metadata Fields
+    - Metadata fields describe events of resource content editing
+    - Metadata fields are not refreshed when their CNT record is edited exclusively in the `resource` field or in female vertexes

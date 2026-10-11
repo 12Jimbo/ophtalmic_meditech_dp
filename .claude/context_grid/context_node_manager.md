@@ -8,9 +8,9 @@ Invoke the contect_edge_manager `.claude/context_grid/context_edge_manager.md` w
 
 The process described in this document is meant to have as object a file_x in folder_x, and assumes that:
     - file_x is a file containing executable code (like python or sql scripts, or notebooks)
-    - file_x has unstaged changes
+    - file_x either has unstaged changes or has been created after the last commit
 If the assumptions are not met, halt the process and signal the discrepancy. Otherwise:
-- Consider file_x working-tree diff
+- Consider file_x content, and its unstaged working-tree diff if it exists
     - If file_x has been deleted:
         - If file_x has no CNT record, stop processing file_X
         - If file_x has a CNT record:
@@ -19,9 +19,9 @@ If the assumptions are not met, halt the process and signal the discrepancy. Oth
     - If file_x has been moved from folder_z to folder_x:
         - If file_x has a CNT record in folder_z context node, delete its CNT record   
     - If no context_node.md file exists in folder_x:
-        - create a context_node.md file in folder_x using context_node_master as template
-            - Do not copy from template rows beginning with "--"
-            - Copy the table schemas, but do not import the sample records to the context node instance
+        - create a context_node.md file in folder_x using context_node_master as template.
+            - Copy from template only table schemas and table titles
+            - Add in the first line a reference to the maste filepath
     - Read the context_node.md field rules to inform how you assign values each field in the following process
     - Create or update the record for file_x in the CNT of context_node.md
 
@@ -44,6 +44,12 @@ If the assumptions are not met, halt the process and signal the discrepancy. Oth
             - Empty the female vertex
             - For each file_y path in the noted resources, grow the edge file_y to file_x on the male vertex
     - If file_x content was edited:
-        - Update all fields that except for female vertexes in the file_x CNT record, as prescribed by the field rules.
-        - For each male vertex, for each file_y path added to the male vertex, grow the edge from file_x to file_y on the male vertex
-        - For each male vertex, for each file_y path removed from a male vertex, cut the edge from file_x to file_y on the male vertex
+        - Following the field rules, update, in this order:
+            - The `resource` field 
+            - simple fields
+            - male vertexes
+        - Then:
+            - If the `resource` has changed value as result of the update, for each male vertex, for each file_y path in it, regrow the edge from file_x to file_y on the male vertex
+            - Otherwise:
+                - For each male vertex, for each file_y path added to the male vertex, grow the edge from file_x to file_y on the male vertex
+                - For each male vertex, for each file_y path removed from a male vertex, cut the edge from file_x to file_y on the male vertex
