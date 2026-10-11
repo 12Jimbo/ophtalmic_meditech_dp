@@ -27,36 +27,35 @@ Field Rules:
     - resource path cannot be empty or null
     - There cannot be duplicates of this field in the CNT for a given context node file.
     - Expressions like "this file's CNT record" unambiguously refer to the record in the CNT of the file's context node identified by the file's path
+    - In the context of context nodes, the term "resource" refers to a file paths relative to project root
   - `description`: a summary description of the resource
     - under 150 characters
     - can be empty
     - must be assigned a value based exclusively on resource content
-  - `imports_from`: is the list of paths relative to project root of all and only the scripts or notebooks that are imported by the resource.
+  - `imports_from`: is the list of resources of all and only the scripts or notebooks that are imported by the resource.
     - is a male vertex coupled with CNT `imported_by`
-    - must be assigned a value based exclusively on resource code content
-    - cannot include the path in the `resource` field of the record
     - can propagate to `imported_by`
-  - `imported_by`: is the list of paths relative to project root of scripts or notebooks that import the resource
-    - is a female vertex coupled with CNT `importt_from`
-    - can be populated only as target of a propagating fied
+  - `imported_by`: is the list of resources of scripts or notebooks that import the resource
+    - is a female vertex coupled with CNT `import_from`
   - `data_sources`: is the list of all and only the files the resource reads from
     - is a vertex
-    - must be assigned a value based exclusively on resource code content
   - `data_targets`: is the list of all and only the files the resource writes to
     - is a vertex
-    - must be assigned a value based exclusively on resource code content
   - `updated_at`: is the current timestamp at the time of record creation or update
   - `update_n`: starts at 1 upon record creation, and increases by 1 every time the record is updated
 
 Grid Rules:
   - Vertex fields:
-    - Are a lists of file paths relative to project root
+    - Are a lists of file resources
     - Vertexes can be empty
     - Vertexes can't contain duplicates
-    - Vertexes cannot include the path in the `resource` field of the same record
+    - Vertexes cannot include the resource that identifies their own record
     - Vertex fields can be coupled:
       - As females, to a given male vertex field of a node table
         - Upon record creation, female vertexes are initialized to empty
         - Has to be coupled to one and only one male vertex
+        - Female vertexes are reciprocal indexes derived from males
       - As males, relative to a given female vertex field of a node table
         - Has to be coupled to one and only one female vertex
+        - Males are authoritative and are assigned values based on resource code exclusively
+

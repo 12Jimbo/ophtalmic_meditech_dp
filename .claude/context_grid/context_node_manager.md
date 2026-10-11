@@ -4,7 +4,7 @@ description: creates or updates context_node.md files in the project
 ---
 
 Read the context_node_master `.claude/context_grid/context_node_master.md`.
-Invoke the contect_edge_manager `.claude/context_grid/context_node_master.md` when operating on edges.
+Invoke the contect_edge_manager `.claude/context_grid/context_edge_mmanager.md` when operating on edges.
 
 The process described in this document is meant to have as object a file_x in folder_x, and assumes that:
     - file_x is a file containing executable code (like python or sql scripts, or notebooks)
@@ -27,7 +27,8 @@ If the assumptions are not met, halt the process and signal the discrepancy. Oth
 - Whenever you create the CNT record of file_x in a context_node.md:
     - Read file_x 
     - Assign a value to each field in the file_x record, as prescribed by the field rules. 
-    - For each male vertex field, for each file_y path in male_vertex_z, grow the edge from file_x to file_y on the male vertex field
+    - For each male vertex, for each file_y path in male_vertex_z:
+        - Grow the edge from file_x to file_y on the male vertex
 
 - Whenever you delete the CNT record of file_x in a context_node.md:
     - For each male vertex in file_x record, for each file_y path in the male vertex, cut the edge from file_x to file_y on the male vertex

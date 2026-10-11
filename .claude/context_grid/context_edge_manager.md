@@ -19,6 +19,8 @@ Assumptions
 
 Callable Commands
 - Grow an edge from file_x to file_y on field_z:
+    - If file_y does not have a context node, create it
+    - If file_y does not have a CNT record, create it
     - If assumptions are met, file_x path is added to the female, unless already present
 - Cut the edge from file_x to file_y on field_z:
     - If assumptions are met, file_x path is removed from the female, if present
