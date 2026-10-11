@@ -13,8 +13,8 @@ Assumptions
 - If an instruction applies to an edge from file_x to file_y on field_z, then:
     - The instruction assumes that field_z is a male vertex coupled with a female vertex
     - For the scope of the instruction:
-        - the couple's male vertex in file_x CTN record is referred to just as male
-        - the couple's female vertex in file_y CTN record is referred to just as female
+        - the couple's male vertex in file_x CNT record is referred to just as male
+        - the couple's female vertex in file_y CNT record is referred to just as female
     - The instruction assumes that file_y path is listed in the male (the edge growth stops otherwise)
 
 Callable Commands

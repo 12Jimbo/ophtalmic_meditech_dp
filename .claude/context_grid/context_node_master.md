@@ -36,7 +36,7 @@ Field Rules:
     - is a male vertex coupled with CNT `imported_by`
     - can propagate to `imported_by`
   - `imported_by`: is the list of resources of scripts or notebooks that import the resource
-    - is a female vertex coupled with CNT `import_from`
+    - is a female vertex coupled with CNT `imports_from`
   - `data_sources`: is the list of all and only the files the resource reads from
     - is a vertex
   - `data_targets`: is the list of all and only the files the resource writes to
