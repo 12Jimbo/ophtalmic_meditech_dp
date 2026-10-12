@@ -32,7 +32,6 @@ Field Rules:
     - must be assigned a value based exclusively on resource content
   - `imports_from`: is the list of resources of all and only the scripts or notebooks that are imported by the resource.
     - is a male vertex coupled with CNT `imported_by`
-    - can propagate to `imported_by`
   - `imported_by`: is the list of resources of scripts or notebooks that import the resource
     - is a female vertex coupled with CNT `imports_from`
   - `data_sources`: is the list of all and only the files the resource reads from
@@ -44,7 +43,6 @@ Field Rules:
 
 Field types:
   - Simple fields: if a field has no specified type, it's assumed to be a simple field
-
 
   - Record identity field, aka record id. An id field value:
     - cannot be empty 
