@@ -24,9 +24,11 @@ If the assumptions are not met, halt the process and signal the discrepancy. Oth
         - If file_x has a CNT record in folder_z context node, delete its CNT record   
     - If no context_node.md file exists in folder_x, create it
     - Read the context_node_master.md field rules to inform how you assign values each field in the following process
-    - Update the CNT schema, if it does match the fields described in the context node master:
+    - Update the CNT schema, if it does not match the fields described in the context node master:
         - Add all new master fields to the CNT, initializing to empty for each record
-        - Remove all master fields in CNT that are not in the context node master 
+        - Remove all master fields in CNT that are not in the context node master
+        - Refresh the timestamp of last master commit in context_node.md
+      If there is no CNT, just create an empty schema according to the context node master.
     - Create or update the record for file_x in the CNT of context_node.md
 
 - Whenever you create a context_node.md file in folder_x, use context_node_master as template:
@@ -44,7 +46,6 @@ If the assumptions are not met, halt the process and signal the discrepancy. Oth
 
 - Whenever you update the CNT record of file_x in the CNT of a context_node.md:
     - Keep in memory the old version of the CNT record for the duration of the session
-    - Refresh the timestamp of last master commit in context_node.md
     - Following the field rules, update, in this order:
         - The `resource` field 
         - simple fields
