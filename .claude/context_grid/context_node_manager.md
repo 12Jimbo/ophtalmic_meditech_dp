@@ -23,7 +23,7 @@ If the assumptions are not met, halt the process and signal the discrepancy. Oth
     - If file_x has been moved from folder_z to folder_x:
         - If file_x has a CNT record in folder_z context node, delete its CNT record   
     - If no context_node.md file exists in folder_x, create it
-    - Read the context_node.md field rules to inform how you assign values each field in the following process
+    - Read the context_node_master.md field rules to inform how you assign values each field in the following process
     - Create or update the record for file_x in the CNT of context_node.md
 
 - Whenever you create a context_node.md file in folder_x, use context_node_master as template:
@@ -48,9 +48,9 @@ If the assumptions are not met, halt the process and signal the discrepancy. Oth
 ------------------------------------------------------------------------------------------------------
 
 After node processing has executed for each file_x, call the context edge manager and pass it for edge processing:
- - The list of resourceas for which a CNT record was created during the present process: updated_records_list
- - The list of resourceas for which a CNT record id was updated during the present process: updated_ids_list
- - The list of resourceas for which a CNT record male vertexes were updated during the present process: updated_males_list. For each male vertex, provide the sublists:
+ - created_records_list: the list of resourceas for which a CNT record was created during the present process: 
+ - updated_ids_list: the list of resourceas for which a CNT record id was updated during the present process: 
+ - updated_males_list: the list of resourceas for which a CNT record male vertexes were updated during the present process. For each male vertex, provide the sublists:
     - Of resources that were added to the vertex
     - Of resources taht were removed from the present vertex
 

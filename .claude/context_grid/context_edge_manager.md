@@ -10,13 +10,14 @@ Semantics
     - mv is coupled with fv
     - file_x.mv is lists file_y path
     - file_y.fv lists file_x path
+- A resource listed in a female vertex of file_y is a pending edge if, considering the male vertex coupled with the female, the resource does not list file_y in its male vertex. 
 
 Assumptions
+- For the scope of an instruction:
+    - the couple's male vertex in file_x CNT record is referred to just as male
+    - the couple's female vertex in file_y CNT record is referred to just as female
 - If an instruction applies to an edge from file_x to file_y on field_z, then:
     - The instruction assumes that field_z is a male vertex coupled with a female vertex
-    - For the scope of the instruction:
-        - the couple's male vertex in file_x CNT record is referred to just as male
-        - the couple's female vertex in file_y CNT record is referred to just as female
     - The instruction assumes that file_y path is listed in the male (the edge growth stops otherwise)
 
 Callable Commands
@@ -31,13 +32,17 @@ Callable Commands
     - If assumptions are met:
         - cut the edge from file_x to file_y on field_z using the old file_x path
         - grow the edge from file_x to file_y on field_z using the new file_x path
+- Cut the pending edge in field_z of file_y left by file_x:
+    - Assumes field_z is a female vertex that includes file_x path
+    - Assumes there is no edge from file_x to file_y on the male
+    - If assumptions are met, remove file_x from the female
 
 
 
 
 EGE PROCESSING  
 -----------------------------------------------------------------------------
-- For each resource in updated_records_list:
+- For each resource in created_records_list:
     - For each male vertex, for each file_y path in it, grow the edge from file_x to file_y on the male vertex
 
 - For each resource in updated_ids_list:
@@ -45,11 +50,11 @@ EGE PROCESSING
     - For each female vertex and its coupled male vertex, for each file_y path in the female vertex:
         - Take note of the list of resources in the female vertex
         - Empty the female vertex
-        - For each file_y path in the noted resources, grow the edge file_y to file_x on the male vertex
+        - For each file_y path in the noted resources, grow the edge from file_y to file_x on the male vertex
 
 - For each resource in the updated_males_list:
     - For each male vertex, for each file_y path added to the male vertex, grow the edge from file_x to file_y on the male vertex
-    - For each male vertex, for each file_y path removed from a male vertex, cut the edge from file_x to file_y on the male vertex
+    - For each male vertex and its coupled female, for each file_y path removed from a male vertex, remove the resource from file_y coupled female vertex
 
 
 -----------------------------------------------------------------------------
