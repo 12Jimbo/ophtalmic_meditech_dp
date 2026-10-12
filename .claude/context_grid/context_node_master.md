@@ -62,6 +62,7 @@ Field types:
       - As males, relative to a given female vertex field of a node table
         - Has to be coupled to one and only one female vertex
         - Males are authoritative and are assigned values based on resource code exclusively
+        - If value assignment to a male would leave the male an empty list, value it to "NONE" instead
 
   - Metadata Fields
     - Metadata fields describe events of resource content editing
