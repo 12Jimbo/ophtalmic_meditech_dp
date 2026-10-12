@@ -24,6 +24,9 @@ If the assumptions are not met, halt the process and signal the discrepancy. Oth
         - If file_x has a CNT record in folder_z context node, delete its CNT record   
     - If no context_node.md file exists in folder_x, create it
     - Read the context_node_master.md field rules to inform how you assign values each field in the following process
+    - Update the CNT schema, if it does match the fields described in the context node master:
+        - Add all new master fields to the CNT, initializing to empty for each record
+        - Remove all master fields in CNT that are not in the context node master 
     - Create or update the record for file_x in the CNT of context_node.md
 
 - Whenever you create a context_node.md file in folder_x, use context_node_master as template:
@@ -32,9 +35,6 @@ If the assumptions are not met, halt the process and signal the discrepancy. Oth
 
 - Whenever you create the CNT record of file_x in a context_node.md:
     - Read file_x and it's context node CNT
-    - If the CNT fields don't match those described in the context node master:
-        - Add all new master fields to the CNT, initializing to empty for each record
-        - Remove all master fields in CNT that are not in the context node master 
     - Assign a value to each field in the file_x record, as prescribed by the field rules
     
 
