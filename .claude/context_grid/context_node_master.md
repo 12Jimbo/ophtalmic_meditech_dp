@@ -54,7 +54,8 @@ Field types:
     - there can be only one id field per table
   - Vertex fields:
     - Are a lists of file resources
-    - Vertexes can be empty
+    - Vertexes can be empty strings
+    - Vertexes initialize to empty lists []
     - Vertexes can't contain duplicates
     - Vertexes cannot include the resource that identifies their own record
     - Vertex fields can be coupled:
