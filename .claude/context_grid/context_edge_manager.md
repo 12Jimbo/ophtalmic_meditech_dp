@@ -54,7 +54,7 @@ EGE PROCESSING
 
 - For each resource in the updated_males_list:
     - For each male vertex, for each file_y path added to the male vertex, grow the edge from file_x to file_y on the male vertex
-    - For each male vertex and its coupled female, for each file_y path removed from a male vertex, remove the resource from file_y coupled female vertex
+    - For each male vertex and its coupled female, for each file_y path removed from a male vertex, cut the pending edge in female of file_y left by the resource
 
 
 -----------------------------------------------------------------------------
