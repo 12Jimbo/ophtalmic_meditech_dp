@@ -51,6 +51,7 @@ EGE PROCESSING
         - Take note of the list of resources in the female vertex
         - Empty the female vertex
         - For each file_y path in the noted resources, grow the edge from file_y to file_x on the male vertex
+    - For each male vertex and its coupled female, for each file_y path removed from a male vertex, cut the pending edge in female of file_y left by the resource's old id
 
 - For each resource in the updated_males_list:
     - For each male vertex, for each file_y path added to the male vertex, grow the edge from file_x to file_y on the male vertex
