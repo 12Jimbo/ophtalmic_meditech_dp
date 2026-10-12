@@ -41,6 +41,9 @@ Field Rules:
   - `updated_at`: is the current timestamp at the time of record creation or update
   - `update_n`: starts at 1 upon record creation, and increases by 1 every time the record is updated
 
+By convention, fields that evaluate to empty string have never been processed.
+Fields that evaluate to NONE have been processed, but it was found there is no value to assigned them.
+
 Field types:
   - Simple fields: if a field has no specified type, it's assumed to be a simple field
 
