@@ -28,11 +28,15 @@ If the assumptions are not met, halt the process and signal the discrepancy. Oth
 
 - Whenever you create a context_node.md file in folder_x, use context_node_master as template:
     - Copy from template only table schemas and table titles
-    - Add in the first line a reference to the master filepath 
+    - Add in the first line a reference to the master filepath, indicating the timestamp of master last commit
 
 - Whenever you create the CNT record of file_x in a context_node.md:
-    - Read file_x 
-    - Assign a value to each field in the file_x record, as prescribed by the field rules. 
+    - Read file_x and it's context node CNT
+    - If the CNT fields don't match those described in the context node master:
+        - Add all new master fields to the CNT, initializing to empty for each record
+        - Remove all master fields in CNT that are not in the context node master 
+    - Assign a value to each field in the file_x record, as prescribed by the field rules:
+    
 
 - Whenever you delete the CNT record of file_x in a context_node.md:
     - For each male vertex in file_x record, for each file_y path in the male vertex, cut the edge from file_x to file_y on the male vertex
@@ -40,6 +44,7 @@ If the assumptions are not met, halt the process and signal the discrepancy. Oth
 
 - Whenever you update the CNT record of file_x in the CNT of a context_node.md:
     - Keep in memory the old version of the CNT record for the duration of the session
+    - Refresh the timestamp of last master commit in context_node.md
     - Following the field rules, update, in this order:
         - The `resource` field 
         - simple fields
