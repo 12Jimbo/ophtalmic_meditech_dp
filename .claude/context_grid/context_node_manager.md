@@ -35,7 +35,7 @@ If the assumptions are not met, halt the process and signal the discrepancy. Oth
     - If the CNT fields don't match those described in the context node master:
         - Add all new master fields to the CNT, initializing to empty for each record
         - Remove all master fields in CNT that are not in the context node master 
-    - Assign a value to each field in the file_x record, as prescribed by the field rules:
+    - Assign a value to each field in the file_x record, as prescribed by the field rules
     
 
 - Whenever you delete the CNT record of file_x in a context_node.md:
@@ -53,9 +53,9 @@ If the assumptions are not met, halt the process and signal the discrepancy. Oth
 ------------------------------------------------------------------------------------------------------
 
 After node processing has executed for each file_x, call the context edge manager and pass it for edge processing:
- - created_records_list: the list of resourceas for which a CNT record was created during the present process: 
- - updated_ids_list: the list of resourceas for which a CNT record id was updated during the present process: 
- - updated_males_list: the list of resourceas for which a CNT record male vertexes were updated during the present process. For each male vertex, provide the sublists:
+ - created_records_list: the list of resources for which a CNT record was created during the present process: 
+ - updated_ids_list: the list of resources for which the CNT record id was updated during the present process: 
+ - updated_males_list: the list of resources for which CNT record male vertexes were updated during the present process. For each male vertex, provide the sublists:
     - Of resources that were added to the vertex
     - Of resources taht were removed from the present vertex
 
