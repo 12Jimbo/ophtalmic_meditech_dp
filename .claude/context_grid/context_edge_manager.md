@@ -19,6 +19,10 @@ Assumptions
 - If an instruction applies to an edge from file_x to file_y on field_z, then:
     - The instruction assumes that field_z is a male vertex coupled with a female vertex
     - The instruction assumes that file_y path is listed in the male (the edge growth stops otherwise)
+- If a vertex evaluates to empty string or "none", then it can be assumed to include no resource:
+    - empty string: is produced by field initialization
+    - none: is the result of processing
+
 
 Callable Commands
 - Grow an edge from file_x to file_y on field_z:
@@ -49,7 +53,7 @@ EGE PROCESSING
     - For each male vertex, for each file_y path in it, regrow the edge from file_x to file_y on the male vertex
     - For each female vertex and its coupled male vertex, for each file_y path in the female vertex:
         - Take note of the list of resources in the female vertex
-        - Empty the female vertex
+        - Assign the value "none" to the female vertex
         - For each file_y path in the noted resources, grow the edge from file_y to file_x on the male vertex
     - For each male vertex and its coupled female, for each file_y path removed from a male vertex, cut the pending edge in female of file_y left by the resource's old id
 

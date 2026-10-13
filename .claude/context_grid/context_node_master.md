@@ -79,7 +79,7 @@ Data Node Table (DNT) - Sample
   - Vertex fields:
     - Are a lists of file resources
     - Vertexes can be empty strings
-    - When file inspection determines that a vertexes is an empty list, assign the vertex the value "[]"
+    - When file inspection determines that a vertexes is an empty list, assign the vertex the value "none"
     - Vertexes can't contain duplicates
     - Vertexes cannot include the resource that identifies their own record
     - Vertex fields can be coupled:
