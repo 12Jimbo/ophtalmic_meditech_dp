@@ -4,6 +4,7 @@ This document serves as template for context_node.md files, aka context nodes.
 This document also specifies how to instantiate context node from this template - how to fill placeholders with actual values.
 The expressions "current folder" or "folder" in the following will refer to the folder of the instantiated context node
 
+
 # Context Node
 Each context node stores metadata about files in its same folder path.
 There cannot be more than one context node in the same folder.
@@ -78,12 +79,12 @@ Data Node Table (DNT) - Sample
   - Vertex fields:
     - Are a lists of file resources
     - Vertexes can be empty strings
-    - Vertexes initialize to empty lists []
+    - When file inspection determines that a vertexes is an empty list, assign the vertex the value "[]"
     - Vertexes can't contain duplicates
     - Vertexes cannot include the resource that identifies their own record
     - Vertex fields can be coupled:
       - As females, to a given male vertex field of a node table
-        - Upon record creation, female vertexes are initialized to empty
+        - Upon record creation, female vertexes initialize to empty string
         - Has to be coupled to one and only one male vertex
         - Female vertexes are reciprocal indexes derived from males
       - As males, relative to a given female vertex field of a node table

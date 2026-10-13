@@ -23,7 +23,7 @@ Assumptions
 Callable Commands
 - Grow an edge from file_x to file_y on field_z:
     - If file_y does not have a context node, create it
-    - If file_y does not have a node record, create it. Override the record creation process described in the context node manager: initialize to empty all fields except for id. Then move to the step below after initialization.
+    - If file_y does not have a node record, create it. Override the record creation process described in the context node manager: initialize to empty string all fields except for id. Then move to the step below after initialization.
     - If assumptions are met, file_x path is added to the female, unless already present
 - Cut the edge from file_x to file_y on field_z:
     - If assumptions are met, file_x path is removed from the female, if present
