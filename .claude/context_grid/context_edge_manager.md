@@ -46,6 +46,10 @@ Callable Commands
 
 EGE PROCESSING  
 -----------------------------------------------------------------------------
+- Whenever an edge operation results in a vertex containing no resources, assign "none" as vertex value
+
+- Whenever you add a first resource to a vertex, if the vertex evaluates to none, replace none with the resource
+
 - For each resource in created_records_list:
     - For each male vertex, for each file_y path in it, grow the edge from file_x to file_y on the male vertex
 
