@@ -8,7 +8,7 @@ The expressions "current folder" or "folder" in the following will refer to the 
 In the present document are used the following conventions:
 - All files with any of the following extensions are considered code files: ['.sql', '.py', '.ipynb']
 - All files with any of the following extensions are considered data files: ['.csv']
-- All files with any of the following extensions are considered data files: ['.json', '.yaml']
+- All files with any of the following extensions are considered configuration files: ['.json', '.yaml']
 
 # Context Node
 Each context node stores metadata about files in its same folder path.
