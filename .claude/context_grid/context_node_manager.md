@@ -11,11 +11,8 @@ The process described in this document is meant to have as object a file_x in fo
 FOR EACH FILE_X, FOLLOW THE NODE UPDATE PROCESS
 ------------------------------------------------------------------------------------------------------
 It is assumed that:
-    - file_x is eithere a code file or a data file
-        - if file_x is a code file, in the present document NT is a synonim of DNT
-        - if file_x is a data file, in the present document NT is a synonim of DNT
-        - In the present document, table fields are implied to be NT fields unless specified
-    - file_x either has unstaged changes or has been created after the last commit
+- file_x is eithere a code file or a data file
+- file_x either has unstaged changes or has been created after the last commit
 If the assumptions are not met, halt the process and signal the discrepancy. Otherwise:
 - Consider file_x content, and its unstaged working-tree diff if it exists
     - If file_x has been deleted:
@@ -63,3 +60,9 @@ After node processing has executed for each file_x, call the context edge manage
     - Of resources that were added to the vertex
     - Of resources taht were removed from the present vertex
 
+
+# Semantic Conventions
+- if file_x is a code file, in the present document NT is a synonim of CNT
+- if file_x is a data file, in the present document NT is a synonim of DNT
+- In the present document, table fields are implied to be NT fields unless specified
+- file_x node record refers either a DNT or a CNT table in file_x's node, depending on the *NT appropriate for the file extension

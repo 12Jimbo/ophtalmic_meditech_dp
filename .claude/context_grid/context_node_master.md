@@ -4,12 +4,6 @@ This document serves as template for context_node.md files, aka context nodes.
 This document also specifies how to instantiate context node from this template - how to fill placeholders with actual values.
 The expressions "current folder" or "folder" in the following will refer to the folder of the instantiated context node
 
-# File Types
-In the present document are used the following conventions:
-- All files with any of the following extensions are considered code files: ['.sql', '.py', '.ipynb']
-- All files with any of the following extensions are considered data files: ['.csv']
-- All files with any of the following extensions are considered configuration files: ['.json', '.yaml']
-
 # Context Node
 Each context node stores metadata about files in its same folder path.
 There cannot be more than one context node in the same folder.
@@ -49,16 +43,13 @@ Code Node Table (CNT) - Sample
   - `updated_at`: is the current timestamp at the time of record creation or update
   - `update_n`: starts at 1 upon record creation, and increases by 1 every time the record is updated
 
-By convention, fields that evaluate to empty string have never been processed.
-Fields that evaluate to NONE have been processed, but it was found there is no value to assigned them.
-
   - Metadata Fields
     - Metadata fields describe events of resource content editing
     - Metadata fields are not refreshed when their CNT record is edited exclusively in the `resource` field or in female vertexes
 
 # Data Node Table (DNT)
 Table description:
-Data files can be recorded in CNT to keep track of which code files use them as sources, and which as targets.
+Data files can be recorded in DNT to keep track of which code files use them as sources, and which as targets.
 
 Data Node Table (DNT) - Sample
 | resource | writers | readers |
