@@ -19,9 +19,9 @@ Code files can be recorded in CNT to extract from their code, and track, informa
   - General description of the code
 
 Code Node Table (CNT) - Sample
-| resource | description | imports_from | imported_by | data_sources | data_targets | updated_at | update_n |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| `scripts\clean_data.py` | Cleans the raw dataset for downstream analysis. | [`config\settings.py`] | [`notebooks\analysis.ipynb`] | [`data\raw.csv`] | [`data\clean.csv`] | `2026-10-08T08:34:00+02:00` | 1 |
+| resource | description | imports_from | imported_by | API_sources | data_sources | data_targets | updated_at | update_n |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `scripts\clean_data.py` | Cleans the raw dataset for downstream analysis. | [`config\settings.py`] | [`notebooks\analysis.ipynb`] | `https://api.ted.europa.eu/v3/notices/search` | [`data\raw.csv`] | [`data\clean.csv`] | `2026-10-08T08:34:00+02:00` | 1 |
 
 
 ### CNT Field Rules:
@@ -37,6 +37,7 @@ Code Node Table (CNT) - Sample
     - is a male vertex coupled with CNT `imported_by`
   - `imported_by`: is the list of resources of scripts or notebooks that import the resource
     - is a female vertex coupled with CNT `imports_from`
+  - API_sources: the list of the API endpoint URLs used by the resource to retrieve data via API call
   - `data_sources`: is the list of all and only the files the resource reads from
     - is a male vertex coupled with DNT `readers`
   - `data_targets`: is the list of all and only the files the resource writes to
@@ -53,19 +54,25 @@ Table description:
 Data files can be recorded in DNT to keep track of which code files use them as sources, and which as targets.
 
 Data Node Table (DNT) - Sample
-| resource | writers | readers |
-| --- | --- | --- |
-| `data\source_1.csv` | [`config\settings.py`] | [`notebooks\analysis.ipynb`]
+| resource | writers | readers | type |
+| --- | --- | --- | --- |
+| `data\source_1.csv` | [`config\settings.py`] | [`notebooks\analysis.ipynb`] | `table`
 
 ### DNT Field Rules:
-  - `resource`:  is the path relative to project root of a file in the current folder
-    - is the record id. 
+  - `resource`: a data asset that allows to read, store, or write data
+    - if type is table or map: resource is a path relative to project root of a file in the current folder
+    - if type is API: the API endopoint URL
+    - resource is the record id
     - Expressions like "this file's DNT record" unambiguously refer to the record in the DNT of the file's context node identified by the file's path
     - In the context of context nodes, the term "resource" refers to a file paths relative to project root
   - `readers`: the list of code files that can read data from the resource
     - is a female vertex coupled with CNT `data_sources`
   - `writers`: the list of code files that can write data to the resource
     - is a female vertex coupled with CNT `data_targets`
+  - `type`: the resource can be:
+    - table: structured data
+    - map: semistructured data
+    - API (will only have readers)
 
 
 # Field types:
