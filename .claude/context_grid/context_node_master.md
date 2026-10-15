@@ -51,7 +51,7 @@ Code Node Table (CNT) - Sample
 
 # Data Node Table (DNT)
 Table description:
-Data files can be recorded in DNT to keep track of which code files use them as sources, and which as targets.
+Data files and external resources (like APIs) can be recorded in DNT to keep track of their relationship with code files.
 
 Data Node Table (DNT) - Sample
 | resource | writers | readers | type |
