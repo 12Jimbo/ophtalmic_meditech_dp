@@ -1,0 +1,5664 @@
+{
+    "notices": [
+      {
+        "sme-part": [
+          true
+        ],
+        "touchpoint-gateway-ted-esen": [
+          "string"
+        ],
+        "submission-url-lot": [
+          "string"
+        ],
+        "organisation-person-addinfo-part": [
+          true
+        ],
+        "no-negocaition-necessary-lot": [
+          true
+        ],
+        "BT-13(t)-Part": [
+          "string"
+        ],
+        "organisation-city-serv-prov": [
+          "string"
+        ],
+        "result-framework-maximum-value-cur-notice": "string",
+        "BT-821-Lot": [
+          "string"
+        ],
+        "touchpoint-partname-tenderer": [
+          "string"
+        ],
+        "touchpoint-internet-address-paying": [
+          "string"
+        ],
+        "BT-805-Lot": [
+          "string"
+        ],
+        "touchpoint-post-code-addinfo-lot": [
+          "string"
+        ],
+        "option-description-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-internet-address-fiscal-legis-lot": [
+          "string"
+        ],
+        "organisation-email-tenderer": [
+          "string"
+        ],
+        "organisation-country-buyer": [
+          "string"
+        ],
+        "organisation-post-code-docprovider-part": [
+          "string"
+        ],
+        "tendering-party-name": [
+          "string"
+        ],
+        "BT-5101(a)-Lot": [
+          "string"
+        ],
+        "place-performance-streetline1-part": [
+          "string"
+        ],
+        "BT-137-LotsGroup": [
+          "string"
+        ],
+        "organisation-person-mediator-lot": [
+          true
+        ],
+        "BT-711-LotResult-Currency": [
+          "string"
+        ],
+        "organisation-gateway-revieworg-lot": [
+          "string"
+        ],
+        "OPP-130-Business": {
+          "lang": "string"
+        },
+        "organisation-street-ted-esen": [
+          "string"
+        ],
+        "OPP-021-Contract": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-tel-subcontractor": [
+          "string"
+        ],
+        "ubo-email": [
+          "string"
+        ],
+        "touchpoint-internet-address-tender-receip-part": [
+          "string"
+        ],
+        "touchpoint-internet-address-tender-eval-part": [
+          "string"
+        ],
+        "BT-5131-Part": [
+          "string"
+        ],
+        "BT-1501(n)-Contract": [
+          "string"
+        ],
+        "url-employment-legislation-lot": [
+          "string"
+        ],
+        "touchpoint-contact-point-tender-eval-part": [
+          "string"
+        ],
+        "touchpoint-fax-buyer": [
+          "string"
+        ],
+        "subcontracting-value-cur": [
+          "string"
+        ],
+        "description-glo": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-country-docprovider-lot": [
+          "string"
+        ],
+        "touchpoint-city-revieworg-lot": [
+          "string"
+        ],
+        "award-criterion-number-fixed-glo": [
+          "string"
+        ],
+        "organisation-partname-docprovider-part": [
+          "string"
+        ],
+        "BT-727-Part": [
+          "string"
+        ],
+        "place-of-performance-post-code-part": [
+          "string"
+        ],
+        "deadline-receipt-tender-date-lot": [
+          "string"
+        ],
+        "identifier-part": [
+          "string"
+        ],
+        "BT-785-Review": [
+          "string"
+        ],
+        "framework-maximum-value-lot": [
+          0.1
+        ],
+        "BT-1311(t)-Lot": [
+          "string"
+        ],
+        "place-performance-street-proc": [
+          "string"
+        ],
+        "touchpoint-city-reviewinfo-lot": [
+          "string"
+        ],
+        "BT-46-Lot": [
+          "string"
+        ],
+        "overriding-reasons-public-interest-res": {
+          "lang": [
+            "string"
+          ]
+        },
+        "tender-variant": [
+          true
+        ],
+        "touchpoint-country-revieworg-lot": [
+          "string"
+        ],
+        "maximum-candidates-id-lot": [
+          true
+        ],
+        "BT-803(d)-notice": "string",
+        "touchpoint-country-reviewinfo-lot": [
+          "string"
+        ],
+        "contract-nature-add-part": [
+          "string"
+        ],
+        "organisation-person-tender-eval-lot": [
+          true
+        ],
+        "lots-max-allowed-proc": 9007199254740991,
+        "organisation-city-signatory": [
+          "string"
+        ],
+        "organisation-country-sub-subcontractor": [
+          "string"
+        ],
+        "acquiring-cpb-buyer": [
+          true
+        ],
+        "BT-539-Lot": [
+          "string"
+        ],
+        "organisation-post-code-fiscal-legis-lot": [
+          "string"
+        ],
+        "BT-800(d)-Lot": [
+          "string"
+        ],
+        "organisation-internet-address-ted-esen": [
+          "string"
+        ],
+        "organisation-email-subcontractor": [
+          "string"
+        ],
+        "BT-134-Lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-street-subcontractor": [
+          "string"
+        ],
+        "corporate-body": [
+          "string"
+        ],
+        "tender-validity-deadline-unit-lot": [
+          "string"
+        ],
+        "touchpoint-country-reviewinfo-part": [
+          "string"
+        ],
+        "buyer-touchpoint-gateway": [
+          "string"
+        ],
+        "OPP-080-Tender-Unit": [
+          "string"
+        ],
+        "procurement-relaunch": [
+          true
+        ],
+        "review-applicant-id": [
+          "string"
+        ],
+        "BT-5141-Lot": [
+          "string"
+        ],
+        "touchpoint-tel-tender-receip-lot": [
+          "string"
+        ],
+        "previous-planning-identifier-part-lot": [
+          "string"
+        ],
+        "BT-5121-Procedure": [
+          "string"
+        ],
+        "touchpoint-fax-environ-legis-part": [
+          "string"
+        ],
+        "organisation-email-fiscal-legis-part": [
+          "string"
+        ],
+        "BT-13713-LotResult": [
+          "string"
+        ],
+        "BT-796-Review": [
+          true
+        ],
+        "contract-nature-main-proc": "string",
+        "organisation-country-tenderer": [
+          "string"
+        ],
+        "BT-1118-NoticeResult-Currency": "string",
+        "touchpoint-street-revieworg-part": [
+          "string"
+        ],
+        "BT-793-Review": [
+          0.1
+        ],
+        "review-title": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-688-LotResult": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-country-sub-docprovider-lot": [
+          "string"
+        ],
+        "missing-info-submission-description-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-identifier-signatory": [
+          "string"
+        ],
+        "touchpoint-fax-environ-legis-lot": [
+          "string"
+        ],
+        "BT-708-Lot": [
+          "string"
+        ],
+        "organisation-name-tender-receip-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "place-performance-street-lot": [
+          "string"
+        ],
+        "change-previous-notice-section-identifier": [
+          "string"
+        ],
+        "jury-member-name-lot": [
+          "string"
+        ],
+        "OPT-112-Lot-EnvironLegis": [
+          "string"
+        ],
+        "touchpoint-country-mediator-part": [
+          "string"
+        ],
+        "reserved-execution-lot": [
+          "string"
+        ],
+        "BT-636-LotResult": [
+          "string"
+        ],
+        "buyer-review-compainants-code": [
+          "string"
+        ],
+        "selection-criterion-description-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "variant-allowed-lot": [
+          "string"
+        ],
+        "place-of-performance-country-proc": [
+          "string"
+        ],
+        "BT-768-Contract": [
+          true
+        ],
+        "BT-3202-Contract": [
+          "string"
+        ],
+        "framework-agreement-part": [
+          "string"
+        ],
+        "place-of-performance-post-code-proc": [
+          "string"
+        ],
+        "BT-156-NoticeResult-Currency": [
+          "string"
+        ],
+        "jury-decision-binding-lot": [
+          true
+        ],
+        "BT-5423-LotsGroup": [
+          "string"
+        ],
+        "BT-635-LotResult": [
+          0.1
+        ],
+        "touchpoint-gateway-fiscal-legis-part": [
+          "string"
+        ],
+        "framework-agreement-lot": [
+          "string"
+        ],
+        "document-restricted-part": [
+          "string"
+        ],
+        "BT-661-Lot": [
+          true
+        ],
+        "eu-funds-financing-id-lot": [
+          "string"
+        ],
+        "BT-98-Lot": [
+          {
+            "value": "string",
+            "unit": "string"
+          }
+        ],
+        "BT-19-Lot": [
+          "string"
+        ],
+        "BT-1252-Procedure": [
+          "string"
+        ],
+        "organisation-email-reviewinfo-part": [
+          "string"
+        ],
+        "BT-127-notice": "string",
+        "organisation-person-tender-eval-part": [
+          true
+        ],
+        "touchpoint-tel-financing": [
+          "string"
+        ],
+        "BT-625-Lot": [
+          "string"
+        ],
+        "BT-01(c)-procedure": [
+          "string"
+        ],
+        "organisation-country-tender-eval-part": [
+          "string"
+        ],
+        "BT-132(d)-Lot": "string",
+        "winner-post-code": [
+          "string"
+        ],
+        "organisation-partname-docprovider-lot": [
+          "string"
+        ],
+        "change-procurement-documents": [
+          true
+        ],
+        "touchpoint-email-docprovider-lot": [
+          "string"
+        ],
+        "buyer-touchpoint-partname": [
+          "string"
+        ],
+        "BT-800(t)-Lot": [
+          "string"
+        ],
+        "BT-5422-LotsGroup": [
+          "string"
+        ],
+        "BT-271-Procedure": 0.1,
+        "BT-01-notice": "string",
+        "touchpoint-street-serv-prov": [
+          "string"
+        ],
+        "framework-estimated-value-glo": [
+          0.1
+        ],
+        "organisation-post-code-mediator-lot": [
+          "string"
+        ],
+        "touchpoint-internet-address-docprovider-part": [
+          "string"
+        ],
+        "penalties-rewards-code-res": [
+          "string"
+        ],
+        "touchpoint-name-environ-legis-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-internet-address-addinfo-lot": [
+          "string"
+        ],
+        "BT-1561-NoticeResult": [
+          0.1
+        ],
+        "organisation-identifier-docprovider-lot": [
+          "string"
+        ],
+        "publication-date": "string",
+        "selection-criterion-name-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-736-Part": [
+          "string"
+        ],
+        "review-previous-id": [
+          "string"
+        ],
+        "BT-05(a)-notice": "string",
+        "touchpoint-street-tender-receip-lot": [
+          "string"
+        ],
+        "BT-769-Lot": [
+          "string"
+        ],
+        "significance-lot": [
+          "string"
+        ],
+        "organisation-identifier-tenderer": [
+          "string"
+        ],
+        "BT-726-Lot": [
+          true
+        ],
+        "touchpoint-city-tenderer": [
+          "string"
+        ],
+        "touchpoint-street-environ-legis-part": [
+          "string"
+        ],
+        "touchpoint-contact-point-buyer": [
+          "string"
+        ],
+        "touchpoint-post-code-reviewinfo-lot": [
+          "string"
+        ],
+        "contract-nature-add-proc": [
+          "string"
+        ],
+        "touchpoint-country-sub-docprovider-lot": [
+          "string"
+        ],
+        "OPP-034-Tender": {
+          "lang": [
+            "string"
+          ]
+        },
+        "buyer-touchpoint-post-code": [
+          "string"
+        ],
+        "review-remedy-value": [
+          0.1
+        ],
+        "organisation-post-code-tenderer": [
+          "string"
+        ],
+        "BT-26(m)-Part": [
+          "string"
+        ],
+        "BT-634-Lot": [
+          true
+        ],
+        "procurement-document-id-part": [
+          "string"
+        ],
+        "buyer-profile": [
+          "string"
+        ],
+        "OPT-160-UBO": [
+          "string"
+        ],
+        "winner-country": [
+          "string"
+        ],
+        "touchpoint-city-mediator-part": [
+          "string"
+        ],
+        "touchpoint-partname-addinfo-lot": [
+          "string"
+        ],
+        "requirement-stage-lot": [
+          "string"
+        ],
+        "deadline-time-part": [
+          "string"
+        ],
+        "BT-807-Review": [
+          "string"
+        ],
+        "BT-88-Procedure": {
+          "lang": "string"
+        },
+        "BT-632-Lot": [
+          "string"
+        ],
+        "BT-733-Lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-person-financing": [
+          true
+        ],
+        "organisation-post-code-revieworg-part": [
+          "string"
+        ],
+        "business-city": "string",
+        "BT-54-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-person-environ-legis-part": [
+          true
+        ],
+        "touchpoint-tel-buyer": [
+          "string"
+        ],
+        "place-of-performance-country-part": [
+          "string"
+        ],
+        "review-irregularity-type": [
+          "string"
+        ],
+        "organisation-name-serv-prov": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-post-code-signatory": [
+          "string"
+        ],
+        "touchpoint-fax-docprovider-part": [
+          "string"
+        ],
+        "touchpoint-street-reviewinfo-part": [
+          "string"
+        ],
+        "BT-60-Lot": [
+          "string"
+        ],
+        "renewal-maximum-lot": [
+          9007199254740991
+        ],
+        "BT-13716-notice": [
+          "string"
+        ],
+        "BT-21-Procedure": {
+          "lang": "string"
+        },
+        "gpa-lot": [
+          true
+        ],
+        "touchpoint-fax-employ-legis-part": [
+          "string"
+        ],
+        "touchpoint-internet-address-tender-eval-lot": [
+          "string"
+        ],
+        "fiscal-legislation-document-id-lot": [
+          "string"
+        ],
+        "deadline-receipt-expressions-time-lot": [
+          "string"
+        ],
+        "touchpoint-fax-fiscal-legis-lot": [
+          "string"
+        ],
+        "organisation-person-tender-receip-lot": [
+          true
+        ],
+        "eu-funds-name": [
+          "string"
+        ],
+        "organisation-fax-tenderer": [
+          "string"
+        ],
+        "business-identifier": [
+          "string"
+        ],
+        "place-of-performance": [
+          "string"
+        ],
+        "organisation-contact-point-financing": [
+          "string"
+        ],
+        "tender-value-cur-highest": [
+          "string"
+        ],
+        "organisation-fax-addinfo-lot": [
+          "string"
+        ],
+        "eed-applicable-lot": [
+          "string"
+        ],
+        "BT-776-Lot": [
+          "string"
+        ],
+        "touchpoint-contact-point-docprovider-part": [
+          "string"
+        ],
+        "touchpoint-contact-point-fiscal-legis-lot": [
+          "string"
+        ],
+        "BT-5101(c)-Part": [
+          "string"
+        ],
+        "touchpoint-city-docprovider-lot": [
+          "string"
+        ],
+        "organisation-country-revieworg-lot": [
+          "string"
+        ],
+        "organisation-country-fiscal-legis-lot": [
+          "string"
+        ],
+        "organisation-country-docprovider-part": [
+          "string"
+        ],
+        "organisation-tel-tender-eval-lot": [
+          "string"
+        ],
+        "BT-11-Procedure-Buyer": [
+          "string"
+        ],
+        "touchpoint-street-buyer": [
+          "string"
+        ],
+        "change-reason-code": "string",
+        "organisation-gateway-ted-esen": [
+          "string"
+        ],
+        "review-request-fee": [
+          0.1
+        ],
+        "recurrence-lot": [
+          true
+        ],
+        "eed-list-basis-res": [
+          "string"
+        ],
+        "BT-5101(c)-Lot": [
+          "string"
+        ],
+        "place-of-performance-city-part": [
+          "string"
+        ],
+        "touchpoint-street-paying": [
+          "string"
+        ],
+        "organisation-country-addinfo-part": [
+          "string"
+        ],
+        "touchpoint-partname-fiscal-legis-part": [
+          "string"
+        ],
+        "organisation-identifier-mediator-lot": [
+          "string"
+        ],
+        "BT-24-Part": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-767-Lot": [
+          true
+        ],
+        "BT-27-LotsGroup-Currency": [
+          "string"
+        ],
+        "BT-125(i)-Part": [
+          "string"
+        ],
+        "organisation-fax-employ-legis-part": [
+          "string"
+        ],
+        "subcontracting-obligation-lot": [
+          "string"
+        ],
+        "touchpoint-country-sub-tender-eval-part": [
+          "string"
+        ],
+        "organisation-fax-environ-legis-lot": [
+          "string"
+        ],
+        "organisation-contact-point-employ-legis-lot": [
+          "string"
+        ],
+        "BT-5101(a)-Part": [
+          "string"
+        ],
+        "touchpoint-contact-point-tenderer": [
+          "string"
+        ],
+        "organisation-tel-docprovider-part": [
+          "string"
+        ],
+        "public-opening-date-lot": "string",
+        "touchpoint-internet-address-mediator-lot": [
+          "string"
+        ],
+        "touchpoint-city-employ-legis-lot": [
+          "string"
+        ],
+        "organisation-country-sub-addinfo-lot": [
+          "string"
+        ],
+        "touchpoint-partname-docprovider-lot": [
+          "string"
+        ],
+        "contract-duration-period-oth-part": [
+          "string"
+        ],
+        "organisation-country-mediator-part": [
+          "string"
+        ],
+        "registration-place-postcode": "string",
+        "url-employment-legislation-part": [
+          "string"
+        ],
+        "concession-revenue-buyer": [
+          0.1
+        ],
+        "touchpoint-fax-tender-eval-part": [
+          "string"
+        ],
+        "renewal-description-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "url-fiscal-legislation-part": [
+          "string"
+        ],
+        "tenderer-legal-form-lot": [
+          "string"
+        ],
+        "BT-751-Lot": [
+          "string"
+        ],
+        "registration-place-town": "string",
+        "BT-809-Lot": [
+          "string"
+        ],
+        "vehicle-type-val-res": [
+          0.1
+        ],
+        "clean-vehicles-directive-lot": [
+          "string"
+        ],
+        "deadline-receipt-request": [
+          "string"
+        ],
+        "buyer-category": [
+          "string"
+        ],
+        "BT-140-notice": "string",
+        "awarding-cpb-org": [
+          true
+        ],
+        "organisation-street-tender-receip-part": [
+          "string"
+        ],
+        "BT-634-Procedure": true,
+        "organisation-street-revieworg-part": [
+          "string"
+        ],
+        "BT-64-Lot": [
+          0.1
+        ],
+        "reserved-execution-justification-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-post-code-addinfo-lot": [
+          "string"
+        ],
+        "touchpoint-street-addinfo-lot": [
+          "string"
+        ],
+        "place-of-performance-country-lot": [
+          "string"
+        ],
+        "contract-duration-start-date-part": [
+          "string"
+        ],
+        "touchpoint-street-fiscal-legis-part": [
+          "string"
+        ],
+        "ecatalog-allowed-lot": [
+          "string"
+        ],
+        "organisation-city-environ-legis-part": [
+          "string"
+        ],
+        "BT-508-Procedure-Buyer": [
+          "string"
+        ],
+        "BT-632-Part": [
+          "string"
+        ],
+        "BT-811(b)-Lot": [
+          "string"
+        ],
+        "csecurity-clearance-description-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-contact-point-tender-receip-part": [
+          "string"
+        ],
+        "organisation-person-fiscal-legis-lot": [
+          true
+        ],
+        "organisation-tel-ted-esen": [
+          "string"
+        ],
+        "organisation-tel-tender-receip-lot": [
+          "string"
+        ],
+        "BT-141(a)-notice": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-6110-Contract": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-788-Review": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-name-employ-legis-part": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-country-sub-paying": [
+          "string"
+        ],
+        "OPT-155-LotResult": [
+          "string"
+        ],
+        "framework-notice-id": [
+          "string"
+        ],
+        "BT-735-Lot": [
+          "string"
+        ],
+        "touchpoint-city-tender-receip-lot": [
+          "string"
+        ],
+        "touchpoint-country-sub-serv-prov": [
+          "string"
+        ],
+        "BT-811(a)-LotResult": [
+          "string"
+        ],
+        "BT-15-Part": [
+          "string"
+        ],
+        "BT-758-notice": "string",
+        "organisation-person-fiscal-legis-part": [
+          true
+        ],
+        "penalties-rewards-description-res": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-country-tender-eval-part": [
+          "string"
+        ],
+        "ubo-city": [
+          "string"
+        ],
+        "touchpoint-country-tenderer": [
+          "string"
+        ],
+        "touchpoint-post-code-revieworg-part": [
+          "string"
+        ],
+        "organisation-partname-signatory": [
+          "string"
+        ],
+        "review-id": [
+          "string"
+        ],
+        "touchpoint-internet-address-addinfo-part": [
+          "string"
+        ],
+        "BT-756-Procedure": true,
+        "winner-touchpoint-post-code": [
+          "string"
+        ],
+        "contract-duration-end-date-part": [
+          "string"
+        ],
+        "BT-123-Lot": [
+          "string"
+        ],
+        "innovative-acquisition-lot": [
+          "string"
+        ],
+        "organisation-identifier-revieworg-lot": [
+          "string"
+        ],
+        "deadline-receipt-expressions-date-lot": [
+          "string"
+        ],
+        "BT-810-Lot": [
+          "string"
+        ],
+        "touchpoint-country-fiscal-legis-lot": [
+          "string"
+        ],
+        "document-restricted-lot": [
+          "string"
+        ],
+        "BT-27-LotsGroup": [
+          0.1
+        ],
+        "framework-maximum-participants-number-lot": [
+          9007199254740991
+        ],
+        "award-criteria-order-justification": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-internet-address-employ-legis-lot": [
+          "string"
+        ],
+        "organisation-contact-point-docprovider-lot": [
+          "string"
+        ],
+        "touchpoint-email-reviewinfo-lot": [
+          "string"
+        ],
+        "touchpoint-partname-revieworg-part": [
+          "string"
+        ],
+        "organisation-post-code-subcontractor": [
+          "string"
+        ],
+        "BT-707-Part": [
+          "string"
+        ],
+        "procedure-features": {
+          "lang": "string"
+        },
+        "touchpoint-country-mediator-lot": [
+          "string"
+        ],
+        "BT-538-Part": [
+          "string"
+        ],
+        "touchpoint-post-code-tender-receip-lot": [
+          "string"
+        ],
+        "BT-105-Procedure": "string",
+        "BT-71-Part": [
+          "string"
+        ],
+        "BT-765-Lot": [
+          "string"
+        ],
+        "organisation-city-reviewinfo-lot": [
+          "string"
+        ],
+        "organisation-gateway-environ-legis-part": [
+          "string"
+        ],
+        "organisation-identifier-paying": [
+          "string"
+        ],
+        "assets-related-contract-extension-indicator-lot": [
+          true
+        ],
+        "organisation-identifier-addinfo-lot": [
+          "string"
+        ],
+        "organisation-post-code-tender-eval-part": [
+          "string"
+        ],
+        "touchpoint-country-sub-tender-receip-part": [
+          "string"
+        ],
+        "organisation-name-signatory": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-partname-employ-legis-lot": [
+          "string"
+        ],
+        "organisation-country-sub-fiscal-legis-part": [
+          "string"
+        ],
+        "touchpoint-partname-reviewinfo-lot": [
+          "string"
+        ],
+        "touchpoint-contact-point-tender-eval-lot": [
+          "string"
+        ],
+        "touchpoint-fax-addinfo-lot": [
+          "string"
+        ],
+        "organisation-city-fiscal-legis-part": [
+          "string"
+        ],
+        "touchpoint-country-tender-receip-lot": [
+          "string"
+        ],
+        "organisation-contact-point-employ-legis-part": [
+          "string"
+        ],
+        "organisation-email-environ-legis-part": [
+          "string"
+        ],
+        "touchpoint-gateway-docprovider-lot": [
+          "string"
+        ],
+        "BT-710-LotResult-Currency": [
+          "string"
+        ],
+        "BT-501-Business-European": "string",
+        "BT-779-Tender": [
+          0.1
+        ],
+        "BT-262-Lot": [
+          "string"
+        ],
+        "OPP-040-Procedure": [
+          "string"
+        ],
+        "BT-5422-Lot": [
+          "string"
+        ],
+        "organisation-person-tenderer": [
+          true
+        ],
+        "BT-687-LotResult": [
+          "string"
+        ],
+        "number-tender-applications-ipi-measure-res": [
+          9007199254740991
+        ],
+        "BT-24-Lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "OPT-112-Part-EnvironLegis": [
+          "string"
+        ],
+        "touchpoint-contact-point-addinfo-part": [
+          "string"
+        ],
+        "BT-109-Lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-street-tender-eval-lot": [
+          "string"
+        ],
+        "touchpoint-partname-serv-prov": [
+          "string"
+        ],
+        "BT-21-Part": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-identifier-mediator-part": [
+          "string"
+        ],
+        "buyer-touchpoint-contact-point": [
+          "string"
+        ],
+        "dispatch-time": "string",
+        "organisation-internet-address-mediator-part": [
+          "string"
+        ],
+        "organisation-partname-reviewinfo-part": [
+          "string"
+        ],
+        "organisation-street-fiscal-legis-part": [
+          "string"
+        ],
+        "organisation-identifier-serv-prov": [
+          "string"
+        ],
+        "BT-737-Lot": [
+          "string"
+        ],
+        "touchpoint-city-addinfo-lot": [
+          "string"
+        ],
+        "business-tel": "string",
+        "organisation-fax-tender-eval-lot": [
+          "string"
+        ],
+        "funding": [
+          "string"
+        ],
+        "BT-51-Lot": [
+          9007199254740991
+        ],
+        "touchpoint-tel-fiscal-legis-lot": [
+          "string"
+        ],
+        "touchpoint-street-employ-legis-lot": [
+          "string"
+        ],
+        "contract-nature-add-lot": [
+          "string"
+        ],
+        "BT-106-Procedure": "string",
+        "group-framework-re-estimated-value-cur-res": "string",
+        "BT-94-Lot": [
+          true
+        ],
+        "buyer-person": [
+          true
+        ],
+        "additional-classification-type-proc": [
+          "string"
+        ],
+        "organisation-fax-revieworg-lot": [
+          "string"
+        ],
+        "OPP-121-Business": "string",
+        "organisation-internet-address-tender-receip-part": [
+          "string"
+        ],
+        "selection-criteria-source": [
+          "string"
+        ],
+        "OPP-030-Tender": [
+          "string"
+        ],
+        "submission-nonelectronic-description-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-27-Procedure": 0.1,
+        "organisation-internet-address-subcontractor": [
+          "string"
+        ],
+        "BT-537-Lot": [
+          "string"
+        ],
+        "winner-gateway": [
+          "string"
+        ],
+        "touchpoint-country-sub-fiscal-legis-lot": [
+          "string"
+        ],
+        "BT-804-Review": [
+          "string"
+        ],
+        "organisation-tel-environ-legis-part": [
+          "string"
+        ],
+        "authority-main-activity": [
+          "string"
+        ],
+        "OPP-080-Tender": [
+          9007199254740991
+        ],
+        "customization-id": "string",
+        "BT-780-Tender": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-street-ted-esen": [
+          "string"
+        ],
+        "organisation-gateway-mediator-part": [
+          "string"
+        ],
+        "estimated-value-cur-lot": [
+          "string"
+        ],
+        "touchpoint-street-signatory": [
+          "string"
+        ],
+        "organisation-country-employ-legis-part": [
+          "string"
+        ],
+        "organisation-post-code-reviewinfo-part": [
+          "string"
+        ],
+        "organisation-internet-address-docprovider-lot": [
+          "string"
+        ],
+        "environmental-legislation-document-id-part": [
+          "string"
+        ],
+        "BT-191-Tender": [
+          "string"
+        ],
+        "framework-maximum-value-glo": [
+          0.1
+        ],
+        "BT-686-LotResult": [
+          9007199254740991
+        ],
+        "concession-value-description": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-identifier-environ-legis-part": [
+          "string"
+        ],
+        "subcontracting-obligation-minimum-lot": [
+          0.1
+        ],
+        "organisation-post-code-serv-prov": [
+          "string"
+        ],
+        "BT-531-Part": [
+          "string"
+        ],
+        "BT-5121-Lot": [
+          "string"
+        ],
+        "subcontracting-indication-lot": [
+          "string"
+        ],
+        "touchpoint-internet-address-environ-legis-lot": [
+          "string"
+        ],
+        "BT-01(f)-Procedure": {
+          "lang": [
+            "string"
+          ]
+        },
+        "document-restricted-justification": [
+          "string"
+        ],
+        "touchpoint-name-mediator-part": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-fax-mediator-part": [
+          "string"
+        ],
+        "touchpoint-name-ted-esen": {
+          "lang": [
+            "string"
+          ]
+        },
+        "OPP-051-Organization": [
+          true
+        ],
+        "touchpoint-tel-tenderer": [
+          "string"
+        ],
+        "OPT-090-Lot": [
+          "string"
+        ],
+        "organisation-post-code-fiscal-legis-part": [
+          "string"
+        ],
+        "organisation-post-code-environ-legis-part": [
+          "string"
+        ],
+        "award-criterion-type-glo": [
+          "string"
+        ],
+        "ubo-name": [
+          "string"
+        ],
+        "eeig-official-name": "string",
+        "BT-22-Lot": [
+          "string"
+        ],
+        "organisation-fax-employ-legis-lot": [
+          "string"
+        ],
+        "buyer-post-code": [
+          "string"
+        ],
+        "framework-estimated-value-cur-glo": [
+          "string"
+        ],
+        "OPP-111-Business": "string",
+        "touchpoint-tel-tender-eval-part": [
+          "string"
+        ],
+        "place-performance-street-part": [
+          "string"
+        ],
+        "organisation-city-tenderer": [
+          "string"
+        ],
+        "url-fiscal-legislation-lot": [
+          "string"
+        ],
+        "organisation-country-sub-paying": [
+          "string"
+        ],
+        "touchpoint-tel-fiscal-legis-part": [
+          "string"
+        ],
+        "review-request-decision": [
+          "string"
+        ],
+        "BT-26(a)-Procedure": [
+          "string"
+        ],
+        "organisation-internet-address-revieworg-lot": [
+          "string"
+        ],
+        "touchpoint-email-paying": [
+          "string"
+        ],
+        "tender-value": [
+          0.1
+        ],
+        "organisation-partname-financing": [
+          "string"
+        ],
+        "organisation-country-financing": [
+          "string"
+        ],
+        "organisation-gateway-financing": [
+          "string"
+        ],
+        "organisation-identifier-addinfo-part": [
+          "string"
+        ],
+        "review-remedy-value-cur": [
+          "string"
+        ],
+        "BT-762-notice": {
+          "lang": "string"
+        },
+        "touchpoint-gateway-paying": [
+          "string"
+        ],
+        "touchpoint-gateway-employ-legis-lot": [
+          "string"
+        ],
+        "BT-132(t)-Lot": [
+          "string"
+        ],
+        "touchpoint-gateway-tender-eval-lot": [
+          "string"
+        ],
+        "BT-26(m)-Lot": [
+          "string"
+        ],
+        "BT-10-Procedure-Buyer": [
+          "string"
+        ],
+        "BT-1501(p)-Contract": [
+          "string"
+        ],
+        "OPP-122-Business": "string",
+        "modification-description": {
+          "lang": [
+            "string"
+          ]
+        },
+        "OPT-060-Lot": [
+          "string"
+        ],
+        "BT-120-Lot": [
+          true
+        ],
+        "BT-759-LotResult": [
+          0.1
+        ],
+        "touchpoint-contact-point-docprovider-lot": [
+          "string"
+        ],
+        "touchpoint-partname-environ-legis-lot": [
+          "string"
+        ],
+        "organisation-gateway-subcontractor": [
+          "string"
+        ],
+        "touchpoint-city-serv-prov": [
+          "string"
+        ],
+        "organisation-contact-point-tender-receip-lot": [
+          "string"
+        ],
+        "touchpoint-country-sub-revieworg-part": [
+          "string"
+        ],
+        "dispatch-invitation-tender-lot": [
+          "string"
+        ],
+        "touchpoint-name-revieworg-part": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-name-buyer": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-street-financing": [
+          "string"
+        ],
+        "BT-13(d)-Lot": [
+          "string"
+        ],
+        "touchpoint-email-addinfo-lot": [
+          "string"
+        ],
+        "organisation-contact-point-buyer": [
+          "string"
+        ],
+        "OPA-36-Part-Number": [
+          0.1
+        ],
+        "touchpoint-country-environ-legis-part": [
+          "string"
+        ],
+        "touchpoint-country-environ-legis-lot": [
+          "string"
+        ],
+        "BT-537-Part": [
+          "string"
+        ],
+        "lots-max-awarded-proc": 9007199254740991,
+        "organisation-city-employ-legis-lot": [
+          "string"
+        ],
+        "announcement-title": "string",
+        "organisation-country-sub-serv-prov": [
+          "string"
+        ],
+        "BT-06-Lot": [
+          "string"
+        ],
+        "touchpoint-post-code-tender-receip-part": [
+          "string"
+        ],
+        "BT-738-notice": "string",
+        "organisation-country-sub-mediator-part": [
+          "string"
+        ],
+        "modification-part-reference": [
+          "string"
+        ],
+        "winner-touchpoint-country": [
+          "string"
+        ],
+        "organisation-identifier-tender-receip-part": [
+          "string"
+        ],
+        "BT-160-Tender": [
+          0.1
+        ],
+        "BT-92-Lot": [
+          true
+        ],
+        "previous-planning-identifier-lot": [
+          "string"
+        ],
+        "organisation-tel-employ-legis-lot": [
+          "string"
+        ],
+        "BT-161-NoticeResult": 0.1,
+        "touchpoint-gateway-tender-receip-lot": [
+          "string"
+        ],
+        "touchpoint-internet-address-revieworg-lot": [
+          "string"
+        ],
+        "BT-531-Lot": [
+          "string"
+        ],
+        "internal-identifier-part": [
+          "string"
+        ],
+        "organisation-email-reviewinfo-lot": [
+          "string"
+        ],
+        "touchpoint-email-environ-legis-part": [
+          "string"
+        ],
+        "deadline": [
+          "string"
+        ],
+        "description-part": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-country-subcontractor": [
+          "string"
+        ],
+        "BT-21-Lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-city-paying": [
+          "string"
+        ],
+        "touchpoint-name-revieworg-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-email-subcontractor": [
+          "string"
+        ],
+        "BT-14-Part": [
+          "string"
+        ],
+        "BT-77-Lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "winner-size": [
+          "string"
+        ],
+        "buyer-touchpoint-country-sub": [
+          "string"
+        ],
+        "result-value-cur-notice": "string",
+        "BT-757-notice": 1073741824,
+        "place-of-performance-additional-part": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-internet-address-tender-receip-lot": [
+          "string"
+        ],
+        "organisation-partname-serv-prov": [
+          "string"
+        ],
+        "execution-requirements-factor-lot": [
+          "string"
+        ],
+        "touchpoint-name-serv-prov": {
+          "lang": [
+            "string"
+          ]
+        },
+        "non-award-justification": [
+          "string"
+        ],
+        "fiscal-legislation-document-id-part": [
+          "string"
+        ],
+        "award-criterion-number-fixed-lot": [
+          "string"
+        ],
+        "procedure-identifier": "string",
+        "touchpoint-email-tender-receip-part": [
+          "string"
+        ],
+        "touchpoint-partname-tender-eval-lot": [
+          "string"
+        ],
+        "organisation-country-sub-ted-esen": [
+          "string"
+        ],
+        "BT-578-Lot": [
+          "string"
+        ],
+        "organisation-street-docprovider-lot": [
+          "string"
+        ],
+        "group-framework-value-cur-notice": [
+          "string"
+        ],
+        "touchpoint-contact-point-signatory": [
+          "string"
+        ],
+        "ubo-country-sub": [
+          "string"
+        ],
+        "identifier-lot": [
+          "string"
+        ],
+        "BT-540-LotsGroup": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-country-sub-mediator-lot": [
+          "string"
+        ],
+        "OPP-012-notice": "string",
+        "place-of-performance-subdiv-lot": [
+          "string"
+        ],
+        "subcontracting": [
+          "string"
+        ],
+        "estimated-value-lot": [
+          0.1
+        ],
+        "BT-271-LotsGroup": [
+          0.1
+        ],
+        "deadline-receipt-answers-date-lot": [
+          "string"
+        ],
+        "description-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-country-sub-reviewinfo-part": [
+          "string"
+        ],
+        "tender-value-highest": [
+          0.1
+        ],
+        "organisation-email-employ-legis-lot": [
+          "string"
+        ],
+        "OPT-030-Procedure-SProvider": [
+          "string"
+        ],
+        "review-request-withdrawn": [
+          true
+        ],
+        "touchpoint-name-buyer": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-gateway-signatory": [
+          "string"
+        ],
+        "additional-classification-lot": [
+          "string"
+        ],
+        "BT-5071-Procedure": [
+          "string"
+        ],
+        "organisation-contact-point-docprovider-part": [
+          "string"
+        ],
+        "additional-classification-type-part": [
+          "string"
+        ],
+        "award-criterion-description-glo": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-internet-address-reviewinfo-lot": [
+          "string"
+        ],
+        "sme-lot": [
+          true
+        ],
+        "organisation-partname-tender-receip-part": [
+          "string"
+        ],
+        "touchpoint-name-tender-eval-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-1375-Procedure": [
+          "string"
+        ],
+        "organisation-street-tender-eval-part": [
+          "string"
+        ],
+        "organisation-country-sub-reviewinfo-lot": [
+          "string"
+        ],
+        "legal-basis": [
+          "string"
+        ],
+        "BT-719-notice": [
+          "string"
+        ],
+        "electronic-invoicing-lot": [
+          "string"
+        ],
+        "BT-5421-LotsGroup": [
+          "string"
+        ],
+        "OPP-020-Contract": [
+          true
+        ],
+        "tender-penalties-res": [
+          0.1
+        ],
+        "award-criterion-order-justification-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-email-revieworg-lot": [
+          "string"
+        ],
+        "organisation-internet-address-addinfo-part": [
+          "string"
+        ],
+        "organisation-internet-address-environ-legis-lot": [
+          "string"
+        ],
+        "organisation-gateway-fiscal-legis-lot": [
+          "string"
+        ],
+        "organisation-email-tender-eval-part": [
+          "string"
+        ],
+        "procurement-document-id-lot": [
+          "string"
+        ],
+        "touchpoint-gateway-employ-legis-part": [
+          "string"
+        ],
+        "organisation-country-sub-financing": [
+          "string"
+        ],
+        "BT-5131-Procedure": [
+          "string"
+        ],
+        "touchpoint-internet-address-signatory": [
+          "string"
+        ],
+        "organisation-city-docprovider-lot": [
+          "string"
+        ],
+        "winner-identifier": [
+          "string"
+        ],
+        "used-assetlot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-email-ted-esen": [
+          "string"
+        ],
+        "organisation-contact-point-paying": [
+          "string"
+        ],
+        "touchpoint-city-tender-eval-lot": [
+          "string"
+        ],
+        "organisation-contact-point-tender-eval-part": [
+          "string"
+        ],
+        "BT-781-Lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-contact-point-tender-receip-lot": [
+          "string"
+        ],
+        "BT-01(d)-procedure": {
+          "lang": [
+            "string"
+          ]
+        },
+        "concession-revenue-cur-buyer": [
+          "string"
+        ],
+        "touchpoint-city-tender-receip-part": [
+          "string"
+        ],
+        "reserved-procurement-lot": [
+          "string"
+        ],
+        "touchpoint-contact-point-financing": [
+          "string"
+        ],
+        "internal-identifier-proc": "string",
+        "organisation-contact-point-reviewinfo-lot": [
+          "string"
+        ],
+        "BT-540-Lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-75-Lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "buyer-touchpoint-country": [
+          "string"
+        ],
+        "document-official-language-part": [
+          "string"
+        ],
+        "OPP-070-notice": "string",
+        "touchpoint-street-revieworg-lot": [
+          "string"
+        ],
+        "foreign-subsidies-measures-res": [
+          "string"
+        ],
+        "organisation-country-environ-legis-lot": [
+          "string"
+        ],
+        "organisation-post-code-docprovider-lot": [
+          "string"
+        ],
+        "touchpoint-fax-tender-eval-lot": [
+          "string"
+        ],
+        "following-contract-lot": [
+          true
+        ],
+        "organisation-city-tender-eval-part": [
+          "string"
+        ],
+        "organisation-name-fiscal-legis-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-partname-environ-legis-part": [
+          "string"
+        ],
+        "BT-5101(c)-Procedure": [
+          "string"
+        ],
+        "BT-681-Lot": [
+          "string"
+        ],
+        "organisation-country-sub-revieworg-part": [
+          "string"
+        ],
+        "organisation-partname-mediator-lot": [
+          "string"
+        ],
+        "announcement-url": "string",
+        "notice-type": "string",
+        "OPP-110-Business": "string",
+        "touchpoint-tel-mediator-part": [
+          "string"
+        ],
+        "touchpoint-country-sub-mediator-part": [
+          "string"
+        ],
+        "SUB_LG": [
+          "string"
+        ],
+        "kilometers-public-transport-res": [
+          "string"
+        ],
+        "BT-786-Review": [
+          "string"
+        ],
+        "buyer-city": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-27-Procedure-Currency": "string",
+        "buyer-touchpoint-name": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-country-revieworg-part": [
+          "string"
+        ],
+        "missing-info-submission-lot": [
+          "string"
+        ],
+        "organisation-street-signatory": [
+          "string"
+        ],
+        "BT-811(a)-Lot": [
+          "string"
+        ],
+        "duration-period-value-part": [
+          0.1
+        ],
+        "BT-09(a)-Procedure": "string",
+        "BT-748-Lot": [
+          "string"
+        ],
+        "BT-746-Organization": [
+          true
+        ],
+        "employment-legislation-document-id-part": [
+          "string"
+        ],
+        "organisation-post-code-buyer": [
+          "string"
+        ],
+        "social-objective-lot": [
+          "string"
+        ],
+        "organisation-identifier-tender-eval-lot": [
+          "string"
+        ],
+        "BT-27-Lot-Currency": [
+          "string"
+        ],
+        "touchpoint-contact-point-serv-prov": [
+          "string"
+        ],
+        "touchpoint-fax-docprovider-lot": [
+          "string"
+        ],
+        "place-of-performance-subdiv-proc": [
+          "string"
+        ],
+        "touchpoint-name-financing": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-201-Contract": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-city-tender-eval-lot": [
+          "string"
+        ],
+        "BT-792-Review": [
+          "string"
+        ],
+        "tender-validity-deadline-lot": [
+          {
+            "value": "string",
+            "unit": "string"
+          }
+        ],
+        "publication-number": "string",
+        "contract-nature-subtype": [
+          "string"
+        ],
+        "BT-119-LotResult": [
+          true
+        ],
+        "BT-761-Lot": [
+          "string"
+        ],
+        "legal-basis-no-id-desc": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-country-tender-eval-lot": [
+          "string"
+        ],
+        "BT-766-Part": [
+          "string"
+        ],
+        "touchpoint-country-sub-tender-eval-lot": [
+          "string"
+        ],
+        "tender-value-cur-lowest": [
+          "string"
+        ],
+        "BT-5010-Lot": [
+          "string"
+        ],
+        "organisation-internet-address-signatory": [
+          "string"
+        ],
+        "organisation-country-addinfo-lot": [
+          "string"
+        ],
+        "organisation-fax-docprovider-part": [
+          "string"
+        ],
+        "BT-553-Tender": [
+          0.1
+        ],
+        "BT-755-Lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "buyer-review-compainants-val": [
+          0.1
+        ],
+        "prize-rank-lot": [
+          9007199254740991
+        ],
+        "BT-22-Part": [
+          "string"
+        ],
+        "place-of-performance-city-proc": [
+          "string"
+        ],
+        "OPT-110-Lot-FiscalLegis": [
+          "string"
+        ],
+        "dispatch-invitation-interest-lot": [
+          "string"
+        ],
+        "buyer-touchpoint-email": [
+          "string"
+        ],
+        "BT-706-UBO": [
+          "string"
+        ],
+        "organisation-name-fiscal-legis-part": {
+          "lang": [
+            "string"
+          ]
+        },
+        "url-environmental-legislation-part": [
+          "string"
+        ],
+        "organisation-gateway-tender-receip-lot": [
+          "string"
+        ],
+        "BT-131(d)-Lot": [
+          "string"
+        ],
+        "organisation-identifier-employ-legis-part": [
+          "string"
+        ],
+        "touchpoint-post-code-reviewinfo-part": [
+          "string"
+        ],
+        "description-proc": {
+          "lang": "string"
+        },
+        "touchpoint-email-employ-legis-part": [
+          "string"
+        ],
+        "TVH": [
+          0.1
+        ],
+        "organisation-tel-revieworg-lot": [
+          "string"
+        ],
+        "review-description": {
+          "lang": [
+            "string"
+          ]
+        },
+        "TVL": [
+          0.1
+        ],
+        "touchpoint-partname-signatory": [
+          "string"
+        ],
+        "touchpoint-contact-point-employ-legis-part": [
+          "string"
+        ],
+        "selection-criterion-lot": [
+          "string"
+        ],
+        "organisation-country-subcontractor": [
+          "string"
+        ],
+        "deadline-time-lot": [
+          "string"
+        ],
+        "touchpoint-post-code-fiscal-legis-part": [
+          "string"
+        ],
+        "BT-98-Lot-Unit": [
+          "string"
+        ],
+        "place-of-performance-subdiv-part": [
+          "string"
+        ],
+        "organisation-post-code-employ-legis-part": [
+          "string"
+        ],
+        "BT-801-Lot": [
+          "string"
+        ],
+        "touchpoint-city-environ-legis-part": [
+          "string"
+        ],
+        "BT-631-Lot": [
+          "string"
+        ],
+        "subcontracting-value-known-res": [
+          true
+        ],
+        "dispatch-date": "string",
+        "electronic-auction-lot": [
+          true
+        ],
+        "contact-nature-main-part": [
+          "string"
+        ],
+        "organisation-identifier-ted-esen": [
+          "string"
+        ],
+        "touchpoint-internet-address-tenderer": [
+          "string"
+        ],
+        "eu-funds-identifier": [
+          "string"
+        ],
+        "contract-title": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-5121-Part": [
+          "string"
+        ],
+        "business-street": [
+          "string"
+        ],
+        "touchpoint-country-sub-ted-esen": [
+          "string"
+        ],
+        "touchpoint-contact-point-mediator-part": [
+          "string"
+        ],
+        "OPT-211-Tenderer": [
+          "string"
+        ],
+        "buyer-internet-address": [
+          "string"
+        ],
+        "OPP-031-Tender": {
+          "lang": [
+            "string"
+          ]
+        },
+        "notice-title": {
+          "lang": "string"
+        },
+        "BT-41-Lot": [
+          true
+        ],
+        "touchpoint-tel-tender-eval-lot": [
+          "string"
+        ],
+        "consumption-metric-res": [
+          "string"
+        ],
+        "BT-300-LotsGroup": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-person-docprovider-part": [
+          true
+        ],
+        "touchpoint-country-sub-signatory": [
+          "string"
+        ],
+        "organisation-country-sub-tender-receip-lot": [
+          "string"
+        ],
+        "BT-720-Tender": [
+          0.1
+        ],
+        "touchpoint-country-addinfo-lot": [
+          "string"
+        ],
+        "touchpoint-gateway-revieworg-lot": [
+          "string"
+        ],
+        "deadline-date-part": [
+          "string"
+        ],
+        "contract-conditions-description-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "energy-efficiency-label-res": [
+          "string"
+        ],
+        "organisation-country-sub-tender-receip-part": [
+          "string"
+        ],
+        "BT-17-Lot": [
+          "string"
+        ],
+        "previous-notice-id-proc": [
+          "string"
+        ],
+        "BT-721-Contract": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-795-Review": [
+          0.1
+        ],
+        "organisation-tel-fiscal-legis-part": [
+          "string"
+        ],
+        "organisation-post-code-reviewinfo-lot": [
+          "string"
+        ],
+        "organisation-partname-tenderer": [
+          "string"
+        ],
+        "reward-other-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-gateway-serv-prov": [
+          "string"
+        ],
+        "organisation-tel-tenderer": [
+          "string"
+        ],
+        "organisation-gateway-tender-receip-part": [
+          "string"
+        ],
+        "contract-nature": [
+          "string"
+        ],
+        "lot-included-proc": [
+          "string"
+        ],
+        "buyer-identifier": [
+          "string"
+        ],
+        "organisation-tel-subcontractor": [
+          "string"
+        ],
+        "BT-774-Lot": [
+          "string"
+        ],
+        "legal-basis-notice": "string",
+        "BT-5141-Part": [
+          "string"
+        ],
+        "touchpoint-country-sub-environ-legis-lot": [
+          "string"
+        ],
+        "touchpoint-name-addinfo-part": {
+          "lang": [
+            "string"
+          ]
+        },
+        "energy-consumption-res": [
+          0.1
+        ],
+        "modification-modified-contract-reference": [
+          "string"
+        ],
+        "touchpoint-post-code-subcontractor": [
+          "string"
+        ],
+        "touchpoint-name-reviewinfo-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "OPT-080-LotResult": [
+          "string"
+        ],
+        "organisation-country-sub-fiscal-legis-lot": [
+          "string"
+        ],
+        "review-request-withdrawn-date": [
+          "string"
+        ],
+        "organisation-internet-address-financing": [
+          "string"
+        ],
+        "business-name": "string",
+        "organisation-email-revieworg-part": [
+          "string"
+        ],
+        "organisation-gateway-reviewinfo-part": [
+          "string"
+        ],
+        "touchpoint-partname-subcontractor": [
+          "string"
+        ],
+        "buyer-name": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-262-Part": [
+          "string"
+        ],
+        "BT-740-Procedure-Buyer": [
+          "string"
+        ],
+        "organisation-fax-tender-receip-part": [
+          "string"
+        ],
+        "touchpoint-gateway-addinfo-lot": [
+          "string"
+        ],
+        "tender-ranked-res": [
+          true
+        ],
+        "document-url-lot": [
+          "string"
+        ],
+        "touchpoint-tel-reviewinfo-lot": [
+          "string"
+        ],
+        "touchpoint-partname-docprovider-part": [
+          "string"
+        ],
+        "BT-553-Tender-Currency": [
+          "string"
+        ],
+        "organisation-post-code-tender-receip-lot": [
+          "string"
+        ],
+        "received-submissions-type-code": [
+          "string"
+        ],
+        "BT-711-LotResult": [
+          0.1
+        ],
+        "BT-729-Lot": [
+          0.1
+        ],
+        "organisation-gateway-fiscal-legis-part": [
+          "string"
+        ],
+        "organisation-fax-tender-receip-lot": [
+          "string"
+        ],
+        "OPT-071-Lot": [
+          "string"
+        ],
+        "review-body-type": [
+          "string"
+        ],
+        "exception-application-ipi-measure-res": [
+          "string"
+        ],
+        "touchpoint-gateway-signatory": [
+          "string"
+        ],
+        "successive-redution-lot": [
+          true
+        ],
+        "lot-included-glo": [
+          "string"
+        ],
+        "touchpoint-partname-revieworg-lot": [
+          "string"
+        ],
+        "value-prize-lot": [
+          0.1
+        ],
+        "organisation-partname-environ-legis-lot": [
+          "string"
+        ],
+        "framework-maximum-value-cur-glo": [
+          "string"
+        ],
+        "BT-144-LotResult": [
+          "string"
+        ],
+        "organisation-city-environ-legis-lot": [
+          "string"
+        ],
+        "contract-duration-period-oth-lot": [
+          "string"
+        ],
+        "BT-124-Part": [
+          "string"
+        ],
+        "touchpoint-email-addinfo-part": [
+          "string"
+        ],
+        "touchpoint-fax-subcontractor": [
+          "string"
+        ],
+        "eed-list-item-lot": [
+          "string"
+        ],
+        "organisation-tel-tender-eval-part": [
+          "string"
+        ],
+        "touchpoint-internet-address-environ-legis-part": [
+          "string"
+        ],
+        "award-criterion-number-lot": [
+          0.1
+        ],
+        "organisation-fax-addinfo-part": [
+          "string"
+        ],
+        "touchpoint-fax-employ-legis-lot": [
+          "string"
+        ],
+        "organisation-gateway-tenderer": [
+          "string"
+        ],
+        "touchpoint-gateway-revieworg-part": [
+          "string"
+        ],
+        "deadline-receipt-request-date-lot": [
+          "string"
+        ],
+        "touchpoint-fax-revieworg-lot": [
+          "string"
+        ],
+        "touchpoint-post-code-docprovider-part": [
+          "string"
+        ],
+        "touchpoint-tel-docprovider-lot": [
+          "string"
+        ],
+        "organisation-internet-address-serv-prov": [
+          "string"
+        ],
+        "framework-estimated-value-cur": [
+          "string"
+        ],
+        "BT-773-Tender": [
+          "string"
+        ],
+        "touchpoint-fax-reviewinfo-lot": [
+          "string"
+        ],
+        "organisation-street-employ-legis-lot": [
+          "string"
+        ],
+        "touchpoint-country-sub-buyer": [
+          "string"
+        ],
+        "cross-border-law-description-proc": {
+          "lang": "string"
+        },
+        "environmental-impact-lot": [
+          "string"
+        ],
+        "organisation-partname-reviewinfo-lot": [
+          "string"
+        ],
+        "BT-71-Lot": [
+          "string"
+        ],
+        "organisation-tel-tender-receip-part": [
+          "string"
+        ],
+        "organisation-person-paying": [
+          true
+        ],
+        "organisation-contact-point-revieworg-lot": [
+          "string"
+        ],
+        "estimated-value-cur-glo": [
+          "string"
+        ],
+        "entity-main-activity": [
+          "string"
+        ],
+        "BT-709-LotResult-Currency": [
+          "string"
+        ],
+        "organisation-post-code-paying": [
+          "string"
+        ],
+        "organisation-street-serv-prov": [
+          "string"
+        ],
+        "OPT-111-Lot-FiscalLegis": [
+          "string"
+        ],
+        "quantity-lot": [
+          0.1
+        ],
+        "organisation-person-mediator-part": [
+          true
+        ],
+        "touchpoint-name-addinfo-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "electronic-ordering-lot": [
+          true
+        ],
+        "total-value-cur": [
+          "string"
+        ],
+        "organisation-internet-address-fiscal-legis-part": [
+          "string"
+        ],
+        "organisation-partname-fiscal-legis-lot": [
+          "string"
+        ],
+        "contract-duration-period-part": [
+          {
+            "value": "string",
+            "unit": "string"
+          }
+        ],
+        "document-restricted-justification-part": [
+          "string"
+        ],
+        "organisation-partname-buyer": [
+          "string"
+        ],
+        "touchpoint-fax-revieworg-part": [
+          "string"
+        ],
+        "electronic-payment-lot": [
+          true
+        ],
+        "organisation-partname-mediator-part": [
+          "string"
+        ],
+        "deadline-receipt-tender-time-lot": [
+          "string"
+        ],
+        "revenues-allocation-tickets-sales-code-res": [
+          "string"
+        ],
+        "touchpoint-post-code-revieworg-lot": [
+          "string"
+        ],
+        "BT-58-Lot": [
+          9007199254740991
+        ],
+        "touchpoint-tel-revieworg-part": [
+          "string"
+        ],
+        "BT-15-Lot": [
+          "string"
+        ],
+        "document-unofficial-language-part": [
+          "string"
+        ],
+        "touchpoint-street-mediator-lot": [
+          "string"
+        ],
+        "touchpoint-partname-buyer": [
+          "string"
+        ],
+        "award-criterion-description-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-city-employ-legis-part": [
+          "string"
+        ],
+        "touchpoint-internet-address-financing": [
+          "string"
+        ],
+        "organisation-country-sub-tenderer": [
+          "string"
+        ],
+        "document-unofficial-language-lot": [
+          "string"
+        ],
+        "touchpoint-contact-point-employ-legis-lot": [
+          "string"
+        ],
+        "organisation-post-code-addinfo-part": [
+          "string"
+        ],
+        "winner-listed": [
+          true
+        ],
+        "winner-selection-status": [
+          "string"
+        ],
+        "organisation-city-subcontractor": [
+          "string"
+        ],
+        "BT-1251-Lot": [
+          "string"
+        ],
+        "BT-789-Review": {
+          "lang": [
+            "string"
+          ]
+        },
+        "tender-validity-deadline-value-lot": [
+          0.1
+        ],
+        "winner-partname": [
+          "string"
+        ],
+        "BT-772-Lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-internet-address-fiscal-legis-part": [
+          "string"
+        ],
+        "direct-award-justification-text-proc": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-644-Lot": [
+          0.1
+        ],
+        "organisation-identifier-fiscal-legis-lot": [
+          "string"
+        ],
+        "procurement-relaunch-proc": true,
+        "touchpoint-gateway-tender-receip-part": [
+          "string"
+        ],
+        "group-framework-value-notice": [
+          0.1
+        ],
+        "organisation-city-revieworg-lot": [
+          "string"
+        ],
+        "touchpoint-street-reviewinfo-lot": [
+          "string"
+        ],
+        "organisation-contact-point-ted-esen": [
+          "string"
+        ],
+        "sme-glo": [
+          true
+        ],
+        "form-type": "string",
+        "BT-7532-Lot": [
+          "string"
+        ],
+        "organisation-street-environ-legis-lot": [
+          "string"
+        ],
+        "organisation-country-sub-addinfo-part": [
+          "string"
+        ],
+        "touchpoint-country-fiscal-legis-part": [
+          "string"
+        ],
+        "touchpoint-post-code-mediator-lot": [
+          "string"
+        ],
+        "place-performance-streetline1-proc": [
+          "string"
+        ],
+        "organisation-gateway-addinfo-part": [
+          "string"
+        ],
+        "touchpoint-gateway-financing": [
+          "string"
+        ],
+        "touchpoint-country-sub-environ-legis-part": [
+          "string"
+        ],
+        "BT-263-Procedure": [
+          "string"
+        ],
+        "BT-04-notice": "string",
+        "touchpoint-country-sub-docprovider-part": [
+          "string"
+        ],
+        "organisation-street-environ-legis-part": [
+          "string"
+        ],
+        "BT-142-LotResult": [
+          "string"
+        ],
+        "touchpoint-email-docprovider-part": [
+          "string"
+        ],
+        "touchpoint-contact-point-environ-legis-part": [
+          "string"
+        ],
+        "BT-13714-Tender": [
+          "string"
+        ],
+        "organisation-contact-point-subcontractor": [
+          "string"
+        ],
+        "touchpoint-gateway-reviewinfo-lot": [
+          "string"
+        ],
+        "buyer-group-lead": [
+          true
+        ],
+        "touchpoint-name-docprovider-part": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-post-code-buyer": [
+          "string"
+        ],
+        "tender-payment-value-res": [
+          0.1
+        ],
+        "BT-27-Part-Currency": [
+          "string"
+        ],
+        "BT-300-Part": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-internet-address-serv-prov": [
+          "string"
+        ],
+        "BT-67(a)-Procedure": [
+          "string"
+        ],
+        "organisation-person-ted-esen": [
+          true
+        ],
+        "BT-744-Lot": [
+          "string"
+        ],
+        "BT-09(b)-Procedure": {
+          "lang": "string"
+        },
+        "ipi-measures-applicable-lot": [
+          "string"
+        ],
+        "organisation-name-mediator-part": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-post-code-environ-legis-lot": [
+          "string"
+        ],
+        "OPP-052-Organization": [
+          true
+        ],
+        "energy-savings-res": [
+          0.1
+        ],
+        "BT-135-Procedure": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-fax-tender-receip-part": [
+          "string"
+        ],
+        "buyer-country-sub": [
+          "string"
+        ],
+        "organisation-tel-revieworg-part": [
+          "string"
+        ],
+        "organisation-tel-mediator-lot": [
+          "string"
+        ],
+        "BT-538-Lot": [
+          "string"
+        ],
+        "BT-814-LotResult": [
+          0.1
+        ],
+        "BT-24-Procedure": {
+          "lang": "string"
+        },
+        "BT-26(m)-Procedure": "string",
+        "organisation-person-employ-legis-part": [
+          true
+        ],
+        "touchpoint-post-code-employ-legis-part": [
+          "string"
+        ],
+        "AA": [
+          "string"
+        ],
+        "AC": "string",
+        "BT-1501(c)-Contract": [
+          "string"
+        ],
+        "award-criterion-name-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-post-code-financing": [
+          "string"
+        ],
+        "touchpoint-contact-point-addinfo-lot": [
+          "string"
+        ],
+        "BT-137-Part": [
+          "string"
+        ],
+        "AU": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-person-signatory": [
+          true
+        ],
+        "minimum-candidate-lot": [
+          9007199254740991
+        ],
+        "OPT-120-Part-EnvironLegis": [
+          "string"
+        ],
+        "organisation-name-employ-legis-part": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-city-fiscal-legis-lot": [
+          "string"
+        ],
+        "touchpoint-street-employ-legis-part": [
+          "string"
+        ],
+        "OPT-081-LotResult": [
+          "string"
+        ],
+        "touchpoint-email-revieworg-lot": [
+          "string"
+        ],
+        "business-fax": "string",
+        "future-notice": "string",
+        "touchpoint-gateway-environ-legis-part": [
+          "string"
+        ],
+        "BI": [
+          "string"
+        ],
+        "BT-33-Procedure": 9007199254740991,
+        "organisation-person-environ-legis-lot": [
+          true
+        ],
+        "touchpoint-partname-tender-eval-part": [
+          "string"
+        ],
+        "organisation-tel-addinfo-part": [
+          "string"
+        ],
+        "touchpoint-contact-point-fiscal-legis-part": [
+          "string"
+        ],
+        "organisation-contact-point-serv-prov": [
+          "string"
+        ],
+        "BT-712(b)-LotResult": [
+          0.1
+        ],
+        "touchpoint-country-serv-prov": [
+          "string"
+        ],
+        "environmental-legislation-document-id-lot": [
+          "string"
+        ],
+        "place-performance-streetline1-lot": [
+          "string"
+        ],
+        "BT-125(i)-Lot": [
+          "string"
+        ],
+        "touchpoint-contact-point-reviewinfo-part": [
+          "string"
+        ],
+        "electronic-auction-lot-url": [
+          "string"
+        ],
+        "deadline-date-lot": [
+          "string"
+        ],
+        "organisation-name-environ-legis-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-person-employ-legis-lot": [
+          true
+        ],
+        "winner-owner-nationality": [
+          "string"
+        ],
+        "tender-value-cur": [
+          "string"
+        ],
+        "BT-732-Lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-name-docprovider-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-internet-address-subcontractor": [
+          "string"
+        ],
+        "CY": [
+          "string"
+        ],
+        "BT-651-Lot": [
+          "string"
+        ],
+        "BT-150-Contract": [
+          "string"
+        ],
+        "BT-45-Lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-710-LotResult": [
+          0.1
+        ],
+        "DD": [
+          "string"
+        ],
+        "organisation-internet-address-addinfo-lot": [
+          "string"
+        ],
+        "organisation-email-mediator-lot": [
+          "string"
+        ],
+        "OPP-050-Organization": [
+          true
+        ],
+        "DI": [
+          "string"
+        ],
+        "non-disclosure-agreement-lot": [
+          "string"
+        ],
+        "modification-justification": [
+          "string"
+        ],
+        "BT-70-Lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-country-employ-legis-lot": [
+          "string"
+        ],
+        "DS": "string",
+        "DT": [
+          "string"
+        ],
+        "BT-707-Lot": [
+          "string"
+        ],
+        "touchpoint-name-subcontractor": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-partname-financing": [
+          "string"
+        ],
+        "BT-52-Lot": [
+          true
+        ],
+        "buyer-reviewrequests-irregularity-type": [
+          "string"
+        ],
+        "touchpoint-partname-fiscal-legis-lot": [
+          "string"
+        ],
+        "internal-identifier-glo": [
+          "string"
+        ],
+        "BT-99-Lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "contract-identifier": [
+          "string"
+        ],
+        "organisation-country-sub-docprovider-part": [
+          "string"
+        ],
+        "eed-list-basis-lot": [
+          "string"
+        ],
+        "touchpoint-street-tender-eval-part": [
+          "string"
+        ],
+        "BT-733-LotsGroup": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-36-Lot": [
+          {
+            "value": "string",
+            "unit": "string"
+          }
+        ],
+        "touchpoint-country-sub-financing": [
+          "string"
+        ],
+        "BT-118-NoticeResult": 0.1,
+        "contract-tender-id": [
+          "string"
+        ],
+        "organisation-tel-employ-legis-part": [
+          "string"
+        ],
+        "BT-161-NoticeResult-Currency": "string",
+        "touchpoint-city-docprovider-part": [
+          "string"
+        ],
+        "BT-709-LotResult": [
+          0.1
+        ],
+        "maximum-candidates-lot": [
+          9007199254740991
+        ],
+        "touchpoint-name-fiscal-legis-part": {
+          "lang": [
+            "string"
+          ]
+        },
+        "place-of-performance-city-lot": [
+          "string"
+        ],
+        "BT-22-LotsGroup": [
+          "string"
+        ],
+        "FT": "string",
+        "organisation-internet-address-docprovider-part": [
+          "string"
+        ],
+        "organisation-tel-buyer": [
+          "string"
+        ],
+        "tool-url-part": [
+          "string"
+        ],
+        "organisation-email-addinfo-part": [
+          "string"
+        ],
+        "organisation-tel-signatory": [
+          "string"
+        ],
+        "touchpoint-street-tender-receip-part": [
+          "string"
+        ],
+        "touchpoint-street-environ-legis-lot": [
+          "string"
+        ],
+        "organisation-contact-point-signatory": [
+          "string"
+        ],
+        "touchpoint-city-tender-eval-part": [
+          "string"
+        ],
+        "organisation-post-code-tender-eval-lot": [
+          "string"
+        ],
+        "organisation-contact-point-tenderer": [
+          "string"
+        ],
+        "duration-additional-information-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-internet-address-fiscal-legis-lot": [
+          "string"
+        ],
+        "ubo-fax": [
+          "string"
+        ],
+        "quality-target-description-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "HA": "string",
+        "OPT-120-Lot-EnvironLegis": [
+          "string"
+        ],
+        "OPT-150-LOT": [
+          "string"
+        ],
+        "touchpoint-internet-address-reviewinfo-part": [
+          "string"
+        ],
+        "url-environmental-legislation-lot": [
+          "string"
+        ],
+        "touchpoint-country-signatory": [
+          "string"
+        ],
+        "predominance-lot": [
+          "string"
+        ],
+        "BT-26(a)-Lot": [
+          "string"
+        ],
+        "touchpoint-tel-employ-legis-lot": [
+          "string"
+        ],
+        "organisation-contact-point-fiscal-legis-part": [
+          "string"
+        ],
+        "contract-framework-agreement": [
+          true
+        ],
+        "touchpoint-city-buyer": [
+          "string"
+        ],
+        "additional-classification-proc": [
+          "string"
+        ],
+        "touchpoint-fax-paying": [
+          "string"
+        ],
+        "touchpoint-fax-addinfo-part": [
+          "string"
+        ],
+        "touchpoint-internet-address-ted-esen": [
+          "string"
+        ],
+        "IA": [
+          "string"
+        ],
+        "buyer-gateway": [
+          "string"
+        ],
+        "BT-47-Lot": [
+          "string"
+        ],
+        "organisation-fax-tender-eval-part": [
+          "string"
+        ],
+        "contract-duration-end-date-lot": [
+          "string"
+        ],
+        "ubo-street": [
+          "string"
+        ],
+        "foreign-subsidies-regulation-lot": [
+          "string"
+        ],
+        "OPP-123-Business": "string",
+        "BT-777-Lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-734-Lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-street-mediator-part": [
+          "string"
+        ],
+        "touchpoint-email-ted-esen": [
+          "string"
+        ],
+        "selection-criteria-second-stage-invite-lot": [
+          true
+        ],
+        "touchpoint-email-tender-receip-lot": [
+          "string"
+        ],
+        "touchpoint-city-addinfo-part": [
+          "string"
+        ],
+        "BT-726-Part": [
+          true
+        ],
+        "direct-award-justification-previous-procedure-identifier-proct": [
+          "string"
+        ],
+        "review-decision-type": [
+          "string"
+        ],
+        "organisation-city-addinfo-part": [
+          "string"
+        ],
+        "BT-610-Procedure-Buyer": [
+          "string"
+        ],
+        "organisation-country-reviewinfo-lot": [
+          "string"
+        ],
+        "touchpoint-street-fiscal-legis-lot": [
+          "string"
+        ],
+        "registration-date": "string",
+        "organisation-person-tender-receip-part": [
+          true
+        ],
+        "touchpoint-gateway-mediator-lot": [
+          "string"
+        ],
+        "BT-27-Part": [
+          0.1
+        ],
+        "organisation-name-addinfo-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-partname-revieworg-part": [
+          "string"
+        ],
+        "BT-554-Tender": {
+          "lang": [
+            "string"
+          ]
+        },
+        "business-email": "string",
+        "buyer-email": [
+          "string"
+        ],
+        "BT-798-Review": {
+          "lang": [
+            "string"
+          ]
+        },
+        "legal-basis-text": {
+          "lang": [
+            "string"
+          ]
+        },
+        "OPP-011-notice": "string",
+        "subcontracting-percentage": [
+          0.1
+        ],
+        "subcontracting-allowed-lot": [
+          "string"
+        ],
+        "organisation-email-paying": [
+          "string"
+        ],
+        "BT-5131-Lot": [
+          "string"
+        ],
+        "modification-previous-notice-identifier": [
+          "string"
+        ],
+        "touchpoint-country-tender-eval-lot": [
+          "string"
+        ],
+        "organisation-partname-addinfo-lot": [
+          "string"
+        ],
+        "touchpoint-street-docprovider-part": [
+          "string"
+        ],
+        "touchpoint-tel-reviewinfo-part": [
+          "string"
+        ],
+        "award-criterion-number-weight-glo": [
+          "string"
+        ],
+        "vehicle-type": [
+          "string"
+        ],
+        "estimated-value-glo": [
+          0.1
+        ],
+        "tender-rank": [
+          9007199254740991
+        ],
+        "tool-name-part": [
+          "string"
+        ],
+        "BT-1561-NoticeResult-Currency": "string",
+        "organisation-name-reviewinfo-part": {
+          "lang": [
+            "string"
+          ]
+        },
+        "winner-country-sub": [
+          "string"
+        ],
+        "BT-660-LotResult-Currency": [
+          "string"
+        ],
+        "MA": [
+          "string"
+        ],
+        "organisation-country-sub-mediator-lot": [
+          "string"
+        ],
+        "organisation-fax-fiscal-legis-lot": [
+          "string"
+        ],
+        "touchpoint-contact-point-revieworg-lot": [
+          "string"
+        ],
+        "touchpoint-email-tender-eval-lot": [
+          "string"
+        ],
+        "ojs-number": "string",
+        "links": {
+          "xml": {
+            "additionalProp1": "string",
+            "additionalProp2": "string",
+            "additionalProp3": "string"
+          },
+          "pdf": {
+            "additionalProp1": "string",
+            "additionalProp2": "string",
+            "additionalProp3": "string"
+          },
+          "pdfs": {
+            "additionalProp1": "string",
+            "additionalProp2": "string",
+            "additionalProp3": "string"
+          },
+          "html": {
+            "additionalProp1": "string",
+            "additionalProp2": "string",
+            "additionalProp3": "string"
+          },
+          "htmlDirect": {
+            "additionalProp1": "string",
+            "additionalProp2": "string",
+            "additionalProp3": "string"
+          }
+        },
+        "BT-5101(b)-Part": [
+          "string"
+        ],
+        "organisation-tel-docprovider-lot": [
+          "string"
+        ],
+        "organisation-fax-revieworg-part": [
+          "string"
+        ],
+        "organisation-tel-mediator-part": [
+          "string"
+        ],
+        "BT-728-Part": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-person-serv-prov": [
+          true
+        ],
+        "touchpoint-internet-address-revieworg-part": [
+          "string"
+        ],
+        "organisation-name-revieworg-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-gateway-tender-eval-part": [
+          "string"
+        ],
+        "deadline-receipt-request-time-lot": [
+          "string"
+        ],
+        "identifier-glo": [
+          "string"
+        ],
+        "ubo-country": [
+          "string"
+        ],
+        "organisation-street-revieworg-lot": [
+          "string"
+        ],
+        "NC": [
+          "string"
+        ],
+        "organisation-name-financing": {
+          "lang": [
+            "string"
+          ]
+        },
+        "ND": "string",
+        "BT-782-Tender": [
+          0.1
+        ],
+        "touchpoint-country-sub-employ-legis-part": [
+          "string"
+        ],
+        "OPT-140-Part": [
+          "string"
+        ],
+        "BT-97-Lot": [
+          "string"
+        ],
+        "NL": 1073741824,
+        "accessibility-justification-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "security-clearence-deadline-lot": [
+          "string"
+        ],
+        "title-part": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-street-addinfo-part": [
+          "string"
+        ],
+        "touchpoint-tel-employ-legis-part": [
+          "string"
+        ],
+        "BT-05(b)-notice": "string",
+        "organisation-fax-mediator-lot": [
+          "string"
+        ],
+        "employment-legislation-document-id-lot": [
+          "string"
+        ],
+        "organisation-partname-tender-eval-lot": [
+          "string"
+        ],
+        "OPT-110-Part-FiscalLegis": [
+          "string"
+        ],
+        "BT-720-Tender-Currency": [
+          "string"
+        ],
+        "touchpoint-tel-paying": [
+          "string"
+        ],
+        "winner-touchpoint-gateway": [
+          "string"
+        ],
+        "organisation-country-sub-employ-legis-part": [
+          "string"
+        ],
+        "touchpoint-gateway-subcontractor": [
+          "string"
+        ],
+        "OJ": "string",
+        "OPP-105-Business": [
+          "string"
+        ],
+        "OL": [
+          "string"
+        ],
+        "organisation-fax-fiscal-legis-part": [
+          "string"
+        ],
+        "public-opening-place-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-email-signatory": [
+          "string"
+        ],
+        "touchpoint-country-ted-esen": [
+          "string"
+        ],
+        "buyer-legal-type": [
+          "string"
+        ],
+        "organisation-city-tender-receip-part": [
+          "string"
+        ],
+        "BT-27-Lot": [
+          0.1
+        ],
+        "additional-classification-part": [
+          "string"
+        ],
+        "PC": [
+          "string"
+        ],
+        "organisation-fax-serv-prov": [
+          "string"
+        ],
+        "organisation-fax-buyer": [
+          "string"
+        ],
+        "PD": "string",
+        "organisation-tel-environ-legis-lot": [
+          "string"
+        ],
+        "touchpoint-gateway-fiscal-legis-lot": [
+          "string"
+        ],
+        "BT-615-Part": [
+          "string"
+        ],
+        "touchpoint-gateway-docprovider-part": [
+          "string"
+        ],
+        "BT-727-Lot": [
+          "string"
+        ],
+        "BT-727-Procedure": [
+          "string"
+        ],
+        "PR": "string",
+        "contract-conclusion-date": [
+          "string"
+        ],
+        "subcontracting-percentage-ind": [
+          true
+        ],
+        "change-description": {
+          "lang": [
+            "string"
+          ]
+        },
+        "strategic-procurement-description-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "tendering-party-leader": [
+          true
+        ],
+        "BT-543-LotsGroup": {
+          "lang": [
+            "string"
+          ]
+        },
+        "electronic-signature-lot": [
+          "string"
+        ],
+        "organisation-email-employ-legis-part": [
+          "string"
+        ],
+        "OPP-023-Contract": [
+          "string"
+        ],
+        "organisation-person-reviewinfo-part": [
+          true
+        ],
+        "subcontracting-description": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-country-sub-revieworg-lot": [
+          "string"
+        ],
+        "submission-nonelectronic-lot": [
+          "string"
+        ],
+        "touchpoint-partname-reviewinfo-part": [
+          "string"
+        ],
+        "organisation-email-environ-legis-lot": [
+          "string"
+        ],
+        "title-proc": {
+          "lang": "string"
+        },
+        "organisation-identifier-financing": [
+          "string"
+        ],
+        "additional-classification-type-lot": [
+          "string"
+        ],
+        "award-criterion-number-weight-lot": [
+          "string"
+        ],
+        "BT-737-Part": [
+          "string"
+        ],
+        "eu-registration-number": "string",
+        "RC": [
+          "string"
+        ],
+        "touchpoint-contact-point-paying": [
+          "string"
+        ],
+        "BT-815-LotResult": [
+          0.1
+        ],
+        "touchpoint-internet-address-reviewinfo-lot": [
+          "string"
+        ],
+        "RN": "string",
+        "RP": "string",
+        "OPP-035-Tender": [
+          "string"
+        ],
+        "organisation-city-docprovider-part": [
+          "string"
+        ],
+        "organisation-contact-point-mediator-lot": [
+          "string"
+        ],
+        "organisation-fax-reviewinfo-part": [
+          "string"
+        ],
+        "touchpoint-email-serv-prov": [
+          "string"
+        ],
+        "BT-630(t)-Lot": [
+          "string"
+        ],
+        "touchpoint-country-paying": [
+          "string"
+        ],
+        "touchpoint-post-code-tender-eval-part": [
+          "string"
+        ],
+        "place-performance-streetline2-proc": [
+          "string"
+        ],
+        "organisation-internet-address-tender-receip-lot": [
+          "string"
+        ],
+        "BT-124-Lot": [
+          "string"
+        ],
+        "touchpoint-tel-addinfo-part": [
+          "string"
+        ],
+        "BT-1711-Tender": [
+          true
+        ],
+        "BT-13(d)-Part": [
+          "string"
+        ],
+        "organisation-name-docprovider-part": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-791-Review": [
+          "string"
+        ],
+        "organisation-contact-point-reviewinfo-part": [
+          "string"
+        ],
+        "organisation-post-code-mediator-part": [
+          "string"
+        ],
+        "BT-136-Procedure": [
+          "string"
+        ],
+        "touchpoint-country-sub-subcontractor": [
+          "string"
+        ],
+        "organisation-country-serv-prov": [
+          "string"
+        ],
+        "touchpoint-partname-tender-receip-part": [
+          "string"
+        ],
+        "touchpoint-tel-signatory": [
+          "string"
+        ],
+        "BT-708-Part": [
+          "string"
+        ],
+        "revenues-allocation-lot": [
+          0.1
+        ],
+        "organisation-country-sub-tender-eval-lot": [
+          "string"
+        ],
+        "touchpoint-street-tender-eval-lot": [
+          "string"
+        ],
+        "TD": "string",
+        "document-restricted-url-lot": [
+          "string"
+        ],
+        "BT-813-LotResult": [
+          0.1
+        ],
+        "organisation-internet-address-revieworg-part": [
+          "string"
+        ],
+        "classification-cpv": [
+          "string"
+        ],
+        "TI": {
+          "lang": "string"
+        },
+        "BT-23-Procedure": "string",
+        "specific-ipi-measure-res": [
+          "string"
+        ],
+        "organisation-gateway-addinfo-lot": [
+          "string"
+        ],
+        "gazette-issue-id": "string",
+        "TV": 0.1,
+        "TW": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-gateway-reviewinfo-part": [
+          "string"
+        ],
+        "TY": "string",
+        "multiple-tender-lot": [
+          "string"
+        ],
+        "BT-5421-Lot": [
+          "string"
+        ],
+        "organisation-partname-employ-legis-lot": [
+          "string"
+        ],
+        "change-reason-description": {
+          "lang": "string"
+        },
+        "OPA-36-Lot-Number": [
+          0.1
+        ],
+        "organisation-fax-paying": [
+          "string"
+        ],
+        "additional-info-proc": {
+          "lang": "string"
+        },
+        "touchpoint-partname-addinfo-part": [
+          "string"
+        ],
+        "BT-95-Lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "dps-usage-lot": [
+          "string"
+        ],
+        "place-of-performance-other-lot": [
+          "string"
+        ],
+        "BT-202-Contract": {
+          "lang": [
+            "string"
+          ]
+        },
+        "main-classification-type-proc": "string",
+        "BT-21-LotsGroup": {
+          "lang": [
+            "string"
+          ]
+        },
+        "cvd-contract-type-lot": [
+          "string"
+        ],
+        "organisation-country-sub-environ-legis-part": [
+          "string"
+        ],
+        "BT-79-Lot": [
+          "string"
+        ],
+        "direct-award-justification-proc": [
+          "string"
+        ],
+        "organisation-internet-address-tender-eval-lot": [
+          "string"
+        ],
+        "organisation-person-docprovider-lot": [
+          true
+        ],
+        "organisation-post-code-ted-esen": [
+          "string"
+        ],
+        "competition-termination-proc": true,
+        "contract-conditions-code-lot": [
+          "string"
+        ],
+        "touchpoint-country-sub-reviewinfo-lot": [
+          "string"
+        ],
+        "legal-basis-no-id": [
+          "string"
+        ],
+        "OPA-98-Lot-Number": [
+          0.1
+        ],
+        "cross-border-law-identifier-proc": "string",
+        "result-value-notice": 0.1,
+        "BT-736-Lot": [
+          "string"
+        ],
+        "organisation-contact-point-revieworg-part": [
+          "string"
+        ],
+        "BT-752-Lot": [
+          0.1
+        ],
+        "framework-value-cur-notice": "string",
+        "organisation-post-code-revieworg-lot": [
+          "string"
+        ],
+        "BT-133-Lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-country-signatory": [
+          "string"
+        ],
+        "BT-25-Lot": [
+          0.1
+        ],
+        "organisation-country-paying": [
+          "string"
+        ],
+        "procedure-justification": {
+          "lang": "string"
+        },
+        "official-language": [
+          "string"
+        ],
+        "eu-fund-lot": [
+          "string"
+        ],
+        "BT-03-notice": "string",
+        "touchpoint-name-signatory": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-post-code-fiscal-legis-lot": [
+          "string"
+        ],
+        "TV_CUR": [
+          "string"
+        ],
+        "touchpoint-post-code-tenderer": [
+          "string"
+        ],
+        "organisation-country-environ-legis-part": [
+          "string"
+        ],
+        "BT-67(b)-Procedure": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-partname-mediator-lot": [
+          "string"
+        ],
+        "touchpoint-internet-address-buyer": [
+          "string"
+        ],
+        "BT-145-Contract": [
+          "string"
+        ],
+        "touchpoint-email-buyer": [
+          "string"
+        ],
+        "organisation-gateway-employ-legis-lot": [
+          "string"
+        ],
+        "touchpoint-street-financing": [
+          "string"
+        ],
+        "tool-atypical-url-lot": [
+          "string"
+        ],
+        "organisation-street-mediator-lot": [
+          "string"
+        ],
+        "BT-5141-Procedure": [
+          "string"
+        ],
+        "place-performance-streetline2-part": [
+          "string"
+        ],
+        "terms-financial-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-63-Lot": [
+          "string"
+        ],
+        "organisation-fax-docprovider-lot": [
+          "string"
+        ],
+        "touchpoint-tel-mediator-lot": [
+          "string"
+        ],
+        "OPP-032-Tender": [
+          0.1
+        ],
+        "BT-500-Business-European": "string",
+        "organisation-street-addinfo-lot": [
+          "string"
+        ],
+        "BT-730-Tender": [
+          true
+        ],
+        "BT-137-Lot": [
+          "string"
+        ],
+        "eu-funds-details-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "business-country-sub": "string",
+        "security-clearance-lot": [
+          "string"
+        ],
+        "BT-157-LotsGroup-Currency": [
+          "string"
+        ],
+        "touchpoint-name-paying": {
+          "lang": [
+            "string"
+          ]
+        },
+        "duration-period-unit-part": [
+          "string"
+        ],
+        "BT-5101(b)-Lot": [
+          "string"
+        ],
+        "touchpoint-gateway-addinfo-part": [
+          "string"
+        ],
+        "touchpoint-name-tender-eval-part": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-660-LotResult": [
+          0.1
+        ],
+        "BT-122-Lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-fax-subcontractor": [
+          "string"
+        ],
+        "previous-planning-identifier-part": [
+          "string"
+        ],
+        "touchpoint-city-signatory": [
+          "string"
+        ],
+        "organisation-country-sub-buyer": [
+          "string"
+        ],
+        "buyer-touchpoint-city": [
+          "string"
+        ],
+        "main-classification-lot": [
+          "string"
+        ],
+        "touchpoint-city-financing": [
+          "string"
+        ],
+        "organisation-partname-fiscal-legis-part": [
+          "string"
+        ],
+        "organisation-gateway-employ-legis-part": [
+          "string"
+        ],
+        "organisation-internet-address-mediator-lot": [
+          "string"
+        ],
+        "organisation-tel-paying": [
+          "string"
+        ],
+        "OPP-090-Procedure": [
+          "string"
+        ],
+        "organisation-partname-ted-esen": [
+          "string"
+        ],
+        "OPT-170-Tenderer": [
+          true
+        ],
+        "organisation-street-reviewinfo-part": [
+          "string"
+        ],
+        "provided-service-type": [
+          "string"
+        ],
+        "BT-701-notice": "string",
+        "organisation-identifier-environ-legis-lot": [
+          "string"
+        ],
+        "BT-157-LotsGroup": [
+          0.1
+        ],
+        "organisation-email-mediator-part": [
+          "string"
+        ],
+        "touchpoint-city-mediator-lot": [
+          "string"
+        ],
+        "first-name-ubo": [
+          "string"
+        ],
+        "organisation-city-buyer": [
+          "string"
+        ],
+        "organisation-gateway-environ-legis-lot": [
+          "string"
+        ],
+        "BT-794-Review": [
+          "string"
+        ],
+        "organisation-name-revieworg-part": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-gateway-paying": [
+          "string"
+        ],
+        "OPT-111-Part-FiscalLegis": [
+          "string"
+        ],
+        "issue-date": "string",
+        "business-contact-point": "string",
+        "estimated-value-cur-proc": "string",
+        "quality-target-code-lot": [
+          "string"
+        ],
+        "BT-36-Part-Unit": [
+          "string"
+        ],
+        "BT-536-Lot": [
+          "string"
+        ],
+        "touchpoint-country-sub-tenderer": [
+          "string"
+        ],
+        "touchpoint-fax-tender-receip-lot": [
+          "string"
+        ],
+        "BT-163-Tender": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-internet-address-employ-legis-lot": [
+          "string"
+        ],
+        "additional-information-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "dispatch-date-esender": "string",
+        "BT-766-Lot": [
+          "string"
+        ],
+        "BT-783-Review": [
+          "string"
+        ],
+        "organisation-city-revieworg-part": [
+          "string"
+        ],
+        "BT-160-Tender-Currency": [
+          "string"
+        ],
+        "BT-722-Contract": [
+          "string"
+        ],
+        "touchpoint-city-reviewinfo-part": [
+          "string"
+        ],
+        "BT-685-LotResult": [
+          "string"
+        ],
+        "result-value-lot": [
+          0.1
+        ],
+        "organisation-contact-point-addinfo-part": [
+          "string"
+        ],
+        "BT-271-LotsGroup-Currency": [
+          "string"
+        ],
+        "kilometer-public-transport": [
+          9007199254740991
+        ],
+        "review-url": [
+          "string"
+        ],
+        "green-procurement-criteria-lot": [
+          "string"
+        ],
+        "title-glo": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-799-ReviewBody": [
+          "string"
+        ],
+        "winner-person": [
+          true
+        ],
+        "organisation-country-sub-signatory": [
+          "string"
+        ],
+        "organisation-country-ted-esen": [
+          "string"
+        ],
+        "BT-263-Lot": [
+          "string"
+        ],
+        "group-framework-re-estimated-value-res": [
+          0.1
+        ],
+        "touchpoint-name-environ-legis-part": {
+          "lang": [
+            "string"
+          ]
+        },
+        "dispatch-time-esender": "string",
+        "selection-criterion-used-lot": [
+          "string"
+        ],
+        "BT-5071-Part": [
+          "string"
+        ],
+        "BT-5423-Lot": [
+          "string"
+        ],
+        "OPP-124-Business": "string",
+        "touchpoint-fax-mediator-lot": [
+          "string"
+        ],
+        "organisation-fax-environ-legis-part": [
+          "string"
+        ],
+        "accessibility-lot": [
+          "string"
+        ],
+        "BT-23-Lot": [
+          "string"
+        ],
+        "OPT-002-notice": "string",
+        "electronic-submission-lot": [
+          "string"
+        ],
+        "notice-version": 1073741824,
+        "organisation-identifier-revieworg-part": [
+          "string"
+        ],
+        "award-criterion-number-threshold-lot": [
+          "string"
+        ],
+        "main-classification-type-part": [
+          "string"
+        ],
+        "touchpoint-fax-ted-esen": [
+          "string"
+        ],
+        "touchpoint-email-tender-eval-part": [
+          "string"
+        ],
+        "winner-email": [
+          "string"
+        ],
+        "energy-efficiency-quantity-res": [
+          0.1
+        ],
+        "organisation-street-paying": [
+          "string"
+        ],
+        "place-of-performance-post-code-lot": [
+          "string"
+        ],
+        "framework-maximum-value-cur-lot": [
+          "string"
+        ],
+        "estimated-value-cur-part": [
+          "string"
+        ],
+        "BT-1351-Procedure": {
+          "lang": "string"
+        },
+        "organisation-identifier-docprovider-part": [
+          "string"
+        ],
+        "BT-65-Lot": [
+          "string"
+        ],
+        "touchpoint-email-fiscal-legis-lot": [
+          "string"
+        ],
+        "organisation-city-financing": [
+          "string"
+        ],
+        "BT-750-Lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "winner-touchpoint-partname": [
+          "string"
+        ],
+        "organisation-name-tender-receip-part": {
+          "lang": [
+            "string"
+          ]
+        },
+        "lots-all-required-proc": "string",
+        "touchpoint-name-fiscal-legis-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-50-Lot": [
+          9007199254740991
+        ],
+        "BT-93-Lot": [
+          true
+        ],
+        "document-official-language-lot": [
+          "string"
+        ],
+        "touchpoint-street-docprovider-lot": [
+          "string"
+        ],
+        "organisation-name-reviewinfo-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-email-signatory": [
+          "string"
+        ],
+        "OPT-130-Part-EmployLegis": [
+          "string"
+        ],
+        "submission-language": [
+          "string"
+        ],
+        "organisation-identifier-buyer": [
+          "string"
+        ],
+        "additional-info-part": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-31-Procedure": 9007199254740991,
+        "winner-touchpoint-internet-address": [
+          "string"
+        ],
+        "organisation-city-tender-receip-lot": [
+          "string"
+        ],
+        "tenderer-legal-form-description-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-street-reviewinfo-lot": [
+          "string"
+        ],
+        "organisation-post-code-tender-receip-part": [
+          "string"
+        ],
+        "BT-24-LotsGroup": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-contact-point-environ-legis-part": [
+          "string"
+        ],
+        "exclusion-grounds-source-proc": [
+          "string"
+        ],
+        "OPP-033-Tender": [
+          "string"
+        ],
+        "organisation-contact-point-tender-eval-lot": [
+          "string"
+        ],
+        "BT-171-Tender": [
+          9007199254740991
+        ],
+        "organisation-internet-address-paying": [
+          "string"
+        ],
+        "BT-747-Lot": [
+          "string"
+        ],
+        "business-post-code": "string",
+        "review-notice-section-id": [
+          "string"
+        ],
+        "touchpoint-city-subcontractor": [
+          "string"
+        ],
+        "touchpoint-tel-tender-receip-part": [
+          "string"
+        ],
+        "BT-771-Lot": [
+          "string"
+        ],
+        "BT-812-LotResult": [
+          "string"
+        ],
+        "organisation-person-revieworg-part": [
+          true
+        ],
+        "additional-information": {
+          "lang": "string"
+        },
+        "organisation-identifier-tender-receip-lot": [
+          "string"
+        ],
+        "touchpoint-email-fiscal-legis-part": [
+          "string"
+        ],
+        "BT-1118-NoticeResult": 0.1,
+        "BT-26(a)-Part": [
+          "string"
+        ],
+        "winner-touchpoint-country-sub": [
+          "string"
+        ],
+        "BT-682-Tender": [
+          "string"
+        ],
+        "BT-02-notice": "string",
+        "BT-726-LotsGroup": [
+          true
+        ],
+        "organisation-gateway-tender-eval-part": [
+          "string"
+        ],
+        "framework-estimated-value": [
+          0.1
+        ],
+        "exclusion-grounds": [
+          "string"
+        ],
+        "framework-approximate-value-notice": 0.1,
+        "winner-contact-point": [
+          "string"
+        ],
+        "organisation-partname-tender-receip-lot": [
+          "string"
+        ],
+        "estimated-value-proc": 0.1,
+        "touchpoint-tel-revieworg-lot": [
+          "string"
+        ],
+        "eed-list-item-res": [
+          "string"
+        ],
+        "touchpoint-country-sub-fiscal-legis-part": [
+          "string"
+        ],
+        "place-of-performance-other-part": [
+          "string"
+        ],
+        "BT-271-Lot": [
+          0.1
+        ],
+        "notice-purpose": "string",
+        "BT-556-NoticeResult": [
+          "string"
+        ],
+        "BT-118-NoticeResult-Currency": "string",
+        "organisation-gateway-revieworg-part": [
+          "string"
+        ],
+        "organisation-gateway-serv-prov": [
+          "string"
+        ],
+        "organisation-street-tender-receip-lot": [
+          "string"
+        ],
+        "organisation-internet-address-tenderer": [
+          "string"
+        ],
+        "reserved-execution-part": [
+          "string"
+        ],
+        "OPT-140-Lot": [
+          "string"
+        ],
+        "BT-539-LotsGroup": [
+          "string"
+        ],
+        "organisation-name-addinfo-part": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-person-buyer": [
+          true
+        ],
+        "BT-263-Part": [
+          "string"
+        ],
+        "review-request-fee-cur": [
+          "string"
+        ],
+        "eu-funds-programme-lot": [
+          "string"
+        ],
+        "touchpoint-internet-address-docprovider-lot": [
+          "string"
+        ],
+        "organisation-contact-point-fiscal-legis-lot": [
+          "string"
+        ],
+        "gpa-part": [
+          true
+        ],
+        "organisation-name-paying": {
+          "lang": [
+            "string"
+          ]
+        },
+        "tool-name-lot": [
+          "string"
+        ],
+        "touchpoint-post-code-employ-legis-lot": [
+          "string"
+        ],
+        "BT-111-Lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-country-sub-revieworg-lot": [
+          "string"
+        ],
+        "BT-764-Lot": [
+          "string"
+        ],
+        "organisation-name-employ-legis-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "winner-touchpoint-contact-point": [
+          "string"
+        ],
+        "procedure-accelerated": "string",
+        "award-criterion-type-lot": [
+          "string"
+        ],
+        "touchpoint-country-sub-addinfo-part": [
+          "string"
+        ],
+        "OPT-100-Contract": [
+          "string"
+        ],
+        "touchpoint-city-environ-legis-lot": [
+          "string"
+        ],
+        "touchpoint-country-tender-receip-part": [
+          "string"
+        ],
+        "BT-193-Tender": [
+          true
+        ],
+        "organisation-city-mediator-part": [
+          "string"
+        ],
+        "organisation-contact-point-mediator-part": [
+          "string"
+        ],
+        "touchpoint-fax-tenderer": [
+          "string"
+        ],
+        "framework-approximate-value-cur-notice": "string",
+        "guarantee-required-description-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-street-fiscal-legis-lot": [
+          "string"
+        ],
+        "organisation-partname-addinfo-part": [
+          "string"
+        ],
+        "organisation-name-tender-eval-part": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-identifier-reviewinfo-lot": [
+          "string"
+        ],
+        "organisation-name-mediator-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-country-reviewinfo-part": [
+          "string"
+        ],
+        "BT-728-Procedure": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-post-code-serv-prov": [
+          "string"
+        ],
+        "touchpoint-internet-address-mediator-part": [
+          "string"
+        ],
+        "OPP-113-Business-European": "string",
+        "touchpoint-country-docprovider-lot": [
+          "string"
+        ],
+        "organisation-gateway-docprovider-part": [
+          "string"
+        ],
+        "buyer-country": [
+          "string"
+        ],
+        "BT-14-Lot": [
+          "string"
+        ],
+        "buyer-contracting-entity": [
+          "string"
+        ],
+        "electronic-auction-description-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-644-Lot-Currency": [
+          "string"
+        ],
+        "organisation-street-tenderer": [
+          "string"
+        ],
+        "procedure-type": "string",
+        "place-of-performance-other-proc": [
+          "string"
+        ],
+        "recurrence-description-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-749-Lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-contact-point-mediator-lot": [
+          "string"
+        ],
+        "award-criterion-name-glo": {
+          "lang": [
+            "string"
+          ]
+        },
+        "selection-criteria-second-stage-invite-number-lot": [
+          0.1
+        ],
+        "organisation-identifier-employ-legis-lot": [
+          "string"
+        ],
+        "BT-271-Procedure-Currency": "string",
+        "touchpoint-gateway-buyer": [
+          "string"
+        ],
+        "contract-duration-period-lot": [
+          {
+            "value": "string",
+            "unit": "string"
+          }
+        ],
+        "BT-01(e)-Procedure": [
+          "string"
+        ],
+        "organisation-identifier-subcontractor": [
+          "string"
+        ],
+        "organisation-country-sub-employ-legis-lot": [
+          "string"
+        ],
+        "BT-684-Lot": [
+          "string"
+        ],
+        "organisation-internet-address-buyer": [
+          "string"
+        ],
+        "touchpoint-email-financing": [
+          "string"
+        ],
+        "organisation-city-employ-legis-part": [
+          "string"
+        ],
+        "BT-78-Lot": [
+          "string"
+        ],
+        "organisation-partname-employ-legis-part": [
+          "string"
+        ],
+        "dps-termination-lot": [
+          true
+        ],
+        "BT-271-Lot-Currency": [
+          "string"
+        ],
+        "organisation-street-employ-legis-part": [
+          "string"
+        ],
+        "duration-period-unit-lot": [
+          "string"
+        ],
+        "non-disclosure-agreement-description-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-gateway-environ-legis-lot": [
+          "string"
+        ],
+        "organisation-email-fiscal-legis-lot": [
+          "string"
+        ],
+        "OPT-113-Lot-EmployLegis": [
+          "string"
+        ],
+        "estimated-value-part": [
+          0.1
+        ],
+        "touchpoint-tel-environ-legis-part": [
+          "string"
+        ],
+        "organisation-internet-address-employ-legis-part": [
+          "string"
+        ],
+        "organisation-partname-paying": [
+          "string"
+        ],
+        "contract-nature-main-lot": [
+          "string"
+        ],
+        "subcontracting-obligation-maximum-lot": [
+          0.1
+        ],
+        "BT-806-Procedure": [
+          "string"
+        ],
+        "organisation-city-addinfo-lot": [
+          "string"
+        ],
+        "BT-40-Lot": [
+          true
+        ],
+        "BT-36-Lot-Unit": [
+          "string"
+        ],
+        "touchpoint-post-code-paying": [
+          "string"
+        ],
+        "touchpoint-post-code-ted-esen": [
+          "string"
+        ],
+        "framework-duration-justification-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-post-code-signatory": [
+          "string"
+        ],
+        "organisation-contact-point-tender-receip-part": [
+          "string"
+        ],
+        "change-notice-version-identifier": "string",
+        "guarantee-required-lot": [
+          "string"
+        ],
+        "touchpoint-post-code-financing": [
+          "string"
+        ],
+        "activity-sector": [
+          "string"
+        ],
+        "document-restricted-url-part": [
+          "string"
+        ],
+        "review-body-id": [
+          "string"
+        ],
+        "touchpoint-country-addinfo-part": [
+          "string"
+        ],
+        "BT-130-Lot": [
+          "string"
+        ],
+        "BT-5101(b)-Procedure": [
+          "string"
+        ],
+        "dps-usage-part": [
+          "string"
+        ],
+        "organisation-gateway-mediator-lot": [
+          "string"
+        ],
+        "touchpoint-contact-point-subcontractor": [
+          "string"
+        ],
+        "organisation-street-subcontractor": [
+          "string"
+        ],
+        "contract-eu-funds-details-res": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-internet-address-employ-legis-part": [
+          "string"
+        ],
+        "OPT-156-LotResult": [
+          0.1
+        ],
+        "organisation-person-reviewinfo-lot": [
+          true
+        ],
+        "touchpoint-email-revieworg-part": [
+          "string"
+        ],
+        "organisation-person-addinfo-lot": [
+          true
+        ],
+        "place-of-performance-add-proc": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-street-mediator-part": [
+          "string"
+        ],
+        "BT-803(t)-notice": "string",
+        "participant-name-lot": [
+          "string"
+        ],
+        "BT-7220-Lot": [
+          "string"
+        ],
+        "BT-1501(s)-Contract": [
+          "string"
+        ],
+        "public-opening-description-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "OPP-010-notice": "string",
+        "BT-811(b)-LotResult": [
+          "string"
+        ],
+        "review-remedy-type": [
+          "string"
+        ],
+        "touchpoint-city-fiscal-legis-part": [
+          "string"
+        ],
+        "BT-754-Lot": [
+          "string"
+        ],
+        "organisation-name-ted-esen": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-115-Part": [
+          true
+        ],
+        "tender-identifier": [
+          "string"
+        ],
+        "touchpoint-email-tenderer": [
+          "string"
+        ],
+        "touchpoint-email-mediator-lot": [
+          "string"
+        ],
+        "touchpoint-name-reviewinfo-part": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-country-fiscal-legis-part": [
+          "string"
+        ],
+        "touchpoint-name-employ-legis-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-22-Procedure": "string",
+        "organisation-name-subcontractor": {
+          "lang": [
+            "string"
+          ]
+        },
+        "winner-decision-date": [
+          "string"
+        ],
+        "BT-797-Review": [
+          "string"
+        ],
+        "OPP-120-Business": "string",
+        "change-procurement-documents-date": [
+          "string"
+        ],
+        "touchpoint-partname-employ-legis-part": [
+          "string"
+        ],
+        "touchpoint-country-sub-employ-legis-lot": [
+          "string"
+        ],
+        "organisation-email-tender-receip-lot": [
+          "string"
+        ],
+        "BT-6140-Lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-gateway-tenderer": [
+          "string"
+        ],
+        "organisation-contact-point-environ-legis-lot": [
+          "string"
+        ],
+        "BT-76-Lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "ubo-tel": [
+          "string"
+        ],
+        "organisation-internet-address-reviewinfo-part": [
+          "string"
+        ],
+        "touchpoint-country-employ-legis-part": [
+          "string"
+        ],
+        "touchpoint-post-code-addinfo-part": [
+          "string"
+        ],
+        "organisation-name-tender-eval-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-tel-addinfo-lot": [
+          "string"
+        ],
+        "OPT-130-Lot-EmployLegis": [
+          "string"
+        ],
+        "touchpoint-email-employ-legis-lot": [
+          "string"
+        ],
+        "selection-criteria-second-stage-invite-number-threshold-lot": [
+          "string"
+        ],
+        "touchpoint-fax-signatory": [
+          "string"
+        ],
+        "BT-731-Tender": [
+          true
+        ],
+        "touchpoint-contact-point-environ-legis-lot": [
+          "string"
+        ],
+        "BT-1311(d)-Lot": [
+          "string"
+        ],
+        "organisation-tel-financing": [
+          "string"
+        ],
+        "main-classification-part": [
+          "string"
+        ],
+        "OPP-112-Business": "string",
+        "strategic-procurement-lot": [
+          "string"
+        ],
+        "BT-712(a)-LotResult": [
+          "string"
+        ],
+        "received-submissions-type-val": [
+          0.1
+        ],
+        "review-technical-id": [
+          "string"
+        ],
+        "tender-value-lowest": [
+          0.1
+        ],
+        "savings-metric-res": [
+          "string"
+        ],
+        "touchpoint-email-environ-legis-lot": [
+          "string"
+        ],
+        "organisation-street-addinfo-part": [
+          "string"
+        ],
+        "touchpoint-gateway-mediator-part": [
+          "string"
+        ],
+        "winner-internet-address": [
+          "string"
+        ],
+        "tender-lot-identifier": [
+          "string"
+        ],
+        "BT-162-Tender": [
+          0.1
+        ],
+        "organisation-email-buyer": [
+          "string"
+        ],
+        "organisation-email-docprovider-part": [
+          "string"
+        ],
+        "organisation-country-mediator-lot": [
+          "string"
+        ],
+        "BT-728-Lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-post-code-environ-legis-lot": [
+          "string"
+        ],
+        "buyer-partname": [
+          "string"
+        ],
+        "concession-revenue-user": [
+          0.1
+        ],
+        "BT-743-Lot": [
+          "string"
+        ],
+        "BT-162-Tender-Currency": [
+          "string"
+        ],
+        "BT-734-LotsGroup": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-555-Tender": [
+          0.1
+        ],
+        "previous-planning-identifier-part-part": [
+          "string"
+        ],
+        "organisation-street-buyer": [
+          "string"
+        ],
+        "award-criterion-number-threshold-glo": [
+          "string"
+        ],
+        "BT-36-Part": [
+          {
+            "value": "string",
+            "unit": "string"
+          }
+        ],
+        "BT-115-Lot": [
+          true
+        ],
+        "BT-702-notice": [
+          "string"
+        ],
+        "OPT-072-Lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-615-Lot": [
+          "string"
+        ],
+        "main-activity": [
+          "string"
+        ],
+        "contract-url": [
+          "string"
+        ],
+        "organisation-fax-financing": [
+          "string"
+        ],
+        "touchpoint-tel-ted-esen": [
+          "string"
+        ],
+        "publication-name": "string",
+        "touchpoint-tel-environ-legis-lot": [
+          "string"
+        ],
+        "organisation-country-tender-receip-part": [
+          "string"
+        ],
+        "BT-775-Lot": [
+          "string"
+        ],
+        "organisation-email-serv-prov": [
+          "string"
+        ],
+        "place-of-performance-addtional-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-tel-addinfo-lot": [
+          "string"
+        ],
+        "organisation-country-sub-tender-eval-part": [
+          "string"
+        ],
+        "organisation-name-environ-legis-part": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-street-docprovider-part": [
+          "string"
+        ],
+        "touchpoint-city-ted-esen": [
+          "string"
+        ],
+        "notice-subtype": "string",
+        "organisation-fax-ted-esen": [
+          "string"
+        ],
+        "BT-808-Review": [
+          "string"
+        ],
+        "BT-787-Review": [
+          "string"
+        ],
+        "notice-identifier": "string",
+        "organisation-tel-fiscal-legis-lot": [
+          "string"
+        ],
+        "BT-18-Lot": [
+          "string"
+        ],
+        "OPP-100-Business": "string",
+        "value-prize-cur-lot": [
+          "string"
+        ],
+        "BT-156-NoticeResult": [
+          0.1
+        ],
+        "touchpoint-post-code-tender-eval-lot": [
+          "string"
+        ],
+        "registration-place-country": "string",
+        "organisation-internet-address-tender-eval-part": [
+          "string"
+        ],
+        "quantity-unit-lot": [
+          "string"
+        ],
+        "winner-city": [
+          "string"
+        ],
+        "BT-42-Lot": [
+          true
+        ],
+        "document-url-part": [
+          "string"
+        ],
+        "country-origin": [
+          "string"
+        ],
+        "touchpoint-country-buyer": [
+          "string"
+        ],
+        "BT-330-Procedure": [
+          "string"
+        ],
+        "touchpoint-tel-serv-prov": [
+          "string"
+        ],
+        "organisation-city-fiscal-legis-lot": [
+          "string"
+        ],
+        "legal-basis-proc": [
+          "string"
+        ],
+        "OPT-113-Part-EmployLegis": [
+          "string"
+        ],
+        "modification-reason-description": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-131(t)-Lot": [
+          "string"
+        ],
+        "touchpoint-contact-point-ted-esen": [
+          "string"
+        ],
+        "BT-763-Procedure": "string",
+        "organisation-email-addinfo-lot": [
+          "string"
+        ],
+        "organisation-post-code-employ-legis-lot": [
+          "string"
+        ],
+        "award-criterion-complicated-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "total-value": 0.1,
+        "touchpoint-name-mediator-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-partname-paying": [
+          "string"
+        ],
+        "touchpoint-country-sub-reviewinfo-part": [
+          "string"
+        ],
+        "BT-151-Contract": [
+          "string"
+        ],
+        "result-framework-maximum-value-notice": 0.1,
+        "organisation-country-sub-environ-legis-lot": [
+          "string"
+        ],
+        "organisation-gateway-reviewinfo-lot": [
+          "string"
+        ],
+        "subcontracting-value": [
+          0.1
+        ],
+        "touchpoint-street-tenderer": [
+          "string"
+        ],
+        "winner-touchpoint-name": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-email-financing": [
+          "string"
+        ],
+        "notice-preferred-publication-date": "string",
+        "tender-payment-value-info-res": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-57-Lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-country-docprovider-part": [
+          "string"
+        ],
+        "organisation-internet-address-environ-legis-part": [
+          "string"
+        ],
+        "buyer-touchpoint-internet-address": [
+          "string"
+        ],
+        "organisation-name-tenderer": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-fax-reviewinfo-lot": [
+          "string"
+        ],
+        "organisation-country-tender-receip-lot": [
+          "string"
+        ],
+        "BT-541-Lot": [
+          0.1
+        ],
+        "title-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "ubo-post-code": [
+          "string"
+        ],
+        "additional-info-glo": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-identifier-reviewinfo-part": [
+          "string"
+        ],
+        "framework-buyer-categories-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-email-reviewinfo-part": [
+          "string"
+        ],
+        "BT-1251-Part": [
+          "string"
+        ],
+        "BT-165-Organization-Company": [
+          "string"
+        ],
+        "touchpoint-country-financing": [
+          "string"
+        ],
+        "buyer-contact-point": [
+          "string"
+        ],
+        "term-performance-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-300-Lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-735-LotResult": [
+          "string"
+        ],
+        "touchpoint-post-code-environ-legis-part": [
+          "string"
+        ],
+        "organisation-tel-reviewinfo-part": [
+          "string"
+        ],
+        "exclusion-grounds-description": {
+          "lang": [
+            "string"
+          ]
+        },
+        "reserved-participation-part": [
+          "string"
+        ],
+        "BT-630(d)-Lot": [
+          "string"
+        ],
+        "touchpoint-post-code-docprovider-lot": [
+          "string"
+        ],
+        "BT-760-LotResult": [
+          "string"
+        ],
+        "touchpoint-city-revieworg-part": [
+          "string"
+        ],
+        "touchpoint-name-tender-receip-part": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-23-Part": [
+          "string"
+        ],
+        "touchpoint-contact-point-reviewinfo-lot": [
+          "string"
+        ],
+        "touchpoint-partname-tender-receip-lot": [
+          "string"
+        ],
+        "OPP-022-Contract": [
+          "string"
+        ],
+        "winner-touchpoint-city": [
+          "string"
+        ],
+        "organisation-city-ted-esen": [
+          "string"
+        ],
+        "BT-1451-Contract": [
+          "string"
+        ],
+        "BT-300-procedure": {
+          "lang": "string"
+        },
+        "organisation-tel-serv-prov": [
+          "string"
+        ],
+        "selection-criteria-second-stage-invite-number-weight-lot": [
+          "string"
+        ],
+        "contract-duration-start-date-lot": [
+          "string"
+        ],
+        "organisation-city-mediator-lot": [
+          "string"
+        ],
+        "organisation-city-reviewinfo-part": [
+          "string"
+        ],
+        "review-date": [
+          "string"
+        ],
+        "BT-200-Contract": [
+          "string"
+        ],
+        "organisation-email-tender-eval-lot": [
+          "string"
+        ],
+        "result-lot-identifier": [
+          "string"
+        ],
+        "BT-745-Lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-7531-Lot": [
+          "string"
+        ],
+        "touchpoint-tel-docprovider-part": [
+          "string"
+        ],
+        "organisation-gateway-docprovider-lot": [
+          "string"
+        ],
+        "BT-13(t)-Lot": [
+          "string"
+        ],
+        "BT-790-Review": [
+          "string"
+        ],
+        "concession-revenue-cur-user": [
+          "string"
+        ],
+        "organisation-fax-signatory": [
+          "string"
+        ],
+        "touchpoint-partname-mediator-part": [
+          "string"
+        ],
+        "touchpoint-partname-ted-esen": [
+          "string"
+        ],
+        "touchpoint-name-tenderer": {
+          "lang": [
+            "string"
+          ]
+        },
+        "winner-touchpoint-email": [
+          "string"
+        ],
+        "organisation-contact-point-addinfo-lot": [
+          "string"
+        ],
+        "review-request-withdrawn-reasons": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-113-Lot": [
+          9007199254740991
+        ],
+        "BT-5011-Contract": [
+          "string"
+        ],
+        "business-internet-address": "string",
+        "touchpoint-fax-serv-prov": [
+          "string"
+        ],
+        "OPT-070-Lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "BT-765-Part": [
+          "string"
+        ],
+        "group-framework-value-lot-id-res": [
+          "string"
+        ],
+        "touchpoint-country-revieworg-part": [
+          "string"
+        ],
+        "BT-784-Review": [
+          "string"
+        ],
+        "touchpoint-country-sub-tender-receip-lot": [
+          "string"
+        ],
+        "main-classification-proc": [
+          "string"
+        ],
+        "internal-identifier-lot": [
+          "string"
+        ],
+        "buyer-reviewrequests-irregularity-type-val": [
+          0.1
+        ],
+        "BT-531-Procedure": [
+          "string"
+        ],
+        "touchpoint-fax-fiscal-legis-part": [
+          "string"
+        ],
+        "organisation-email-docprovider-lot": [
+          "string"
+        ],
+        "organisation-tel-reviewinfo-lot": [
+          "string"
+        ],
+        "BT-5101(a)-Procedure": [
+          "string"
+        ],
+        "BT-44-Lot": [
+          9007199254740991
+        ],
+        "BT-543-Lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-city-paying": [
+          "string"
+        ],
+        "public-opening-time-lot": [
+          "string"
+        ],
+        "deadline-receipt-answers-time-lot": [
+          "string"
+        ],
+        "BT-718-notice": [
+          true
+        ],
+        "organisation-email-tender-receip-part": [
+          "string"
+        ],
+        "touchpoint-fax-mediator-part": [
+          "string"
+        ],
+        "BT-717-Lot": [
+          "string"
+        ],
+        "touchpoint-contact-point-revieworg-part": [
+          "string"
+        ],
+        "main-classification-type-lot": [
+          "string"
+        ],
+        "organisation-partname-tender-eval-part": [
+          "string"
+        ],
+        "BT-5071-Lot": [
+          "string"
+        ],
+        "BT-802-Lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "framework-value-notice": 0.1,
+        "BT-262-Procedure": [
+          "string"
+        ],
+        "organisation-person-subcontractor": [
+          true
+        ],
+        "review-deadline-description-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "place-performance-streetline2-lot": [
+          "string"
+        ],
+        "organisation-person-revieworg-lot": [
+          true
+        ],
+        "organisation-identifier-fiscal-legis-part": [
+          "string"
+        ],
+        "organisation-name-docprovider-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "touchpoint-name-tender-receip-lot": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-gateway-buyer": [
+          "string"
+        ],
+        "touchpoint-email-mediator-part": [
+          "string"
+        ],
+        "organisation-partname-revieworg-lot": [
+          "string"
+        ],
+        "touchpoint-country-sub-addinfo-lot": [
+          "string"
+        ],
+        "touchpoint-fax-reviewinfo-part": [
+          "string"
+        ],
+        "organisation-identifier-tender-eval-part": [
+          "string"
+        ],
+        "BT-536-Part": [
+          "string"
+        ],
+        "cvd-contract-type-res": [
+          "string"
+        ],
+        "award-criteria-complicated-glo": {
+          "lang": [
+            "string"
+          ]
+        },
+        "organisation-partname-subcontractor": [
+          "string"
+        ],
+        "duration-period-value-lot": [
+          0.1
+        ],
+        "touchpoint-partname-environ-legis-part": [
+          "string"
+        ],
+        "result-value-cur-lot": [
+          "string"
+        ],
+        "touchpoint-fax-financing": [
+          "string"
+        ],
+        "organisation-country-employ-legis-lot": [
+          "string"
+        ],
+        "touchpoint-post-code-mediator-part": [
+          "string"
+        ],
+        "organisation-gateway-tender-eval-lot": [
+          "string"
+        ],
+        "winner-name": {
+          "lang": [
+            "string"
+          ]
+        },
+        "business-country": "string",
+        "additionalProp1": "string",
+        "additionalProp2": "string",
+        "additionalProp3": "string"
+      }
+    ],
+    "totalNoticeCount": 9007199254740991,
+    "iterationNextToken": "string",
+    "timedOut": true
+  }
