@@ -19,7 +19,7 @@ Code files can be recorded in CNT to extract from their code, and track, informa
   - General description of the code
 
 Code Node Table (CNT) - Sample
-| resource | description | imports_from | imported_by | API_sources | data_sources | data_targets | updated_at | update_n |
+| resource | description | imports_from | imported_by | data_sources | data_targets | updated_at | update_n |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `scripts\clean_data.py` | Cleans the raw dataset for downstream analysis. | [`config\settings.py`] | [`notebooks\analysis.ipynb`] | `https://api.ted.europa.eu/v3/notices/search` | [`data\raw.csv`] | [`data\clean.csv`] | `2026-10-08T08:34:00+02:00` | 1 |
 
@@ -37,31 +37,36 @@ Code Node Table (CNT) - Sample
     - is a male vertex coupled with CNT `imported_by`
   - `imported_by`: is the list of resources of scripts or notebooks that import the resource
     - is a female vertex coupled with CNT `imports_from`
-  - API_sources: the list of the API endpoint URLs used by the resource to retrieve data via API call
-  - `data_sources`: is the list of all and only the files the resource reads from
+  - `data_sources`: is the list of all and only the data assets the resource consumes
+    - can list data files
+    - can list API documentation files
     - is a male vertex coupled with DNT `readers`
-  - `data_targets`: is the list of all and only the files the resource writes to
+  - `data_targets`: is the list of all and only the data assets the resource writes to
+    - can list data files
     - is a male vertex coupled with DNT `writers`
   - `updated_at`: is the current timestamp at the time of record creation or update
+    - Is a metadata field
   - `update_n`: starts at 1 upon record creation, and increases by 1 every time the record is updated
+    - Is a metadata field
+    - Does not refresh if the record update included only edits to the following fields:
+      - Metadata fields
+      - Record id
+      - Female vertexes
 
-  - Metadata Fields
-    - Metadata fields describe events of resource content editing
-    - Metadata fields are not refreshed when their CNT record is edited exclusively in the `resource` field or in female vertexes
 
 # Data Node Table (DNT)
 Table description:
 Data files and external resources (like APIs) can be recorded in DNT to keep track of their relationship with code files.
 
 Data Node Table (DNT) - Sample
-| resource | writers | readers | type |
-| --- | --- | --- | --- |
-| `data\source_1.csv` | [`config\settings.py`] | [`notebooks\analysis.ipynb`] | `table`
+| resource | writers | readers | type | endpoint |
+| --- | --- | --- | --- |  --- |
+| `data\source_1.csv` | [`config\settings.py`] | [`notebooks\analysis.ipynb`] | `table` | `self` |
 
 ### DNT Field Rules:
   - `resource`: a data asset that allows to read, store, or write data
-    - if type is table or map: resource is a path relative to project root of a file in the current folder
-    - if type is API: the API endopoint URL
+    - if type is table or map: resource is a path relative to project root of a data file in the current folder
+    - if type is API: resource is a path relative to project root of an API documentation file in the current folder
     - resource is the record id
     - Expressions like "this file's DNT record" unambiguously refer to the record in the DNT of the file's context node identified by the file's path
     - In the context of context nodes, the term "resource" refers to a file paths relative to project root
@@ -73,11 +78,14 @@ Data Node Table (DNT) - Sample
     - table: structured data
     - map: semistructured data
     - API (will only have readers)
+  - `endpoint`
+    - for type table or map: 'self'
+    - for type API: the endpoint URL
 
 
 # Field types:
   - Simple fields: if a field has no specified type, it's assumed to be a simple field
-
+  - Metadata fields: they describe events of resource content editing, rather than describing the resopurce content itself
   - Record identity field, aka record id. An id field value:
     - cannot be empty 
     - cannot be null
