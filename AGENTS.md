@@ -14,6 +14,7 @@
 - All files with any of the following extensions are considered code files: ['.sql', '.py', '.ipynb']
 - All files with any of the following extensions are considered data files: ['.csv']
 - All files with any of the following extensions are considered configuration files: ['.json', '.yaml']
+- All files with any of the following extensions are considered documentation files: ['.md']
 
 # Project Navigation
 Whenever you access a folder as part of a task, if the folder contains a context_node.md, include context_node.md in your current session context.

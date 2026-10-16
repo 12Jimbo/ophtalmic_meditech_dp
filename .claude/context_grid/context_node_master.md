@@ -20,7 +20,7 @@ Code files can be recorded in CNT to extract from their code, and track, informa
 
 Code Node Table (CNT) - Sample
 | resource | description | imports_from | imported_by | data_sources | data_targets | updated_at | update_n |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 | `scripts\clean_data.py` | Cleans the raw dataset for downstream analysis. | [`config\settings.py`] | [`notebooks\analysis.ipynb`] | `https://api.ted.europa.eu/v3/notices/search` | [`data\raw.csv`] | [`data\clean.csv`] | `2026-10-08T08:34:00+02:00` | 1 |
 
 
