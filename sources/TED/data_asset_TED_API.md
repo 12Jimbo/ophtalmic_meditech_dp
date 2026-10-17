@@ -1,7 +1,7 @@
 # TED API Search Request
 
 ## Project references
-- **Swagger:** [swagger_TED-api-v3.yaml](./swagger_TED-api-v3.yaml) is a cleaned up version of the original swagger found at [API documentation](https://api.ted.europa.eu/swagger-ui/index.html#/Search/search)
+- **Swagger:** [swagger_TED-api-v3.yaml](./swagger_TED-api-v3.yaml) is a cleaned up version of the original swagger found at [API documentation](https://api.ted.europa.eu/swagger-ui/index.html#/Search/search). The present document includes API search request essentials, leaving out requested fields details.
 
 - **Aliases Map:** [List_of_search_fields.csv](./List_of_search_fields.csv),  downoaded from [Search fields used on the TED website](https://docs.ted.europa.eu/ODS/latest/reuse/field-list.html), lists 1,340 unique primary names in `Search field`, alternative names in `Alias 1` and `Alias 2`, and references in `Reference in the eForms SDK`.
 
