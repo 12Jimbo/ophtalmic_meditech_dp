@@ -1,7 +1,11 @@
 # TED API Search Request
 **Source:** [API documentation](https://api.ted.europa.eu/swagger-ui/index.html#/Search/search)
 
-**Full Swagger:** [ted_swagger_api-v3.yaml](./swagger_TED-api-v3.yaml)
+**Edited Swagger:** [swagger_TED-api-v3.yaml](./swagger_TED-api-v3.yaml)
+
+**Original Swagger copy:** [swagger_TED-api-v3 original.yaml](./swagger_TED-api-v3%20original.yaml)
+
+## Search request
 
 **Request URL**: https://api.ted.europa.eu/v3/notices/search
 
@@ -27,7 +31,7 @@ Request body of the notice search endpoint:
 
 | Field | Type | Description |
 |---|---|---|
-| `notices` | `array<object>` | Matching notices containing the requested fields. Individual fields may be scalars, arrays, or multilingual objects; their definitions are in `ted_swagger_api-v3.yaml`. |
+| `notices` | `array<object>` | Matching notices containing the requested fields. Individual fields may be scalars, arrays, or multilingual objects; their definitions are in `swagger_TED-api-v3.yaml`. |
 | `totalNoticeCount` | `integer (int64)` | Total number of notices matching the query. |
 | `iterationNextToken` | `string` | Token used to retrieve the next batch in `ITERATION` mode. |
 | `timedOut` | `boolean` | Indicates whether the search timed out. |
@@ -127,3 +131,19 @@ Both modes allow at most 250 notices per request and require `fields.length × l
 | `InvalidIterationTokenError` | The iteration token is invalid. |
 
 Query errors can include the location of the problem (`beginLine`, `beginColumn`, `endLine`, `endColumn`) and details such as the field name, allowed format, or unsupported operation/value.
+
+
+## Swagger Cleanup
+
+[List_of_search_fields.csv](./List_of_search_fields.csv) lists 1,340 unique primary names in `Search field`, alternative names in `Alias 1` and `Alias 2`, and references in `Reference in the eForms SDK`.
+
+The edited Swagger removes the `fields.example` block, which repeated all 1,830 enum entries in the same order. It also removes 492 alias names from both `PublicExpertSearchRequestV1.properties.fields.enum` and `NoticeResponse.properties`, preferring the CSV's `Search field` name. Both sections now contain the same 1,338 unique names. Retained field definitions and descriptions are unchanged; all 492 primary-alias pairs had identical definitions before removal, including matching descriptions where present. The original Swagger copy is preserved separately.
+
+The CSV's `Search field` column and the edited enum share 1,337 names but do not match exactly:
+
+| Location | Names absent from the other list |
+|---|---|
+| CSV only | `buyer-country-i18ns`, `deletion-date`, `previous-planning-identifier` |
+| Enum only | `links` |
+
+`links` remains in both Swagger sections because the CSV provides no alias mapping for it. The CSV is unchanged. This cleanup narrows the names documented in the local Swagger; it does not change the TED API itself.
