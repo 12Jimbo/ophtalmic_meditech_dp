@@ -1,9 +1,9 @@
 # TED API Search Request
 **Source:** [API documentation](https://api.ted.europa.eu/swagger-ui/index.html#/Search/search)
 
-**Edited Swagger:** [swagger_TED-api-v3.yaml](./swagger_TED-api-v3.yaml)
+**Swagger:** [swagger_TED-api-v3.yaml](./swagger_TED-api-v3.yaml)
 
-**Original Swagger copy:** [swagger_TED-api-v3 original.yaml](./swagger_TED-api-v3%20original.yaml)
+**Semantic field map:** [semantic_base.json](./semantic_base.json) maps each of the 1,338 retained Swagger search field names to a semantic description, initialized to an empty string (`""`). Note: the Swagger's field descriptions explain multilingual text structure and language codes, rather than business meaning.
 
 ## Search request
 
@@ -134,6 +134,7 @@ Query errors can include the location of the problem (`beginLine`, `beginColumn`
 
 
 ## Swagger Cleanup
+Redundant fields have been removed from **Original Swagger copy:** [swagger_TED-api-v3 original.yaml], as follows.
 
 [List_of_search_fields.csv](./List_of_search_fields.csv) lists 1,340 unique primary names in `Search field`, alternative names in `Alias 1` and `Alias 2`, and references in `Reference in the eForms SDK`.
 
