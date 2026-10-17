@@ -1,9 +1,24 @@
 # TED API Search Request
-**Source:** [API documentation](https://api.ted.europa.eu/swagger-ui/index.html#/Search/search)
 
-**Swagger:** [swagger_TED-api-v3.yaml](./swagger_TED-api-v3.yaml)
+## Project references
+- **Swagger:** [swagger_TED-api-v3.yaml](./swagger_TED-api-v3.yaml) is a cleaned up version of the original swagger found at [API documentation](https://api.ted.europa.eu/swagger-ui/index.html#/Search/search)
 
-**Semantic field map:** [semantic_base.json](./semantic_base.json) maps each of the 1,338 retained Swagger search field names to a semantic description, initialized to an empty string (`""`). Note: the Swagger's field descriptions explain multilingual text structure and language codes, rather than business meaning.
+- **Aliases Map:** [List_of_search_fields.csv](./List_of_search_fields.csv),  downoaded from [Search fields used on the TED website](https://docs.ted.europa.eu/ODS/latest/reuse/field-list.html), lists 1,340 unique primary names in `Search field`, alternative names in `Alias 1` and `Alias 2`, and references in `Reference in the eForms SDK`.
+
+- **Semantic field map:** [semantic_base.json](./semantic_base.json), maps each of the 1,338 retained swagger search field names to a semantic description, initialized to an empty string (`""`). Note: the swagger's field descriptions explain multilingual text structure and language codes, rather than business meaning.
+
+## Swagger Cleanup
+The original swagger presented redundancies that have been eliminated to produce a project's version of the swagger:
+1. Field duplicates: the list of fields for the search api body (section PublicExpertSearchRequestV1) included an example section that just relisted all the 1830 fields
+2. Field aliases: using [List_of_search_fields.csv](./List_of_search_fields.csv). Removed 492 alias names in the original swagger from both `PublicExpertSearchRequestV1.properties.fields.enum` and `NoticeResponse.properties`, preferring the CSV's `Search field` name. Both sections now contain the same 1,338 unique names.
+
+Notice that the CSV's `Search field` column and the edited swagger search request share 1,337 names but do not match exactly:
+
+| Location | Names absent from the other list |
+|---|---|
+| CSV only | `buyer-country-i18ns`, `deletion-date`, `previous-planning-identifier` |
+| Enum only | `links` |
+
 
 ## Search request
 
@@ -131,20 +146,3 @@ Both modes allow at most 250 notices per request and require `fields.length × l
 | `InvalidIterationTokenError` | The iteration token is invalid. |
 
 Query errors can include the location of the problem (`beginLine`, `beginColumn`, `endLine`, `endColumn`) and details such as the field name, allowed format, or unsupported operation/value.
-
-
-## Swagger Cleanup
-Redundant fields have been removed from **Original Swagger copy:** [swagger_TED-api-v3 original.yaml], as follows.
-
-[List_of_search_fields.csv](./List_of_search_fields.csv) lists 1,340 unique primary names in `Search field`, alternative names in `Alias 1` and `Alias 2`, and references in `Reference in the eForms SDK`.
-
-The edited Swagger removes the `fields.example` block, which repeated all 1,830 enum entries in the same order. It also removes 492 alias names from both `PublicExpertSearchRequestV1.properties.fields.enum` and `NoticeResponse.properties`, preferring the CSV's `Search field` name. Both sections now contain the same 1,338 unique names. Retained field definitions and descriptions are unchanged; all 492 primary-alias pairs had identical definitions before removal, including matching descriptions where present. The original Swagger copy is preserved separately.
-
-The CSV's `Search field` column and the edited enum share 1,337 names but do not match exactly:
-
-| Location | Names absent from the other list |
-|---|---|
-| CSV only | `buyer-country-i18ns`, `deletion-date`, `previous-planning-identifier` |
-| Enum only | `links` |
-
-`links` remains in both Swagger sections because the CSV provides no alias mapping for it. The CSV is unchanged. This cleanup narrows the names documented in the local Swagger; it does not change the TED API itself.
