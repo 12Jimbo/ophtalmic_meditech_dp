@@ -33,7 +33,7 @@ Request body of the notice search endpoint:
 | Parameter | Type | Required | Default | Constraints / Allowed Values | Description |
 |---|---|---|---|---|---|
 | `query` | `string` | Yes | — | Minimum 1 character | Search query used to retrieve notices. |
-| `fields` | `array<string>` | Yes | — | Minimum 1 item | Distinct fields to include in the search results; see the compact example below and the [full field definitions](./swagger_TED-api-v3.yaml). |
+| `fields` | `array<string>` | Yes | — | Minimum 1 item | Distinct fields to include in the search results; see the compact example below and the [full field list](./swagger_TED-api-v3.yaml). |
 | `page` | `integer (int32)` | No | `1` | Minimum: `1` | Result page number, used to paginate results. |
 | `limit` | `integer (int32)` | No | `10` | Minimum: `0`; maximum: 250 notices per page | Maximum number of notices returned per page. Up to 10,000 fields can be retrieved per page, calculated as `fields.length × limit`. |
 | `scope` | `string` | No | `"ALL"` | `LATEST`, `ACTIVE`, `ALL` | Defines the search scope. `LATEST`: only notices from the current OJ S release. `ACTIVE`: only active notices. `ALL`: all notices. |
