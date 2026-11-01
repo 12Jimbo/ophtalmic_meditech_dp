@@ -16,7 +16,7 @@ CONTEXT NODE UPDATING PROCESS
     - note the file creation commit timestamp and commit id, if they exist
     - If the file has an NT record:
         - note the file resource updated_at timestamp values
-        - note as "latest commit id" the id of th latest edit to the file occurred after the cration commit and updated_at, if it exists.
+        - note as "latest commit id" the id of the latest edit to the file occurred between the cration commit and updated_at, if it exists.
     - note as comparison commit id the latest between the creation commit id and the latest commit id. If neither exists, there is no comparison commit.
 
 2. for each code file:
@@ -24,5 +24,7 @@ CONTEXT NODE UPDATING PROCESS
     - if it does not have a comparison commit, ask the context node manager to update its NT record, specifying the file has been created after the last commit
 
 3. for each NT record: if the resource does not exist in the present context node folder, delete the record
+
+4. If requested, performed the update recursively on the present folder's subfolders
 
 --------------------------------------------------------------------------------------
