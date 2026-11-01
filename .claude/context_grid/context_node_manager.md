@@ -11,8 +11,11 @@ The process described in this document is meant to have as object a file_x in fo
 FOR EACH FILE_X, FOLLOW THE NODE UPDATE PROCESS
 ------------------------------------------------------------------------------------------------------
 It is assumed that:
-- file_x is eithere a code file or a data file
-- file_x either has unstaged changes or has been created after the last commit
+- file_x is either a code file or a data file
+- file_x has changes, either:
+    - has unstaged changes or 
+    - has been created after the last commit or
+    - a comparison commit id has been provided: changes are then the differences between filed_x comparison commit and file_x present read. No differences are equivalent to no file changes.
 If the assumptions are not met, halt the process and signal the discrepancy. Otherwise:
 - Consider file_x content, and its unstaged working-tree diff if it exists
     - If file_x has been deleted:
