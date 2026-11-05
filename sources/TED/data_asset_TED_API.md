@@ -3,14 +3,14 @@
 ## Project references
 - **Swagger:** [swagger_TED-api-v3.yaml](./swagger_TED-api-v3.yaml) is a cleaned up version of the original swagger found at [API documentation](https://api.ted.europa.eu/swagger-ui/index.html#/Search/search). The present document includes API search request essentials, leaving out requested fields details.
 
-- **Aliases Map:** [List_of_search_fields.csv](./List_of_search_fields.csv),  downoaded from [Search fields used on the TED website](https://docs.ted.europa.eu/ODS/latest/reuse/field-list.html), lists 1,340 unique primary names in `Search field`, alternative names in `Alias 1` and `Alias 2`, and references in `Reference in the eForms SDK`.
+- **Aliases Map:** [List_of_search_fields.csv](./semantic%20base/API%20map/List_of_search_fields.csv),  downoaded from [Search fields used on the TED website](https://docs.ted.europa.eu/ODS/latest/reuse/field-list.html), lists 1,340 unique primary names in `Search field`, alternative names in `Alias 1` and `Alias 2`, and references in `Reference in the eForms SDK`.
 
-- **Semantic field map:** [semantic_base.json](./semantic_base.json), maps each of the 1,338 retained swagger search field names to a semantic description, initialized to an empty string (`""`). Note: the swagger's field descriptions explain multilingual text structure and language codes, rather than business meaning.
+- **Semantic field map:** [semantic_base.json](./semantic%20base/semantic_base.json), maps each of the 1,338 retained swagger search field names to a semantic description, initialized to an empty string (`""`). Note: the swagger's field descriptions explain multilingual text structure and language codes, rather than business meaning.
 
 ## Swagger Cleanup
 The original swagger presented redundancies that have been eliminated to produce a project's version of the swagger:
 1. Field duplicates: the list of fields for the search api body (section PublicExpertSearchRequestV1) included an example section that just relisted all the 1830 fields
-2. Field aliases: using [List_of_search_fields.csv](./List_of_search_fields.csv). Removed 492 alias names in the original swagger from both `PublicExpertSearchRequestV1.properties.fields.enum` and `NoticeResponse.properties`, preferring the CSV's `Search field` name. Both sections now contain the same 1,338 unique names.
+2. Field aliases: using [List_of_search_fields.csv](./semantic%20base/API%20map/List_of_search_fields.csv). Removed 492 alias names in the original swagger from both `PublicExpertSearchRequestV1.properties.fields.enum` and `NoticeResponse.properties`, preferring the CSV's `Search field` name. Both sections now contain the same 1,338 unique names.
 
 Notice that the CSV's `Search field` column and the edited swagger search request share 1,337 names but do not match exactly:
 

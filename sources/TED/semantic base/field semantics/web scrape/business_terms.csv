@@ -1,0 +1,388 @@
+﻿business_group_id,business_group_name,business_term_identifier,Description,Data Type
+BG-1,Notice,BT-01,Procedure Legal Basis,CODE
+BG-1,Notice,BT-02,Notice Type,CODE
+BG-1,Notice,BT-03,Form Type,CODE
+BG-1,Notice,BT-04,Procedure Identifier,IDENTIFIER
+BG-1,Notice,BT-05,Notice Dispatch Date,DATE
+BG-1,Notice,BT-701,Notice Identifier,IDENTIFIER
+BG-1,Notice,BT-702,Notice Official Language,CODE
+BG-1,Notice,BT-738,Notice Preferred Publication Date,DATE
+BG-1,Notice,BT-757,Notice Version,IDENTIFIER
+BG-1,Notice,BT-803,Notice Dispatch Date eSender,DATE
+BG-100,Communication,BT-99,Review Deadline Description,TEXT
+BG-100,Communication,BT-124,Tool Atypical URL,URL
+BG-100,Communication,BT-127,Future Notice,DATE
+BG-100,Communication,BT-130,Dispatch Invitation Tender,DATE
+BG-100,Communication,BT-631,Dispatch Invitation Interest,DATE
+BG-100,Communication,BT-632,Tool Name,TEXT
+BG-100,Communication,BT-724,Tool Atypical,INDICATOR
+BG-100,Communication,BT-13712,Communication Lot Identifier,IDENTIFIER
+BG-101,Procurement Documents,BT-13,Additional Information Deadline,DATE
+BG-101,Procurement Documents,BT-14,Documents Restricted,INDICATOR
+BG-101,Procurement Documents,BT-15,Documents URL,URL
+BG-101,Procurement Documents,BT-615,Documents Restricted URL,URL
+BG-101,Procurement Documents,BT-707,Documents Restricted Justification,CODE
+BG-101,Procurement Documents,BT-708,Documents Official Language,CODE
+BG-101,Procurement Documents,BT-737,Documents Unofficial Language,CODE
+BG-101,Procurement Documents,BT-13718,Documents Lot Identifier,IDENTIFIER
+BG-102,Submission Terms,BT-17,Submission Electronic,CODE
+BG-102,Submission Terms,BT-18,Submission URL,URL
+BG-102,Submission Terms,BT-19,Submission Nonelectronic Justification,CODE
+BG-102,Submission Terms,BT-63,Variants,CODE
+BG-102,Submission Terms,BT-75,Guarantee Required Description,TEXT
+BG-102,Submission Terms,BT-97,Submission Language,CODE
+BG-102,Submission Terms,BT-98,Tender Validity Deadline,DURATION
+BG-102,Submission Terms,BT-131,Deadline Receipt Tenders,DATE
+BG-102,Submission Terms,BT-132,Public Opening Date,DATE
+BG-102,Submission Terms,BT-133,Public Opening Place,TEXT
+BG-102,Submission Terms,BT-134,Public Opening Description,TEXT
+BG-102,Submission Terms,BT-630,Deadline Receipt Expressions,DATE
+BG-102,Submission Terms,BT-651,Subcontracting Tender Indication,CODE
+BG-102,Submission Terms,BT-744,Submission Electronic Signature,INDICATOR
+BG-102,Submission Terms,BT-745,Submission Nonelectronic Description,TEXT
+BG-102,Submission Terms,BT-751,Guarantee Required,INDICATOR
+BG-102,Submission Terms,BT-764,Submission Electronic Catalogue,CODE
+BG-102,Submission Terms,BT-769,Multiple Tenders,INDICATOR
+BG-102,Submission Terms,BT-771,Late Tenderer Information,CODE
+BG-102,Submission Terms,BT-772,Late Tenderer Information Description,TEXT
+BG-102,Submission Terms,BT-800,Deadline Receipt Answers,DATE
+BG-102,Submission Terms,BT-1311,Deadline Receipt Requests,DATE
+BG-102,Submission Terms,BT-13719,Submission Lot Identifier,IDENTIFIER
+BG-125,Previous Planning,BT-125,Previous Planning Identifier,IDENTIFIER
+BG-125,Previous Planning,BT-1251,Previous Planning Part Identifier,IDENTIFIER
+BG-125,Previous Planning,BT-1371,Previous Planning Lot Identifier,IDENTIFIER
+BG-2,Purpose,BT-21,Title,TEXT
+BG-2,Purpose,BT-22,Internal Identifier,TEXT
+BG-2,Purpose,BT-23,Main Nature,CODE
+BG-2,Purpose,BT-24,Description,TEXT
+BG-2,Purpose,BT-25,Quantity,NUMBER
+BG-2,Purpose,BT-27,Estimated Value,VALUE
+BG-2,Purpose,BT-53,Options,INDICATOR
+BG-2,Purpose,BT-54,Options Description,TEXT
+BG-2,Purpose,BT-94,Recurrence,INDICATOR
+BG-2,Purpose,BT-95,Recurrence Description,TEXT
+BG-2,Purpose,BT-137,Purpose Lot Identifier,IDENTIFIER
+BG-2,Purpose,BT-271,Framework Maximum Value,VALUE
+BG-2,Purpose,BT-531,Additional Nature,CODE
+BG-2,Purpose,BT-625,Unit,CODE
+BG-2 > BG-261,Purpose > Classification,BT-26,Classification Type,CODE
+BG-2 > BG-261,Purpose > Classification,BT-262,Main Classification Code,CODE
+BG-2 > BG-261,Purpose > Classification,BT-263,Additional Classification Codes,CODE
+BG-2 > BG-557,Purpose > Group Framework Maximum Value,BT-157,Group Framework Maximum Value,VALUE
+BG-2 > BG-557,Purpose > Group Framework Maximum Value,BT-557,Group Framework Maximum Value Lot Identifier,IDENTIFIER
+BG-36,Duration,BT-36,Duration Period,DURATION
+BG-36,Duration,BT-57,Renewal Description,TEXT
+BG-36,Duration,BT-58,Renewal Maximum,NUMBER
+BG-36,Duration,BT-536,Duration Start Date,DATE
+BG-36,Duration,BT-537,Duration End Date,DATE
+BG-36,Duration,BT-538,Duration Other,CODE
+BG-36,Duration,BT-781,Duration Additional Information,TEXT
+BG-36,Duration,BT-1373,Duration Lot Identifier,IDENTIFIER
+BG-6,Procedure,BT-09,Cross Border Law,TEXT
+BG-6,Procedure,BT-31,Lots Max Allowed,NUMBER
+BG-6,Procedure,BT-33,Lots Max Awarded,NUMBER
+BG-6,Procedure,BT-88,Procedure Features,TEXT
+BG-6,Procedure,BT-105,Procedure Type,CODE
+BG-6,Procedure,BT-106,Procedure Accelerated,INDICATOR
+BG-6,Procedure,BT-135,Direct Award Justification Text,TEXT
+BG-6,Procedure,BT-136,Direct Award Justification Code,CODE
+BG-6,Procedure,BT-763,Lots All Required,INDICATOR
+BG-6,Procedure,BT-1252,Direct Award Justification Previous Procedure Identifier,IDENTIFIER
+BG-6,Procedure,BT-1351,Procedure Accelerated Justification,TEXT
+BG-6 > BG-330,Procedure > Group Lot Award,BT-330,Group Identifier,IDENTIFIER
+BG-6 > BG-330,Procedure > Group Lot Award,BT-1375,Group Lot Identifier,IDENTIFIER
+BG-6 > BG-709,Procedure > Second Stage,BT-50,Minimum Candidates,NUMBER
+BG-6 > BG-709,Procedure > Second Stage,BT-51,Maximum Candidates Number,NUMBER
+BG-6 > BG-709,Procedure > Second Stage,BT-52,Successive Reduction,INDICATOR
+BG-6 > BG-709,Procedure > Second Stage,BT-120,No Negotiation Necessary,INDICATOR
+BG-6 > BG-709,Procedure > Second Stage,BT-661,Maximum Candidates Indicator,INDICATOR
+BG-6 > BG-709,Procedure > Second Stage,BT-1376,Second Stage Lot Identifier,IDENTIFIER
+BG-61,EU Funds,BT-60,EU Funds,INDICATOR
+BG-61,EU Funds,BT-1374,Funds Lot Identifier,IDENTIFIER
+BG-612,Buyer Review Summary,BT-712,Buyer Review Complainants,NUMBER
+BG-612,Buyer Review Summary,BT-13722,Buyer Review Lot Identifier,IDENTIFIER
+BG-612 > BG-613,Buyer Review Summary > Buyer Review Requests,BT-635,Buyer Review Requests Count,NUMBER
+BG-612 > BG-613,Buyer Review Summary > Buyer Review Requests,BT-636,Buyer Review Requests Irregularity Type,CODE
+BG-614,EU Funds Information,BT-5010,EU Funds Financing Identifier,IDENTIFIER
+BG-614,EU Funds Information,BT-6140,EU Funds Details,TEXT
+BG-614,EU Funds Information,BT-7220,EU Funds Programme,CODE
+BG-681,Information on IPI Measures,BT-685,Specific IPI Measure,CODE
+BG-681,Information on IPI Measures,BT-686,Number of tender applications that fall under this IPI Measure,NUMBER
+BG-681,Information on IPI Measures,BT-687,Exception to the application of the IPI Measure,CODE
+BG-681,Information on IPI Measures,BT-688,Overriding reasons relating to the public interest,TEXT
+BG-684,International Procurement Instrument (IPI),BT-684,IPI Measures are Applicable,INDICATOR
+BG-7,Notice Result,BT-118,Notice Framework Maximum Value,VALUE
+BG-7,Notice Result,BT-161,Notice Value,VALUE
+BG-7,Notice Result,BT-1118,Notice Framework Approximate Value,VALUE
+BG-7 > BG-137,Notice Result > Procedure Lot Result,BT-142,Winner Chosen,CODE
+BG-7 > BG-137,Notice Result > Procedure Lot Result,BT-144,Not Awarded Reason,CODE
+BG-7 > BG-137,Notice Result > Procedure Lot Result,BT-660,Framework Re-estimated Value,VALUE
+BG-7 > BG-137,Notice Result > Procedure Lot Result,BT-709,Framework Maximum Value,VALUE
+BG-7 > BG-137,Notice Result > Procedure Lot Result,BT-710,Tender Value Lowest,VALUE
+BG-7 > BG-137,Notice Result > Procedure Lot Result,BT-711,Tender Value Highest,VALUE
+BG-7 > BG-137,Notice Result > Procedure Lot Result,BT-13713,Result Lot Identifier,IDENTIFIER
+BG-7 > BG-137 > BG-712,Notice Result > Procedure Lot Result > Received Submissions,BT-759,Received Submissions Count,NUMBER
+BG-7 > BG-137 > BG-712,Notice Result > Procedure Lot Result > Received Submissions,BT-760,Received Submissions Type,CODE
+BG-7 > BG-310,Notice Result > Contract,BT-145,Contract Conclusion Date,DATE
+BG-7 > BG-310,Notice Result > Contract,BT-150,Contract Identifier,IDENTIFIER
+BG-7 > BG-310,Notice Result > Contract,BT-151,Contract URL,URL
+BG-7 > BG-310,Notice Result > Contract,BT-721,Contract Title,TEXT
+BG-7 > BG-310,Notice Result > Contract,BT-768,Contract Framework Agreement,INDICATOR
+BG-7 > BG-310,Notice Result > Contract,BT-1451,Winner Decision Date,DATE
+BG-7 > BG-310,Notice Result > Contract,BT-3202,Contract Tender Identifier,IDENTIFIER
+BG-7 > BG-310 > BG-611,Notice Result > Contract > Contract EU Funds,BT-722,Contract EU Funds Programme,CODE
+BG-7 > BG-310 > BG-611,Notice Result > Contract > Contract EU Funds,BT-5011,Contract EU Funds Financing Identifier,IDENTIFIER
+BG-7 > BG-310 > BG-611,Notice Result > Contract > Contract EU Funds,BT-6110,Contract EU Funds Details,TEXT
+BG-7 > BG-320,Notice Result > Tender,BT-160,Concession Revenue Buyer,VALUE
+BG-7 > BG-320,Notice Result > Tender,BT-162,Concession Revenue User,VALUE
+BG-7 > BG-320,Notice Result > Tender,BT-163,Concession Value Description,TEXT
+BG-7 > BG-320,Notice Result > Tender,BT-171,Tender Rank,NUMBER
+BG-7 > BG-320,Notice Result > Tender,BT-191,Country Origin,CODE
+BG-7 > BG-320,Notice Result > Tender,BT-193,Tender Variant,INDICATOR
+BG-7 > BG-320,Notice Result > Tender,BT-682,Foreign Subsidies Measures,CODE
+BG-7 > BG-320,Notice Result > Tender,BT-720,Tender Value,VALUE
+BG-7 > BG-320,Notice Result > Tender,BT-779,Tender Payment Value,VALUE
+BG-7 > BG-320,Notice Result > Tender,BT-780,Tender Payment Value Additional Information,TEXT
+BG-7 > BG-320,Notice Result > Tender,BT-782,Tender Penalties,VALUE
+BG-7 > BG-320,Notice Result > Tender,BT-1711,Tender Ranked,INDICATOR
+BG-7 > BG-320,Notice Result > Tender,BT-3201,Tender Identifier,IDENTIFIER
+BG-7 > BG-320,Notice Result > Tender,BT-13714,Tender Lot Identifier,IDENTIFIER
+BG-7 > BG-320 > BG-180,Notice Result > Tender > Subcontracting,BT-553,Subcontracting Value,VALUE
+BG-7 > BG-320 > BG-180,Notice Result > Tender > Subcontracting,BT-554,Subcontracting Description,TEXT
+BG-7 > BG-320 > BG-180,Notice Result > Tender > Subcontracting,BT-555,Subcontracting Percentage,NUMBER
+BG-7 > BG-320 > BG-180,Notice Result > Tender > Subcontracting,BT-730,Subcontracting Value Known,INDICATOR
+BG-7 > BG-320 > BG-180,Notice Result > Tender > Subcontracting,BT-731,Subcontracting Percentage Known,INDICATOR
+BG-7 > BG-320 > BG-180,Notice Result > Tender > Subcontracting,BT-773,Subcontracting,CODE
+BG-7 > BG-556,Notice Result > Group Framework Value,BT-156,Group Framework Maximum Value,VALUE
+BG-7 > BG-556,Notice Result > Group Framework Value,BT-556,Group Framework Value Lot Identifier,IDENTIFIER
+BG-7 > BG-556,Notice Result > Group Framework Value,BT-1561,Group Framework Re-estimated Value,VALUE
+BG-700,Exclusion Grounds and Selection Criteria,BT-806,Exclusion Grounds Source,CODE
+BG-700,Exclusion Grounds and Selection Criteria,BT-821,Selection Criteria Source,CODE
+BG-701,Exclusion Grounds,BT-67(a),"The criteria (or criterion) of the given type are (is) used, unused, or (in case of prior information notice used as a call for competition or to reduce time limits) the use is not yet known.",CODE
+BG-701,Exclusion Grounds,BT-67(b),The brief description of the exclusion criteria (or criterion).,TEXT
+BG-702,Selection Criteria,BT-40,Selection Criteria Second Stage Invite,INDICATOR
+BG-702,Selection Criteria,BT-750,Selection Criteria Description,TEXT
+BG-702,Selection Criteria,BT-809,Selection Criteria,CODE
+BG-702,Selection Criteria,BT-1378,Selection Lot Identifier,IDENTIFIER
+BG-702 > BG-72,Selection Criteria > Selection Criteria Second Stage Invite Number,BT-752,Selection Criteria Second Stage Invite Number,NUMBER
+BG-702 > BG-72,Selection Criteria > Selection Criteria Second Stage Invite Number,BT-7531,Selection Criteria Second Stage Invite Number Weight,CODE
+BG-702 > BG-72,Selection Criteria > Selection Criteria Second Stage Invite Number,BT-7532,Selection Criteria Second Stage Invite Number Threshold,CODE
+BG-703,Organisation,BT-08,Organisation Role,CODE
+BG-703,Organisation,BT-16,Organisation Part Name,TEXT
+BG-703,Organisation,BT-500,Organisation Name,TEXT
+BG-703,Organisation,BT-501,Organisation Identifier,IDENTIFIER
+BG-703,Organisation,BT-502,Organisation Contact Point,TEXT
+BG-703,Organisation,BT-503,Organisation Contact Telephone Number,TEXT
+BG-703,Organisation,BT-505,Organisation Internet Address,URL
+BG-703,Organisation,BT-506,Organisation Contact Email Address,TEXT
+BG-703,Organisation,BT-507,Organisation Country Subdivision,CODE
+BG-703,Organisation,BT-509,Organisation eDelivery Gateway,URL
+BG-703,Organisation,BT-510,Organisation Street,TEXT
+BG-703,Organisation,BT-512,Organisation Post Code,TEXT
+BG-703,Organisation,BT-513,Organisation City,TEXT
+BG-703,Organisation,BT-514,Organisation Country Code,CODE
+BG-703,Organisation,BT-633,Organisation Natural Person,INDICATOR
+BG-703,Organisation,BT-739,Organisation Contact Fax,TEXT
+BG-703,Organisation,BT-770,Organisation Subrole,CODE
+BG-703,Organisation,BT-13720,Organisation Notice Section Identifier,IDENTIFIER
+BG-703 > BG-3,Organisation > Buyer,BT-10,Activity Authority,CODE
+BG-703 > BG-3,Organisation > Buyer,BT-11,Buyer Legal Type,CODE
+BG-703 > BG-3,Organisation > Buyer,BT-508,Buyer Profile URL,URL
+BG-703 > BG-3,Organisation > Buyer,BT-610,Activity Entity,CODE
+BG-703 > BG-3,Organisation > Buyer,BT-740,Buyer Contracting Entity,INDICATOR
+BG-703 > BG-4,Organisation > Winner,BT-165,Winner Size,CODE
+BG-703 > BG-4,Organisation > Winner,BT-706,Winner Owner Nationality,CODE
+BG-703 > BG-4,Organisation > Winner,BT-746,Winner Listed,INDICATOR
+BG-703 > BG-715,Organisation > Review Body,BT-799,Review Body Type,CODE
+BG-704,Reward and Jury,BT-41,Following Contract,INDICATOR
+BG-704,Reward and Jury,BT-42,Jury Decision Binding,INDICATOR
+BG-704,Reward and Jury,BT-45,Rewards Other,TEXT
+BG-704,Reward and Jury,BT-46,Jury Member Name,TEXT
+BG-704,Reward and Jury,BT-47,Participant Name,TEXT
+BG-704,Reward and Jury,BT-1377,Rewards Lot Identifier,IDENTIFIER
+BG-704 > BG-44,Reward and Jury > Prize,BT-44,Prize Rank,NUMBER
+BG-704 > BG-44,Reward and Jury > Prize,BT-644,Prize Value,VALUE
+BG-705,Other Requirements,BT-71,Reserved Participation,CODE
+BG-705,Other Requirements,BT-78,Security Clearance Deadline,DATE
+BG-705,Other Requirements,BT-79,Performing Staff Qualification,CODE
+BG-705,Other Requirements,BT-578,Security Clearance,INDICATOR
+BG-705,Other Requirements,BT-681,Foreign Subsidies Regulation,INDICATOR
+BG-705,Other Requirements,BT-732,Security Clearance Description,TEXT
+BG-705,Other Requirements,BT-801,Non Disclosure Agreement,INDICATOR
+BG-705,Other Requirements,BT-802,Non Disclosure Agreement Description,TEXT
+BG-705,Other Requirements,BT-1379,Requirements Lot Identifier,IDENTIFIER
+BG-706,Techniques,BT-109,Framework Duration Justification,TEXT
+BG-706,Techniques,BT-111,Framework Buyer Categories,TEXT
+BG-706,Techniques,BT-113,Framework Maximum Participants Number,NUMBER
+BG-706,Techniques,BT-119,Dynamic Purchasing System Termination,INDICATOR
+BG-706,Techniques,BT-122,Electronic Auction Description,TEXT
+BG-706,Techniques,BT-123,Electronic Auction URL,URL
+BG-706,Techniques,BT-765,Framework Agreement,CODE
+BG-706,Techniques,BT-766,Dynamic Purchasing System,CODE
+BG-706,Techniques,BT-767,Electronic Auction,INDICATOR
+BG-706,Techniques,BT-778,Framework Maximum Participants,INDICATOR
+BG-706,Techniques,BT-13711,Techniques Lot Identifier,IDENTIFIER
+BG-707,Award Criteria,BT-543,Award Criteria Complicated,TEXT
+BG-707,Award Criteria,BT-733,Award Criteria Order Justification,TEXT
+BG-707,Award Criteria,BT-13710,Award Criteria Lot Identifier,IDENTIFIER
+BG-707 > BG-38,Award Criteria > Award Criterion,BT-539,Award Criterion Type,CODE
+BG-707 > BG-38,Award Criteria > Award Criterion,BT-540,Award Criterion Description,TEXT
+BG-707 > BG-38,Award Criteria > Award Criterion,BT-734,Award Criterion Name,TEXT
+BG-707 > BG-38 > BG-541,Award Criteria > Award Criterion > Award Criterion Number,BT-541,Award Criterion Number,NUMBER
+BG-707 > BG-38 > BG-541,Award Criteria > Award Criterion > Award Criterion Number,BT-5421,Award Criterion Number Weight,CODE
+BG-707 > BG-38 > BG-541,Award Criteria > Award Criterion > Award Criterion Number,BT-5422,Award Criterion Number Fixed,CODE
+BG-707 > BG-38 > BG-541,Award Criteria > Award Criterion > Award Criterion Number,BT-5423,Award Criterion Number Threshold,CODE
+BG-708,Place of Performance,BT-727,Place Performance Services Other,CODE
+BG-708,Place of Performance,BT-728,Place Performance Additional Information,TEXT
+BG-708,Place of Performance,BT-1372,Place Performance Lot Identifier,IDENTIFIER
+BG-708,Place of Performance,BT-5071,Place Performance Country Subdivision,CODE
+BG-708,Place of Performance,BT-5101,Place Performance Street,TEXT
+BG-708,Place of Performance,BT-5121,Place Performance Post Code,TEXT
+BG-708,Place of Performance,BT-5131,Place Performance City,TEXT
+BG-708,Place of Performance,BT-5141,Place Performance Country Code,CODE
+BG-710,Additional Information,BT-115,GPA Coverage,INDICATOR
+BG-710,Additional Information,BT-300,Additional Information,TEXT
+BG-710,Additional Information,BT-634,Procurement Relaunch,INDICATOR
+BG-710,Additional Information,BT-726,Suitable For SMEs,INDICATOR
+BG-710,Additional Information,BT-756,PIN Competition Termination,INDICATOR
+BG-710,Additional Information,BT-13715,Additional Information Lot Identifier,IDENTIFIER
+BG-711,Contract Terms,BT-64,Subcontracting Obligation Minimum,NUMBER
+BG-711,Contract Terms,BT-65,Subcontracting Obligation,CODE
+BG-711,Contract Terms,BT-70,Terms Performance,TEXT
+BG-711,Contract Terms,BT-76,Tenderer Legal Form Description,TEXT
+BG-711,Contract Terms,BT-77,Terms Financial,TEXT
+BG-711,Contract Terms,BT-92,Electronic Ordering,INDICATOR
+BG-711,Contract Terms,BT-93,Electronic Payment,INDICATOR
+BG-711,Contract Terms,BT-729,Subcontracting Obligation Maximum,NUMBER
+BG-711,Contract Terms,BT-736,Reserved Execution,CODE
+BG-711,Contract Terms,BT-743,Electronic Invoicing,CODE
+BG-711,Contract Terms,BT-761,Tenderer Legal Form,INDICATOR
+BG-711,Contract Terms,BT-13717,Terms Lot Identifier,IDENTIFIER
+BG-713,Strategic Procurement,BT-06,Strategic Procurement,CODE
+BG-713,Strategic Procurement,BT-715,Vehicles,NUMBER
+BG-713,Strategic Procurement,BT-716,Vehicles Clean,NUMBER
+BG-713,Strategic Procurement,BT-717,Clean Vehicles Directive,INDICATOR
+BG-713,Strategic Procurement,BT-725,Vehicles Zero Emission,NUMBER
+BG-713,Strategic Procurement,BT-754,Accessibility,CODE
+BG-713,Strategic Procurement,BT-755,Accessibility Justification,TEXT
+BG-713,Strategic Procurement,BT-774,Green Procurement,CODE
+BG-713,Strategic Procurement,BT-775,Social Procurement,CODE
+BG-713,Strategic Procurement,BT-776,Procurement of Innovation,CODE
+BG-713,Strategic Procurement,BT-777,Strategic Procurement Description,TEXT
+BG-713,Strategic Procurement,BT-805,Green Procurement Criteria,CODE
+BG-713,Strategic Procurement,BT-13721,Strategic Procurement Notice Section Identifier,IDENTIFIER
+BG-714,CVD Information,BT-735,CVD Contract Type,CODE
+BG-7141,CVD Vehicles,BT-723,Vehicle Category,CODE
+BG-716,Review,BT-783,Review Request or Decision,CODE
+BG-716,Review,BT-784,Review Identifier,IDENTIFIER
+BG-716,Review,BT-785,Review Previous Identifier,IDENTIFIER
+BG-716,Review,BT-786,Review Notice Section Identifier,IDENTIFIER
+BG-716,Review,BT-787,Review Date,DATE
+BG-716,Review,BT-788,Review Title,TEXT
+BG-716,Review,BT-789,Review Description,TEXT
+BG-716,Review,BT-790,Review Decision Type,CODE
+BG-716,Review,BT-791,Review Irregularity Type,CODE
+BG-716,Review,BT-792,Review Remedy Type,CODE
+BG-716,Review,BT-793,Review Remedy Value,VALUE
+BG-716,Review,BT-794,Review URL,URL
+BG-716,Review,BT-795,Review Request Fee,VALUE
+BG-716,Review,BT-796,Review Request Withdrawn,INDICATOR
+BG-716,Review,BT-797,Review Request Withdrawn Date,DATE
+BG-716,Review,BT-798,Review Request Withdrawn Reasons,TEXT
+BG-716,Review,BT-804,Review Technical Identifier,IDENTIFIER
+BG-716,Review,BT-807,Review Body Identifier,IDENTIFIER
+BG-716,Review,BT-808,Review Applicant Identifier,IDENTIFIER
+BG-77,Modification,BT-200,Modification Reason Code,CODE
+BG-77,Modification,BT-201,Modification Reason Description,TEXT
+BG-77,Modification,BT-202,Modification Description,TEXT
+BG-77,Modification,BT-1501,Modification Previous Notice Section Identifier,IDENTIFIER
+BG-8,Not Immediately Published,BT-195,Unpublished Identifier,IDENTIFIER
+BG-8,Not Immediately Published,BT-196,Unpublished Justification Description,TEXT
+BG-8,Not Immediately Published,BT-197,Unpublished Justification Code,CODE
+BG-8,Not Immediately Published,BT-198,Unpublished Access Date,DATE
+BG-809,Energy Efficiency Directive (EED),BT-810,EED Applicable,INDICATOR
+BG-810,EED Information,BT-811,EED List,CODE
+BG-810,EED Information,BT-812,Energy Efficiency Label,CODE
+BG-810,EED Information,BT-813,Energy Consumption in kWh/year,NUMBER
+BG-810,EED Information,BT-814,Energy Efficiency Unit,CODE
+BG-810,EED Information,BT-815,Energy Efficiency Quantity,NUMBER
+BG-9,Change,BT-140,Change Reason Code,CODE
+BG-9,Change,BT-141,Change Description,TEXT
+BG-9,Change,BT-718,Change Procurement Documents,INDICATOR
+BG-9,Change,BT-719,Change Procurement Documents Date,DATE
+BG-9,Change,BT-758,Change Notice Version Identifier,IDENTIFIER
+BG-9,Change,BT-762,Change Reason Description,TEXT
+BG-9,Change,BT-13716,Change Previous Notice Section Identifier,IDENTIFIER
+,Other,OPT-001,UBL version ID (UBL),-
+,Other,OPT-002,Customization ID (UBL),-
+,Other,OPP-010,Notice Publication Number,-
+,Other,OPP-011,OJEU Identifier,-
+,Other,OPP-012,OJEU Publication Date,-
+,Other,OPP-020,Assets related contract extension indicator,-
+,Other,OPP-021,Used asset,-
+,Other,OPP-022,Significance (%),-
+,Other,OPP-023,Predominance (%),-
+,Other,OPP-030,Contract conditions Code,-
+,Other,OPT-030,Provided Service Type,-
+,Other,OPP-031,Contract conditions Decription (other than revenue allocation),-
+,Other,OPP-032,Revenues Allocation,-
+,Other,OPP-033,Penalties & Rewards Code,-
+,Other,OPP-034,Penalties and Rewards Description,-
+,Other,OPP-035,Revenues allocation of tickets sales code,-
+,Other,OPP-040,Main Nature - Sub Type,-
+,Other,OPP-050,Buyers Group Lead Indicator,-
+,Other,OPT-050,Document Status,-
+,Other,OPP-051,Awarding CPB Buyer Indicator,-
+,Other,OPP-052,Acquiring CPB Buyer Indicator,-
+,Other,OPT-060,Execution Requirements Factor,CODE
+,Other,OPP-070,Notice Subtype,-
+,Other,OPT-070,Reserved Execution Justification,-
+,Other,OPT-071,Quality Target Code,-
+,Other,OPT-072,Quality Target Description,-
+,Other,OPP-080,Kilometers Public Transport,-
+,Other,OPT-080,Consumption Metric,-
+,Other,OPT-081,Savings Metric,-
+,Other,OPP-090,Previous Notice,-
+,Other,OPT-090,Buyer Categories,-
+,Other,OPT-093,Review Technical Identifier,IDENTIFIER
+,Other,OPP-100,Notice Purpose,-
+,Other,OPT-100,Framework Notice Identifier,-
+,Other,OPP-105,Sector of activity,-
+,Other,OPP-110,Place of registration - Town,-
+,Other,OPT-110,URL to Fiscal Legislation,-
+,Other,OPP-111,Place of registration - Postcode,-
+,Other,OPT-111,Fiscal Legislation Document ID,-
+,Other,OPP-112,Place of registration - Country,-
+,Other,OPT-112,Environmental Legislation Document ID,-
+,Other,OPP-113,Date of registration,-
+,Other,OPT-113,Employment Legislation Document ID,-
+,Other,OPP-120,Name of Publication,-
+,Other,OPT-120,URL to Environmental Legislation,-
+,Other,OPP-121,Title of the announcement,-
+,Other,OPP-122,URL of the announcement,-
+,Other,OPP-123,Date of publication,-
+,Other,OPP-124,Gazette Issue Identifier,-
+,Other,OPP-130,Additional information,-
+,Other,OPT-130,URL to Employment Legislation,-
+,Other,OPP-131,Sender email address,-
+,Other,OPT-140,Procurement Documents ID,-
+,Other,OPT-150,Subcontracting Allowed,-
+,Other,OPT-155,Vehicule Type,-
+,Other,OPT-156,Vehicule Numeric,-
+,Other,OPT-160,First Name,-
+,Other,OPT-170,Tendering Party Leader,-
+,Other,OPT-200,Company Technical Identifier,-
+,Other,OPT-201,TouchPoint Technical Identifier,-
+,Other,OPT-202,Beneficial Owner Technical Identifier,-
+,Other,OPT-210,Tendering Party ID,-
+,Other,OPT-211,Tendering Party Name,-
+,Other,OPT-300,Party Identifier Reference,-
+,Other,OPT-301,Party (ID reference),-
+,Other,OPT-302,Beneficial Owner Reference,-
+,Other,OPT-310,Tendering Party ID Reference,-
+,Other,OPT-315,Contract Identifier Reference,-
+,Other,OPT-316,Contract Technical Identifier,-
+,Other,OPT-320,Tender Identifier Reference,-
+,Other,OPT-321,Tender Technical Identifier,-
+,Other,OPT-322,LotResult Technical Identifier,-
+,Other,OPT-999,Dummy Tender Award Date,-
