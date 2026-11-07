@@ -32,28 +32,41 @@ def split_sdk_references(reference):
     return references or [pd.NA]
 
 
-def build_semantic_base():
-    # Locate the two source tables relative to this script.
+def build_semantic_base(api_search_fields_df=None, bs_fields_df=None):
+    """Join supplied source dataframes, or load the source CSVs when omitted.
+
+    Accept original CSV column names or the exploration notebook's renamed IDs.
+    Supplied dataframes are copied before normalization.
+    """
     semantic_base = Path(__file__).resolve().parent
-    api_search_fields_df = pd.read_csv(
-        semantic_base / "API map" / "List_of_search_fields.csv",
-        usecols=["Search field", "Reference in the eForms SDK"],
-        encoding="utf-8-sig",
-    ).rename(columns={"Reference in the eForms SDK": "sdk_field"})
-    bs_fields_df = pd.read_csv(
-        semantic_base / "field semantics" / "CSVs download" / "fields.csv",
-        usecols=[
-            "fieldId",
-            "btId",
-            "type",
-            "name",
-            "nameLabel",
-            "descriptionLabel",
-            "maxLength",
-            "businessEntityId",
-        ],
-        encoding="utf-8-sig",
-    )
+    field_columns = [
+        "fieldId", "btId", "type", "name", "nameLabel", "descriptionLabel",
+        "maxLength", "businessEntityId",
+    ]
+
+    # Load only inputs that were not supplied by the caller.
+    if api_search_fields_df is None:
+        api_search_fields_df = pd.read_csv(
+            semantic_base / "API map" / "List_of_search_fields.csv",
+            usecols=["Search field", "Reference in the eForms SDK"],
+            encoding="utf-8-sig",
+        )
+    if bs_fields_df is None:
+        bs_fields_df = pd.read_csv(
+            semantic_base / "field semantics" / "CSVs download" / "fields.csv",
+            usecols=field_columns,
+            encoding="utf-8-sig",
+        )
+
+    # Use the same source columns for CSV inputs and preloaded notebook dataframes.
+    api_search_fields_df = api_search_fields_df.rename(columns={
+        "api_field_id": "Search field",
+        "sdk_field_id": "sdk_field",
+        "Reference in the eForms SDK": "sdk_field",
+    })[["Search field", "sdk_field"]].copy()
+    bs_fields_df = bs_fields_df.rename(columns={
+        "sdk_field_id": "fieldId", "bs_term_id": "btId",
+    })[field_columns]
     bs_fields_df = bs_fields_df[
         bs_fields_df["fieldId"].notna() & bs_fields_df["fieldId"].ne("")
     ].copy()
