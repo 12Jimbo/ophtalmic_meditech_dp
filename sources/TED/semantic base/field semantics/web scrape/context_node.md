@@ -12,6 +12,6 @@ Master: `.claude\context_grid\context_node_master.md` (last master commit: `2026
 
 | resource | writers | readers | type | endpoint |
 | --- | --- | --- | --- | --- |
-| `sources\TED\semantic base\field semantics\web scrape\business_terms.csv` | [`sources\TED\semantic base\field semantics\web scrape\scrape_business_terms.py`] |  | table | self |
-| `sources\TED\semantic base\field semantics\web scrape\codelists.csv` | [`sources\TED\semantic base\field semantics\web scrape\scrape_codelists.py`] |  | table | self |
-| `sources\TED\semantic base\field semantics\web scrape\codelist_codes.csv` | [`sources\TED\semantic base\field semantics\web scrape\scrape_codelists.py`] |  | table | self |
+| `sources\TED\semantic base\field semantics\web scrape\business_terms.csv` | [`sources\TED\semantic base\field semantics\web scrape\scrape_business_terms.py`] | [`sources\TED\semantic base\API map\onthology_mapper.ipynb`, `sources\TED\semantic base\semantic_base_exploration.ipynb`] | table | self |
+| `sources\TED\semantic base\field semantics\web scrape\codelists.csv` | [`sources\TED\semantic base\field semantics\web scrape\scrape_codelists.py`] | [`sources\TED\semantic base\API map\onthology_mapper.ipynb`, `sources\TED\semantic base\semantic_base_exploration.ipynb`] | table | self |
+| `sources\TED\semantic base\field semantics\web scrape\codelist_codes.csv` | [`sources\TED\semantic base\field semantics\web scrape\scrape_codelists.py`] | [`sources\TED\semantic base\semantic_base_exploration.ipynb`] | table | self |

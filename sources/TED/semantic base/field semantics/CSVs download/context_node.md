@@ -9,4 +9,4 @@ Master: `.claude\context_grid\context_node_master.md` (last master commit: `2026
 
 | resource | writers | readers | type | endpoint |
 | --- | --- | --- | --- | --- |
-| `sources\TED\semantic base\field semantics\CSVs download\fields.csv` |  |  | table | self |
+| `sources\TED\semantic base\field semantics\CSVs download\fields.csv` |  | [`sources\TED\semantic base\semantic_base_exploration.ipynb`, `sources\TED\semantic base\semantic_base_builder.py`] | table | self |
