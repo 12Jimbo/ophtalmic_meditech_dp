@@ -9,4 +9,4 @@ Master: `.claude/context_grid/context_node_master.md` (last commit: `2026-10-16T
 
 | resource | writers | readers | type | endpoint |
 | --- | --- | --- | --- | --- |
-| `sources/EUDAMED/semantic base/technical documentation/data dictionaries/EMDN/EMDN v2026_EN.csv` | | | table | self |
+| `sources/EUDAMED/semantic base/technical documentation/data dictionaries/EMDN/EMDN v2026_EN.csv` |  | [`sources/EUDAMED/semantic base/semantic_base_builder.py`] | table | self |

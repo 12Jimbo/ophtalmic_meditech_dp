@@ -9,7 +9,7 @@ Master: `.claude/context_grid/context_node_master.md` (last commit: `2026-10-16T
 
 | resource | writers | readers | type | endpoint |
 | --- | --- | --- | --- | --- |
-| `sources/EUDAMED/semantic base/technical documentation/data dictionaries/EUD Common/EUD - data dictionary-Common Entities.csv` | | | table | self |
+| `sources/EUDAMED/semantic base/technical documentation/data dictionaries/EUD Common/EUD - data dictionary-Common Entities.csv` |  | [`sources/EUDAMED/semantic base/semantic_base_builder.py`] | table | self |
 | `sources/EUDAMED/semantic base/technical documentation/data dictionaries/EUD Common/EUD - data dictionary-Data Dictionary Fields.csv` | | | table | self |
 | `sources/EUDAMED/semantic base/technical documentation/data dictionaries/EUD Common/EUD - data dictionary-Entities.csv` | | | table | self |
 | `sources/EUDAMED/semantic base/technical documentation/data dictionaries/EUD Common/EUD - data dictionary-Version history.csv` | | | table | self |

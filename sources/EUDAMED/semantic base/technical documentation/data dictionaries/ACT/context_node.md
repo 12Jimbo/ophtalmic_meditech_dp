@@ -10,7 +10,7 @@ Master: `.claude/context_grid/context_node_master.md` (last commit: `2026-10-16T
 | resource | writers | readers | type | endpoint |
 | --- | --- | --- | --- | --- |
 | `sources/EUDAMED/semantic base/technical documentation/data dictionaries/ACT/ACT - data dictionary-Actor Registration Request.csv` | | | table | self |
-| `sources/EUDAMED/semantic base/technical documentation/data dictionaries/ACT/ACT - data dictionary-Actor.csv` | | | table | self |
+| `sources/EUDAMED/semantic base/technical documentation/data dictionaries/ACT/ACT - data dictionary-Actor.csv` |  | [`sources/EUDAMED/semantic base/semantic_base_builder.py`] | table | self |
 | `sources/EUDAMED/semantic base/technical documentation/data dictionaries/ACT/ACT - data dictionary-Data Dictionary Fields.csv` | | | table | self |
 | `sources/EUDAMED/semantic base/technical documentation/data dictionaries/ACT/ACT - data dictionary-Entities.csv` | | | table | self |
 | `sources/EUDAMED/semantic base/technical documentation/data dictionaries/ACT/ACT - data dictionary-EUDAMED Account.csv` | | | table | self |

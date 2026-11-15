@@ -11,11 +11,11 @@ Master: `.claude/context_grid/context_node_master.md` (last commit: `2026-10-16T
 | --- | --- | --- | --- | --- |
 | `sources/EUDAMED/semantic base/technical documentation/data dictionaries/UID Devices/UDI Devices - data dictionary-Data Dictionary Fields.csv` | | | table | self |
 | `sources/EUDAMED/semantic base/technical documentation/data dictionaries/UID Devices/UDI Devices - data dictionary-DD AR related.csv` | | | table | self |
-| `sources/EUDAMED/semantic base/technical documentation/data dictionaries/UID Devices/UDI Devices - data dictionary-DD BASIC UDI.csv` | | | table | self |
-| `sources/EUDAMED/semantic base/technical documentation/data dictionaries/UID Devices/UDI Devices - data dictionary-DD BASIC UDI_SPP.csv` | | | table | self |
+| `sources/EUDAMED/semantic base/technical documentation/data dictionaries/UID Devices/UDI Devices - data dictionary-DD BASIC UDI.csv` |  | [`sources/EUDAMED/semantic base/semantic_base_builder.py`] | table | self |
+| `sources/EUDAMED/semantic base/technical documentation/data dictionaries/UID Devices/UDI Devices - data dictionary-DD BASIC UDI_SPP.csv` |  | [`sources/EUDAMED/semantic base/semantic_base_builder.py`] | table | self |
 | `sources/EUDAMED/semantic base/technical documentation/data dictionaries/UID Devices/UDI Devices - data dictionary-DD Container Pack.csv` | | | table | self |
-| `sources/EUDAMED/semantic base/technical documentation/data dictionaries/UID Devices/UDI Devices - data dictionary-DD Legacy Devices.csv` | | | table | self |
-| `sources/EUDAMED/semantic base/technical documentation/data dictionaries/UID Devices/UDI Devices - data dictionary-DD UDI-DI.csv` | | | table | self |
+| `sources/EUDAMED/semantic base/technical documentation/data dictionaries/UID Devices/UDI Devices - data dictionary-DD Legacy Devices.csv` |  | [`sources/EUDAMED/semantic base/semantic_base_builder.py`] | table | self |
+| `sources/EUDAMED/semantic base/technical documentation/data dictionaries/UID Devices/UDI Devices - data dictionary-DD UDI-DI.csv` |  | [`sources/EUDAMED/semantic base/semantic_base_builder.py`] | table | self |
 | `sources/EUDAMED/semantic base/technical documentation/data dictionaries/UID Devices/UDI Devices - data dictionary-DD UDI-DI_SPP.csv` | | | table | self |
 | `sources/EUDAMED/semantic base/technical documentation/data dictionaries/UID Devices/UDI Devices - data dictionary-Entities.csv` | | | table | self |
 | `sources/EUDAMED/semantic base/technical documentation/data dictionaries/UID Devices/UDI Devices - data dictionary-Version history.csv` | | | table | self |
