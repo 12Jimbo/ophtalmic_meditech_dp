@@ -1,106 +1,25 @@
-## Links
-[EUDAMED API Portal](https://developer.datalake.sante.service.ec.europa.eu/api-details#api=94b9e658-d721-4b58-8d96-022c490f7a17&operation=411c8f92-26fa-4451-9377-7a13b5d17915)
+# EUDAMED exploration findings
 
-[EUDAMED InfoCenter](https://webgate.ec.europa.eu/eudamed-help/en/documentation/user-guides-and-templates.html)
---> a list of pdf documents, including sources\EUDAMED\API\Public API - user guide.pdf
+Source inventories and download provenance are maintained in the [technical documentation](semantic%20base/technical%20documentation/README.md), [user guides](semantic%20base/user%20guides/README.md) and [device registration guides](semantic%20base/device%20registration%20guides/README.md) READMEs.
 
-[EUDAMED Tech Doc](https://webgate.ec.europa.eu/eudamed-help/en/documentation/technical-documentation.html)
---> most pertinent to semantic field descriptions
+## Pagination
 
-[Public Health Topics](https://health.ec.europa.eu/medical-devices-topics-interest_en)
---> [European Medical Devices Nomenclature (EMDN)](https://health.ec.europa.eu/medical-devices-topics-interest/european-medical-devices-nomenclature-emdn_en)
---> [download list](https://webgate.ec.europa.eu/dyna2/emdn/M90#title)
---> sources\EUDAMED\data dictionaries\EMDN\EMDN v2026_EN.csv
+Earlier exploration confirmed that incomplete JSON GET responses provide a continuation link for the next batch of up to 1,000 rows. This is a historical observation, not a fresh API test. See the [Public API user guide](semantic%20base/user%20guides/data%20exchange/Public%20API%20-%20user%20guide.pdf).
 
+## Competent-authority filters
 
-## ERGONOMICS
+Working interpretation from the Public API guide: `CA_NAME` and `CA_ACTOR_ID` refer to competent-authority actors, corresponding to actor names and identifiers where `ACTOR_TYPE` is `Competent Authority`. Verify this mapping before using it as an authoritative filter description.
 
-#### Pagination
-The 1000 rows cap is a problem.
-Doc says that when using GET in JSON format, a continuation link is provided (if the returned data is incomplete) to query the following 1000. EXPE CONFIRMED
+## Device identifiers
 
+The [UDI concept infographic](semantic%20base/device%20registration%20guides/md_eudamed-udi-concept_en.pdf) explains:
 
-## Semanics
-From sources\EUDAMED\API\Public API - user guide.pdf - user guide.pdf it can be inferred that CA_name valid field values are the subset of name field values where actor_type = "Competent Authority" (analogously for CA_actor_id).
+- Basic UDI-DI groups devices sharing intended purpose, risk class and essential design/manufacturing characteristics.
+- UDI-DI identifies a specific model, variation or version.
+- Package UDI-DI identifies a container package at a packaging level.
+- One Basic UDI-DI can link to multiple UDI-DIs; its registration requires at least one UDI-DI.
+- Each UDI-DI inherits attributes from its Basic UDI-DI. Container-package registration is optional and can follow later.
 
-Device identifiers - see sources\EUDAMED\downloaded docs\md_eudamed-udi-concept_en.pdf
-UDI means unique device identifier.
-`Basic UDI-DI`: Main key in the database and relevant documentation, groups devices with same intended purpose, risk class and essential design and manufacturing characteristics. 
-`UDI-DI`: Specific to a model/variation/version
-`Package UDI-DI`: groups devices that are packaged together in serving a medical purpose (es: collirium + tomographer)
+## Nomenclature
 
-In the relationship between 'Basic UDI-DI' and 'UDI-DI', one or multiple UDI-DIs can be linked to one Basic UDI-DI. 
-The registration of a Basic UDI-DI must always be accompanied by at least one UDI-DI.
-Each UDI-DI inherits the attributes of its linked Basic UDI-DI. Package definition is not required.
-
-
-udi/NOMENCLATURE_CODE is the medical categorization of the device, to be matched in EMDN map
-
-
-## Tech Doc
-
-#### Data dictionaries (Excel files)
-Common
-
-EUD Common - data dictionary | 
-
-Actor
-
-ACT - data dictionary | 
-
-UDI/Devices
-
-UDI Devices - data dictionary | 
-
-Certificates
-
-CRF - certificates - data dictionary | 
-
-CRF - Refused certificates and applications - data dictionary
-
-CRF - varia - data dictionary
-
-CRF - CECP - data dictionary
-
-Market Surveillance
-
-MSU - data dictionary
-
-
-#### Business rules/enumerations
-These seem to apply to actors who want to insert data into the database rather than pulling data from it.
-
-Common
-
-EUD Common - business rules | This purpose of this document is to provide an overview of the scope and conditions data needs to be provided to be valid information for EUDAMED.
-Business rules describe a required set of conditions that will be validated when submitting information.
-
-EUD Common - enumerations | This purpose of this document is to provide an overview of the possible values fields can contain to be valid information for EUDAMED throughout the releases. 
-
-Actor
-
-AIM - enumerations |
-
-ACT - business rules |
-
-ACT - enumerations | 
-
-AIM - business rules |
-
-Certificates
-
-CRF - business rules | 
-
-CRF - enumerations | 
-
-Market Surveillance |
-
-MSU - business rules | 
-
-MSU - enumerations | 
-
-UDI/Devices
-
-UDI Devices - business rules | 
-
-UDI Devices - enumerations | 
+`/udi` field `NOMENCLATURE_CODE` corresponds to the device's EMDN classification. Use the local [EMDN catalogue](semantic%20base/technical%20documentation/data%20dictionaries/EMDN/EMDN%20v2026_EN.csv) to interpret its code.

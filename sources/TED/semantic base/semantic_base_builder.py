@@ -47,7 +47,7 @@ def build_semantic_base(api_search_fields_df=None, bs_fields_df=None):
     # Load only inputs that were not supplied by the caller.
     if api_search_fields_df is None:
         api_search_fields_df = pd.read_csv(
-            semantic_base / "API map" / "List_of_search_fields.csv",
+            semantic_base / "API" / "List_of_search_fields.csv",
             usecols=["Search field", "Reference in the eForms SDK"],
             encoding="utf-8-sig",
         )
