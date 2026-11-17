@@ -23,6 +23,8 @@ CONTEXT NODE UPDATING PROCESS
     - if it has a comparison commit id, ask the context node manager to update its NT record, providing the comparison commmit id
     - if it does not have a comparison commit, ask the context node manager to update its NT record, specifying the file has been created after the last commit
 
+2a. Inventory data assets, including source/reference PDFs. They use DNT and do not have CNT `updated_at` metadata, so the code timestamp procedure above does not apply. For changed, created or moved data assets, call the node manager. For an unchanged asset with no record, create its DNT record using the master field rules; this inventory operation does not require a content change. Derive reciprocal readers/writers only from current code male vertices via the edge manager. Register PDF sources as `document` with `endpoint=self`, and keep manually curated PDF evidence in output provenance rather than inventing runtime reader edges.
+
 3. for each NT record: if the resource does not exist in the present context node folder, delete the record
 
 4. If requested, performed the update recursively on the present folder's subfolders
