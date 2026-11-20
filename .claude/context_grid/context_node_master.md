@@ -39,8 +39,7 @@ Code Node Table (CNT) - Sample
     - is a female vertex coupled with CNT `imports_from`
   - `data_sources`: is the list of all and only the data assets the resource consumes
     - can list data files
-    - can list API documentation files and PDFs whose contents the code reads
-    - manually consulted sources belong in output provenance; file-existence checks do not establish content dependencies
+    - can list API documentation files
     - is a male vertex coupled with DNT `readers`
   - `data_targets`: is the list of all and only the data assets the resource writes to
     - can list data files
@@ -57,7 +56,7 @@ Code Node Table (CNT) - Sample
 
 # Data Node Table (DNT)
 Table description:
-Data files, reference metadata documents (including PDFs) and external resources (like APIs) can be recorded in DNT to keep track of their relationship with code files.
+Data files and external resources (like APIs) can be recorded in DNT to keep track of their relationship with code files.
 
 Data Node Table (DNT) - Sample
 | resource | writers | readers | type | endpoint |
@@ -66,7 +65,7 @@ Data Node Table (DNT) - Sample
 
 ### DNT Field Rules:
   - `resource`: a data asset that allows to read, store, or write data
-    - if type is table, map or document: resource is a path relative to project root of the file in the current folder
+    - if type is table or map: resource is a path relative to project root of a data file in the current folder
     - if type is API: resource is a path relative to project root of an API documentation file in the current folder
     - resource is the record id
     - Expressions like "this file's DNT record" unambiguously refer to the record in the DNT of the file's context node identified by the file's path
@@ -78,10 +77,9 @@ Data Node Table (DNT) - Sample
   - `type`: the resource can be:
     - table: structured data
     - map: semistructured data
-    - document: source or reference metadata documents, including PDFs
     - API (will only have readers)
   - `endpoint`
-    - for type table, map or document: 'self'
+    - for type table or map: 'self'
     - for type API: the endpoint URL
 
 

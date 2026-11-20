@@ -12,7 +12,7 @@
 
 # Semantic Conventions
 - All files with any of the following extensions are considered code files: ['.sql', '.py', '.ipynb']
-- All files with any of the following extensions are considered data files: ['.csv', '.pdf']
+- All files with any of the following extensions are considered data files: ['.csv']
 - All files with any of the following extensions are considered configuration files: ['.json', '.yaml']
 - All files with any of the following extensions are considered documentation files: ['.md']
 

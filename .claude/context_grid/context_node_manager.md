@@ -8,14 +8,6 @@ Invoke the contect_edge_manager `.claude/context_grid/context_edge_manager.md` w
 
 The process described in this document is meant to have as object a file_x in folder_x, for x in [1, ... n]. 
 
-# Building derived data
-
-When asked to produce data files from other files, consider a small reusable builder script when it makes the transformation easier to reproduce or the dependencies easier to trace. Prefer extending an existing suitable builder. Do not introduce a script solely to wrap a trivial copy or rename.
-
-For a builder, record the files whose contents it actually reads in CNT `data_sources`, and the files it writes in `data_targets`. Use the edge manager to maintain reciprocal DNT `readers` and `writers`. Runtime dependencies must remain grounded in code.
-
-PDFs can be source data or reference metadata. Register a relevant PDF in DNT as `document`, with `endpoint=self`; the PDF format alone does not make it an API. If code parses a PDF, record that runtime reader. If an agent or human consults it and curates facts into code or a table, preserve its path and page, section or field locator in output provenance. Do not invent a runtime PDF reader edge for manually curated facts or a file-existence check. Document how that curation is maintained.
-
 FOR EACH FILE_X, FOLLOW THE NODE UPDATE PROCESS
 ------------------------------------------------------------------------------------------------------
 It is assumed that:
