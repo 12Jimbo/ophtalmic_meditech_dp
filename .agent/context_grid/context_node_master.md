@@ -21,7 +21,7 @@ Code files can be recorded in CNT to extract from their code, and track, informa
 Code Node Table (CNT) - Sample
 | resource | description | imports_from | imported_by | data_sources | data_targets | updated_at | update_n |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| `scripts\clean_data.py` | Cleans the raw dataset for downstream analysis. | [`config\settings.py`] | [`notebooks\analysis.ipynb`] | `https://api.ted.europa.eu/v3/notices/search` | [`data\raw.csv`] | [`data\clean.csv`] | `2026-10-08T08:34:00+02:00` | 1 |
+| `scripts\clean_data.py` | Cleans the raw dataset for downstream analysis. | [`config\settings.py`] | [`notebooks\analysis.ipynb`] | [`data\raw.csv`] | [`data\clean.csv`] | `2026-10-08T08:34:00+02:00` | 1 |
 
 
 ### CNT Field Rules:
@@ -45,9 +45,11 @@ Code Node Table (CNT) - Sample
     - can list data files
     - is a male vertex coupled with DNT `writers`
   - `updated_at`: is the current timestamp at the time of record creation or update
-    - Is a metadata field
+    - Does not refresh if the record update included only edits to the following fields:
+      - Metadata fields
+      - Record id
+      - Female vertexes
   - `update_n`: starts at 1 upon record creation, and increases by 1 every time the record is updated
-    - Is a metadata field
     - Does not refresh if the record update included only edits to the following fields:
       - Metadata fields
       - Record id

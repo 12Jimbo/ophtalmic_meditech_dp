@@ -11,10 +11,19 @@
 - DRY: do not repeat yourself. If two chunks of code in a file define very similar processing logic, modularize the logic into a single function.
 
 # Semantic Conventions
-- All files with any of the following extensions are considered code files: ['.sql', '.py', '.ipynb']
-- All files with any of the following extensions are considered data files: ['.csv']
-- All files with any of the following extensions are considered configuration files: ['.json', '.yaml']
-- All files with any of the following extensions are considered documentation files: ['.md']
+
+## File type consideration
+While evading a task, a file in this repository is to be considered as a:
+- Code file, if any of the following is true:
+  - the file has any of the following extensions: ['.sql', '.py', '.ipynb']
+- Data file, if any of the following is true:
+  - the file has any of the following extensions: ['.csv']
+- Configuration file, if any of the following is true:
+  - the file has any of the following extensions: ['.json', '.yaml']
+- Documentation file, if any of the following is true:
+  - the file has any of the following extensions: ['.md', '.pdf]
+
+A file can be considered of one type only. If type consideration is ambigous, ask the user how to consider the file type for the present task, and suggest an edit to type consideration rules that would disambiguate the current case.
 
 # Project Navigation
 Whenever you access a folder as part of a task, if the folder contains a context_node.md, include context_node.md in your current session context.
